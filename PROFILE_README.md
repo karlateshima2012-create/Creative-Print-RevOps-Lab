@@ -39,20 +39,19 @@ Além de desenhar a estratégia operacional, eu sou a responsável pelo desenvol
 
 *   🌐 **[CP Agenda Pro](https://github.com/karlateshima2012-create/CP-Agenda-Pro-Brasil):** Solução focada nos processos de Atendimento, Aquisição de Leads e Conversão de Clientes.
 *   ⭐ **[CP Review](https://github.com/karlateshima2012-create/CP-Review):** Plataforma de inteligência de pós-venda, focada em pesquisas de NPS, CSAT, e Health Score dos clientes.
-*   📊 **[CP Gestão](https://github.com/karlateshima2012-create/CP-Gestao-New):** Painel corporativo e administrativo para consolidação de métricas operacionais.
 
 ---
 
 ## 📈 Estatísticas do GitHub
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=karlateshima2012-create&show_icons=true&theme=nord&include_all_commits=true" alt="Estatísticas do GitHub" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=karlateshima2012-create&layout=compact&theme=nord" alt="Linguagens mais usadas" height="150"/>
+  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=karlateshima2012-create&show_icons=true&theme=nord&include_all_commits=true" alt="Estatísticas do GitHub" height="150"/>
+  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api/top-langs/?username=karlateshima2012-create&layout=compact&theme=nord" alt="Linguagens mais usadas" height="150"/>
 </p>
 
 ---
 
 ## 📫 Vamos nos conectar?
 
-*   💼 **[LinkedIn](https://linkedin.com/in/karlateshima)** *(Substitua pelo seu link)*
-*   ✉️ **[E-mail de Contato](mailto:seu-email@dominio.com)** *(Substitua pelo seu e-mail)*
+*   💼 **[LinkedIn](https://www.linkedin.com/in/karla-teshima-revops)**
+*   ✉️ **[E-mail de Contato](mailto:karlateshima@icloud.com)**
