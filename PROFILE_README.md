@@ -1,13 +1,13 @@
 # Olá, eu sou a Karla Teshima 👋
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Cargo-CEO%20%26%20SaaS%20Developer%20%40%20Creative%20Print-blueviolet?style=for-the-badge" alt="Cargo"/>
-  <img src="https://img.shields.io/badge/Especializando--me-RevOps%20%7C%20CRM%20Architecture-FF7A59?style=for-the-badge" alt="Especializando-se"/>
+  <img src="https://img.shields.io/badge/Posicionamento-CEO%20%26%20SaaS%20Developer%20%7C%20Em%20Transi%C3%A7%C3%A3o%20para%20RevOps-blueviolet?style=for-the-badge" alt="Cargo"/>
+  <img src="https://img.shields.io/badge/Foco%20de%20Carreira-RevOps%20%7C%20CRM%20Architecture-FF7A59?style=for-the-badge" alt="Foco de Carreira"/>
 </p>
 
-Sou fundadora, **CEO** e a desenvolvedora principal das soluções SaaS da **Creative Print**. Minha jornada une a liderança de negócios e o desenvolvimento técnico de software à visão estratégica de **Revenue Operations (RevOps)** e **Arquitetura de CRM**.
+Sou fundadora e **CEO da Creative Print** (baseada no Japão), onde atuo também como a desenvolvedora principal das nossas soluções SaaS. Atualmente, estou estruturando uma **transição de carreira focada em Revenue Operations (RevOps) e Arquitetura de CRM**, preparando meu retorno estratégico ao mercado brasileiro.
 
-Acredito que, para um SaaS escalar com eficiência, o produto técnico e a máquina de operações precisam estar em perfeita harmonia. Por isso, estou me especializando em estruturar infraestruturas de RevOps eficientes, utilizando o **HubSpot como Single Source of Truth (SSOT)** e o **Make.com** como orquestrador.
+Meu diferencial competitivo em RevOps é a vivência prática como desenvolvedora de software e fundadora de negócios. Entendo de bancos de dados (SQL), integrações via APIs/Webhooks e métricas de crescimento (LTV, CAC, Churn) a partir da experiência real de codificar e gerenciar produtos SaaS de ponta a ponta.
 
 Atualmente, utilizo o próprio ecossistema da **Creative Print** para documentar meu progresso prático em conectar as áreas de **Marketing, Vendas e Customer Success** utilizando o **HubSpot**, **Make.com**, **APIs REST** e análise de dados com **SQL**.
 
