@@ -1,13 +1,15 @@
 # Olá, eu sou a Karla Teshima 👋
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Em%20Forma%C3%A7%C3%A3o-RevOps%20%7C%20CRM%20Architecture-blueviolet?style=for-the-badge" alt="Em Formação"/>
-  <img src="https://img.shields.io/badge/Laborat%C3%B3rio-Creative%20Print%20RevOps-FF7A59?style=for-the-badge" alt="Laboratório"/>
+  <img src="https://img.shields.io/badge/Cargo-CEO%20%26%20SaaS%20Developer%20%40%20Creative%20Print-blueviolet?style=for-the-badge" alt="Cargo"/>
+  <img src="https://img.shields.io/badge/Especializando--me-RevOps%20%7C%20CRM%20Architecture-FF7A59?style=for-the-badge" alt="Especializando-se"/>
 </p>
 
-Estou em formação especializada em **Revenue Operations (RevOps)** e **Arquitetura de CRM**. Meu objetivo é consolidar a transição entre o desenvolvimento técnico de software (construção de soluções SaaS) e a modelagem estratégica de negócios, criando operações de receita integradas e escaláveis.
+Sou fundadora, **CEO** e a desenvolvedora principal das soluções SaaS da **Creative Print**. Minha jornada une a liderança de negócios e o desenvolvimento técnico de software à visão estratégica de **Revenue Operations (RevOps)** e **Arquitetura de CRM**.
 
-Atualmente, estou desenvolvendo o ecossistema da **Creative Print** para documentar meu progresso prático em conectar as áreas de **Marketing, Vendas e Customer Success** utilizando o **HubSpot** como a única fonte de verdade (*Single Source of Truth*), orquestrado com **Make.com**, **APIs REST** e análise de dados com **SQL**.
+Acredito que, para um SaaS escalar com eficiência, o produto técnico e a máquina de operações precisam estar em perfeita harmonia. Por isso, estou me especializando em estruturar infraestruturas de RevOps eficientes, utilizando o **HubSpot como Single Source of Truth (SSOT)** e o **Make.com** como orquestrador.
+
+Atualmente, utilizo o próprio ecossistema da **Creative Print** para documentar meu progresso prático em conectar as áreas de **Marketing, Vendas e Customer Success** utilizando o **HubSpot**, **Make.com**, **APIs REST** e análise de dados com **SQL**.
 
 ---
 
