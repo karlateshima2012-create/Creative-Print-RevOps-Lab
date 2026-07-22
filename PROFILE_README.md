@@ -1,13 +1,13 @@
 # Olá, eu sou a Karla Teshima 👋
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Posicionamento-RevOps%20Engineer%20%7C%20CRM%20Architect-blueviolet?style=for-the-badge" alt="Posicionamento"/>
-  <img src="https://img.shields.io/badge/Especialidade-SaaS%20Integrations%20%26%20Automation-FF7A59?style=for-the-badge" alt="Especialidade"/>
+  <img src="https://img.shields.io/badge/Em%20Forma%C3%A7%C3%A3o-RevOps%20%7C%20CRM%20Architecture-blueviolet?style=for-the-badge" alt="Em Formação"/>
+  <img src="https://img.shields.io/badge/Laborat%C3%B3rio-Creative%20Print%20RevOps-FF7A59?style=for-the-badge" alt="Laboratório"/>
 </p>
 
-Sou uma especialista em **Revenue Operations (RevOps)** e **Arquiteta de CRM**. Meu diferencial competitivo é a habilidade de unir o desenvolvimento técnico de software (construção de SaaS) à arquitetura de negócios e inteligência de dados, criando operações integradas e altamente escaláveis.
+Estou em formação especializada em **Revenue Operations (RevOps)** e **Arquitetura de CRM**. Meu objetivo é consolidar a transição entre o desenvolvimento técnico de software (construção de soluções SaaS) e a modelagem estratégica de negócios, criando operações de receita integradas e escaláveis.
 
-Atuo conectando as áreas de **Marketing, Vendas e Customer Success**, estruturando o **HubSpot** como a única fonte de verdade (*Single Source of Truth*) através de integrações customizadas com **Make.com**, **APIs REST** e **SQL**.
+Atualmente, estou desenvolvendo o ecossistema da **Creative Print** para documentar meu progresso prático em conectar as áreas de **Marketing, Vendas e Customer Success** utilizando o **HubSpot** como a única fonte de verdade (*Single Source of Truth*), orquestrado com **Make.com**, **APIs REST** e análise de dados com **SQL**.
 
 ---
 
