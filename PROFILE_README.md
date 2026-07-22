@@ -5,11 +5,15 @@
   <img src="https://img.shields.io/badge/Foco%20de%20Carreira-RevOps%20%7C%20CRM%20Architecture-FF7A59?style=for-the-badge" alt="Foco de Carreira"/>
 </p>
 
-Sou fundadora e **CEO da Creative Print** (baseada no Japão), onde atuo também como a desenvolvedora principal das nossas soluções SaaS. Atualmente, estou estruturando uma **transição de carreira focada em Revenue Operations (RevOps) e Arquitetura de CRM**, preparando meu retorno estratégico ao mercado brasileiro.
+Sou fundadora e CEO da **Creative Print**, uma empresa baseada no Japão que une fabricação digital, produtos personalizados e soluções tecnológicas para negócios.
 
-Meu diferencial competitivo em RevOps é a vivência prática como desenvolvedora de software e fundadora de negócios. Entendo de bancos de dados (SQL), integrações via APIs/Webhooks e métricas de crescimento (LTV, CAC, Churn) a partir da experiência real de codificar e gerenciar produtos SaaS de ponta a ponta.
+Minha trajetória começou na criação de produtos físicos utilizando tecnologia 3D, NFC e personalização sob demanda. Ao longo dessa jornada, expandi o ecossistema da empresa para soluções digitais próprias, desenvolvendo plataformas SaaS como **CP Agenda Pro** e **CP Review**.
 
-Atualmente, utilizo o próprio ecossistema da **Creative Print** para documentar meu progresso prático em conectar as áreas de **Marketing, Vendas e Customer Success** utilizando o **HubSpot**, **Make.com**, **APIs REST** e análise de dados com **SQL**.
+Essa experiência me proporcionou uma visão completa da operação de uma empresa: desde produto, aquisição de clientes e vendas até relacionamento, retenção e dados.
+
+Como fundadora e desenvolvedora das nossas próprias soluções, atuo na interseção entre negócio e tecnologia, trabalhando com integrações, APIs, bancos de dados e automações para transformar processos manuais em operações escaláveis.
+
+Atualmente, estou abrindo caminhos e expandindo minha atuação para **Revenue Operations (RevOps), CRM Architecture e Marketing Automation**, aplicando minha experiência prática de construção de produtos e operações para criar estruturas de receita mais previsíveis e orientadas por dados.
 
 ---
 

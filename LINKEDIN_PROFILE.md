@@ -24,23 +24,15 @@ Escolha a que melhor se adapta à sua preferência de posicionamento atual:
 Copie e cole o texto abaixo na seção **"Sobre"** do seu perfil:
 
 ```text
-Olá! Sou fundadora e CEO da Creative Print, empresa baseada no Japão onde atuo também como a desenvolvedora principal das nossas soluções SaaS (CP Agenda Pro e CP Review). Atualmente, estou conduzindo uma transição de carreira estruturada em direção à área de Revenue Operations (RevOps) e CRM Architecture, preparando meu retorno estratégico ao mercado brasileiro nos próximos 2 anos.
+Sou fundadora e CEO da Creative Print, uma empresa baseada no Japão que une fabricação digital, produtos personalizados e soluções tecnológicas para negócios.
 
-Minha trajetória traz um diferencial único para o mercado de RevOps: a vivência real como fundadora de SaaS e desenvolvedora. Eu entendo de APIs, lógica de integração, bancos de dados (SQL) e métricas de crescimento (LTV, CAC, Churn) não apenas na teoria, mas porque eu mesma codifiquei e gerenciei esses produtos.
+Minha trajetória começou na criação de produtos físicos utilizando tecnologia 3D, NFC e personalização sob demanda. Ao longo dessa jornada, expandi o ecossistema da empresa para soluções digitais próprias, desenvolvendo plataformas SaaS como CP Agenda Pro e CP Review.
 
-🚀 O Laboratório Creative Print (RevOps Lab):
-Como parte do planejamento de reestruturação do ecossistema de operações da minha empresa e da minha consolidação técnica para atuar no mercado de RevOps, criei e documento publicamente um laboratório de implantação real de 12 fases no GitHub:
+Essa experiência me proporcionou uma visão completa da operação de uma empresa: desde produto, aquisição de clientes e vendas até relacionamento, retenção e dados.
 
-• CP Agenda Pro: Modelagem dos processos de Atendimento, Aquisição, Vendas e Onboarding direto no CRM.
-• CP Review: Integração completa de NPS/CSAT e Health Score de clientes via Webhooks e Make.com para automatizar o pós-venda.
-• Orquestração de Dados: Sincronização em tempo real de plataformas proprietárias e serviços externos (Stripe, WhatsApp, etc.) com o HubSpot como Single Source of Truth (SSOT).
+Como fundadora e desenvolvedora das nossas próprias soluções, atuo na interseção entre negócio e tecnologia, trabalhando com integrações, APIs, bancos de dados e automações para transformar processos manuais em operações escaláveis.
 
-🛠️ Minha Stack Técnica & Áreas de Foco:
-• Liderança e Produto: Estratégia de SaaS, Unit Economics (CAC/LTV), OKRs e funis de receita integrados.
-• CRM & Automação: HubSpot CRM (Marketing, Sales, Service, Operations Hub) & Make.com.
-• Engenharia de Dados: SQL, APIs REST, JSON, Webhooks, GA4 e Looker Studio.
-
-Estou me preparando ativamente para atuar como especialista e consultora no mercado de RevOps brasileiro, conectando tecnologia e estratégia de negócios para estruturar operações integradas que geram crescimento previsível.
+Atualmente, estou abrindo caminhos e expandindo minha atuação para Revenue Operations (RevOps), CRM Architecture e Marketing Automation, aplicando minha experiência prática de construção de produtos e operações para criar estruturas de receita mais previsíveis e orientadas por dados.
 
 📬 Conecte-se comigo ou entre em contato pelo e-mail: karlateshima@icloud.com
 ```
