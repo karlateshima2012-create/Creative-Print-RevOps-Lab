@@ -44,7 +44,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
   color: var(--text-primary);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -94,7 +94,7 @@ header.site-header {
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
-  background-color: rgba(252, 251, 250, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
   z-index: 100;
 }
@@ -145,6 +145,7 @@ header.site-header .container {
 .hero {
   padding: var(--spacing-lg) 0;
   border-bottom: 1px solid var(--border-color);
+  background-color: #ffffff;
 }
 
 .hero-grid {
@@ -276,6 +277,16 @@ header.site-header .container {
   align-items: center;
 }
 
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  width: min(80%, 320px);
+  height: min(80%, 320px);
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  z-index: 1;
+}
+
 .profile-avatar {
   width: 100%;
   max-width: 420px;
@@ -288,6 +299,8 @@ header.site-header .container {
 }
 
 .profile-avatar-transparent {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 420px;
   aspect-ratio: 1 / 1;
@@ -382,7 +395,7 @@ header.site-header .container {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: var(--spacing-md);
-  background-color: var(--bg-primary);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   padding: var(--spacing-md);
   border-radius: 6px;
@@ -537,7 +550,7 @@ header.site-header .container {
   height: 12px;
   border-radius: 50%;
   background-color: var(--color-muted);
-  border: 2px solid var(--bg-primary);
+  border: 2px solid var(--bg-secondary);
   transition: var(--transition-smooth);
 }
 
@@ -552,7 +565,7 @@ header.site-header .container {
 }
 
 .timeline-content {
-  background-color: var(--bg-secondary);
+  background-color: #ffffff;
   padding: 1.25rem;
   border-radius: 6px;
   border: 1px solid var(--border-color);
@@ -649,7 +662,7 @@ header.site-header .container {
 }
 
 .skill-category-card {
-  background-color: var(--bg-secondary);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 1.25rem;
@@ -754,7 +767,7 @@ header.site-header .container {
 }
 
 .quote-card {
-  background-color: var(--bg-secondary);
+  background-color: #ffffff;
   border-left: 4px solid var(--color-accent);
   padding: var(--spacing-md);
   border-radius: 0 4px 4px 0;
@@ -792,7 +805,7 @@ header.site-header .container {
 }
 
 .contact-info-card {
-  background-color: var(--bg-secondary);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 1.5rem;
@@ -849,7 +862,7 @@ header.site-header .container {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  background-color: var(--bg-primary);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 1.5rem;
