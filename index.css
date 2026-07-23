@@ -287,6 +287,17 @@ header.site-header .container {
   transition: var(--transition-smooth);
 }
 
+.profile-avatar-transparent {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  transition: var(--transition-smooth);
+}
+
+.profile-avatar-transparent:hover,
 .profile-avatar:hover {
   transform: scale(1.02);
 }
