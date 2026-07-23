@@ -168,15 +168,6 @@ header.site-header .container {
   margin-bottom: var(--spacing-sm);
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 520px;
-}
-
-.word-karla,
-.word-teshima {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .hero-subtitle {
@@ -290,8 +281,8 @@ header.site-header .container {
 .hero-image-wrapper::before {
   content: '';
   position: absolute;
-  width: min(80%, 320px);
-  height: min(80%, 320px);
+  width: min(95%, 480px);
+  height: min(95%, 480px);
   border-radius: 50%;
   background-color: #152827;
   z-index: 1;
