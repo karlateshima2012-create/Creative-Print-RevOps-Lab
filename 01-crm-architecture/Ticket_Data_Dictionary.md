@@ -221,16 +221,6 @@ CSAT e NPS serão utilizados quando existir processo estruturado de Customer Suc
 
 ---
 
-# Status de Implementação dos Grupos do Ticket
-
-| Grupo | Status |
-| --- | --- |
-| Ticket Information | ✅ Finalizado |
-| Ticket Activity | ✅ Finalizado |
-| Ticket AI Enrichment | ⏳ Em andamento |
-
----
-
 # Grupo 3 — Ticket AI Enrichment
 
 ## Objetivo
@@ -247,3 +237,56 @@ Essas propriedades têm como objetivo auxiliar análises de experiência do clie
 | --- | --- | --- | --- |
 | CX Negative Signals | Análise de sentimento | Não inicialmente | HubSpot AI |
 | CX Positive Signals | Análise de sentimento | Não inicialmente | HubSpot AI |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-063 — IA complementa processos existentes
+
+Recursos de inteligência artificial devem apoiar decisões de Customer Success, mas não substituir dados estruturados de relacionamento.
+
+---
+
+### DA-064 — Dados gerados por IA entram somente quando houver uso operacional
+
+Propriedades automáticas devem ser utilizadas apenas quando gerarem ações concretas dentro do processo.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+### Avaliar Futuramente
+
+| Propriedade | Motivo |
+| --- | --- |
+| CX Negative Signals | Pode apoiar prevenção de churn |
+| CX Positive Signals | Pode apoiar análise de satisfação |
+
+---
+
+# Status do Grupo
+
+**Grupo 3 — Ticket AI Enrichment**
+
+- **Status:** ✅ Finalizado (sem propriedades aprovadas)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Sinais de IA serão avaliados no futuro para prevenção de churn e análise de satisfação, sem operacionalização na v1.
+
+---
+
+# Status de Implementação dos Grupos do Ticket
+
+| Grupo | Status |
+| --- | --- |
+| Ticket Information | ✅ Finalizado |
+| Ticket Activity | ✅ Finalizado |
+| Ticket AI Enrichment | ✅ Finalizado (sem propriedades aprovadas) |
