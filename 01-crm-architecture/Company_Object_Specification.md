@@ -95,8 +95,57 @@ Sempre que possível, um Contato deverá estar associado a uma Empresa.
 
 Essa associação permitirá manter o histórico completo do relacionamento comercial e evitar duplicidade de informações.
 
-## 4. Responsabilidades
-<!-- Quem é responsável por gerenciar, atualizar e manter a qualidade dos dados deste objeto -->
+# Responsabilidades
+
+## Objetivo
+
+Definir quem é responsável pela criação, manutenção e qualidade das informações armazenadas no objeto **Empresa (Company)**.
+
+Uma definição clara de responsabilidades garante consistência dos dados, reduz erros operacionais e estabelece uma governança adequada para o CRM.
+
+---
+
+## Responsáveis pelo Objeto
+
+| Responsabilidade                                | Responsável                   |
+| ----------------------------------------------- | ----------------------------- |
+| Criar uma Empresa                               | Equipe Comercial ou Automação |
+| Atualizar informações comerciais                | Equipe Comercial              |
+| Atualizar informações cadastrais                | Equipe Comercial              |
+| Atualizar informações provenientes dos sistemas | Integrações e Automações      |
+| Garantir a qualidade dos dados                  | RevOps                        |
+| Resolver registros duplicados                   | RevOps                        |
+| Definir novas propriedades                      | RevOps                        |
+| Aprovar alterações estruturais                  | RevOps                        |
+
+---
+
+## Fonte Oficial dos Dados
+
+O HubSpot será considerado a **fonte única da verdade (Single Source of Truth)** para todas as informações comerciais relacionadas às Empresas.
+
+Os sistemas da Creative Print (CP Agenda, CP Review e futuras soluções) poderão consultar e atualizar informações específicas, mas o relacionamento comercial será centralizado no HubSpot.
+
+---
+
+## Regras de Atualização
+
+* Informações comerciais deverão ser atualizadas sempre que houver interação relevante com o cliente.
+* Alterações realizadas por integrações deverão seguir as regras definidas em **CRM_Data_Governance.md**.
+* Nenhuma automação deverá sobrescrever informações preenchidas manualmente sem uma regra previamente documentada.
+* Alterações estruturais (novas propriedades, novos grupos ou mudanças de comportamento) deverão ser registradas como uma nova decisão arquitetural (ADR).
+
+---
+
+## Qualidade dos Dados
+
+A qualidade das informações armazenadas no objeto Empresa deverá seguir os seguintes princípios:
+
+* Evitar registros duplicados.
+* Evitar propriedades sem finalidade definida.
+* Priorizar informações verificadas.
+* Manter apenas dados relevantes para o relacionamento comercial.
+* Garantir que todas as informações críticas possuam um responsável claramente definido.
 
 ## 5. Relacionamentos
 <!-- Como este objeto se relaciona com Contatos, Negócios (Deals), Tickets e outros objetos -->
