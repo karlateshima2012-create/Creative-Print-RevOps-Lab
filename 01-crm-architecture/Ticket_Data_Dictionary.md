@@ -283,10 +283,86 @@ Propriedades automáticas devem ser utilizadas apenas quando gerarem ações con
 
 ---
 
-# Status de Implementação dos Grupos do Ticket
+# Grupo 4 — Ticket Stage Properties
+
+## Objetivo
+
+O grupo Ticket Stage Properties representa propriedades relacionadas às etapas do processo de atendimento no HubSpot.
+
+Este grupo não possui propriedades disponíveis no ambiente atual e não será utilizado como parte do modelo de dados do CRM.
+
+O controle de evolução dos chamados será realizado através da configuração do Pipeline e Ticket Status.
+
+---
+
+## Propriedades Candidatas
+
+Nenhuma propriedade encontrada.
+
+---
+
+## Análise
+
+Não existem propriedades configuráveis neste grupo.
+
+A governança do processo de atendimento será realizada por:
+* Pipeline de Tickets;
+* Ticket Status;
+* responsáveis pelo atendimento;
+* métricas de atividade.
+
+**Decisão:** ✅ Não criar propriedades neste grupo.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-065 — Etapas do atendimento serão controladas pelo Pipeline
+
+O avanço dos tickets será definido pela configuração do processo, não pela criação de propriedades adicionais.
+
+---
+
+### DA-066 — Evitar propriedades sem função operacional
+
+Grupos vazios ou técnicos não devem receber campos apenas para completar a estrutura do CRM.
+
+---
+
+# Status Final — Ticket Data Dictionary
 
 | Grupo | Status |
 | --- | --- |
 | Ticket Information | ✅ Finalizado |
 | Ticket Activity | ✅ Finalizado |
-| Ticket AI Enrichment | ✅ Finalizado (sem propriedades aprovadas) |
+| Ticket AI Enrichment | ✅ Finalizado |
+| Ticket Stage Properties | ✅ Finalizado |
+
+---
+
+# Propriedades Finais Aprovadas do Objeto Ticket
+
+| Propriedade | Grupo |
+| --- | --- |
+| Ticket Name | Ticket Information |
+| Ticket Owner | Ticket Information |
+| Ticket Status | Ticket Information |
+| Pipeline | Ticket Information |
+| Priority | Ticket Information |
+| Ticket Description | Ticket Information |
+| Create Date | Ticket Activity |
+| Close Date | Ticket Activity |
+| Last Activity Date | Ticket Activity |
+| Next Activity Date | Ticket Activity |
+| Last Customer Reply Date | Ticket Activity |
+| First Agent Email Response Date | Ticket Activity |
