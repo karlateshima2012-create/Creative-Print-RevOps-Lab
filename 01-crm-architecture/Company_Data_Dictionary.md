@@ -86,60 +86,75 @@ Cada grupo será documentado em uma seção específica deste documento.
 
 # Grupo 1 — Identificação
 
-## Propriedade 01
+## Objetivo
 
-| Campo          | Valor                                                                                          |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| Nome Exibido   | Company name                                                                                   |
-| Nome Interno   | `name`                                                                                         |
-| Tipo           | Single-line text                                                                               |
-| Origem         | HubSpot (Padrão)                                                                               |
-| Grupo          | Identificação                                                                                  |
-| Obrigatório    | Sim                                                                                            |
-| Valor Padrão   | Não                                                                                            |
-| Origem do Dado | Comercial / Formulários / Importação                                                           |
-| Responsável    | Comercial                                                                                      |
-| Atualização    | Criação da Empresa                                                                             |
-| Utilização     | Identificação principal da Empresa                                                             |
-| Justificativa  | Identificador principal do objeto Company. Todas as Empresas deverão possuir um nome definido. |
+O Grupo **Identificação** reúne todas as informações responsáveis por identificar de forma única uma empresa dentro do CRM.
+
+As propriedades deste grupo não descrevem características comerciais ou operacionais do cliente.
+
+Sua função é permitir:
+
+* identificar corretamente uma empresa;
+* evitar registros duplicados;
+* facilitar integrações;
+* padronizar cadastros;
+* garantir rastreabilidade entre sistemas.
 
 ---
 
-## Propriedade 02
+## Propriedades Candidatas
 
-| Campo          | Valor                                                                            |
-| -------------- | -------------------------------------------------------------------------------- |
-| Nome Exibido   | Company domain name                                                              |
-| Nome Interno   | `domain`                                                                         |
-| Tipo           | Single-line text                                                                 |
-| Origem         | HubSpot (Padrão)                                                                 |
-| Grupo          | Identificação                                                                    |
-| Obrigatório    | Não                                                                              |
-| Valor Padrão   | Não                                                                              |
-| Origem do Dado | Comercial                                                                        |
-| Responsável    | Comercial                                                                        |
-| Atualização    | Quando disponível                                                                |
-| Utilização     | Deduplicação, integrações futuras e identificação da Empresa                     |
-| Justificativa  | Utilizada como um dos identificadores da Empresa quando existir domínio próprio. |
+| Propriedade         | Categoria | Necessária?        | Origem      |
+| ------------------- | --------- | ------------------ | ----------- |
+| Company Name        | Global    | Sim                | HubSpot     |
+| Company Domain      | Global    | Sim                | HubSpot     |
+| Website             | Global    | Sim                | HubSpot     |
+| Phone Number        | Global    | Sim                | HubSpot     |
+| Country             | Global    | Sim                | HubSpot     |
+| State/Region        | Global    | Sim                | HubSpot     |
+| City                | Global    | Sim                | HubSpot     |
+| Record ID           | Global    | Sim                | HubSpot     |
+| CNPJ                | Brasil    | Sim                | Customizada |
+| Razão Social        | Brasil    | Sim                | Customizada |
+| Nome Fantasia       | Brasil    | Sim                | Customizada |
+| Inscrição Estadual  | Brasil    | Não (Inicialmente) | Customizada |
+| Inscrição Municipal | Brasil    | Não (Inicialmente) | Customizada |
+| Instagram Comercial | Brasil    | Sim                | Customizada |
+| Facebook            | Global    | Não                | HubSpot     |
+| LinkedIn            | Global    | Não                | HubSpot     |
 
 ---
 
-## Propriedade 03
+## Decisões Arquiteturais
 
-| Campo          | Valor                                                                      |
-| -------------- | -------------------------------------------------------------------------- |
-| Nome Exibido   | Record ID                                                                  |
-| Nome Interno   | `hs_object_id`                                                             |
-| Tipo           | Número (Sistema)                                                           |
-| Origem         | HubSpot (Padrão)                                                           |
-| Grupo          | Identificação                                                              |
-| Obrigatório    | Sim (Automático)                                                           |
-| Valor Padrão   | Gerado pelo HubSpot                                                        |
-| Origem do Dado | Sistema                                                                    |
-| Responsável    | HubSpot                                                                    |
-| Atualização    | Automática                                                                 |
-| Utilização     | Integrações, APIs e relacionamento entre sistemas                          |
-| Justificativa  | Identificador único da Empresa dentro do HubSpot. Nunca deve ser alterado. |
+### DA-001 — Priorizar propriedades nativas
+
+Sempre que uma propriedade padrão do HubSpot atender ao requisito de negócio, ela será utilizada.
+
+---
+
+### DA-002 — Arquitetura Global com Extensão Brasil
+
+O CRM utilizará uma arquitetura baseada nas propriedades globais do HubSpot, complementada por propriedades específicas do mercado brasileiro quando agregarem valor ao negócio.
+
+---
+
+### DA-003 — Propriedades somente com finalidade definida
+
+Uma propriedade somente poderá fazer parte do CRM quando possuir pelo menos um dos seguintes objetivos:
+
+* segmentação;
+* automação;
+* integração;
+* relatório;
+* apoio à tomada de decisão.
+
+---
+
+### DA-004 — Identificação por múltiplos identificadores
+
+A identificação de uma Empresa utilizará uma combinação de propriedades, conforme definido no documento **CRM_Data_Governance.md**, não dependendo de um único identificador.
+
 
 
 
