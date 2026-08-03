@@ -55,14 +55,13 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 | Ordem | Grupo | Status |
 | --- | --- | --- |
-| 1 | Company Information | ✅ Completed |
-| 2 | Social Media Information | ✅ Completed |
-| 3 | Perfil da Empresa | ✅ Completed |
-| 4 | Informações Comerciais | ✅ Completed |
-| 5 | Produtos e Serviços | ✅ Completed |
-| 6 | Financeiro | ⏳ Pending |
-| 7 | Customer Success | ⏳ Pending |
-| 8 | Marketing | ⏳ Pending |
+| 1 | Contact Information | ✅ Completed |
+| 2 | Company Profile | ✅ Completed |
+| 3 | Commercial Information | ✅ Completed |
+| 4 | Products & Services | ✅ Completed |
+| 5 | Finance | ⏳ Pending |
+| 6 | Customer Success | ⏳ Pending |
+| 7 | Marketing | ⏳ Pending |
 
 **Evidência de Implementação:**
 ![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/01/01_company_information_group.png)
@@ -183,12 +182,11 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 
 **Grupos configurados:**
 
-- Company Information
-- Social Media Information
-- Perfil da Empresa
-- Informações Comerciais
-- Produtos e Serviços (Products & Services)
+- Contact Information
+- Company Profile
+- Commercial Information
+- Products & Services
 
 **Próxima etapa:**
 
-Configuração do grupo Financeiro.
+Configuração do grupo Finance (Financeiro).
