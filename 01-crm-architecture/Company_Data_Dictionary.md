@@ -1265,22 +1265,22 @@ Esses dados deverão permanecer no objeto Deal.
 
 ---
 
-# Grupo 5 — Financeiro
+# Grupo 5 — Finance
 
 ## Objetivo
 
-O Grupo **Financeiro** reúne informações relacionadas à capacidade econômica e classificação financeira da empresa.
+O grupo Finance reúne informações financeiras estratégicas da empresa que apoiam análises, segmentações e tomada de decisão.
 
-As propriedades deste grupo têm como objetivo fornecer contexto para análise comercial, segmentação e tomada de decisão.
+Este grupo não deve armazenar informações transacionais, como valores de negociações, pagamentos, faturas ou receitas provenientes de vendas.
 
-Estas informações devem apoiar:
+Esses dados deverão permanecer nos objetos apropriados ou em sistemas financeiros integrados.
 
-* análise de potencial comercial;
-* segmentação de clientes;
-* definição de estratégias comerciais;
-* avaliação de perfil financeiro.
+As propriedades deste grupo têm como objetivo:
 
-Informações relacionadas a valores de vendas, contratos, pagamentos, faturamento específico e receita gerada por negociações não devem ser armazenadas neste grupo, pois pertencem ao objeto **Deal**.
+* apoiar análises estratégicas;
+* auxiliar na qualificação de clientes;
+* identificar potencial financeiro da empresa;
+* fornecer informações para segmentação e planejamento comercial.
 
 ---
 
@@ -1288,16 +1288,11 @@ Informações relacionadas a valores de vendas, contratos, pagamentos, faturamen
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Annual Revenue | Global | Não inicialmente | HubSpot |
-| Number of Employees | Global | Já definido no Grupo 2 | HubSpot |
-| Company Revenue Range | Customizada | Sim | Customizada |
-| Customer Value Segment | Customizada | Sim | Customizada |
-| Payment Status | Customizada | Não utilizar | Customizada |
-| Payment Method | Customizada | Não utilizar | Customizada |
-| Average Ticket | Customizada | Não utilizar | Customizada |
-| Contract Value | Customizada | Não utilizar | Customizada |
-| Credit Rating | Customizada | Não inicialmente | Customizada |
-| Financial Risk Level | Customizada | Sim | Customizada |
+| Payment Terms | Customizada | Sim | Customizada |
+| Customer Credit Status | Customizada | Não inicialmente | Customizada |
+| Financial Risk | Customizada | Não inicialmente | Customizada |
+| Currency | HubSpot | Não | HubSpot |
+| Annual Revenue | HubSpot | Não inicialmente | HubSpot |
 
 ---
 
