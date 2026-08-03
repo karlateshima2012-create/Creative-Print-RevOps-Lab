@@ -75,20 +75,62 @@ Configurar as probabilidades por estágio:
 
 ---
 
-## 5. Validação após Configuração
+## 5. Deal Properties Configuration — Resultado da Validação
+
+### Propriedades Aprovadas
+
+| Propriedade | Grupo HubSpot | Ação |
+| --- | --- | --- |
+| Deal Name | Deal Information | ✅ Utilizar |
+| Deal Owner | Deal Information | ✅ Utilizar |
+| Close Date | Deal Information | ✅ Utilizar |
+| Deal Type | Deal Information | ✅ Utilizar |
+| Deal Description | Deal Information | ✅ Utilizar |
+| Priority | Deal Information | ✅ Utilizar |
+| Amount | Deal Revenue | ✅ Utilizar |
+| Last Activity Date | Deal Activity | ✅ Utilizar |
+| Next Activity Date | Deal Activity | ✅ Utilizar |
+| Last Contacted | Deal Activity | ✅ Utilizar |
+| Number of Sales Activities | Deal Activity | ✅ Utilizar |
+
+---
+
+### Ajuste no Data Dictionary
+
+* **Substituir:** `Number of Activities`
+* **Por:** `Number of Sales Activities`
+* **Motivo:** O HubSpot disponibiliza a propriedade nativa `Number of Sales Activities`, que representa o volume de atividades comerciais associadas ao Deal. Não será criada uma propriedade customizada equivalente.
+
+---
+
+### Propriedades Não Utilizadas Inicialmente
+
+| Grupo | Decisão |
+| --- | --- |
+| Analytics History | Não utilizar inicialmente |
+| HubSpot Metrics | Não utilizar inicialmente |
+| Predictive Deal Score Feature Properties | Não utilizar |
+| Calculated Deal Information | Não utilizar |
+| Multi Account Management | Não utilizar |
+| Deal Revenue recorrente (ARR/MRR/ACV) | Reservado para evolução SaaS |
+
+---
+
+## 6. Validação após Configuração
 
 Checklist de validação técnica:
-- [ ] Pipeline criado corretamente (`Sales Pipeline`).
-- [ ] Nome das etapas revisado.
-- [ ] Probabilidades configuradas.
-- [ ] Closed Won funcionando (100%).
-- [ ] Closed Lost funcionando (0%).
-- [ ] Ordem das etapas validada.
+- [x] Pipeline criado corretamente (`Sales Pipeline`).
+- [x] Nome das etapas revisado.
+- [x] Probabilidades configuradas.
+- [x] Core Properties validadas no HubSpot.
+- [x] Closed Won funcionando (100%).
+- [x] Closed Lost funcionando (0%).
+- [x] Ordem das etapas validada.
 - [ ] Teste com Deal fictício realizado.
 
 ---
 
-## 6. Evidências para Portfólio
+## 7. Evidências para Portfólio
 
 Diretório de evidências:
 `Documentation/evidence/hubspot/deal/`
@@ -121,11 +163,25 @@ Nenhuma alteração de pipeline deve ocorrer sem atualização do Data Dictionar
 
 ---
 
-# Status da Implementação
+# Status Deal Object Configuration
+
+| Item | Status |
+| --- | --- |
+| Pipeline Sales Pipeline | ✅ Completed |
+| Deal Stages | ✅ Completed |
+| Probabilities | ✅ Completed |
+| Core Properties Validation | ✅ Completed |
+| Custom Properties Creation | ⬜ Não necessária inicialmente |
+| Deal Views | ⬜ Próximo |
+| Deal Automation | ⬜ Futuro |
+
+---
+
+# Status da Implementação Global
 
 | Objeto | Arquitetura | Configuração |
 | --- | --- | --- |
 | Company | ✅ Concluído | ✅ Concluído |
 | Contact | ✅ Concluído | ✅ Concluído |
-| Deal | ✅ Concluído | ⬜ Iniciando |
+| Deal | ✅ Concluído | 🟨 Em Validação / views pendente |
 | Ticket | ✅ Concluído | ⬜ Pendente |
