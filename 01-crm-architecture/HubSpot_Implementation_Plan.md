@@ -63,6 +63,9 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 | 6 | Customer Success |
 | 7 | Marketing |
 
+**Evidência de Implementação:**
+![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/01_property_groups/01_company_information_group.png)
+
 ---
 
 ## Property Creation Standard
