@@ -238,17 +238,6 @@ Informações relacionadas a valores, negociações e receita deverão permanece
 
 ---
 
-# Status de Implementação dos Grupos do Contact
-
-| Grupo | Status |
-| --- | --- |
-| Contact Information | ✅ Finalizado |
-| Sales Properties | ✅ Finalizado |
-| Social Media Information | ✅ Finalizado |
-| Marketing Information | ⬜ Pendente |
-
----
-
 # Grupo 3 — Social Media Information
 
 ## Objetivo
@@ -325,3 +314,84 @@ Novas propriedades sociais somente serão criadas quando existir um processo cla
 - **Propriedades aprovadas:**
   * LinkedIn URL
 - **Decisão arquitetural principal:** Nenhuma propriedade customizada será criada. Apenas a propriedade nativa LinkedIn URL foi aprovada para enriquecimento profissional.
+
+---
+
+# Grupo 4 — Marketing Information
+
+## Objetivo
+
+O grupo Marketing Information reúne informações relacionadas às origens de aquisição, interesse por conteúdo e engajamento dos contatos com ações de marketing.
+
+Este grupo tem como objetivo apoiar:
+
+* análise de atribuição de marketing;
+* segmentação de campanhas;
+* nutrição de leads.
+
+Nenhuma propriedade transacional ou de atendimento operacional deve ser armazenada neste grupo.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Original Traffic Source | Rastreamento técnico | Não | HubSpot |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-030 — Priorizar rastreamento nativo do HubSpot
+
+Propriedades técnicas de origem e tráfego são gerenciadas automaticamente pelo HubSpot nos grupos nativos da plataforma (como *Web analytics history*), evitando duplicidades.
+
+---
+
+### DA-031 — Criar propriedades de marketing somente quando houver estratégia definida
+
+Propriedades de marketing customizadas serão adicionadas no futuro apenas quando existirem campanhas, segmentações ou fluxos de automação específicos estruturados.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Original Traffic Source | Pertence ao grupo Web analytics history e é uma propriedade automática do HubSpot |
+
+> **Observação:**
+>
+> Propriedades relacionadas à origem de tráfego e histórico de aquisição geradas automaticamente pelo HubSpot permanecem nos grupos técnicos da plataforma (ex.: Web analytics history).
+>
+> Essas propriedades não serão replicadas em grupos de negócio como Marketing Information.
+
+---
+
+# Status do Grupo
+
+**Grupo 4 — Marketing Information**
+
+- **Status:** ✅ Finalizado (Sem propriedades nesta versão)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Rastreamentos técnicos permanecem nos grupos nativos do HubSpot, evitando a criação de propriedades redundantes.
+
+---
+
+# Status de Implementação dos Grupos do Contact
+
+| Grupo | Status |
+| --- | --- |
+| Contact Information | ✅ Finalizado |
+| Sales Properties | ✅ Finalizado |
+| Social Media Information | ✅ Finalizado |
+| Marketing Information | ✅ Finalizado (Sem propriedades na v1) |
