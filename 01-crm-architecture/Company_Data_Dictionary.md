@@ -1643,6 +1643,100 @@ Informações relacionadas a valores de vendas, contratos, pagamentos, faturamen
 | Credit Rating | Customizada | Não inicialmente | Customizada |
 | Financial Risk Level | Customizada | Sim | Customizada |
 
+---
+
+## Decisões Arquiteturais
+
+### DA-020 — Separação entre perfil financeiro e transação financeira
+
+O objeto **Company** armazenará somente informações financeiras permanentes ou classificatórias.
+
+Valores relacionados a vendas, contratos e pagamentos devem permanecer no objeto **Deal**.
+
+---
+
+### DA-021 — Evitar armazenamento manual de métricas calculáveis
+
+Informações que podem ser calculadas através do histórico comercial não devem ser preenchidas manualmente.
+
+Exemplo:
+
+**Average Ticket** deve ser obtido através dos Deals.
+
+---
+
+### DA-022 — Utilizar classificação financeira quando gerar ação comercial
+
+O CRM priorizará classificações que permitam:
+
+* segmentação;
+* priorização;
+* automação;
+* análise estratégica.
+
+Informações sem aplicação operacional imediata não serão adicionadas.
+
+---
+
+### DA-023 — Não transformar Company em sistema financeiro
+
+O CRM não substituirá ferramentas financeiras.
+
+Informações como:
+
+* pagamentos;
+* cobranças;
+* contratos;
+* faturamento;
+
+devem permanecer nos sistemas apropriados ou no objeto **Deal**.
+
+---
+
+### DA-024 — Dados financeiros devem respeitar governança de origem
+
+Cada informação financeira deverá possuir uma fonte definida:
+
+* CRM;
+* sistema financeiro;
+* ERP;
+* processo comercial.
+
+Evitar duplicidade de dados entre sistemas.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Company Revenue Range | Aprovada | Permite segmentação financeira sem exigir valor exato |
+| Customer Value Segment | Aprovada | Auxilia classificação estratégica da carteira |
+| Financial Risk Level | Aprovada | Permite gestão preventiva de risco |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Annual Revenue | Não utilizar inicialmente | Baixa confiabilidade e prioridade inicial reduzida |
+| Payment Status | Não utilizar | Pertence ao processo financeiro/transacional |
+| Payment Method | Não utilizar | Informação operacional financeira |
+| Average Ticket | Não utilizar | Deve ser calculated através de Deals |
+| Contract Value | Não utilizar | Pertence ao negócio fechado |
+| Credit Rating | Não utilizar inicialmente | Necessita processo financeiro específico |
+
+---
+
+# Status do Grupo
+
+**Grupo 5 — Financeiro**
+
+- **Status:** Modelagem arquitetural concluída
+- **Decisão arquitetural principal:** A Company armazenará apenas informações financeiras estratégicas e classificatórias. Valores financeiros transacionais serão controlados pelo objeto Deal.
+
+
 
 
 
