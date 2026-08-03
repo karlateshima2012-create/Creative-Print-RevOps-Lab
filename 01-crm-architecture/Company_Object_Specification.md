@@ -16,8 +16,32 @@ Toda empresa poderá possuir:
 
 O objetivo deste objeto é fornecer uma visão única e centralizada de cada cliente, evitando duplicidade de informações e permitindo que vendas, marketing e atendimento trabalhem sobre a mesma base de dados.
 
-## 2. Definição
-<!-- O que define uma "Empresa" no contexto de RevOps e do seu negócio -->
+# Definição
+
+Uma **Empresa (Company)** representa uma pessoa jurídica ou negócio que possui ou poderá possuir relacionamento com a Creative Print.
+
+A Empresa é considerada o cliente principal da organização e funciona como ponto central para associação dos demais objetos do CRM.
+
+Cada Empresa poderá estar relacionada a:
+
+- Contatos (Contacts)
+- Negócios (Deals)
+- Tickets
+- Atividades
+- Produtos contratados
+- Campanhas de marketing
+
+Exemplos de Empresas no contexto da Creative Print:
+
+- Restaurante
+- Clínica
+- Barbearia
+- Academia
+- Loja
+- Escritório
+- Prestador de Serviços
+
+Em situações específicas de venda para pessoa física, o relacionamento poderá existir apenas através do objeto Contato, sem necessidade de criação de uma Empresa.
 
 ## 3. Regras de criação
 <!-- Como e sob quais circunstâncias uma Empresa é criada no CRM -->
