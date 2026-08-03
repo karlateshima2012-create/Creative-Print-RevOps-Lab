@@ -381,5 +381,28 @@ Campos criados automaticamente pela plataforma serão utilizados apenas quando h
 | Deal Revenue | ✅ Finalizado |
 | Deal Activity | ✅ Finalizado |
 | Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
-| Professional Services Information | ⬜ Pendente |
+| Professional Services Information | ⏳ Em andamento |
 | HubSpot Metrics | ⬜ Pendente |
+
+---
+
+# Grupo 5 — Professional Services Information
+
+## Objetivo
+
+O grupo Professional Services Information reúne informações relacionadas à execução de projetos ou serviços associados às oportunidades comerciais.
+
+Essas propriedades podem apoiar processos que envolvem escopo, prazo, complexidade e entrega de serviços.
+
+No cenário atual da Creative Print, esse grupo não representa o processo comercial principal, pois a maior parte das vendas envolve produtos personalizados e soluções digitais padronizadas.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Complexidade do projeto | Classificação do projeto | Não inicialmente | Customizada |
+| Prazo estimado | Planejamento de entrega | Não inicialmente | Customizada |
+| Serviços inclusos | Escopo comercial | Não inicialmente | Customizada |
+| Tamanho do projeto | Classificação do projeto | Não inicialmente | Customizada |
