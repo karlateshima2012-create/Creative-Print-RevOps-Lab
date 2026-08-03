@@ -217,8 +217,52 @@ Essa estrutura proporciona:
 * Escalabilidade para novos produtos e serviços.
 * Facilidade para integrações futuras.
 
-## 6. Ciclo de vida
-<!-- Quais as etapas de ciclo de vida aplicáveis a uma Empresa -->
+# Ciclo de Vida
+
+## Objetivo
+
+Definir a evolução de uma Empresa dentro do CRM utilizando o **Lifecycle Stage** padrão do HubSpot.
+
+O Lifecycle Stage representa a maturidade do relacionamento comercial e será utilizado em segmentações, automações, relatórios e métricas.
+
+---
+
+## Lifecycle Stage
+
+| Estágio                        | Quando entra                                                                  | Quando avança                                              |
+| ------------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Subscriber                     | A empresa apenas demonstrou interesse em receber conteúdo ou manter contato.  | Quando existir interesse comercial identificado.           |
+| Lead                           | A empresa demonstrou interesse em um produto ou serviço.                      | Após qualificação inicial.                                 |
+| Marketing Qualified Lead (MQL) | A empresa atende ao perfil de cliente ideal e possui potencial comercial.     | Quando for aceita pela equipe comercial.                   |
+| Sales Qualified Lead (SQL)     | A oportunidade foi qualificada pela equipe comercial.                         | Quando existir uma negociação ativa.                       |
+| Opportunity                    | Existe uma oportunidade real registrada através de um Negócio (Deal).         | Quando ocorrer a primeira venda.                           |
+| Customer                       | A empresa realizou sua primeira compra ou contratação.                        | Permanece enquanto houver relacionamento comercial.        |
+| Evangelist                     | Cliente satisfeito que recomenda a Creative Print e gera novas oportunidades. | Mantido enquanto continuar atuando como promotor da marca. |
+| Other                          | Empresas que não se enquadram nas categorias anteriores.                      | Conforme necessidade futura.                               |
+
+---
+
+## Regras Gerais
+
+* O Lifecycle Stage deverá evoluir sempre para frente, evitando regressões sempre que possível.
+* Alterações automáticas deverão ser documentadas antes da implementação.
+* O Lifecycle Stage representa o relacionamento comercial e não o status operacional do cliente.
+
+---
+
+## Observação
+
+Informações como:
+
+* Cliente Ativo
+* Cliente Inativo
+* Em Onboarding
+* Cancelado
+* Inadimplente
+
+não pertencem ao Lifecycle Stage.
+
+Essas situações serão controladas por propriedades específicas da Creative Print definidas posteriormente no Data Dictionary.
 
 ## 7. Informações armazenadas
 <!-- Quais os grupos de propriedades e principais tipos de dados armazenados neste objeto -->
