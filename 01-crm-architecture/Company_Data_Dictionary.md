@@ -631,6 +631,129 @@ Criar propriedade customizada.
 
 Apesar de existirem redes sociais no HubSpot, Instagram comercial possui relevância específica para pequenos e médios negócios brasileiros.
 
+---
+
+# Grupo 2 — Perfil da Empresa
+
+## Objetivo
+
+O Grupo **Perfil da Empresa** reúne informações estruturais e classificatórias sobre uma organização.
+
+As propriedades deste grupo têm como objetivo permitir compreender o contexto da empresa, seu porte, segmento de atuação e características gerais.
+
+Estas informações devem apoiar:
+
+* segmentação comercial;
+* personalização da comunicação;
+* análise de mercado;
+* criação de relatórios;
+* definição de estratégias de relacionamento.
+
+As propriedades deste grupo não devem armazenar informações relacionadas diretamente a oportunidades comerciais, produtos adquiridos ou dados financeiros.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Industry | Global | Sim | HubSpot |
+| Company Type | Global | Sim | HubSpot |
+| Number of Employees | Global | Sim | HubSpot |
+| Annual Revenue | Global | Não inicialmente | HubSpot |
+| Business Segment | Brasil | Sim | Customizada |
+| Business Model | Brasil | Sim | Customizada |
+| Company Size Classification | Customizada | Sim | Customizada |
+| Years in Operation | Brasil | Não inicialmente | Customizada |
+| Target Market | Customizada | Não inicialmente | Customizada |
+| Main Customer Profile | Customizada | Não inicialmente | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-005 — Utilização de propriedades globais quando disponíveis
+
+Sempre que uma propriedade padrão do HubSpot atender ao requisito de negócio, ela será utilizada antes da criação de uma propriedade customizada.
+
+Exemplo:
+
+A propriedade **Industry** será utilizada para classificação geral da empresa, evitando a criação de um campo duplicado.
+
+---
+
+### DA-006 — Separação entre classificação global e segmentação comercial
+
+O CRM utilizará propriedades globais do HubSpot para classificações universais e propriedades customizadas para informações específicas do mercado ou estratégia comercial.
+
+Exemplo:
+
+- **Industry** representa a classificação global da empresa.
+- **Business Segment** representa a segmentação comercial utilizada pela organização.
+
+---
+
+### DA-007 — Dados calculáveis não serão mantidos manualmente
+
+Propriedades que podem ser derivadas a partir de outros dados não devem depender de preenchimento manual.
+
+Exemplo:
+
+A propriedade **Company Size Classification** será baseada na informação de **Number of Employees** e poderá ser gerada através de automação.
+
+---
+
+### DA-008 — Evitar duplicidade entre propriedades de ciclo de vida
+
+Propriedades relacionadas ao relacionamento da empresa com a organização não devem ser armazenadas neste grupo.
+
+Exemplo:
+
+Informações como:
+
+* cliente ativo;
+* oportunidade;
+* lead;
+* status comercial;
+
+serão tratadas nos grupos apropriados ou através das propriedades padrão do HubSpot.
+
+---
+
+### DA-009 — Criar propriedades somente quando existir finalidade operacional
+
+Uma propriedade somente fará parte do CRM quando possuir pelo menos um dos seguintes objetivos:
+
+* segmentação;
+* automação;
+* integração;
+* relatório;
+* apoio à tomada de decisão.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Industry | Aprovada | Classificação global utilizada pelo HubSpot |
+| Number of Employees | Aprovada | Permite identificar porte da empresa |
+| Business Segment | Aprovada | Necessária para segmentação comercial brasileira |
+| Business Model | Aprovada | Permite classificar modelo de atuação |
+| Company Size Classification | Aprovada | Facilita relatórios e segmentações |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Annual Revenue | Não utilizar inicialmente | Baixa confiabilidade e pouca aplicação operacional no início |
+| Years in Operation | Não utilizar inicialmente | Não possui impacto imediato em automações ou relatórios |
+| Target Market | Não utilizar inicialmente | Informação pode ser obtida em outros processos comerciais |
+| Main Customer Profile | Não utilizar inicialmente | Possui maior relação com estratégia comercial do que cadastro da empresa |
+
+
 
 
 
