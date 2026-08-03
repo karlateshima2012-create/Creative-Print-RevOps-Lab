@@ -924,6 +924,390 @@ devem pertencer ao objeto **Deal (Negócio)** e não ao objeto **Company (Empres
 | Lead Qualification | Não utilizar inicialmente | Pode ser tratado através de processos de qualificação e propriedades existentes |
 | Relationship Status | Não utilizar inicialmente | Pode gerar conflito com Lifecycle Stage e Customer Status |
 
+---
+
+## Especificação das Propriedades Aprovadas
+
+### Lifecycle Stage
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Lifecycle Stage |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Controlar a evolução do relacionamento da empresa dentro do ciclo de vida comercial.
+
+A propriedade representa o estágio geral em que a empresa se encontra dentro da jornada de relacionamento.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* segmentação de empresas;
+* automações de marketing e vendas;
+* relatórios de conversão;
+* análise do funil comercial.
+
+#### Critérios de Preenchimento
+
+Valores padrão do HubSpot:
+
+* Subscriber
+* Lead
+* Marketing Qualified Lead
+* Sales Qualified Lead
+* Opportunity
+* Customer
+* Evangelist
+* Other
+
+A definição dos valores utilizados deve seguir o processo comercial adotado pela organização.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+**Motivo:** A propriedade atende ao controle do ciclo de relacionamento e possui integração direta com ferramentas nativas da plataforma.
+
+---
+
+### Lead Status
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Lead Status |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Controlar a situação operacional de uma empresa dentro do processo comercial.
+
+Diferente do Lifecycle Stage, esta propriedade representa o acompanhamento diário realizado pela equipe comercial.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* organizar tarefas comerciais;
+* acompanhar leads em andamento;
+* identificar empresas sem evolução;
+* gerar relatórios operacionais.
+
+#### Critérios de Preenchimento
+
+Exemplo de valores:
+
+* New
+* Open
+* In Progress
+* Connected
+* Qualified
+* Unqualified
+* Attempted to Contact
+
+Os valores podem ser adaptados conforme o processo comercial definido.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+**Motivo:** Evita criação de campos equivalentes e mantém compatibilidade com recursos comerciais da plataforma.
+
+---
+
+### Company Owner
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Company Owner |
+| Objeto | Company |
+| Tipo | Usuário |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificar o responsável interno pelo relacionamento com a empresa.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* distribuição de carteira;
+* gestão de responsabilidades;
+* relatórios por vendedor;
+* acompanhamento de atendimento.
+
+#### Critérios de Preenchimento
+
+Cada empresa deve possuir um responsável definido quando entrar no processo comercial.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+**Motivo:** É integrada ao gerenciamento de usuários e permissões da plataforma.
+
+---
+
+### Create Date
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Create Date |
+| Objeto | Company |
+| Tipo | Data |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar automaticamente a data em que o registro da empresa foi criado no CRM.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* análise de crescimento da base;
+* relatórios históricos;
+* cálculo de tempo no CRM.
+
+#### Critérios de Preenchimento
+
+Preenchimento automático pelo sistema. Não deve ser alterada manualmente.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Last Activity Date
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Last Activity Date |
+| Objeto | Company |
+| Tipo | Data |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar a última interação realizada com a empresa.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* identificar empresas sem contato;
+* criar alertas comerciais;
+* analisar produtividade.
+
+#### Critérios de Preenchimento
+
+Atualizada automaticamente através das atividades registradas no CRM (ligações, reuniões, e-mails, tarefas).
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Original Source
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Original Source |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificar o primeiro canal pelo qual a empresa entrou no CRM.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* análise de aquisição;
+* atribuição de marketing;
+* relatórios de origem.
+
+#### Critérios de Preenchimento
+
+Valores controlados pelo HubSpot (*Organic Search, Paid Search, Social Media, Referral, Offline Sources*).
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Acquisition Channel
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Acquisition Channel |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Brasil |
+| Origem | Customizada |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o canal estratégico responsável pela aquisição da empresa.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* análise de estratégia comercial;
+* comparação de canais;
+* planejamento de investimentos.
+
+#### Critérios de Preenchimento
+
+Exemplo de valores:
+
+* Indicação
+* Google Ads
+* Instagram
+* Evento
+* Prospecção ativa
+* Parceiro comercial
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** A propriedade complementa Original Source com uma visão estratégica de negócio.
+
+---
+
+### Customer Potential
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Customer Potential |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Customizada |
+| Origem | Brasil |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Classificar o potencial comercial futuro da empresa.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* priorização comercial;
+* segmentação da carteira;
+* definição de estratégias de abordagem.
+
+#### Critérios de Preenchimento
+
+Valores sugeridos:
+
+* Alto
+* Médio
+* Baixo
+
+Critérios devem ser definidos pela estratégia comercial.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** Representa uma avaliação estratégica interna que não existe como propriedade padrão do HubSpot.
+
+---
+
+### Commercial Priority
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Commercial Priority |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Customizada |
+| Origem | Brasil |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Definir a prioridade operacional de acompanhamento da empresa pela equipe comercial.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* organização da carteira;
+* definição de foco comercial;
+* criação de listas prioritárias.
+
+#### Critérios de Preenchimento
+
+Valores sugeridos:
+
+* Alta
+* Média
+* Baixa
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** A prioridade operacional depende da estratégia interna da empresa e não deve ser confundida com potencial comercial.
+
+---
+
+# Status do Grupo
+
+**Grupo 3 — Informações Comerciais**
+
+- **Status:** Modelagem concluída
+- **Próxima etapa:** Configuração no HubSpot após conclusão da modelagem completa dos grupos de Company.
+
+
 
 
 
