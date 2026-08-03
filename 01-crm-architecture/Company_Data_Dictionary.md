@@ -668,6 +668,10 @@ Esta informação tem como objetivo apoiar segmentação comercial, personaliza�
 
 A propriedade não substitui Industry, pois Industry representa o setor de atuação enquanto Business Type representa o formato operacional da empresa.
 
+**Evidências de Configuração:**
+![Print 1 — Configuração Business Type](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/profile/01_business_type_configuration.png)
+![Print 2 — Opções Dropdown Business Type](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/profile/02_dropdown_options.png)
+
 ---
 
 ## Propriedades Aprovadas
