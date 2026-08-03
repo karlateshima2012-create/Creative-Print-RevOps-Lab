@@ -528,6 +528,22 @@ Métricas derivadas serão calculadas pelo HubSpot.
 
 ---
 
+# Pipeline Configuration
+
+## Objetivo
+
+O Pipeline representa o processo comercial utilizado para acompanhar uma oportunidade desde sua criação até sua conclusão.
+
+A definição das etapas deve refletir o processo real de vendas, permitindo:
+
+* acompanhamento das oportunidades;
+* previsão de receita;
+* identificação de gargalos comerciais;
+* automações futuras;
+* relatórios de conversão.
+
+---
+
 ## Configurações Aprovadas do Objeto Deal
 
 Além das propriedades, o objeto Deal possui configurações que fazem parte da arquitetura:
