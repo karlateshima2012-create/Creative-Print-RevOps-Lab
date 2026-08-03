@@ -91,5 +91,25 @@ Cada grupo será documentado em uma seção específica deste documento.
 | Utilização     | Deduplicação, integrações futuras e identificação da Empresa                     |
 | Justificativa  | Utilizada como um dos identificadores da Empresa quando existir domínio próprio. |
 
+---
+
+## Propriedade 03
+
+| Campo          | Valor                                                                      |
+| -------------- | -------------------------------------------------------------------------- |
+| Nome Exibido   | Record ID                                                                  |
+| Nome Interno   | `hs_object_id`                                                             |
+| Tipo           | Número (Sistema)                                                           |
+| Origem         | HubSpot (Padrão)                                                           |
+| Grupo          | Identificação                                                              |
+| Obrigatório    | Sim (Automático)                                                           |
+| Valor Padrão   | Gerado pelo HubSpot                                                        |
+| Origem do Dado | Sistema                                                                    |
+| Responsável    | HubSpot                                                                    |
+| Atualização    | Automática                                                                 |
+| Utilização     | Integrações, APIs e relacionamento entre sistemas                          |
+| Justificativa  | Identificador único da Empresa dentro do HubSpot. Nunca deve ser alterado. |
+
+
 
 
