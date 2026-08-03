@@ -110,7 +110,7 @@ These properties represent stable business information and support integrations,
 | Trade Name | Custom |
 | Instagram Username | Custom |
 | Facebook Page | Custom |
-| LinkedIn | HubSpot |
+| LinkedIn URL | HubSpot |
 
 
 ---
