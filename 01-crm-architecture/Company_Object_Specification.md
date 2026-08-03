@@ -147,8 +147,75 @@ A qualidade das informações armazenadas no objeto Empresa deverá seguir os se
 * Manter apenas dados relevantes para o relacionamento comercial.
 * Garantir que todas as informações críticas possuam um responsável claramente definido.
 
-## 5. Relacionamentos
-<!-- Como este objeto se relaciona com Contatos, Negócios (Deals), Tickets e outros objetos -->
+# Relacionamentos
+
+## Objetivo
+
+O objeto **Empresa (Company)** será a entidade central do CRM da Creative Print.
+
+Todos os demais objetos deverão estar associados à Empresa sempre que houver um relacionamento comercial B2B.
+
+---
+
+## Estrutura de Relacionamentos
+
+| Objeto            | Relacionamento                                              | Obrigatório | Justificativa                                                       |
+| ----------------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------------- |
+| Contato (Contact) | Uma Empresa pode possuir vários Contatos.                   | Sim         | Uma empresa pode possuir diferentes pessoas de contato.             |
+| Negócio (Deal)    | Uma Empresa pode possuir vários Negócios.                   | Sim         | A mesma empresa poderá realizar diversas compras ao longo do tempo. |
+| Ticket            | Uma Empresa pode possuir vários Tickets.                    | Sim         | Todo atendimento deverá manter vínculo com o cliente.               |
+| Atividades        | Uma Empresa poderá possuir diversas atividades registradas. | Sim         | Centraliza todo o histórico de relacionamento.                      |
+
+---
+
+## Modelo de Relacionamento
+
+```text
+Empresa (Company)
+│
+├── Contatos
+│     ├── Proprietário
+│     ├── Gerente
+│     └── Financeiro
+│
+├── Negócios
+│     ├── Venda de Chaveiros NFC
+│     ├── Assinatura CP Agenda
+│     └── Renovação CP Review
+│
+├── Tickets
+│     ├── Suporte
+│     ├── Dúvidas
+│     └── Solicitações
+│
+└── Atividades
+      ├── Ligações
+      ├── E-mails
+      ├── Reuniões
+      └── Tarefas
+```
+
+---
+
+## Regras de Associação
+
+* Todo Negócio deverá estar associado a uma Empresa.
+* Todo Ticket deverá estar associado a uma Empresa.
+* Todo Contato deverá estar associado a uma Empresa, exceto em operações B2C.
+* Todas as atividades deverão permanecer vinculadas ao registro da Empresa sempre que possível.
+
+---
+
+## Benefícios da Arquitetura
+
+Essa estrutura proporciona:
+
+* Histórico centralizado de relacionamento.
+* Eliminação de duplicidade de informações.
+* Melhor segmentação para Marketing.
+* Relatórios mais consistentes.
+* Escalabilidade para novos produtos e serviços.
+* Facilidade para integrações futuras.
 
 ## 6. Ciclo de vida
 <!-- Quais as etapas de ciclo de vida aplicáveis a uma Empresa -->
