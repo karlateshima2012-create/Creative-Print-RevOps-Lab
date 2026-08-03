@@ -227,4 +227,23 @@ CSAT e NPS serão utilizados quando existir processo estruturado de Customer Suc
 | --- | --- |
 | Ticket Information | ✅ Finalizado |
 | Ticket Activity | ✅ Finalizado |
-| Ticket Metrics | ⬜ Pendente |
+| Ticket AI Enrichment | ⏳ Em andamento |
+
+---
+
+# Grupo 3 — Ticket AI Enrichment
+
+## Objetivo
+
+O grupo Ticket AI Enrichment reúne propriedades geradas automaticamente por recursos de inteligência artificial do HubSpot para identificar sinais positivos e negativos durante interações de atendimento.
+
+Essas propriedades têm como objetivo auxiliar análises de experiência do cliente, mas não substituem classificações operacionais ou processos definidos de Customer Success.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| CX Negative Signals | Análise de sentimento | Não inicialmente | HubSpot AI |
+| CX Positive Signals | Análise de sentimento | Não inicialmente | HubSpot AI |
