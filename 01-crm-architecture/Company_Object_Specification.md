@@ -43,8 +43,57 @@ Exemplos de Empresas no contexto da Creative Print:
 
 Em situações específicas de venda para pessoa física, o relacionamento poderá existir apenas através do objeto Contato, sem necessidade de criação de uma Empresa.
 
-## 3. Regras de criação
-<!-- Como e sob quais circunstâncias uma Empresa é criada no CRM -->
+# Regras de Criação
+
+## Quando criar uma Empresa
+
+Uma Empresa deverá ser criada quando existir uma oportunidade real de relacionamento comercial com um negócio.
+
+Os principais cenários são:
+
+- Solicitação de orçamento.
+- Compra de qualquer produto ou serviço.
+- Preenchimento de formulário informando o nome da empresa.
+- Contato via WhatsApp representando um negócio.
+- Contato via Instagram representando uma empresa.
+- Importação de clientes.
+- Cadastro manual realizado pela equipe comercial.
+
+---
+
+## Quando NÃO criar uma Empresa
+
+Não criar uma Empresa quando:
+
+- O contato ainda não informou o nome do negócio.
+- O contato é apenas um visitante sem intenção comercial.
+- O contato é fornecedor (será classificado posteriormente).
+- O contato é parceiro (será classificado posteriormente).
+- O contato é pessoa física e não representa uma empresa.
+
+Nestes casos, apenas o objeto **Contato (Contact)** será utilizado.
+
+---
+
+## Regra de Duplicidade
+
+Antes da criação de uma nova Empresa, o CRM deverá verificar se ela já existe.
+
+A validação deverá considerar, sempre que possível:
+
+1. Nome da empresa.
+2. Domínio do site.
+3. CNPJ (quando disponível).
+
+Caso exista uma Empresa cadastrada, um novo registro não deverá ser criado.
+
+---
+
+## Regra de Associação
+
+Sempre que possível, um Contato deverá estar associado a uma Empresa.
+
+Essa associação permitirá manter o histórico completo do relacionamento comercial e evitar duplicidade de informações.
 
 ## 4. Responsabilidades
 <!-- Quem é responsável por gerenciar, atualizar e manter a qualidade dos dados deste objeto -->
