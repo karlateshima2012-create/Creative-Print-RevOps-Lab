@@ -14,12 +14,13 @@ Nenhuma propriedade deverá ser criada diretamente no HubSpot sem estar previame
 
 ## Objetivo
 
-O grupo Contact Information reúne as informações de identificação e contato das pessoas relacionadas às empresas cadastradas no CRM.
+O grupo Contact Information reúne as informações de identificação, contato e classificação do ciclo de vida das pessoas relacionadas às empresas cadastradas no CRM.
 
 Essas propriedades têm como objetivo apoiar:
 
 * identificação única do contato;
 * comunicação comercial;
+* acompanhamento do estágio do relacionamento (Lifecycle Stage);
 * segmentação;
 * automações;
 * integrações.
@@ -38,6 +39,7 @@ Este grupo deve armazenar apenas informações pertencentes à pessoa, evitando 
 | Phone Number | Contato | Sim | HubSpot |
 | Mobile Phone Number | Contato | Sim | HubSpot |
 | Job Title | Profissional | Sim | HubSpot |
+| Lifecycle Stage | Classificação | Sim | HubSpot |
 
 ---
 
@@ -79,6 +81,7 @@ Novas propriedades serão criadas apenas quando houver necessidade comprovada pa
 | Phone Number | HubSpot | Phone number |
 | Mobile Phone Number | HubSpot | Phone number |
 | Job Title | HubSpot | Single-line text |
+| Lifecycle Stage | HubSpot | Dropdown select |
 
 > **Observação:**
 >
@@ -92,7 +95,7 @@ Novas propriedades serão criadas apenas quando houver necessidade comprovada pa
 
 **Grupo 1 — Contact Information**
 
-- **Status:** Modelado
+- **Status:** ✅ Finalizado
 - **Propriedades aprovadas:**
   * First Name
   * Last Name
@@ -100,94 +103,147 @@ Novas propriedades serão criadas apenas quando houver necessidade comprovada pa
   * Phone Number
   * Mobile Phone Number
   * Job Title
-- **Decisão arquitetural principal:** As informações de contato utilizarão exclusivamente propriedades nativas do HubSpot, e o vínculo com a empresa será realizado via associações nativas (Associations).
+  * Lifecycle Stage
+- **Decisão arquitetural principal:** As informações de contato e o estágio do ciclo de vida utilizarão exclusivamente propriedades nativas do HubSpot no grupo Contact Information.
 
 ---
 
-# Grupo 2 — About this Contact
+# Grupo 2 — Sales Properties
 
-## Objetivo
+## 1. Objetivo
 
-O grupo About this Contact reúne informações relacionadas ao gerenciamento, classificação e acompanhamento do relacionamento com pessoas cadastradas no CRM.
+O grupo Sales Properties reúne informações utilizadas para gestão comercial e acompanhamento da responsabilidade sobre contatos dentro do processo de vendas.
 
 Essas propriedades têm como objetivo apoiar:
 
-* organização da base de contatos;
-* acompanhamento do estágio do relacionamento;
-* gestão comercial;
-* automações futuras;
-* segmentações.
+* organização da equipe comercial;
+* distribuição de responsabilidades;
+* acompanhamento de leads;
+* gestão do processo comercial.
 
-Este grupo não deve armazenar informações da empresa, oportunidades comerciais ou histórico de atendimento, pois essas informações pertencem aos objetos Company, Deal e Ticket.
+Este grupo não deve armazenar informações da empresa ou dados de negociação, pois essas informações pertencem aos objetos Company e Deal.
 
 ---
 
-## Propriedades Candidatas
+## 2. Levantamento das propriedades candidatas
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Lifecycle Stage | Classificação do relacionamento | Sim | HubSpot |
 | Contact Owner | Gestão comercial | Sim | HubSpot |
 | Lead Status | Processo comercial | Sim | HubSpot |
-| Create Date | Histórico | Não | HubSpot |
-| Last Contacted | Atividade | Não | HubSpot |
-| Recent Conversion Date | Marketing | Não inicialmente | HubSpot |
-| Contact Priority | Classificação interna | Não inicialmente | Customizada |
+| Sales Activity Date | Atividade comercial | Não inicialmente | HubSpot |
+| HubSpot Team | Organização comercial | Não inicialmente | HubSpot |
 
 ---
 
-## Decisões Arquiteturais
+## 3. Análise das propriedades
 
-### DA-024 — Lifecycle Stage como indicador principal do relacionamento
+### Contact Owner
 
-O Lifecycle Stage será utilizado como referência principal para representar a evolução do contato dentro do funil de relacionamento.
+Quem é responsável pelo relacionamento com este contato?
 
----
+Utilizado para:
 
-### DA-025 — Lead Status complementa o processo comercial
+* distribuição de contatos;
+* acompanhamento comercial;
+* gestão de carteira.
 
-O Lead Status será utilizado para representar a situação operacional do contato durante o processo de qualificação comercial.
-
----
-
-### DA-026 — Responsabilidade de dados comerciais no objeto correto
-
-Informações relacionadas à empresa permanecerão no objeto Company.
-
-Informações relacionadas a oportunidades comerciais permanecerão no objeto Deal.
-
-O objeto Contact representa exclusivamente pessoas e seu relacionamento individual.
+**Decisão:** ✅ Utilizar.
 
 ---
 
-## Propriedades Aprovadas
+### Lead Status
+
+Qual é a situação atual do contato no processo comercial?
+
+Utilizado para:
+
+* qualificação;
+* acompanhamento de oportunidades;
+* automações futuras.
+
+**Decisão:** ✅ Utilizar.
+
+---
+
+### Sales Activity Date
+
+Representa atividades registradas no CRM.
+
+É uma informação operacional gerada pelo HubSpot.
+
+**Decisão:** ❌ Não utilizar inicialmente.
+
+---
+
+### HubSpot Team
+
+Depende da estrutura comercial da organização.
+
+Como a Creative Print ainda não possui uma equipe comercial estruturada no CRM:
+
+**Decisão:** ❌ Não utilizar inicialmente.
+
+---
+
+## 4. Decisões Arquiteturais
+
+### DA-024 — Sales Properties representa gestão comercial
+
+As propriedades deste grupo serão utilizadas para controlar responsabilidade e acompanhamento comercial dos contatos.
+
+---
+
+### DA-025 — Lifecycle Stage permanece no Contact Information
+
+O Lifecycle Stage será tratado como uma classificação geral do relacionamento do contato e permanecerá no grupo nativo Contact Information.
+
+---
+
+### DA-026 — Dados comerciais transacionais pertencem ao Deal
+
+Informações relacionadas a valores, negociações e receita deverão permanecer no objeto Deal.
+
+---
+
+## 5. Resultado
+
+### Propriedades aprovadas
 
 | Propriedade | Origem | Tipo |
 | --- | --- | --- |
-| Lifecycle Stage | HubSpot | Dropdown select |
 | Contact Owner | HubSpot | HubSpot user |
 | Lead Status | HubSpot | Dropdown select |
 
 ---
 
-## Propriedades Não Utilizadas Inicialmente
+### Não utilizar inicialmente
 
 | Propriedade | Motivo |
 | --- | --- |
-| Create Date | Informação automática do sistema |
-| Last Contacted | Métrica operacional automática |
-| Recent Conversion Date | Sem processo de marketing definido |
-| Contact Priority | Sem critério objetivo de classificação |
+| Sales Activity Date | Informação operacional automática |
+| HubSpot Team | Estrutura comercial ainda não definida |
 
 ---
 
 # Status do Grupo
 
-**Grupo 2 — About this Contact**
+**Grupo 2 — Sales Properties**
 
-- **Status:** Modelado
+- **Status:** ✅ Finalizado
 - **Propriedades aprovadas:**
-  * Lifecycle Stage
   * Contact Owner
   * Lead Status
-- **Decisão arquitetural principal:** O grupo utilizará exclusivamente propriedades nativas do HubSpot para controle de estágio de relacionamento, qualificação comercial e atribuição de proprietário da conta.
+- **Decisão arquitetural principal:** O grupo utilizará propriedades nativas do HubSpot para atribuição de responsabilidade comercial e qualificação operacional de contatos.
+
+---
+
+# Status de Implementação dos Grupos do Contact
+
+| Grupo | Status |
+| --- | --- |
+| Contact Information | ✅ Finalizado |
+| Sales Properties | ✅ Finalizado |
+| Social Media Information | ⬜ Pendente |
+| Email Information | ⬜ Pendente |
+| Marketing Information | ⬜ Pendente |
