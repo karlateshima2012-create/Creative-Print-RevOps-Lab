@@ -155,6 +155,483 @@ Uma propriedade somente poderá fazer parte do CRM quando possuir pelo menos um 
 
 A identificação de uma Empresa utilizará uma combinação de propriedades, conforme definido no documento **CRM_Data_Governance.md**, não dependendo de um único identificador.
 
+---
+
+## Especificação das Propriedades Aprovadas
+
+### Company Name
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Company Name |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificar o nome comercial utilizado pela empresa dentro do CRM.
+
+Esta propriedade representa a identificação principal visual do registro da empresa para usuários internos.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* identificação rápida do cliente;
+* pesquisa dentro do CRM;
+* associação com contatos e negócios;
+* visualização em pipelines;
+* comunicação comercial.
+
+#### Critérios de Preenchimento
+
+Deve ser utilizado o nome pelo qual a empresa é reconhecida comercialmente.
+
+Exemplo:
+
+`Creative Print`
+
+Não utilizar:
+
+`Creative Print LTDA - Empresa de Produtos Personalizados`
+
+Informações jurídicas devem ser armazenadas em propriedades específicas.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+Motivo:
+
+A propriedade padrão atende ao requisito de identificação sem necessidade de customização.
+
+---
+
+### Company Domain
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Company Domain |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Armazenar o domínio principal utilizado pela empresa.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* identificação automática de empresas;
+* associação de contatos;
+* enriquecimento de dados;
+* redução de duplicidade.
+
+#### Critérios de Preenchimento
+
+Informar somente o domínio.
+
+Correto:
+
+`creativeprintjp.com`
+
+Incorreto:
+
+`https://www.creativeprintjp.com`
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+O domínio é um identificador global importante para operações futuras de automação e integração.
+
+---
+
+### Website
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Website URL |
+| Objeto | Company |
+| Tipo | URL |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o endereço oficial da presença digital da empresa.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* análise comercial;
+* pesquisa antes de contato;
+* enriquecimento de dados;
+* segmentação.
+
+#### Critérios de Preenchimento
+
+Aceita:
+
+`https://creativeprintjp.com`
+
+Quando a empresa não possui site:
+
+Deixar vazio
+
+Não substituir por redes sociais.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Phone Number
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Phone Number |
+| Objeto | Company |
+| Tipo | Telefone |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o principal telefone comercial da empresa.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* contato comercial;
+* atendimento;
+* integrações com ferramentas de comunicação.
+
+#### Critérios de Preenchimento
+
+Sempre utilizar formato internacional.
+
+Exemplo:
+
+`+55 65 XXXXX-XXXX`
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Country
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Country |
+| Objeto | Company |
+| Tipo | Seleção |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificar o país de operação da empresa.
+
+#### Uso no Negócio
+
+Permite:
+
+* segmentação geográfica;
+* relatórios por mercado;
+* regras de automação futuras.
+
+#### Critérios de Preenchimento
+
+Utilizar padrão internacional.
+
+Exemplo:
+
+* Brazil
+* Japan
+* United States
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### State / Region
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | State/Region |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar a divisão administrativa ou região da empresa.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* segmentação regional;
+* análise comercial;
+* campanhas específicas.
+
+#### Critérios de Preenchimento
+
+Brasil:
+
+* Mato Grosso
+* São Paulo
+* Paraná
+
+Japão:
+
+* Shiga
+* Aichi
+* Tokyo
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### City
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | City |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificar a cidade principal onde a empresa está localizada.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* segmentação local;
+* campanhas regionais;
+* análise territorial.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot.
+
+---
+
+### Record ID
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Record ID |
+| Objeto | Company |
+| Tipo | Sistema |
+| Categoria | Global |
+| Origem | HubSpot |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Identificador único interno gerado automaticamente pelo HubSpot.
+
+#### Uso no Negócio
+
+Utilizado principalmente para:
+
+* integrações;
+* sincronização entre sistemas;
+* APIs;
+* controle técnico.
+
+#### Decisão Arquitetural
+
+Não permitir edição manual.
+
+O identificador deve permanecer sob controle do sistema.
+
+---
+
+### CNPJ
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | CNPJ |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Brasil |
+| Origem | Customizada |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o identificador fiscal oficial das empresas brasileiras.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* identificação jurídica;
+* evitar duplicidade;
+* integrações financeiras;
+* validações futuras.
+
+#### Critérios de Preenchimento
+
+Formato recomendado:
+
+`00.000.000/0001-00`
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+Motivo:
+
+O HubSpot possui arquitetura global e não possui CNPJ como campo universal obrigatório.
+
+Para operações no Brasil, este dado possui valor estratégico.
+
+---
+
+### Razão Social
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Razão Social |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Brasil |
+| Origem | Customizada |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o nome jurídico oficial da empresa.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* contratos;
+* documentos fiscais;
+* integrações administrativas.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+Separar nome comercial e nome jurídico evita mistura de informações.
+
+---
+
+### Nome Fantasia
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Nome Fantasia |
+| Objeto | Company |
+| Tipo | Texto |
+| Categoria | Brasil |
+| Origem | Customizada |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o nome comercial oficial quando diferente da razão social.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* comunicação comercial;
+* identificação pública;
+* relacionamento com clientes.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+---
+
+### Instagram Comercial
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Instagram Comercial |
+| Objeto | Company |
+| Tipo | URL |
+| Categoria | Brasil |
+| Origem | Customizada |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o principal perfil comercial da empresa.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* pesquisa comercial;
+* análise de presença digital;
+* campanhas futuras.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+Apesar de existirem redes sociais no HubSpot, Instagram comercial possui relevância específica para pequenos e médios negócios brasileiros.
+
+
 
 
 
