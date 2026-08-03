@@ -1492,81 +1492,34 @@ Este grupo não deve armazenar métricas de campanhas ou atividades de marketing
 
 ## Decisões Arquiteturais
 
-### DA-030 — Priorizar propriedades nativas de Marketing Hub
+### DA-018 — Marketing focado em segmentação
 
-Informações capturadas automaticamente pelo HubSpot devem utilizar propriedades padrão da plataforma.
-
-Não serão criadas propriedades duplicadas para substituir funcionalidades existentes.
+As propriedades deste grupo serão utilizadas para segmentação e análise da origem dos clientes.
 
 ---
 
-### DA-031 — Separar dados técnicos e dados estratégicos
+### DA-019 — Funcionalidades nativas têm prioridade
 
-O CRM diferenciará:
-
-- dados técnicos de origem e rastreamento;
-- classificações estratégicas utilizadas pelo negócio.
-
-Exemplo:
-
-- **Original Source** representa rastreamento técnico.
-- **Marketing Segment** representa estratégia comercial.
-
----
-
-### DA-032 — Dados de comunicação pertencem ao nível correto
-
-Preferências de comunicação devem ser avaliadas conforme o objeto correto.
-
-Quando a informação depender de uma pessoa específica, ela deverá pertencer ao objeto **Contact**.
-
-Quando representar uma característica da empresa, poderá pertencer ao objeto **Company**.
-
----
-
-### DA-033 — Evitar armazenar histórico em propriedades
-
-Histórico de campanhas, interações e conversões deve ser obtido através dos recursos nativos do HubSpot.
-
-Propriedades da **Company** devem representar o estado atual da empresa.
-
----
-
-### DA-034 — Segmentação deve gerar ação
-
-Uma propriedade de marketing somente será criada quando permitir:
-
-* campanhas;
-* personalização;
-* automação;
-* análise;
-* tomada de decisão.
+Recursos de consentimento, assinatura de e-mails e métricas de campanhas utilizarão as funcionalidades nativas do HubSpot, evitando duplicidade de informações.
 
 ---
 
 ## Propriedades Aprovadas
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Original Source | Aprovada | Rastreamento nativo de origem |
-| Latest Source | Aprovada | Análise de último canal de interação |
-| First Conversion | Aprovada | Controle da primeira conversão |
-| Campaign | Aprovada | Associação com campanhas |
-| Marketing Segment | Aprovada | Segmentação estratégica |
-| Persona | Aprovada | Classificação de perfil |
-| Content Interest | Aprovada | Personalização de comunicação |
-| Communication Preference | Aprovada | Adequação do relacionamento |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Primary Acquisition Channel | Customizada | ✅ Criar | Identificar o canal principal de aquisição da empresa para segmentação |
 
 ---
 
 ## Propriedades Não Utilizadas Inicialmente
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Marketing Qualified Status | Não utilizar inicialmente | Pode conflitar com Lifecycle Stage |
-| Newsletter Subscription | Não utilizar inicialmente | Deve pertencer ao Contact |
-| Campaign History | Não utilizar | Histórico deve ser gerenciado pelo HubSpot |
-| Engagement Score | Não utilizar inicialmente | Deve ser calculado automaticamente |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Marketing Consent Status | HubSpot | Não utilizar inicialmente | Consentimento e GDPR gerenciados nativamente no nível de Contact |
+| Lead Source Detail | Customizada | Não utilizar inicialmente | Detalhamento adicional sem processo operacional estruturado |
+| Newsletter Subscriber | HubSpot | Não utilizar inicialmente | Inscrição em newsletters é associada diretamente a contatos |
+| Marketing Qualified | HubSpot | Não utilizar inicialmente | Qualificação controlada nativamente via Lifecycle Stage |
 
 ---
 
@@ -1574,8 +1527,10 @@ Uma propriedade de marketing somente será criada quando permitir:
 
 **Grupo 7 — Marketing**
 
-- **Status:** Modelagem arquitetural concluída
-- **Decisão arquitetural principal:** O CRM utilizará propriedades nativas do HubSpot para rastreamento automático e propriedades customizadas apenas para segmentações estratégicas do negócio.
+- **Status:** Modelado e em configuração
+- **Propriedades aprovadas:**
+  * Primary Acquisition Channel
+- **Decisão arquitetural principal:** O CRM utilizará propriedades nativas do HubSpot para rastreamento e comunicação individual, criando apenas propriedades customizadas estratégicas para a empresa.
 
 
 
