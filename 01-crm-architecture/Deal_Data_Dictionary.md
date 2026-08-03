@@ -371,20 +371,7 @@ Campos criados automaticamente pela plataforma serão utilizados apenas quando h
 - **Propriedades aprovadas:** Nenhuma nesta versão
 - **Decisão arquitetural principal:** Informações de origem de tráfego pertencem ao contexto de Marketing e aquisição de contatos, não sendo operacionalizadas no objeto Deal nesta fase.
 
----
-
-# Status de Implementação dos Grupos do Deal
-
-| Grupo | Status |
-| --- | --- |
-| Deal Information | ✅ Finalizado |
-| Deal Revenue | ✅ Finalizado |
-| Deal Activity | ✅ Finalizado |
-| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
-| Professional Services Information | ⏳ Em andamento |
-| HubSpot Metrics | ⬜ Pendente |
-
----
+------
 
 # Grupo 5 — Professional Services Information
 
@@ -406,3 +393,68 @@ No cenário atual da Creative Print, esse grupo não representa o processo comer
 | Prazo estimado | Planejamento de entrega | Não inicialmente | Customizada |
 | Serviços inclusos | Escopo comercial | Não inicialmente | Customizada |
 | Tamanho do projeto | Classificação do projeto | Não inicialmente | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-045 — Dados de projeto não devem contaminar o processo comercial
+
+Informações de execução devem ser adicionadas somente quando existir um processo formal de serviços/projetos.
+
+---
+
+### DA-046 — Propriedades devem refletir processos existentes
+
+Campos sem utilização operacional definida não devem ser criados ou utilizados apenas para completar o CRM.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+### Avaliar Futuramente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Serviços inclusos | Pode ser útil para soluções digitais e projetos futuros |
+
+---
+
+### Não Utilizar Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Complexidade do projeto | Sem necessidade no processo atual |
+| Prazo estimado | Não existe processo formal de projetos |
+| Tamanho do projeto | Pode duplicar análise pelo valor do Deal |
+
+---
+
+# Status do Grupo
+
+**Grupo 5 — Professional Services Information**
+
+- **Status:** ✅ Finalizado (sem propriedades aprovadas)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Propriedades de execução de serviços não serão criadas na v1 para manter o CRM enxuto e alinhado aos processos reais da empresa.
+
+---
+
+# Status de Implementação dos Grupos do Deal
+
+| Grupo | Status |
+| --- | --- |
+| Deal Information | ✅ Finalizado |
+| Deal Revenue | ✅ Finalizado |
+| Deal Activity | ✅ Finalizado |
+| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
+| Professional Services Information | ✅ Finalizado (sem propriedades aprovadas) |
+| HubSpot Metrics | ⬜ Pendente |
