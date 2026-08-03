@@ -448,19 +448,6 @@ Campos sem utilização operacional definida não devem ser criados ou utilizado
 
 ---
 
-# Status de Implementação dos Grupos do Deal
-
-| Grupo | Status |
-| --- | --- |
-| Deal Information | ✅ Finalizado |
-| Deal Revenue | ✅ Finalizado |
-| Deal Activity | ✅ Finalizado |
-| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
-| Professional Services Information | ✅ Finalizado (sem propriedades aprovadas) |
-| HubSpot Metrics | ⏳ Em andamento |
-
----
-
 # Grupo 6 — HubSpot Metrics
 
 ## Objetivo
@@ -478,3 +465,60 @@ Este grupo não deve ser utilizado para entrada manual de dados comerciais.
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
 | Weighted open pipeline in company currency | Métrica de previsão | Não inicialmente | HubSpot |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-047 — Métricas calculadas não substituem dados operacionais
+
+Indicadores derivados devem ser utilizados através de relatórios e dashboards, evitando dependência de propriedades calculadas.
+
+---
+
+### DA-048 — Dados financeiros devem ter origem no Deal
+
+O valor base da oportunidade permanece no campo Amount.
+
+Métricas derivadas serão calculadas pelo HubSpot.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+### Não Utilizar Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Weighted open pipeline in company currency | Métrica calculada automaticamente pelo HubSpot |
+
+---
+
+# Status do Grupo
+
+**Grupo 6 — HubSpot Metrics**
+
+- **Status:** ✅ Finalizado (sem propriedades aprovadas)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Métricas derivadas calculadas automaticamente pelo HubSpot serão consumidas via dashboards/relatórios, sem necessidade de customização nesta fase.
+
+---
+
+# Status de Implementação dos Grupos do Deal
+
+| Grupo | Status |
+| --- | --- |
+| Deal Information | ✅ Finalizado |
+| Deal Revenue | ✅ Finalizado |
+| Deal Activity | ✅ Finalizado |
+| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
+| Professional Services Information | ✅ Finalizado (sem propriedades aprovadas) |
+| HubSpot Metrics | ✅ Finalizado (sem propriedades aprovadas) |
