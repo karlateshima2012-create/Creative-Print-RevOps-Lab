@@ -72,4 +72,24 @@ Cada grupo será documentado em uma seção específica deste documento.
 | Utilização     | Identificação principal da Empresa                                                             |
 | Justificativa  | Identificador principal do objeto Company. Todas as Empresas deverão possuir um nome definido. |
 
+---
+
+## Propriedade 02
+
+| Campo          | Valor                                                                            |
+| -------------- | -------------------------------------------------------------------------------- |
+| Nome Exibido   | Company domain name                                                              |
+| Nome Interno   | `domain`                                                                         |
+| Tipo           | Single-line text                                                                 |
+| Origem         | HubSpot (Padrão)                                                                 |
+| Grupo          | Identificação                                                                    |
+| Obrigatório    | Não                                                                              |
+| Valor Padrão   | Não                                                                              |
+| Origem do Dado | Comercial                                                                        |
+| Responsável    | Comercial                                                                        |
+| Atualização    | Quando disponível                                                                |
+| Utilização     | Deduplicação, integrações futuras e identificação da Empresa                     |
+| Justificativa  | Utilizada como um dos identificadores da Empresa quando existir domínio próprio. |
+
+
 
