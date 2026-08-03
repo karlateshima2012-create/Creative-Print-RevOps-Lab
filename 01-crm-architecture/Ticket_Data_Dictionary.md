@@ -36,3 +36,80 @@ Este grupo não deve armazenar informações comerciais ou financeiras, pois ess
 | Source | Origem atendimento | Avaliar | HubSpot |
 | Create Date | Histórico | Não inicialmente | HubSpot |
 | Close Date | Resolução | Avaliar | HubSpot |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-058 — Ticket representa atendimento, não venda
+
+Informações de negociação e receita permanecem no Deal.
+
+---
+
+### DA-059 — Status controla evolução do atendimento
+
+O progresso do chamado será controlado pelo Ticket Status e Pipeline, evitando propriedades duplicadas.
+
+---
+
+### DA-060 — Classificações devem existir somente quando gerarem análise
+
+Category e Source serão adicionados ao processo quando houver volume suficiente para justificar segmentação.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Ticket Name | HubSpot | Single-line text |
+| Ticket Owner | HubSpot | HubSpot user |
+| Ticket Status | HubSpot | Dropdown select |
+| Priority | HubSpot | Dropdown select |
+| Ticket Description | HubSpot | Multi-line text |
+
+---
+
+### Avaliar Futuramente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Category | Depende do volume de atendimentos |
+| Source | Depende da estratégia de canais |
+
+---
+
+### Não Utilizar Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Create Date | Campo interno do registro |
+| Close Date | Não existe e pode ser derivado do processo |
+
+---
+
+# Status do Grupo
+
+**Grupo 1 — Ticket Information**
+
+- **Status:** ✅ Finalizado
+- **Propriedades aprovadas:**
+  * Ticket Name
+  * Ticket Owner
+  * Ticket Status
+  * Priority
+  * Ticket Description
+- **Decisão arquitetural principal:** O grupo utilizará propriedades nativas do HubSpot para identificação, atribuição de responsável, status, prioridade e descrição do atendimento.
+
+---
+
+# Status de Implementação dos Grupos do Ticket
+
+| Grupo | Status |
+| --- | --- |
+| Ticket Information | ✅ Finalizado |
+| Ticket Activity | ⬜ Pendente |
+| Ticket Metrics | ⬜ Pendente |
