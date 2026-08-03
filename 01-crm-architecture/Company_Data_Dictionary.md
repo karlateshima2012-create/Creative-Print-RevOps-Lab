@@ -108,7 +108,7 @@ These properties represent stable business information and support integrations,
 | CNPJ | Custom |
 | Legal Name | Custom |
 | Trade Name | Custom |
-| Instagram Business | Custom |
+| Instagram Username | Custom |
 | LinkedIn | HubSpot |
 
 
@@ -589,13 +589,13 @@ Criar propriedade customizada.
 
 ---
 
-### Instagram Comercial
+### Instagram Username
 
 #### Informações Gerais
 
 | Campo | Definição |
 | --- | --- |
-| Nome da Propriedade | Instagram Comercial |
+| Nome da Propriedade | Instagram Username |
 | Objeto | Company |
 | Tipo | URL |
 | Categoria | Brasil |

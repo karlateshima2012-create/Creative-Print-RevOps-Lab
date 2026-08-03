@@ -11,7 +11,7 @@ Para isso, cada Empresa será identificada seguindo a seguinte ordem de priorida
 | 1 | CNPJ | Identificador oficial da empresa. |
 | 2 | Domínio do site | Ex.: creativeprintjp.com |
 | 3 | Nome da empresa (normalizado) | Removendo diferenças de maiúsculas, espaços e sufixos como LTDA ou ME. |
-| 4 | Instagram comercial | Utilizado principalmente para pequenos negócios sem site. |
+| 4 | Instagram Username | Utilizado principalmente para pequenos negócios sem site. |
 | 5 | E-mail corporativo | Utilizado apenas quando o domínio representar claramente a empresa. |
 
 Nenhum identificador isolado deverá ser considerado suficiente para todos os cenários.
