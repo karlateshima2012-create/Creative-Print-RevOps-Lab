@@ -101,3 +101,93 @@ Novas propriedades serão criadas apenas quando houver necessidade comprovada pa
   * Mobile Phone Number
   * Job Title
 - **Decisão arquitetural principal:** As informações de contato utilizarão exclusivamente propriedades nativas do HubSpot, e o vínculo com a empresa será realizado via associações nativas (Associations).
+
+---
+
+# Grupo 2 — About this Contact
+
+## Objetivo
+
+O grupo About this Contact reúne informações relacionadas ao gerenciamento, classificação e acompanhamento do relacionamento com pessoas cadastradas no CRM.
+
+Essas propriedades têm como objetivo apoiar:
+
+* organização da base de contatos;
+* acompanhamento do estágio do relacionamento;
+* gestão comercial;
+* automações futuras;
+* segmentações.
+
+Este grupo não deve armazenar informações da empresa, oportunidades comerciais ou histórico de atendimento, pois essas informações pertencem aos objetos Company, Deal e Ticket.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Lifecycle Stage | Classificação do relacionamento | Sim | HubSpot |
+| Contact Owner | Gestão comercial | Sim | HubSpot |
+| Lead Status | Processo comercial | Sim | HubSpot |
+| Create Date | Histórico | Não | HubSpot |
+| Last Contacted | Atividade | Não | HubSpot |
+| Recent Conversion Date | Marketing | Não inicialmente | HubSpot |
+| Contact Priority | Classificação interna | Não inicialmente | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-024 — Lifecycle Stage como indicador principal do relacionamento
+
+O Lifecycle Stage será utilizado como referência principal para representar a evolução do contato dentro do funil de relacionamento.
+
+---
+
+### DA-025 — Lead Status complementa o processo comercial
+
+O Lead Status será utilizado para representar a situação operacional do contato durante o processo de qualificação comercial.
+
+---
+
+### DA-026 — Responsabilidade de dados comerciais no objeto correto
+
+Informações relacionadas à empresa permanecerão no objeto Company.
+
+Informações relacionadas a oportunidades comerciais permanecerão no objeto Deal.
+
+O objeto Contact representa exclusivamente pessoas e seu relacionamento individual.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Lifecycle Stage | HubSpot | Dropdown select |
+| Contact Owner | HubSpot | HubSpot user |
+| Lead Status | HubSpot | Dropdown select |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Create Date | Informação automática do sistema |
+| Last Contacted | Métrica operacional automática |
+| Recent Conversion Date | Sem processo de marketing definido |
+| Contact Priority | Sem critério objetivo de classificação |
+
+---
+
+# Status do Grupo
+
+**Grupo 2 — About this Contact**
+
+- **Status:** Modelado
+- **Propriedades aprovadas:**
+  * Lifecycle Stage
+  * Contact Owner
+  * Lead Status
+- **Decisão arquitetural principal:** O grupo utilizará exclusivamente propriedades nativas do HubSpot para controle de estágio de relacionamento, qualificação comercial e atribuição de proprietário da conta.
