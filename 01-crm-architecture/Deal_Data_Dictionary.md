@@ -457,4 +457,24 @@ Campos sem utilização operacional definida não devem ser criados ou utilizado
 | Deal Activity | ✅ Finalizado |
 | Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
 | Professional Services Information | ✅ Finalizado (sem propriedades aprovadas) |
-| HubSpot Metrics | ⬜ Pendente |
+| HubSpot Metrics | ⏳ Em andamento |
+
+---
+
+# Grupo 6 — HubSpot Metrics
+
+## Objetivo
+
+O grupo HubSpot Metrics reúne propriedades calculadas automaticamente pelo HubSpot para apoiar análises internas de previsão e desempenho comercial.
+
+Essas propriedades são derivadas de outros dados do Deal, como valor da oportunidade e probabilidade de fechamento.
+
+Este grupo não deve ser utilizado para entrada manual de dados comerciais.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Weighted open pipeline in company currency | Métrica de previsão | Não inicialmente | HubSpot |
