@@ -25,3 +25,16 @@ Essas propriedades têm como objetivo apoiar:
 * integrações.
 
 Este grupo deve armazenar apenas informações pertencentes à pessoa, evitando duplicidade com o objeto Company.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| First Name | Identificação | Sim | HubSpot |
+| Last Name | Identificação | Sim | HubSpot |
+| Email | Contato | Sim | HubSpot |
+| Phone Number | Contato | Sim | HubSpot |
+| Mobile Phone Number | Contato | Sim | HubSpot |
+| Job Title | Profissional | Sim | HubSpot |
