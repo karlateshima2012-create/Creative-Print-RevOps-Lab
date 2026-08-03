@@ -1773,6 +1773,88 @@ Informações relacionadas a atendimentos específicos, chamados, reclamações 
 | Customer Feedback Score | Customizada | Não inicialmente | Customizada |
 | NPS Score | Customizada | Não inicialmente | Customizada |
 
+---
+
+## Decisões Arquiteturais
+
+### DA-025 — Separação entre relacionamento e atendimento
+
+Informações relacionadas à saúde do cliente permanecerão no objeto **Company**.
+
+Informações relacionadas a solicitações, problemas e atendimentos específicos serão controladas pelo objeto **Ticket**.
+
+---
+
+### DA-026 — Customer Success possui visão diferente de Sales
+
+O estágio comercial e a saúde do cliente possuem objetivos diferentes.
+
+- **Lifecycle Stage** controla evolução comercial.
+- **Customer Status** controla relacionamento após aquisição.
+
+---
+
+### DA-027 — Saúde do cliente deve permitir ação
+
+Uma propriedade de Customer Success somente será criada quando permitir:
+
+* retenção;
+* expansão;
+* priorização;
+* prevenção de churn.
+
+---
+
+### DA-028 — Evitar criar métricas sem processo definido
+
+Indicadores como:
+
+* NPS;
+* satisfação;
+* feedback;
+
+somente serão adicionados quando existir um processo estruturado de coleta e utilização.
+
+---
+
+### DA-029 — Informações recorrentes dependem do modelo de negócio
+
+Campos relacionados a renovação, contratos e recorrência somente serão utilizados quando houver necessidade operacional real.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Customer Status | Aprovada | Controla situação atual do cliente |
+| Customer Health Score | Aprovada | Permite acompanhamento de saúde |
+| Customer Tier | Aprovada | Permite diferenciação estratégica |
+| Last Customer Interaction | Aprovada | Permite acompanhamento de relacionamento |
+| Churn Risk Level | Aprovada | Permite prevenção de perda |
+| Expansion Opportunity | Aprovada | Identifica oportunidades de crescimento |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Renewal Date | Não utilizar inicialmente | Depende de modelo de contrato recorrente |
+| Support Level | Não utilizar inicialmente | Depende de estrutura de atendimento |
+| Customer Feedback Score | Não utilizar inicialmente | Necessita processo de coleta |
+| NPS Score | Não utilizar inicialmente | Necessita metodologia implantada |
+
+---
+
+# Status do Grupo
+
+**Grupo 6 — Customer Success**
+
+- **Status:** Modelagem arquitetural concluída
+- **Decisão arquitetural principal:** A Company armazenará informações estratégicas de relacionamento e saúde do cliente. Atendimentos e solicitações operacionais serão controlados pelo objeto Ticket.
+
+
 
 
 
