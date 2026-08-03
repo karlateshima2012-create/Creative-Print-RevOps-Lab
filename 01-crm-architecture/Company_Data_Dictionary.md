@@ -99,7 +99,7 @@ These properties represent stable business information and support integrations,
 | Property | Origin |
 | --- | --- |
 | Company Name | HubSpot |
-| Website URL | HubSpot |
+| Company Domain Name | HubSpot |
 | Phone Number | HubSpot |
 | Country/Region | HubSpot |
 | State/Region | HubSpot |
