@@ -1186,62 +1186,21 @@ Essas informações devem permanecer associadas ao objeto Deal.
 
 ## Decisões Arquiteturais
 
-### DA-015 — Produtos comprados pertencem ao histórico comercial
+### DA-012 — Company armazena relação com soluções, não transações
 
-Informações relacionadas a compras realizadas, valores, contratos e negociações devem ser armazenadas no objeto **Deal**.
+O objeto Company armazenará informações estratégicas sobre interesse e utilização de soluções.
 
-O objeto **Company** deve conter somente informações permanentes sobre características e interesses da organização.
-
----
-
-### DA-016 — Separação entre interesse e aquisição
-
-O CRM deverá diferenciar:
-
-- interesse da empresa em uma solução;
-- solução efetivamente adquirida.
-
-Interesse pertence ao cadastro da empresa.
-
-Aquisição pertence ao processo comercial.
+Dados de venda, quantidade, valor e histórico permanecerão no objeto Deal.
 
 ---
 
-### DA-017 — Evitar campos que armazenam histórico
+### DA-013 — Separar interesse comercial de compra realizada
 
-Propriedades da **Company** não devem ser utilizadas para armazenar listas históricas de eventos (ex.: "Produtos comprados ao longo dos anos").
+Products of Interest representa intenção ou oportunidade.
 
-Esse controle deve ocorrer através de associações entre **Company** e **Deal**.
+Solutions Used representa soluções já utilizadas pela empresa.
 
----
-
-### DA-018 — Informações de produto somente quando gerarem ação
-
-Uma propriedade relacionada a produtos somente será criada quando permitir:
-
-* segmentação;
-* automação;
-* expansão comercial;
-* atendimento personalizado;
-* análise estratégica.
-
----
-
-### DA-019 — Priorizar modelo relacional do CRM
-
-O modelo seguirá a lógica:
-
-```text
-Empresa
-  ↓
-Relacionamento comercial
-  ↓
-Deal
-  ↓
-Produto/Serviço adquirido
-```
-
-Evitando concentrar informações diferentes dentro de um único objeto.
+Essas informações possuem finalidades diferentes dentro do CRM.
 
 ---
 
