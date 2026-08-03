@@ -1350,19 +1350,16 @@ Nenhuma propriedade foi aprovada para implementação na versão inicial do CRM.
 
 ## Objetivo
 
-O Grupo **Customer Success** reúne informações relacionadas ao relacionamento contínuo entre a empresa cliente e a organização após a aquisição de uma solução.
+O grupo Customer Success reúne informações utilizadas para acompanhar o relacionamento da empresa com a organização após o processo comercial.
 
-As propriedades deste grupo têm como objetivo acompanhar a saúde do cliente, identificar oportunidades de expansão e antecipar riscos de perda.
+Essas propriedades têm como objetivo apoiar:
 
-Estas informações devem apoiar:
+* retenção de clientes;
+* identificação de oportunidades de expansão;
+* monitoramento da saúde do relacionamento;
+* priorização de ações de acompanhamento.
 
-* acompanhamento da carteira de clientes;
-* prevenção de churn;
-* estratégias de retenção;
-* oportunidades de expansão;
-* personalização do relacionamento.
-
-Informações relacionadas a atendimentos específicos, chamados, reclamações ou interações operacionais devem ser armazenadas através do objeto **Ticket** ou ferramentas específicas de atendimento.
+Este grupo não deve armazenar informações operacionais de atendimento ou chamados, pois essas informações pertencem ao objeto Ticket.
 
 ---
 
@@ -1370,16 +1367,11 @@ Informações relacionadas a atendimentos específicos, chamados, reclamações 
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Customer Status | Customizada | Sim | Customizada |
-| Customer Health Score | Customizada | Sim | Customizada |
-| Customer Tier | Customizada | Sim | Customizada |
-| Last Customer Interaction | Customizada | Sim | Customizada |
-| Renewal Date | Customizada | Não inicialmente | Customizada |
-| Churn Risk Level | Customizada | Sim | Customizada |
-| Expansion Opportunity | Customizada | Sim | Customizada |
-| Support Level | Customizada | Não inicialmente | Customizada |
-| Customer Feedback Score | Customizada | Não inicialmente | Customizada |
-| NPS Score | Customizada | Não inicialmente | Customizada |
+| Customer Health | Customizada | Sim | Customizada |
+| Onboarding Status | Customizada | Sim | Customizada |
+| Renewal Status | Customizada | Não inicialmente | Customizada |
+| Last Success Review | Customizada | Não inicialmente | Customizada |
+| Churn Risk | Customizada | Não inicialmente | Customizada |
 
 ---
 
