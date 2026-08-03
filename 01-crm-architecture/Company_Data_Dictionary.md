@@ -10,6 +10,12 @@ Nenhuma propriedade deverá ser criada diretamente no HubSpot sem estar previame
 
 ---
 
+> **Decisão Arquitetural 001:**
+> Nunca duplicaremos propriedades padrão do HubSpot.
+> Sempre que uma propriedade padrão atender ao requisito de negócio, ela será utilizada.
+
+---
+
 # Estrutura das Propriedades
 
 Cada propriedade será documentada utilizando o padrão abaixo.

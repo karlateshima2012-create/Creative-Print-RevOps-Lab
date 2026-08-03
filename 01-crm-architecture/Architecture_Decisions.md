@@ -60,3 +60,11 @@
 **Contexto:** operação e cobrança da Creative Print são realizadas no Brasil.
 **Justificativa:** consistência de relatórios financeiros e usabilidade para o time local.
 **Alternativas consideradas:** nenhuma — decisão direta pela operação local da empresa.
+
+## ADR-009 — Uso prioritário de propriedades padrão do HubSpot
+
+**Decisão:** nunca duplicaremos propriedades padrão do HubSpot. Sempre que uma propriedade padrão atender ao requisito de negócio, ela será utilizada.
+**Contexto:** definição de propriedades nos Dicionários de Dados do CRM (ex.: Company Data Dictionary).
+**Justificativa:** evita redundâncias, reduz complexidade de manutenção, simplifica integrações e aproveita inteligência e automações nativas do HubSpot.
+**Alternativas consideradas:** criar propriedades customizadas com prefixo `cp_` para todos os campos — descartada por gerar redundância desnecessária.
+
