@@ -130,25 +130,32 @@ As propriedades customizadas seguirão um padrão de nomenclatura consistente pa
 
 ## Classificação Final do Modelo Company
 
-| Grupo | Quantidade de propriedades aprovadas |
-| --- | --- |
-| Contact Information | 11 |
-| Perfil da Empresa | 3 |
-| Informações Comerciais | 3 |
-| Produtos e Serviços | 2 |
-| Finance | 0 |
-| Customer Success | 2 |
-| Marketing | 8 |
+| HubSpot Group | Tipo | Quantidade de propriedades aprovadas |
+| --- | --- | --- |
+| Company Information | Nativo | 12 |
+| Social Media Information | Nativo | 3 |
+| Sales Properties | Nativo | 2 |
+| Products & Services | Custom | 2 |
+| Customer Success | Custom | 2 |
+| Marketing | Custom | 1 |
 
-> **Total do Modelo:** 29 propriedades aprovadas.
+> **Total do Modelo:** 22 propriedades ativas / configuradas.
 
 ---
 
 ## Decisão Arquitetural Final
 
-O objeto **Company** foi aprovado para implementação no HubSpot.
+O objeto **Company** foi aprovado e totalmente configurado no HubSpot.
 
 A arquitetura definida segue os seguintes princípios:
+
+### DA-045 — Priorizar grupos nativos do HubSpot
+
+Sempre que um grupo nativo do HubSpot atender à organização das propriedades, ele será utilizado.
+
+Grupos customizados serão criados apenas quando representarem um domínio de negócio não contemplado pela estrutura padrão da plataforma.
+
+---
 
 * utilizar propriedades nativas sempre que possível;
 * criar propriedades customizadas somente quando houver necessidade de negócio;

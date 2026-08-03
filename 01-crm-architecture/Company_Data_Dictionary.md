@@ -70,27 +70,24 @@ Cada propriedade será documentada utilizando o padrão abaixo.
 
 # Grupos de Propriedades
 
-As propriedades da Empresa serão organizadas nos seguintes grupos:
+As propriedades da Empresa no HubSpot estão organizadas nos seguintes grupos:
 
-1. Contact Information
-2. Perfil da Empresa
-3. Informações Comerciais
-4. Produtos e Serviços
-5. Financeiro
-6. Customer Success
-7. Marketing
+1. **Company Information** (Nativo)
+2. **Social Media Information** (Nativo)
+3. **Sales Properties** (Nativo)
+4. **Products & Services** (Customizado)
+5. **Customer Success** (Customizado)
+6. **Marketing** (Customizado)
 
-Cada grupo será documentado em uma seção específica deste documento.
+*Nota: O grupo **Finance** foi mantido como estrutura arquitetural reservada, porém nenhuma propriedade foi criada na versão inicial do CRM.*
 
 ---
 
-# Group 1 — Contact Information
+# Group 1 — Company Information
 
 ## Objetivo
 
-The Contact Information group contains the core company data used to identify, locate and uniquely register an organization within the CRM.
-
-These properties represent stable business information and support integrations, commercial processes and operational activities throughout the customer lifecycle.
+O grupo **Company Information** reúne as propriedades principais de identificação, localização, porte e ciclo de vida da empresa no HubSpot.
 
 ---
 
@@ -98,25 +95,35 @@ These properties represent stable business information and support integrations,
 
 ### Company Information
 
-| Property | Origin |
-| --- | --- |
-| Company Name | HubSpot |
-| Website URL | HubSpot |
-| Phone Number | HubSpot |
-| Country/Region | HubSpot |
-| State/Region | HubSpot |
-| City | HubSpot |
-| Record ID | HubSpot |
-| CNPJ | Custom |
+| Property | Origin | HubSpot Group |
+| --- | --- | --- |
+| Company Name | HubSpot | Company Information |
+| Website URL | HubSpot | Company Information |
+| Phone Number | HubSpot | Company Information |
+| Country/Region | HubSpot | Company Information |
+| State/Region | HubSpot | Company Information |
+| City | HubSpot | Company Information |
+| Record ID | HubSpot | Company Information |
+| CNPJ | Custom | Company Information |
+| Industry | HubSpot | Company Information |
+| Number of Employees | HubSpot | Company Information |
+| Business Type | Custom | Company Information |
+| Lifecycle Stage | HubSpot | Company Information |
 
 ### Social Media Information
 
-| Property | Origin |
-| --- | --- |
-| Facebook Company Page | HubSpot |
-| LinkedIn Company Page | HubSpot |
-| Instagram Company Page | Custom |
+| Property | Origin | HubSpot Group |
+| --- | --- | --- |
+| Facebook Company Page | HubSpot | Social Media Information |
+| LinkedIn Company Page | HubSpot | Social Media Information |
+| Instagram Company Page | Custom | Social Media Information |
 
+### Sales Properties
+
+| Property | Origin | HubSpot Group |
+| --- | --- | --- |
+| Lead Status | HubSpot | Sales Properties |
+| Company Owner | HubSpot | Sales Properties |
 
 ---
 
@@ -598,558 +605,28 @@ Utilizar propriedade nativa do HubSpot (`facebook_company_page`).
 
 ---
 
-# Grupo 2 — Perfil da Empresa
+# Group 2 — Sales Properties (Nativo)
 
 ## Objetivo
 
-O grupo Perfil da Empresa reúne informações responsáveis por descrever as características organizacionais da empresa dentro do CRM.
-
-Essas propriedades têm como objetivo permitir:
-
-* segmentação de empresas;
-* classificação de clientes;
-* personalização de abordagens comerciais;
-* criação de relatórios estratégicos;
-* análise da carteira de empresas.
-
-Este grupo não deve armazenar informações de negociação, receita ou histórico de relacionamento, pois esses dados pertencem aos objetos e grupos específicos correspondentes.
+O grupo **Sales Properties** reúne as propriedades padrão do HubSpot utilizadas para acompanhamento do status comercial e atribuição de responsabilidades da conta.
 
 ---
 
-## Propriedades Candidatas
+## Approved Properties
 
-| Propriedade | Categoria | Necessária? | Origem |
-| --- | --- | --- | --- |
-| Industry | Global | Sim | HubSpot |
-| Company Size | Global | Sim | HubSpot |
-| Number of Employees | Global | Sim | HubSpot |
-| Annual Revenue | Global | Não inicialmente | HubSpot |
-| Business Type | Customizada | Sim | Customizada |
-| Customer Segment | Customizada | Sim | Customizada |
-| Market Segment | Customizada | Sim | Customizada |
-| Business Model | Customizada | Não inicialmente | Customizada |
-| Company Description | Global | Não inicialmente | HubSpot |
+| Property | Origin | HubSpot Group |
+| --- | --- | --- |
+| Lead Status | HubSpot | Sales Properties |
+| Company Owner | HubSpot | Sales Properties |
 
 ---
 
-## Decisões Arquiteturais
+# Group 3 — Finance
 
-### DA-005 — Utilizar propriedades nativas para classificação organizacional
+## Objetivo e Decisão Arquitetural
 
-Propriedades padrão do HubSpot serão utilizadas quando atenderem aos objetivos de segmentação e análise da empresa.
-
----
-
-### DA-006 — Evitar duplicidade entre tamanho da empresa e segmentação
-
-A classificação de porte será realizada utilizando Company Size e Number of Employees, evitando a criação de campos redundantes.
-
----
-
-### DA-007 — Criar segmentações estratégicas somente quando agregarem valor
-
-Novas propriedades de segmentação serão criadas apenas quando forem necessárias para filtros, automações ou relatórios.
-
----
-
-### DA-008 — Separar características da empresa de informações comerciais
-
-Dados relacionados ao perfil organizacional permanecerão no objeto Company.
-
-Informações de vendas, negociação e receita serão tratadas no grupo Informações Comerciais.
-
----
-
-### DA-009 — Business Type como classificação organizacional
-
-A propriedade Business Type será utilizada para classificar o modelo de atuação da empresa.
-
-Esta informação tem como objetivo apoiar segmentação comercial, personalização de abordagem e análises futuras.
-
-A propriedade não substitui Industry, pois Industry representa o setor de atuação enquanto Business Type representa o formato operacional da empresa.
-
-**Evidências de Configuração:**
-![Print 1 — Configuração Business Type](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/profile/01_business_type_configuration.png)
-![Print 2 — Opções Dropdown Business Type](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/profile/02_dropdown_options.png)
-
----
-
-## Propriedades Aprovadas
-
-| Propriedade | Origem | Decisão | Motivo |
-| --- | --- | --- | --- |
-| Industry | HubSpot | ✅ Utilizar | Classificação setorizada global nativa do HubSpot |
-| Number of Employees | HubSpot | ✅ Utilizar | Identificação do porte estrutural por contagem de funcionários |
-| Business Type | Customizada | ✅ Criar | Classificação do formato/modelo operacional da empresa |
-
----
-
-## Propriedades Não Utilizadas Inicialmente
-
-| Propriedade | Origem | Decisão | Motivo |
-| --- | --- | --- | --- |
-| Company Size | HubSpot | Não utilizar inicialmente | Subsequente ao Number of Employees |
-| Annual Revenue | HubSpot | Não utilizar inicialmente | Baixa confiabilidade e pouca aplicação operacional no início |
-| Customer Segment | Customizada | Não utilizar inicialmente | Não possui processo estruturado de coleta definido |
-| Market Segment | Customizada | Não utilizar inicialmente | Pode ser derivado da combinação de Industry e Business Type |
-| Business Model | Customizada | Não utilizar inicialmente | Consolidado dentro das opções da propriedade Business Type |
-| Company Description | HubSpot | Não utilizar inicialmente | Campo de texto livre sem utilização para automação/relatório |
-
----
-
-# Grupo 3 — Informações Comerciais
-
-## Objetivo
-
-O grupo Informações Comerciais reúne informações relacionadas ao relacionamento comercial entre a empresa e a organização.
-
-As propriedades deste grupo têm como objetivo apoiar:
-
-* qualificação comercial;
-* priorização de oportunidades;
-* segmentação da carteira;
-* planejamento de abordagem;
-* análises do processo comercial.
-
-Este grupo não deve armazenar informações transacionais, como valores de venda, produtos vendidos ou histórico de negociações, pois essas informações pertencem ao objeto Deal.
-
----
-
-## Propriedades Candidatas
-
-| Propriedade | Categoria | Necessária? | Origem |
-| --- | --- | --- | --- |
-| Lead Status | Global | Sim | HubSpot |
-| Lifecycle Stage | Global | Sim | HubSpot |
-| Owner | Global | Sim | HubSpot |
-| Relationship Status | Customizada | Sim | Customizada |
-| Customer Tier | Customizada | Não inicialmente | Customizada |
-| Sales Priority | Customizada | Não inicialmente | Customizada |
-| Acquisition Channel | Customizada | Não inicialmente | Customizada |
-| Last Contact Date | Global | Não | HubSpot |
-| Next Activity Date | Global | Não | HubSpot |
-
----
-
-## Decisões Arquiteturais
-
-### DA-010 — Utilizar propriedades comerciais nativas do HubSpot
-
-As propriedades comerciais existentes no HubSpot serão utilizadas para controlar ciclo de vida, status comercial e responsável pela conta.
-
-Novas propriedades não serão criadas quando houver sobreposição funcional com campos nativos.
-
----
-
-### DA-011 — Evitar duplicidade de status comercial
-
-O CRM não utilizará propriedades customizadas equivalentes a Lifecycle Stage ou Lead Status para evitar divergência de informação.
-
----
-
-## Propriedades Aprovadas
-
-| Propriedade | Origem | Decisão | Motivo |
-| --- | --- | --- | --- |
-| Lifecycle Stage | HubSpot | ✅ Utilizar | Controle nativo do ciclo de relacionamento com a empresa |
-| Lead Status | HubSpot | ✅ Utilizar | Controle operacional do processo comercial e qualificação |
-| Company Owner | HubSpot | ✅ Utilizar | Atribuição de responsabilidade interna pela conta |
-
----
-
-## Propriedades Não Utilizadas Inicialmente
-
-| Propriedade | Origem | Decisão | Motivo |
-| --- | --- | --- | --- |
-| Relationship Status | Customizada | Não utilizar inicialmente | Sobreposição funcional com Lifecycle Stage e Lead Status |
-| Customer Tier | Customizada | Não utilizar inicialmente | Necessita de regras de negócio de classificação de carteira consolidadas |
-| Sales Priority | Customizada | Não utilizar inicialmente | Pode ser gerenciado no objeto Deal durante as oportunidades |
-| Acquisition Channel | Customizada | Não utilizar inicialmente | Rastreamento técnico coberto pelo Original Source nativo |
-| Last Contact Date | HubSpot | Não utilizar inicialmente | Atualizado automaticamente por interações/atividades nativas |
-| Next Activity Date | HubSpot | Não utilizar inicialmente | Gerenciado nativamente por tarefas e compromissos |
-
----
-
-## Especificação das Propriedades Aprovadas
-
-### Lifecycle Stage
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Lifecycle Stage |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Controlar a evolução do relacionamento da empresa dentro do ciclo de vida comercial.
-
-A propriedade representa o estágio geral em que a empresa se encontra dentro da jornada de relacionamento.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* segmentação de empresas;
-* automações de marketing e vendas;
-* relatórios de conversão;
-* análise do funil comercial.
-
-#### Critérios de Preenchimento
-
-Valores padrão do HubSpot:
-
-* Subscriber
-* Lead
-* Marketing Qualified Lead
-* Sales Qualified Lead
-* Opportunity
-* Customer
-* Evangelist
-* Other
-
-A definição dos valores utilizados deve seguir o processo comercial adotado pela organização.
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
-**Motivo:** A propriedade atende ao controle do ciclo de relacionamento e possui integração direta com ferramentas nativas da plataforma.
-
----
-
-### Lead Status
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Lead Status |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Controlar a situação operacional de uma empresa dentro do processo comercial.
-
-Diferente do Lifecycle Stage, esta propriedade representa o acompanhamento diário realizado pela equipe comercial.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* organizar tarefas comerciais;
-* acompanhar leads em andamento;
-* identificar empresas sem evolução;
-* gerar relatórios operacionais.
-
-#### Critérios de Preenchimento
-
-Exemplo de valores:
-
-* New
-* Open
-* In Progress
-* Connected
-* Qualified
-* Unqualified
-* Attempted to Contact
-
-Os valores podem ser adaptados conforme o processo comercial definido.
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
-**Motivo:** Evita criação de campos equivalentes e mantém compatibilidade com recursos comerciais da plataforma.
-
----
-
-### Company Owner
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Company Owner |
-| Objeto | Company |
-| Tipo | Usuário |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Identificar o responsável interno pelo relacionamento com a empresa.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* distribuição de carteira;
-* gestão de responsabilidades;
-* relatórios por vendedor;
-* acompanhamento de atendimento.
-
-#### Critérios de Preenchimento
-
-Cada empresa deve possuir um responsável definido quando entrar no processo comercial.
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
-**Motivo:** É integrada ao gerenciamento de usuários e permissões da plataforma.
-
----
-
-### Create Date
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Create Date |
-| Objeto | Company |
-| Tipo | Data |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar automaticamente a data em que o registro da empresa foi criado no CRM.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* análise de crescimento da base;
-* relatórios históricos;
-* cálculo de tempo no CRM.
-
-#### Critérios de Preenchimento
-
-Preenchimento automático pelo sistema. Não deve ser alterada manualmente.
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
----
-
-### Last Activity Date
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Last Activity Date |
-| Objeto | Company |
-| Tipo | Data |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar a última interação realizada com a empresa.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* identificar empresas sem contato;
-* criar alertas comerciais;
-* analisar produtividade.
-
-#### Critérios de Preenchimento
-
-Atualizada automaticamente através das atividades registradas no CRM (ligações, reuniões, e-mails, tarefas).
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
----
-
-### Original Source
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Original Source |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Global |
-| Origem | HubSpot padrão |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Identificar o primeiro canal pelo qual a empresa entrou no CRM.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* análise de aquisição;
-* atribuição de marketing;
-* relatórios de origem.
-
-#### Critérios de Preenchimento
-
-Valores controlados pelo HubSpot (*Organic Search, Paid Search, Social Media, Referral, Offline Sources*).
-
-#### Decisão Arquitetural
-
-Utilizar propriedade nativa do HubSpot.
-
----
-
-### Acquisition Channel
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Acquisition Channel |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Brasil |
-| Origem | Customizada |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar o canal estratégico responsável pela aquisição da empresa.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* análise de estratégia comercial;
-* comparação de canais;
-* planejamento de investimentos.
-
-#### Critérios de Preenchimento
-
-Exemplo de valores:
-
-* Indicação
-* Google Ads
-* Instagram
-* Evento
-* Prospecção ativa
-* Parceiro comercial
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** A propriedade complementa Original Source com uma visão estratégica de negócio.
-
----
-
-### Customer Potential
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Customer Potential |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Customizada |
-| Origem | Brasil |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Classificar o potencial comercial futuro da empresa.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* priorização comercial;
-* segmentação da carteira;
-* definição de estratégias de abordagem.
-
-#### Critérios de Preenchimento
-
-Valores sugeridos:
-
-* Alto
-* Médio
-* Baixo
-
-Critérios devem ser definidos pela estratégia comercial.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** Representa uma avaliação estratégica interna que não existe como propriedade padrão do HubSpot.
-
----
-
-### Commercial Priority
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Commercial Priority |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Customizada |
-| Origem | Brasil |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Definir a prioridade operacional de acompanhamento da empresa pela equipe comercial.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* organização da carteira;
-* definição de foco comercial;
-* criação de listas prioritárias.
-
-#### Critérios de Preenchimento
-
-Valores sugeridos:
-
-* Alta
-* Média
-* Baixa
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** A prioridade operacional depende da estratégia interna da empresa e não deve ser confundida com potencial comercial.
-
----
-
-# Status do Grupo
-
-**Grupo 3 — Informações Comerciais**
-
-- **Status:** Modelagem concluída
-- **Próxima etapa:** Configuração no HubSpot após conclusão da modelagem completa dos grupos de Company.
+> **Decisão Arquitetural:** Nenhuma propriedade foi aprovada para a versão inicial do CRM. Não existe configuração de propriedades financeiras no HubSpot nesta fase.
 
 ---
 

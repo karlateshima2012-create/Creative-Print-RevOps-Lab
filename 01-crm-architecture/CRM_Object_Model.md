@@ -128,15 +128,14 @@ Ele deve armazenar informações permanentes ou estratégicas sobre a empresa.
 
 ### Company Property Groups
 
-| Grupo | Objetivo |
-| --- | --- |
-| Contact Information | Identificar a empresa |
-| Perfil da Empresa | Características organizacionais |
-| Informações Comerciais | Relacionamento comercial |
-| Produtos e Serviços | Interesse em soluções |
-| Financeiro | Classificação financeira |
-| Customer Success | Saúde e relacionamento |
-| Marketing | Segmentação e aquisição |
+| HubSpot Group | Tipo | Objetivo |
+| --- | --- | --- |
+| Company Information | Nativo | Dados cadastrais e perfil da empresa |
+| Social Media Information | Nativo | Redes sociais da empresa |
+| Sales Properties | Nativo | Gestão comercial |
+| Products & Services | Custom | Interesse e uso de soluções |
+| Customer Success | Custom | Relacionamento pós-venda |
+| Marketing | Custom | Aquisição e segmentação |
 
 ---
 

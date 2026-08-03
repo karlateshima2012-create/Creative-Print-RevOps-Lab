@@ -53,15 +53,14 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 ### Property Groups
 
-| Ordem | Grupo | Status |
-| --- | --- | --- |
-| 1 | Contact Information | ✅ Completed |
-| 2 | Company Profile | ✅ Completed |
-| 3 | Commercial Information | ✅ Completed |
-| 4 | Products & Services | ✅ Completed |
-| 5 | Finance | ✅ Completed |
-| 6 | Customer Success | ✅ Completed |
-| 7 | Marketing | ⏳ Pending |
+| Ordem | Grupo | Tipo | Status |
+| --- | --- | --- | --- |
+| 1 | Company Information | Nativo | ✅ Completed |
+| 2 | Social Media Information | Nativo | ✅ Completed |
+| 3 | Sales Properties | Nativo | ✅ Completed |
+| 4 | Products & Services | Custom | ✅ Completed |
+| 5 | Customer Success | Custom | ✅ Completed |
+| 6 | Marketing | Custom | ✅ Completed |
 
 **Evidência de Implementação:**
 ![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/01/01_company_information_group.png)
@@ -178,17 +177,15 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Implementação em andamento
+- **Status:** Concluído
 
 **Grupos configurados:**
 
-- Contact Information
-- Company Profile
-- Commercial Information
-- Products & Services
-- Finance (Concluído sem criação de propriedades)
-- Customer Success
+- Company Information (nativo)
+- Social Media Information (nativo)
+- Sales Properties (nativo)
+- Products & Services (custom)
+- Customer Success (custom)
+- Marketing (custom)
 
-**Próxima etapa:**
-
-Configuração do grupo Marketing.
+*Nota: O grupo Finance foi mantido reservado na arquitetura, sem criação de propriedades na v1.*
