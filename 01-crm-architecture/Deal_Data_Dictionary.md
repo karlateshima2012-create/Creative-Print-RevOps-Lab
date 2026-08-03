@@ -544,6 +544,118 @@ A definição das etapas deve refletir o processo real de vendas, permitindo:
 
 ---
 
+## Sales Pipeline Design
+
+A decisão de adotar um pipeline único faz sentido neste momento porque:
+* a operação ainda está em estruturação;
+* o CRM precisa demonstrar governança e simplicidade;
+* múltiplos pipelines agora poderiam fragmentar dados;
+* produtos físicos e soluções digitais podem compartilhar uma jornada inicial de venda.
+
+O pipeline deve representar o avanço da oportunidade, não o tipo de produto.
+
+### Visão Geral do Pipeline
+
+| Item | Definição |
+| --- | --- |
+| Nome | Sales Pipeline |
+| Objeto | Deal |
+| Estratégia | Pipeline único para oportunidades comerciais |
+| Objetivo | Controlar evolução da oportunidade até fechamento |
+
+---
+
+## Stages Definidos
+
+### 1. New Opportunity
+
+* **Objetivo:** Registrar uma nova oportunidade identificada (novo contato comercial, solicitação de orçamento, interesse em produto ou solução).
+* **Critério para entrada:** A oportunidade possui potencial comercial identificado.
+* **Probabilidade:** 10%
+
+---
+
+### 2. Qualified Opportunity
+
+* **Objetivo:** Confirmar que existe uma oportunidade real (validar necessidade, interesse, possibilidade de compra, produto/solução desejada).
+* **Critério para avanço:** Existe uma demanda comercial válida.
+* **Probabilidade:** 30%
+
+---
+
+### 3. Proposal Sent
+
+* **Objetivo:** Registrar que uma proposta comercial foi enviada (orçamento, proposta de serviço, proposta SaaS, valores apresentados).
+* **Critério para avanço:** Cliente recebeu a proposta e está avaliando.
+* **Probabilidade:** 50%
+
+---
+
+### 4. Negotiation
+
+* **Objetivo:** Acompanhar ajustes finais antes da decisão (negociação de valores, ajustes de escopo, dúvidas finais, aprovação interna do cliente).
+* **Critério para avanço:** Cliente demonstra intenção de compra.
+* **Probabilidade:** 80%
+
+---
+
+### 5. Closed Won
+
+* **Objetivo:** Registrar oportunidades convertidas em clientes.
+* **Critério:** Compra aprovada.
+* **Probabilidade:** 100%
+
+---
+
+### 6. Closed Lost
+
+* **Objetivo:** Registrar oportunidades perdidas.
+* **Critério:** Cliente não seguirá com a compra.
+* **Probabilidade:** 0%
+
+---
+
+## Fluxo do Pipeline
+
+```text
+New Opportunity
+        ↓
+Qualified Opportunity
+        ↓
+Proposal Sent
+        ↓
+Negotiation
+        ↓
+Closed Won
+
+        ↘
+       Closed Lost
+```
+
+---
+
+## Decisões Arquiteturais do Pipeline
+
+### DA-052 — Um único pipeline comercial inicial
+
+A Creative Print utilizará inicialmente um único pipeline para centralizar oportunidades de produtos, soluções digitais e SaaS.
+
+A separação em múltiplos pipelines será considerada somente quando os processos comerciais apresentarem diferenças significativas.
+
+---
+
+### DA-053 — Stages representam avanço comercial
+
+As etapas do pipeline representam maturidade da oportunidade e não categorias de produto.
+
+---
+
+### DA-054 — Pipeline deve permanecer simples
+
+Novas etapas somente serão adicionadas quando existir uma mudança real no processo comercial.
+
+---
+
 ## Configurações Aprovadas do Objeto Deal
 
 Além das propriedades, o objeto Deal possui configurações que fazem parte da arquitetura:
