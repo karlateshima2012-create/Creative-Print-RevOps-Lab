@@ -1895,6 +1895,96 @@ Propriedades customizadas devem existir somente quando adicionarem uma visão es
 | Campaign History | Customizada | Não utilizar | Customizada |
 | Engagement Score | Customizada | Não inicialmente | Customizada |
 
+---
+
+## Decisões Arquiteturais
+
+### DA-030 — Priorizar propriedades nativas de Marketing Hub
+
+Informações capturadas automaticamente pelo HubSpot devem utilizar propriedades padrão da plataforma.
+
+Não serão criadas propriedades duplicadas para substituir funcionalidades existentes.
+
+---
+
+### DA-031 — Separar dados técnicos e dados estratégicos
+
+O CRM diferenciará:
+
+- dados técnicos de origem e rastreamento;
+- classificações estratégicas utilizadas pelo negócio.
+
+Exemplo:
+
+- **Original Source** representa rastreamento técnico.
+- **Marketing Segment** representa estratégia comercial.
+
+---
+
+### DA-032 — Dados de comunicação pertencem ao nível correto
+
+Preferências de comunicação devem ser avaliadas conforme o objeto correto.
+
+Quando a informação depender de uma pessoa específica, ela deverá pertencer ao objeto **Contact**.
+
+Quando representar uma característica da empresa, poderá pertencer ao objeto **Company**.
+
+---
+
+### DA-033 — Evitar armazenar histórico em propriedades
+
+Histórico de campanhas, interações e conversões deve ser obtido através dos recursos nativos do HubSpot.
+
+Propriedades da **Company** devem representar o estado atual da empresa.
+
+---
+
+### DA-034 — Segmentação deve gerar ação
+
+Uma propriedade de marketing somente será criada quando permitir:
+
+* campanhas;
+* personalização;
+* automação;
+* análise;
+* tomada de decisão.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Original Source | Aprovada | Rastreamento nativo de origem |
+| Latest Source | Aprovada | Análise de último canal de interação |
+| First Conversion | Aprovada | Controle da primeira conversão |
+| Campaign | Aprovada | Associação com campanhas |
+| Marketing Segment | Aprovada | Segmentação estratégica |
+| Persona | Aprovada | Classificação de perfil |
+| Content Interest | Aprovada | Personalização de comunicação |
+| Communication Preference | Aprovada | Adequação do relacionamento |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Marketing Qualified Status | Não utilizar inicialmente | Pode conflitar com Lifecycle Stage |
+| Newsletter Subscription | Não utilizar inicialmente | Deve pertencer ao Contact |
+| Campaign History | Não utilizar | Histórico deve ser gerenciado pelo HubSpot |
+| Engagement Score | Não utilizar inicialmente | Deve ser calculado automaticamente |
+
+---
+
+# Status do Grupo
+
+**Grupo 7 — Marketing**
+
+- **Status:** Modelagem arquitetural concluída
+- **Decisão arquitetural principal:** O CRM utilizará propriedades nativas do HubSpot para rastreamento automático e propriedades customizadas apenas para segmentações estratégicas do negócio.
+
+
 
 
 
