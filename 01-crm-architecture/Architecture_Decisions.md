@@ -68,3 +68,11 @@
 **Justificativa:** evita redundâncias, reduz complexidade de manutenção, simplifica integrações e aproveita inteligência e automações nativas do HubSpot.
 **Alternativas consideradas:** criar propriedades customizadas com prefixo `cp_` para todos os campos — descartada por gerar redundância desnecessária.
 
+## ADR-010 — Arquitetura de propriedades em camadas (Base Global vs Extensão Brasil)
+
+**Decisão:** a modelagem de propriedades é dividida em duas camadas: Arquitetura Base (Global) para campos universais (Nome, Domínio, País, Cidade, Website, Telefone, Record ID) e Extensão Brasil para campos fiscais/locais (CNPJ, Razão Social, Nome Fantasia, Inscrições Estadual/Municipal).
+**Contexto:** suporte a operações multinacionais e escalabilidade para atendimentos fora do Brasil (ex.: EUA, Japão).
+**Justificativa:** permite implantar o CRM em qualquer país apenas desativando ou omitindo a camada de extensão regional, preservando a camada global intacta.
+**Alternativas consideradas:** mesclar campos fiscais locais na camada principal — descartada por engessar a arquitetura e gerar propriedades irrelevantes em operações internacionais.
+
+

@@ -16,6 +16,37 @@ Nenhuma propriedade deverá ser criada diretamente no HubSpot sem estar previame
 
 ---
 
+> **Decisão Arquitetural 002:**
+> Arquitetura de propriedades em camadas: **Base (Global)** vs **Extensão Brasil**.
+> 
+> ```text
+> Arquitetura Base (Global)
+> │
+> ├── Nome da Empresa
+> ├── Domínio
+> ├── País
+> ├── Estado
+> ├── Cidade
+> ├── Website
+> ├── Telefone
+> └── Record ID
+> 
+> ↓
+> 
+> Extensão Brasil
+> │
+> ├── CNPJ
+> ├── Razão Social
+> ├── Nome Fantasia
+> ├── Inscrição Estadual
+> ├── Inscrição Municipal
+> └── Regime Tributário (futuro, se necessário)
+> ```
+> 
+> *Justificativa:* Garante internacionalização e reutilização da arquitetura. Projetos para empresas globais (EUA, Japão, etc.) utilizam a camada Base sem necessidade da extensão regional.
+
+---
+
 # Estrutura das Propriedades
 
 Cada propriedade será documentada utilizando o padrão abaixo.
