@@ -147,12 +147,12 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 
 ## Ordem de Implementação dos Objetos
 
-| Ordem | Objeto | Motivo |
+| Ordem | Objeto | Status |
 | --- | --- | --- |
-| 1 | Company | Base organizacional do CRM |
-| 2 | Contact | Relacionamento entre pessoas e empresas |
-| 3 | Deal | Processo comercial e receita |
-| 4 | Ticket | Atendimento e Customer Success |
+| 1 | Company | ✅ Completed |
+| 2 | Contact | ✅ Completed |
+| 3 | Deal | 🟨 Architecture Completed / Configuration Pending |
+| 4 | Ticket | 🟨 Architecture Completed / Configuration Pending |
 
 ---
 
@@ -193,6 +193,61 @@ A configuração do objeto **Contact** segue as diretrizes validadas no *Contact
 
 ---
 
+## Deal Object Implementation
+
+O objeto **Deal** será configurado para representar o processo comercial e controle de receita.
+
+A configuração seguirá o *Deal Data Dictionary* e o *Sales Pipeline Design*.
+
+### Pipeline Configuration
+
+| Item | Definição |
+| --- | --- |
+| Pipeline Name | Sales Pipeline |
+| Object | Deal |
+| Strategy | Single Sales Pipeline |
+
+### Deal Stages
+
+| Ordem | Stage | Probability |
+| --- | --- | ---: |
+| 1 | New Opportunity | 10% |
+| 2 | Qualified Opportunity | 30% |
+| 3 | Proposal Sent | 50% |
+| 4 | Negotiation | 80% |
+| 5 | Closed Won | 100% |
+| 6 | Closed Lost | 0% |
+
+### Property Groups
+
+| Grupo | Tipo | Status |
+| --- | --- | --- |
+| Deal Information | Native | ⬜ Pending |
+| Deal Revenue | Native | ⬜ Pending |
+| Deal Activity | Native | ⬜ Pending |
+| Analytics History | Native | ⬜ Reviewed |
+| Professional Services Information | Native | ⬜ Reviewed |
+| HubSpot Metrics | Native | ⬜ Reviewed |
+
+---
+
+## Ticket Object Implementation
+
+O objeto **Ticket** será configurado para representar atendimento e Customer Success.
+
+A configuração seguirá o *Ticket Data Dictionary*.
+
+### Property Groups
+
+| Grupo | Tipo | Status |
+| --- | --- | --- |
+| Ticket Information | Native | ⬜ Pending |
+| Ticket Activity | Native | ⬜ Reviewed |
+| Ticket AI Enrichment | Native | ⬜ Reviewed |
+| Ticket Stage Properties | Native | ⬜ Reviewed |
+
+---
+
 ## Property Creation Standard
 
 Todas as propriedades deverão seguir o padrão:
@@ -227,14 +282,13 @@ Exemplo:
 
 | Ordem | Grupo | Motivo |
 | --- | --- | --- |
-| 1 | Company Information | Base de identificação da empresa |
-| 2 | Social Media Information | Presença digital e canais oficiais |
-| 3 | Perfil da Empresa | Classificação organizacional |
-| 4 | Informações Comerciais | Processo e relacionamento comercial |
-| 5 | Produtos e Serviços | Interesse e soluções relacionadas |
-| 6 | Financeiro | Classificação financeira |
-| 7 | Customer Success | Gestão do relacionamento pós-venda |
-| 8 | Marketing | Segmentação e aquisição |
+| 1 | Company Information | Identificação principal |
+| 2 | Social Media Information | Presença digital |
+| 3 | Sales Properties | Processo comercial |
+| 4 | Products & Services | Produtos e soluções relacionados |
+| 5 | Customer Success | Relacionamento pós-venda |
+| 6 | Marketing | Aquisição e segmentação |
+| 7 | Finance | Reservado para evolução futura |
 
 ---
 
@@ -246,6 +300,22 @@ Exemplo:
 | Contact Properties | Antes de segmentações |
 | Deal Properties | Antes de relatórios de receita |
 | Associations | Antes de análises completas |
+
+## Architecture Validation Status
+
+Antes da configuração operacional do HubSpot, os seguintes documentos foram concluídos:
+
+* ✅ CRM Strategy
+* ✅ Data Governance
+* ✅ Company Data Dictionary
+* ✅ Contact Data Dictionary
+* ✅ Deal Data Dictionary
+* ✅ Ticket Data Dictionary
+* ✅ CRM Object Model
+* ✅ CRM Associations Model
+* ✅ CRM Automation Architecture
+* ✅ CRM Reporting Architecture
+* ✅ CRM Data Quality Framework
 
 ---
 
@@ -297,21 +367,28 @@ Mudanças no CRM deverão passar pelo processo definido de revisão.
 
 O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e somente depois automações.
 
+### DA-044 — Configuração segue arquitetura aprovada
+
+A configuração do HubSpot será realizada somente após a definição dos objetos, propriedades, associações, processos e regras de governança.
+
+A arquitetura precede a implementação técnica.
+
 ### DA-079 — Configuração somente após arquitetura aprovada
 
 A implementação do HubSpot deve seguir a arquitetura documentada previamente, evitando criação de propriedades, pipelines ou automações sem definição estratégica.
 
 ---
 
-**Status da Entrega**
+# Status da Entrega
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Concluído (Company & Contact)
+- **Status:** Architecture Completed / Configuration In Progress
 
-**Objetos e grupos configurados:**
+**Estrutura de Arquitetura e Configuração:**
 
-- **Company:** Company Information, Social Media Information, Sales Properties, Products & Services, Customer Success, Marketing.
-- **Contact:** Contact Information, Sales Properties, Social Media Information, Marketing Information (Nativo sem custom v1).
-
-*Nota: O grupo Finance foi mantido reservado na arquitetura, sem criação de propriedades na v1.*
+- **Company:** Architecture Completed & HubSpot Configured
+- **Contact:** Architecture Completed & HubSpot Configured
+- **Deal:** Architecture Completed / Configuration Pending
+- **Ticket:** Architecture Completed / Configuration Pending
+- **Associations / Automation / Reporting / Quality:** Architecture Completed / Implementation Pending
