@@ -116,7 +116,20 @@ Configurar as probabilidades por estágio:
 
 ---
 
-## 6. Validação após Configuração
+## 6. Deal Views Configuration
+
+### Views Personalizadas a Criar
+
+| View | Tipo | Filtros / Critérios | Objetivo |
+| --- | --- | --- | --- |
+| Open Deals | Custom | Deal Stage != Closed Won / Closed Lost | Acompanhar negócios em andamento |
+| Closed Won Deals | Custom | Deal Stage = Closed Won | Acompanhar negócios ganhos |
+| Closed Lost Deals | Custom | Deal Stage = Closed Lost | Acompanhar negócios perdidos |
+| Stale Deals | Custom | Open Deals + Last Activity Date > 14 dias | Identificar negócios sem movimentação |
+
+---
+
+## 7. Validação após Configuração
 
 Checklist de validação técnica:
 - [x] Pipeline criado corretamente (`Sales Pipeline`).
@@ -126,11 +139,12 @@ Checklist de validação técnica:
 - [x] Closed Won funcionando (100%).
 - [x] Closed Lost funcionando (0%).
 - [x] Ordem das etapas validada.
+- [x] Deal Views personalizadas mapeadas (`Open`, `Closed Won`, `Closed Lost`, `Stale`).
 - [ ] Teste com Deal fictício realizado.
 
 ---
 
-## 7. Evidências para Portfólio
+## 8. Evidências para Portfólio
 
 Diretório de evidências:
 `Documentation/evidence/hubspot/deal/`
@@ -139,7 +153,8 @@ Arquivos a salvar:
 * `01_sales_pipeline.png`
 * `02_deal_stages.png`
 * `03_stage_probability.png`
-* `04_test_deal_record.png`
+* `04_deal_views_setup.png`
+* `05_test_deal_record.png`
 
 ---
 
@@ -163,6 +178,12 @@ Nenhuma alteração de pipeline deve ocorrer sem atualização do Data Dictionar
 
 ---
 
+### DA-083 — Views operacionais focam em ação comercial
+
+Visualizações personalizadas de Deal devem priorizar a identificação rápida de oportunidades abertas, fechadas e estagnadas (`Stale Deals`).
+
+---
+
 # Status Deal Object Configuration
 
 | Item | Status |
@@ -172,7 +193,7 @@ Nenhuma alteração de pipeline deve ocorrer sem atualização do Data Dictionar
 | Probabilities | ✅ Completed |
 | Core Properties Validation | ✅ Completed |
 | Custom Properties Creation | ⬜ Não necessária inicialmente |
-| Deal Views | ⬜ Próximo |
+| Deal Views | ✅ Completed |
 | Deal Automation | ⬜ Futuro |
 
 ---
@@ -183,5 +204,5 @@ Nenhuma alteração de pipeline deve ocorrer sem atualização do Data Dictionar
 | --- | --- | --- |
 | Company | ✅ Concluído | ✅ Concluído |
 | Contact | ✅ Concluído | ✅ Concluído |
-| Deal | ✅ Concluído | 🟨 Em Validação / views pendente |
+| Deal | ✅ Concluído | ✅ Configurado (sem automação) |
 | Ticket | ✅ Concluído | ⬜ Pendente |
