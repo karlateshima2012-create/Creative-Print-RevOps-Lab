@@ -1736,6 +1736,44 @@ Evitar duplicidade de dados entre sistemas.
 - **Status:** Modelagem arquitetural concluída
 - **Decisão arquitetural principal:** A Company armazenará apenas informações financeiras estratégicas e classificatórias. Valores financeiros transacionais serão controlados pelo objeto Deal.
 
+---
+
+# Grupo 6 — Customer Success
+
+## Objetivo
+
+O Grupo **Customer Success** reúne informações relacionadas ao relacionamento contínuo entre a empresa cliente e a organização após a aquisição de uma solução.
+
+As propriedades deste grupo têm como objetivo acompanhar a saúde do cliente, identificar oportunidades de expansão e antecipar riscos de perda.
+
+Estas informações devem apoiar:
+
+* acompanhamento da carteira de clientes;
+* prevenção de churn;
+* estratégias de retenção;
+* oportunidades de expansão;
+* personalização do relacionamento.
+
+Informações relacionadas a atendimentos específicos, chamados, reclamações ou interações operacionais devem ser armazenadas através do objeto **Ticket** ou ferramentas específicas de atendimento.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Customer Status | Customizada | Sim | Customizada |
+| Customer Health Score | Customizada | Sim | Customizada |
+| Customer Tier | Customizada | Sim | Customizada |
+| Last Customer Interaction | Customizada | Sim | Customizada |
+| Renewal Date | Customizada | Não inicialmente | Customizada |
+| Churn Risk Level | Customizada | Sim | Customizada |
+| Expansion Opportunity | Customizada | Sim | Customizada |
+| Support Level | Customizada | Não inicialmente | Customizada |
+| Customer Feedback Score | Customizada | Não inicialmente | Customizada |
+| NPS Score | Customizada | Não inicialmente | Customizada |
+
+
 
 
 
