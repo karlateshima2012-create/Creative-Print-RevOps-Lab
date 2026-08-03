@@ -1153,7 +1153,7 @@ Criar propriedade customizada.
 
 ---
 
-# Grupo 4 — Produtos e Serviços
+# Grupo 4 — Products & Services
 
 ## Objetivo
 
@@ -1186,223 +1186,81 @@ Essas informações devem permanecer associadas ao objeto Deal.
 
 ## Decisões Arquiteturais
 
-### DA-012 — Company armazena relação com soluções, não transações
+### DA-012 — Separação entre interesse e utilização de produtos
 
-O objeto Company armazenará informações estratégicas sobre interesse e utilização de soluções.
+O CRM separa informações de interesse comercial e utilização atual de soluções.
 
-Dados de venda, quantidade, valor e histórico permanecerão no objeto Deal.
-
----
-
-### DA-013 — Separar interesse comercial de compra realizada
-
-Products of Interest representa intenção ou oportunidade.
+Products of Interest representa intenção ou potencial oportunidade.
 
 Solutions Used representa soluções já utilizadas pela empresa.
 
-Essas informações possuem finalidades diferentes dentro do CRM.
+---
+
+### DA-013 — Produtos não armazenam histórico de vendas
+
+Informações relacionadas a quantidade vendida, valores e histórico de compras não serão armazenadas no objeto Company.
+
+Esses dados deverão permanecer no objeto Deal.
 
 ---
 
 ## Propriedades Aprovadas
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Main Solution Interest | Aprovada | Identifica interesse principal da empresa |
-| Product Category Interest | Aprovada | Permite segmentação por interesse |
-| Customer Solution Status | Aprovada | Permite acompanhamento da relação com soluções |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Products of Interest | Customizada | ✅ Criar | Identificar produtos e soluções que a empresa demonstrou interesse |
+| Solutions Used | Customizada | ✅ Criar | Registrar produtos e soluções atualmente utilizados pela empresa |
 
 ---
 
 ## Propriedades Não Utilizadas Inicialmente
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Products Purchased | Não utilizar inicialmente | Histórico pertence ao Deal |
-| Number of Active Solutions | Não utilizar inicialmente | Pode ser calculated futuramente |
-| Preferred Service Type | Não utilizar inicialmente | Baixa necessidade operacional inicial |
-| Subscription Status | Não utilizar inicialmente | Pertence ao contexto contratual |
-| Purchase History | Não utilizar inicialmente | Deve ser obtido através dos Deals |
-| Contract Information | Não utilizar inicialmente | Pertence ao processo financeiro/comercial |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Customer Product Category | Customizada | Não utilizar inicialmente | Sobreposição funcional com Products of Interest |
+| Last Purchased Product | Customizada | Não utilizar inicialmente | Histórico de compras pertencente ao objeto Deal |
+| Product Adoption Status | Customizada | Não utilizar inicialmente | Pode ser acompanhado através do relacionamento e uso das soluções |
 
 ---
 
-## Especificação das Propriedades Aprovadas
+## Especificação das Propriedades
 
-### Main Solution Interest
-
-#### Informações Gerais
+### Products of Interest
 
 | Campo | Definição |
 | --- | --- |
-| Nome da Propriedade | Main Solution Interest |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Customizada |
-| Origem | Brasil |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar a principal solução ou categoria de solução na qual a empresa demonstra interesse.
-
-Esta propriedade representa uma necessidade ou intenção comercial identificada, independentemente de uma compra realizada.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* segmentação de empresas interessadas;
-* personalização de abordagem comercial;
-* criação de campanhas direcionadas;
-* priorização de oportunidades;
-* análise de demanda do mercado.
-
-#### Critérios de Preenchimento
-
-A propriedade deve representar o principal interesse identificado no relacionamento.
-
-Exemplos de valores:
-
-* CRM
-* Automação de Marketing
-* Fidelização de Clientes
-* Agendamento Online
-* Soluções NFC
-* Consultoria
-* Integrações
-
-Caso existam múltiplos interesses, o principal deve ser definido neste campo.
-
-Interesses secundários podem ser tratados futuramente através de uma propriedade de múltipla seleção ou associação com produtos.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** O HubSpot não possui uma classificação específica das soluções oferecidas pela organização. A propriedade representa uma visão estratégica própria do negócio.
+| Property Name | Products of Interest |
+| Object | Company |
+| Group | Products & Services |
+| Type | Multiple checkboxes |
+| Origin | Custom |
+| Purpose | Identificar produtos e soluções que a empresa demonstrou interesse. |
+| Usage | Segmentação comercial, campanhas e análise de oportunidades futuras. |
 
 ---
 
-### Product Category Interest
-
-#### Informações Gerais
+### Solutions Used
 
 | Campo | Definição |
 | --- | --- |
-| Nome da Propriedade | Product Category Interest |
-| Objeto | Company |
-| Tipo | Caixa de seleção múltipla |
-| Categoria | Customizada |
-| Origem | Brasil |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar todas as categorias de soluções pelas quais a empresa possui interesse.
-
-Diferente de Main Solution Interest, esta propriedade permite múltiplas classificações.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* segmentação de marketing;
-* campanhas específicas;
-* análise de interesse da base;
-* identificação de oportunidades de expansão.
-
-#### Critérios de Preenchimento
-
-Valores sugeridos:
-
-* SaaS
-* CRM
-* Automação
-* NFC
-* Marketing Digital
-* Fidelização
-* Agendamento
-* Consultoria
-* Integrações
-
-Permite selecionar mais de uma opção.
-
-Exemplo: Uma clínica pode possuir interesse em: *CRM*, *Agendamento*, *Automação*.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** A propriedade permite uma visão ampla de interesse comercial sem substituir informações de venda ou aquisição.
-
----
-
-### Customer Solution Status
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Customer Solution Status |
-| Objeto | Company |
-| Tipo | Dropdown |
-| Categoria | Customizada |
-| Origem | Brasil |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar o estágio de relacionamento da empresa com uma solução específica.
-
-Esta propriedade permite identificar se a empresa está avaliando, utilizando ou deixou de utilizar uma solução.
-
-#### Uso no Negócio
-
-Utilizada para:
-
-* acompanhamento de clientes;
-* estratégias de expansão;
-* identificação de oportunidades de upgrade;
-* ações de Customer Success.
-
-#### Critérios de Preenchimento
-
-Valores sugeridos:
-
-* Não utiliza
-* Em avaliação
-* Teste/Trial
-* Implantação
-* Ativo
-* Inativo
-
-#### Observação Arquitetural
-
-Esta propriedade não substitui:
-* Lifecycle Stage;
-* Deal Stage;
-* Subscription Status.
-
-Ela representa exclusivamente a relação da empresa com uma solução.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-**Motivo:** Permite acompanhar o relacionamento com soluções sem misturar dados comerciais, financeiros ou contratuais.
+| Property Name | Solutions Used |
+| Object | Company |
+| Group | Products & Services |
+| Type | Multiple checkboxes |
+| Origin | Custom |
+| Purpose | Registrar produtos e soluções atualmente utilizados pela empresa. |
+| Usage | Expansão de clientes, cross-sell e análise de relacionamento. |
 
 ---
 
 # Status do Grupo
 
-**Grupo 4 — Produtos e Serviços**
+**Grupo 4 — Products & Services**
 
-- **Status:** Documentação concluída
+- **Status:** Modelado e configurado
 - **Propriedades aprovadas:**
-  * Main Solution Interest
-  * Product Category Interest
-  * Customer Solution Status
+  * Products of Interest
+  * Solutions Used
 - **Decisão arquitetural principal:** Informações de interesse permanecem no objeto Company. Informações de compra, contrato e histórico comercial serão controladas através do objeto Deal.
 
 ---
