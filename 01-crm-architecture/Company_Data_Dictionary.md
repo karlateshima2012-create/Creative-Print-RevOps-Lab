@@ -562,6 +562,9 @@ Criar propriedade customizada.
 
 Apesar de existirem redes sociais no HubSpot, Instagram comercial possui relevância específica para pequenos e médios negócios brasileiros.
 
+**Evidência de Configuração:**
+![Print 3 — Configuração da propriedade Instagram Company Page](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/03_instagram_company_page/03_instagram_company_page_configuration.png)
+
 ---
 
 ### Facebook Company Page
