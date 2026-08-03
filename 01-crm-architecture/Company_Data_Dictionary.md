@@ -701,19 +701,17 @@ A propriedade não substitui Industry, pois Industry representa o setor de atua�
 
 ## Objetivo
 
-O Grupo **Informações Comerciais** reúne informações relacionadas ao relacionamento comercial entre a empresa e a organização.
+O grupo Informações Comerciais reúne informações relacionadas ao relacionamento comercial entre a empresa e a organização.
 
-As propriedades deste grupo têm como objetivo registrar informações que auxiliam o processo de vendas, acompanhamento de oportunidades, gestão da carteira e análise comercial.
+As propriedades deste grupo têm como objetivo apoiar:
 
-Estas informações devem apoiar:
+* qualificação comercial;
+* priorização de oportunidades;
+* segmentação da carteira;
+* planejamento de abordagem;
+* análises do processo comercial.
 
-* gestão do processo comercial;
-* segmentação de empresas;
-* acompanhamento de oportunidades;
-* análise de desempenho de vendas;
-* definição de estratégias comerciais.
-
-As propriedades deste grupo não devem armazenar informações relacionadas a produtos específicos, valores financeiros detalhados ou dados de relacionamento após a venda.
+Este grupo não deve armazenar informações transacionais, como valores de venda, produtos vendidos ou histórico de negociações, pois essas informações pertencem ao objeto Deal.
 
 ---
 
@@ -721,18 +719,15 @@ As propriedades deste grupo não devem armazenar informações relacionadas a pr
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Lifecycle Stage | Global | Sim | HubSpot |
 | Lead Status | Global | Sim | HubSpot |
-| Company Owner | Global | Sim | HubSpot |
-| Create Date | Global | Sim | HubSpot |
-| Last Activity Date | Global | Sim | HubSpot |
-| Original Source | Global | Sim | HubSpot |
-| Acquisition Channel | Brasil | Sim | Customizada |
-| Sales Territory | Customizada | Não inicialmente | Customizada |
-| Customer Potential | Customizada | Sim | Customizada |
-| Commercial Priority | Customizada | Sim | Customizada |
-| Lead Qualification | Customizada | Não inicialmente | Customizada |
-| Relationship Status | Customizada | Não inicialmente | Customizada |
+| Lifecycle Stage | Global | Sim | HubSpot |
+| Owner | Global | Sim | HubSpot |
+| Relationship Status | Customizada | Sim | Customizada |
+| Customer Tier | Customizada | Não inicialmente | Customizada |
+| Sales Priority | Customizada | Não inicialmente | Customizada |
+| Acquisition Channel | Customizada | Não inicialmente | Customizada |
+| Last Contact Date | Global | Não | HubSpot |
+| Next Activity Date | Global | Não | HubSpot |
 
 ---
 
