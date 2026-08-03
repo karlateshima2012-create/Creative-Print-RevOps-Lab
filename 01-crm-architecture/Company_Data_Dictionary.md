@@ -108,9 +108,9 @@ These properties represent stable business information and support integrations,
 | CNPJ | Custom |
 | Legal Name | Custom |
 | Trade Name | Custom |
-| Instagram Username | Custom |
-| Facebook Page | Custom |
-| LinkedIn URL | HubSpot |
+| Instagram Company Page | Custom |
+| Facebook Company Page | HubSpot |
+| LinkedIn Company Page | HubSpot |
 
 
 ---
@@ -590,13 +590,13 @@ Criar propriedade customizada.
 
 ---
 
-### Instagram Username
+### Instagram Company Page
 
 #### Informações Gerais
 
 | Campo | Definição |
 | --- | --- |
-| Nome da Propriedade | Instagram Username |
+| Nome da Propriedade | Instagram Company Page |
 | Objeto | Company |
 | Tipo | URL |
 | Categoria | Brasil |
@@ -623,17 +623,17 @@ Apesar de existirem redes sociais no HubSpot, Instagram comercial possui relevâ
 
 ---
 
-### Facebook Page
+### Facebook Company Page
 
 #### Informações Gerais
 
 | Campo | Definição |
 | --- | --- |
-| Nome da Propriedade | Facebook Page |
+| Nome da Propriedade | Facebook Company Page |
 | Objeto | Company |
 | Tipo | URL |
 | Categoria | Global |
-| Origem | Customizada |
+| Origem | HubSpot padrão |
 | Obrigatória | Não |
 
 #### Objetivo
@@ -650,7 +650,7 @@ Utilizado para:
 
 #### Decisão Arquitetural
 
-Criar propriedade customizada.
+Utilizar propriedade nativa do HubSpot (`facebook_company_page`).
 
 ---
 
