@@ -244,6 +244,34 @@ Informações relacionadas a valores, negociações e receita deverão permanece
 | --- | --- |
 | Contact Information | ✅ Finalizado |
 | Sales Properties | ✅ Finalizado |
-| Social Media Information | ⬜ Pendente |
+| Social Media Information | ⏳ Em andamento |
 | Email Information | ⬜ Pendente |
 | Marketing Information | ⬜ Pendente |
+
+---
+
+# Grupo 3 — Social Media Information
+
+## Objetivo
+
+O grupo Social Media Information reúne informações relacionadas aos perfis sociais dos contatos cadastrados no CRM.
+
+Essas propriedades têm como objetivo apoiar:
+
+* identificação de contatos;
+* enriquecimento de informações;
+* segmentação;
+* personalização de comunicação.
+
+Este grupo deve armazenar apenas informações relacionadas à pessoa. Informações de redes sociais da empresa permanecem no objeto Company.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| LinkedIn URL | Perfil profissional | Sim | HubSpot |
+| Facebook URL | Perfil social | Não inicialmente | HubSpot |
+| Twitter Username | Perfil social | Não inicialmente | HubSpot |
+| Instagram URL | Perfil social | Não inicialmente | Customizada |
