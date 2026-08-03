@@ -106,16 +106,6 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
 
 ---
 
-# Status de Implementação dos Grupos do Ticket
-
-| Grupo | Status |
-| --- | --- |
-| Ticket Information | ✅ Finalizado |
-| Ticket Activity | ⏳ Em andamento |
-| Ticket Metrics | ⬜ Pendente |
-
----
-
 # Grupo 2 — Ticket Activity
 
 ## Objetivo
@@ -156,3 +146,85 @@ A maioria dessas informações é gerada automaticamente pelo HubSpot e não dev
 | Last CSAT Survey Comment | Feedback cliente | Avaliar | HubSpot |
 | Last NPS Survey Comment | Feedback cliente | Avaliar | HubSpot |
 | Portal-wide Snooze | Controle interno | Não | HubSpot |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-061 — Métricas de atendimento devem ser derivadas
+
+Tempo de resposta e resolução devem ser utilizados através das métricas nativas do HubSpot, evitando criação manual de campos.
+
+---
+
+### DA-062 — Customer Feedback será evoluído posteriormente
+
+CSAT e NPS serão utilizados quando existir processo estruturado de Customer Success.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Create Date | HubSpot | Date |
+| Close Date | HubSpot | Date |
+| Last Activity Date | HubSpot | Date |
+| Next Activity Date | HubSpot | Date |
+| Last Customer Reply Date | HubSpot | Date |
+| First Agent Email Response Date | HubSpot | Date |
+
+---
+
+### Avaliar Futuramente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Time to First Agent Email Reply | SLA |
+| Time to Close | SLA |
+| Last CSAT Survey Rating | Customer Success |
+| Last CSAT Survey Date | Customer Success |
+| Last CSAT Survey Comment | Feedback |
+| Last NPS Survey Comment | Feedback |
+
+---
+
+### Não Utilizar Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Last Modified Date | Campo técnico de controle |
+| Ticket Reopen Date | Histórico estendido |
+| Last Closed Date | Histórico estendido |
+| Owner Assigned Date | Histórico estendido |
+| Number of Times Contacted | Métrica derivada em relatórios |
+| Number of Sales Activities | Métrica derivada em relatórios |
+| Portal-wide Snooze | Controle interno do HubSpot |
+
+---
+
+# Status do Grupo
+
+**Grupo 2 — Ticket Activity**
+
+- **Status:** ✅ Finalizado
+- **Propriedades aprovadas:**
+  * Create Date
+  * Close Date
+  * Last Activity Date
+  * Next Activity Date
+  * Last Customer Reply Date
+  * First Agent Email Response Date
+- **Decisão arquitetural principal:** O grupo utilizará as propriedades de data de atendimento do HubSpot para controle de ciclo de vida e tempo de resposta.
+
+---
+
+# Status de Implementação dos Grupos do Ticket
+
+| Grupo | Status |
+| --- | --- |
+| Ticket Information | ✅ Finalizado |
+| Ticket Activity | ✅ Finalizado |
+| Ticket Metrics | ⬜ Pendente |
