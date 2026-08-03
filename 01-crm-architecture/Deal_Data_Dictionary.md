@@ -512,13 +512,98 @@ Métricas derivadas serão calculadas pelo HubSpot.
 
 ---
 
-# Status de Implementação dos Grupos do Deal
+# Resultado Final — Deal Data Dictionary
+
+## Propriedades Aprovadas
+
+| Propriedade | Grupo | Origem | Tipo | Objetivo |
+| --- | --- | --- | --- | --- |
+| Deal Name | Deal Information | HubSpot | Single-line text | Identificação da oportunidade |
+| Deal Owner | Deal Information | HubSpot | HubSpot user | Responsável comercial |
+| Close Date | Deal Information | HubSpot | Date picker | Previsão de fechamento |
+| Deal Description | Deal Information | HubSpot | Multi-line text | Contexto adicional da negociação |
+| Amount | Deal Revenue | HubSpot | Number | Valor financeiro da oportunidade |
+| Last Activity Date | Deal Activity | HubSpot | Date | Última interação registrada |
+| Next Activity Date | Deal Activity | HubSpot | Date | Próxima ação comercial planejada |
+
+---
+
+## Configurações Aprovadas do Objeto Deal
+
+Além das propriedades, o objeto Deal possui configurações que fazem parte da arquitetura:
+
+| Item | Tipo | Decisão |
+| --- | --- | --- |
+| Pipeline | Configuração do objeto | Utilizar |
+| Deal Stage | Configuração do objeto | Utilizar |
+
+---
+
+## Propriedades Avaliadas para Futuro
+
+| Propriedade | Motivo |
+| --- | --- |
+| Deal Type | Depende da definição de tipos de negócio |
+| Priority | Necessita critério comercial objetivo |
+| Number of Sales Activities | Pode ser usado para métricas comerciais |
+| Annual Contract Value | Relevante para contratos anuais |
+| Annual Recurring Revenue | Relevante para modelo SaaS |
+| Monthly Recurring Revenue | Relevante para assinaturas |
+| Total Contract Value | Relevante para contratos formais |
+| Services Included | Relevante para projetos/serviços |
+
+---
+
+## Propriedades Não Utilizadas
+
+| Grupo | Propriedades | Motivo |
+| --- | --- | --- |
+| Analytics History | Traffic Source fields | Dados de aquisição pertencem ao Marketing/Contact |
+| Professional Services Information | Todas | Processo de projetos ainda não estruturado |
+| HubSpot Metrics | Weighted open pipeline in company currency | Métrica calculada automaticamente |
+| Deal Activity | Last Contacted | Duplicidade com Last Activity Date |
+| Deal Revenue | Exchange Rate | Campo técnico |
+| Deal Revenue | Amount in company currency | Campo técnico |
+
+---
+
+# Decisões Arquiteturais
+
+## DA-049 — Deal é responsável por informações transacionais
+
+O objeto Deal será utilizado para armazenar:
+
+* oportunidades;
+* valores;
+* previsão;
+* movimentação comercial.
+
+Informações permanentes da empresa permanecem no objeto Company.
+
+---
+
+## DA-050 — Pipeline e Deal Stage representam o processo comercial
+
+Pipeline e etapas comerciais não serão criados como propriedades customizadas.
+
+Eles serão configurados como estrutura nativa do objeto Deal.
+
+---
+
+## DA-051 — Receita recorrente será adicionada quando existir operação SaaS madura
+
+Métricas como MRR, ARR e TCV serão utilizadas quando os produtos SaaS da Creative Print possuírem processo comercial recorrente definido.
+
+---
+
+# Status do Deal Data Dictionary
 
 | Grupo | Status |
 | --- | --- |
 | Deal Information | ✅ Finalizado |
 | Deal Revenue | ✅ Finalizado |
 | Deal Activity | ✅ Finalizado |
-| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
-| Professional Services Information | ✅ Finalizado (sem propriedades aprovadas) |
-| HubSpot Metrics | ✅ Finalizado (sem propriedades aprovadas) |
+| Analytics History | ✅ Finalizado |
+| Professional Services Information | ✅ Finalizado |
+| HubSpot Metrics | ✅ Finalizado |
+| Technical Groups | ✅ Revisados |
