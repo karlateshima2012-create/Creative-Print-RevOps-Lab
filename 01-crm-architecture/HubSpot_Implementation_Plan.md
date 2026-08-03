@@ -57,7 +57,7 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 | --- | --- | --- |
 | 1 | Company Information | ✅ Completed |
 | 2 | Social Media Information | ✅ Completed |
-| 3 | Perfil da Empresa | ⏳ Pending |
+| 3 | Perfil da Empresa | ✅ Completed |
 | 4 | Informações Comerciais | ⏳ Pending |
 | 5 | Produtos e Serviços | ⏳ Pending |
 | 6 | Financeiro | ⏳ Pending |
@@ -185,7 +185,8 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 
 - Company Information
 - Social Media Information
+- Perfil da Empresa
 
 **Próxima etapa:**
 
-Configuração do grupo Perfil da Empresa.
+Configuração do grupo Informações Comerciais.
