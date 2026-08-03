@@ -1298,62 +1298,17 @@ As propriedades deste grupo têm como objetivo:
 
 ## Decisões Arquiteturais
 
-### DA-020 — Separação entre perfil financeiro e transação financeira
+### DA-014 — Separação entre classificação financeira e transações
 
-O objeto **Company** armazenará somente informações financeiras permanentes ou classificatórias.
+O objeto Company armazenará apenas informações financeiras estratégicas relacionadas ao cliente.
 
-Valores relacionados a vendas, contratos e pagamentos devem permanecer no objeto **Deal**.
-
----
-
-### DA-021 — Evitar armazenamento manual de métricas calculáveis
-
-Informações que podem ser calculadas através do histórico comercial não devem ser preenchidas manualmente.
-
-Exemplo:
-
-**Average Ticket** deve ser obtido através dos Deals.
+Valores de negociações, pagamentos, faturamento e receitas permanecerão nos objetos apropriados.
 
 ---
 
-### DA-022 — Utilizar classificação financeira quando gerar ação comercial
+### DA-015 — Propriedades financeiras devem possuir uso operacional
 
-O CRM priorizará classificações que permitam:
-
-* segmentação;
-* priorização;
-* automação;
-* análise estratégica.
-
-Informações sem aplicação operacional imediata não serão adicionadas.
-
----
-
-### DA-023 — Não transformar Company em sistema financeiro
-
-O CRM não substituirá ferramentas financeiras.
-
-Informações como:
-
-* pagamentos;
-* cobranças;
-* contratos;
-* faturamento;
-
-devem permanecer nos sistemas apropriados ou no objeto **Deal**.
-
----
-
-### DA-024 — Dados financeiros devem respeitar governança de origem
-
-Cada informação financeira deverá possuir uma fonte definida:
-
-* CRM;
-* sistema financeiro;
-* ERP;
-* processo comercial.
-
-Evitar duplicidade de dados entre sistemas.
+Uma propriedade financeira somente será criada quando existir um processo claro que utilize essa informação em operações, segmentações ou análises.
 
 ---
 
