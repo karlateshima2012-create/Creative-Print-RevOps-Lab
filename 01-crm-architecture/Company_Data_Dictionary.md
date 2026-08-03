@@ -1157,19 +1157,18 @@ Criar propriedade customizada.
 
 ## Objetivo
 
-O Grupo **Produtos e Serviços** reúne informações relacionadas ao relacionamento da empresa com as soluções oferecidas pela organização.
+O grupo Produtos e Serviços reúne informações relacionadas ao interesse, utilização e relacionamento da empresa com as soluções oferecidas.
 
-As propriedades deste grupo têm como objetivo identificar interesses, necessidades e características de consumo da empresa.
-
-Estas informações devem apoiar:
+Estas propriedades têm como objetivo apoiar:
 
 * segmentação de clientes;
+* identificação de oportunidades de expansão;
 * personalização de comunicação;
-* identificação de oportunidades;
-* estratégias de expansão;
-* análise de aderência das soluções.
+* análise de interesse por solução.
 
-Informações relacionadas a negociações específicas, valores, pedidos, contratos e histórico de compras não devem ser armazenadas neste grupo, pois pertencem ao objeto **Deal**.
+Este grupo não deve armazenar informações transacionais, como quantidade vendida, valor da venda ou histórico de compras.
+
+Essas informações devem permanecer associadas ao objeto Deal.
 
 ---
 
@@ -1177,15 +1176,11 @@ Informações relacionadas a negociações específicas, valores, pedidos, contr
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Products Purchased | Customizada | Não inicialmente | Customizada |
-| Main Solution Interest | Customizada | Sim | Customizada |
-| Product Category Interest | Customizada | Sim | Customizada |
-| Customer Solution Status | Customizada | Sim | Customizada |
-| Number of Active Solutions | Customizada | Não inicialmente | Customizada |
-| Preferred Service Type | Customizada | Não inicialmente | Customizada |
-| Subscription Status | Customizada | Não utilizar | Customizada |
-| Purchase History | Customizada | Não utilizar | Customizada |
-| Contract Information | Customizada | Não utilizar | Customizada |
+| Products of Interest | Customizada | Sim | Customizada |
+| Solutions Used | Customizada | Sim | Customizada |
+| Customer Product Category | Customizada | Não inicialmente | Customizada |
+| Last Purchased Product | Customizada | Não inicialmente | Customizada |
+| Product Adoption Status | Customizada | Não inicialmente | Customizada |
 
 ---
 
