@@ -130,7 +130,7 @@ Ele deve armazenar informações permanentes ou estratégicas sobre a empresa.
 
 | Grupo | Objetivo |
 | --- | --- |
-| Identificação | Identificar a empresa |
+| Contact Information | Identificar a empresa |
 | Perfil da Empresa | Características organizacionais |
 | Informações Comerciais | Relacionamento comercial |
 | Produtos e Serviços | Interesse em soluções |

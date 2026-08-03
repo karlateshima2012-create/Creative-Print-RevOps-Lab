@@ -55,7 +55,7 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 | Ordem | Grupo |
 | --- | --- |
-| 1 | Identificação |
+| 1 | Contact Information |
 | 2 | Perfil da Empresa |
 | 3 | Informações Comerciais |
 | 4 | Produtos e Serviços |
@@ -96,7 +96,7 @@ Exemplo:
 
 | Ordem | Grupo | Motivo |
 | --- | --- | --- |
-| 1 | Identificação | Base do cadastro |
+| 1 | Contact Information | Base do cadastro |
 | 2 | Perfil da Empresa | Classificação inicial |
 | 3 | Informações Comerciais | Processo comercial |
 | 4 | Produtos e Serviços | Interesse e relacionamento |

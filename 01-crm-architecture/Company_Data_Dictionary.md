@@ -72,7 +72,7 @@ Cada propriedade será documentada utilizando o padrão abaixo.
 
 As propriedades da Empresa serão organizadas nos seguintes grupos:
 
-1. Identificação
+1. Contact Information
 2. Perfil da Empresa
 3. Informações Comerciais
 4. Produtos e Serviços
@@ -84,44 +84,34 @@ Cada grupo será documentado em uma seção específica deste documento.
 
 ---
 
-# Grupo 1 — Identificação
+# Group 1 — Contact Information
 
 ## Objetivo
 
-O Grupo **Identificação** reúne todas as informações responsáveis por identificar de forma única uma empresa dentro do CRM.
+The Contact Information group contains the core company data used to identify, locate and uniquely register an organization within the CRM.
 
-As propriedades deste grupo não descrevem características comerciais ou operacionais do cliente.
-
-Sua função é permitir:
-
-* identificar corretamente uma empresa;
-* evitar registros duplicados;
-* facilitar integrações;
-* padronizar cadastros;
-* garantir rastreabilidade entre sistemas.
+These properties represent stable business information and support integrations, commercial processes and operational activities throughout the customer lifecycle.
 
 ---
 
 ## Propriedades Candidatas
 
-| Propriedade         | Categoria | Necessária?        | Origem      |
-| ------------------- | --------- | ------------------ | ----------- |
-| Company Name        | Global    | Sim                | HubSpot     |
-| Company Domain      | Global    | Sim                | HubSpot     |
-| Website             | Global    | Sim                | HubSpot     |
-| Phone Number        | Global    | Sim                | HubSpot     |
-| Country             | Global    | Sim                | HubSpot     |
-| State/Region        | Global    | Sim                | HubSpot     |
-| City                | Global    | Sim                | HubSpot     |
-| Record ID           | Global    | Sim                | HubSpot     |
-| CNPJ                | Brasil    | Sim                | Customizada |
-| Razão Social        | Brasil    | Sim                | Customizada |
-| Nome Fantasia       | Brasil    | Sim                | Customizada |
-| Inscrição Estadual  | Brasil    | Não (Inicialmente) | Customizada |
-| Inscrição Municipal | Brasil    | Não (Inicialmente) | Customizada |
-| Instagram Comercial | Brasil    | Sim                | Customizada |
-| Facebook            | Global    | Não                | HubSpot     |
-| LinkedIn            | Global    | Não                | HubSpot     |
+| Property | Origin |
+| --- | --- |
+| Company Name | HubSpot |
+| Company Domain Name | HubSpot |
+| Website URL | HubSpot |
+| Phone Number | HubSpot |
+| Country/Region | HubSpot |
+| State/Region | HubSpot |
+| City | HubSpot |
+| Record ID | HubSpot |
+| CNPJ | Custom |
+| Legal Name | Custom |
+| Trade Name | Custom |
+| Instagram Business | Custom |
+| LinkedIn | HubSpot |
+
 
 ---
 

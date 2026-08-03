@@ -276,7 +276,7 @@ Cada grupo representa um conjunto de informações com uma finalidade específic
 
 ---
 
-## 1. Identificação
+## 1. Contact Information
 
 Armazena os dados básicos que identificam a empresa.
 

@@ -132,7 +132,7 @@ As propriedades customizadas seguirão um padrão de nomenclatura consistente pa
 
 | Grupo | Quantidade de propriedades aprovadas |
 | --- | --- |
-| Identificação | 12 |
+| Contact Information | 12 |
 | Perfil da Empresa | 5 |
 | Informações Comerciais | 9 |
 | Produtos e Serviços | 3 |
