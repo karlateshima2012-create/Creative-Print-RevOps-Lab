@@ -94,21 +94,28 @@ These properties represent stable business information and support integrations,
 
 ---
 
-## Propriedades Candidatas
+## Approved Properties
+
+### Company Information
 
 | Property | Origin |
 | --- | --- |
 | Company Name | HubSpot |
-| Company Domain Name | HubSpot |
+| Website URL | HubSpot |
 | Phone Number | HubSpot |
 | Country/Region | HubSpot |
 | State/Region | HubSpot |
 | City | HubSpot |
 | Record ID | HubSpot |
 | CNPJ | Custom |
-| Instagram Company Page | Custom |
+
+### Social Media Information
+
+| Property | Origin |
+| --- | --- |
 | Facebook Company Page | HubSpot |
 | LinkedIn Company Page | HubSpot |
+| Instagram Company Page | Custom |
 
 
 ---
