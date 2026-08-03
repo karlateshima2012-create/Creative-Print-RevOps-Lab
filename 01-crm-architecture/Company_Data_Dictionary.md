@@ -109,6 +109,7 @@ These properties represent stable business information and support integrations,
 | Legal Name | Custom |
 | Trade Name | Custom |
 | Instagram Username | Custom |
+| Facebook Page | HubSpot |
 | LinkedIn | HubSpot |
 
 
@@ -619,6 +620,37 @@ Utilizado para:
 Criar propriedade customizada.
 
 Apesar de existirem redes sociais no HubSpot, Instagram comercial possui relevância específica para pequenos e médios negócios brasileiros.
+
+---
+
+### Facebook Page
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Facebook Page |
+| Objeto | Company |
+| Tipo | URL |
+| Categoria | Global |
+| Origem | HubSpot padrão |
+| Obrigatória | Não |
+
+#### Objetivo
+
+Registrar a página institucional/comercial da empresa no Facebook.
+
+#### Uso no Negócio
+
+Utilizado para:
+
+* pesquisa comercial;
+* análise de presença digital;
+* apoio ao relacionamento e marketing.
+
+#### Decisão Arquitetural
+
+Utilizar propriedade nativa do HubSpot (`facebook_company_page`).
 
 ---
 
