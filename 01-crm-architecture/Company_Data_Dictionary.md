@@ -1607,6 +1607,43 @@ Criar propriedade customizada.
   * Customer Solution Status
 - **Decisão arquitetural principal:** Informações de interesse permanecem no objeto Company. Informações de compra, contrato e histórico comercial serão controladas através do objeto Deal.
 
+---
+
+# Grupo 5 — Financeiro
+
+## Objetivo
+
+O Grupo **Financeiro** reúne informações relacionadas à capacidade econômica e classificação financeira da empresa.
+
+As propriedades deste grupo têm como objetivo fornecer contexto para análise comercial, segmentação e tomada de decisão.
+
+Estas informações devem apoiar:
+
+* análise de potencial comercial;
+* segmentação de clientes;
+* definição de estratégias comerciais;
+* avaliação de perfil financeiro.
+
+Informações relacionadas a valores de vendas, contratos, pagamentos, faturamento específico e receita gerada por negociações não devem ser armazenadas neste grupo, pois pertencem ao objeto **Deal**.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Annual Revenue | Global | Não inicialmente | HubSpot |
+| Number of Employees | Global | Já definido no Grupo 2 | HubSpot |
+| Company Revenue Range | Customizada | Sim | Customizada |
+| Customer Value Segment | Customizada | Sim | Customizada |
+| Payment Status | Customizada | Não utilizar | Customizada |
+| Payment Method | Customizada | Não utilizar | Customizada |
+| Average Ticket | Customizada | Não utilizar | Customizada |
+| Contract Value | Customizada | Não utilizar | Customizada |
+| Credit Rating | Customizada | Não inicialmente | Customizada |
+| Financial Risk Level | Customizada | Sim | Customizada |
+
+
 
 
 
