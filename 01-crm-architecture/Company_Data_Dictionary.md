@@ -753,6 +753,178 @@ Uma propriedade somente fará parte do CRM quando possuir pelo menos um dos segu
 | Target Market | Não utilizar inicialmente | Informação pode ser obtida em outros processos comerciais |
 | Main Customer Profile | Não utilizar inicialmente | Possui maior relação com estratégia comercial do que cadastro da empresa |
 
+---
+
+# Grupo 3 — Informações Comerciais
+
+## Objetivo
+
+O Grupo **Informações Comerciais** reúne informações relacionadas ao relacionamento comercial entre a empresa e a organização.
+
+As propriedades deste grupo têm como objetivo registrar informações que auxiliam o processo de vendas, acompanhamento de oportunidades, gestão da carteira e análise comercial.
+
+Estas informações devem apoiar:
+
+* gestão do processo comercial;
+* segmentação de empresas;
+* acompanhamento de oportunidades;
+* análise de desempenho de vendas;
+* definição de estratégias comerciais.
+
+As propriedades deste grupo não devem armazenar informações relacionadas a produtos específicos, valores financeiros detalhados ou dados de relacionamento após a venda.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Lifecycle Stage | Global | Sim | HubSpot |
+| Lead Status | Global | Sim | HubSpot |
+| Company Owner | Global | Sim | HubSpot |
+| Create Date | Global | Sim | HubSpot |
+| Last Activity Date | Global | Sim | HubSpot |
+| Original Source | Global | Sim | HubSpot |
+| Acquisition Channel | Brasil | Sim | Customizada |
+| Sales Territory | Customizada | Não inicialmente | Customizada |
+| Customer Potential | Customizada | Sim | Customizada |
+| Commercial Priority | Customizada | Sim | Customizada |
+| Lead Qualification | Customizada | Não inicialmente | Customizada |
+| Relationship Status | Customizada | Não inicialmente | Customizada |
+
+---
+
+## Análise Arquitetural Inicial
+
+### Lifecycle Stage
+- **Pergunta Arquitetural:** Precisamos criar um campo próprio para estágio do relacionamento?
+- **Resposta:** Não. O HubSpot já possui uma propriedade padrão criada exatamente para controlar a evolução do relacionamento (*Subscriber, Lead, MQL, SQL, Opportunity, Customer*).
+- **Decisão:** Utilizar propriedade nativa.
+
+### Lead Status
+- **Pergunta:** Como controlar empresas que estão em processo comercial?
+- **Resposta:** O HubSpot já possui a propriedade nativa Lead Status (*New, Open, In Progress, Qualified, Unqualified*).
+- **Decisão:** Utilizar propriedade nativa.
+
+### Company Owner
+- **Finalidade:** Responsável interno pelo relacionamento.
+- **Importante para:** Distribuição de carteira, responsabilidade comercial e relatórios.
+- **Decisão:** Utilizar propriedade nativa.
+
+### Create Date
+- **Finalidade:** Data técnica criada automaticamente pelo HubSpot.
+- **Utilizada para:** Análise de aquisição, tempo de relacionamento e relatórios.
+- **Decisão:** Utilizar propriedade nativa.
+
+### Last Activity Date
+- **Finalidade:** Permite identificar empresas sem interação recente.
+- **Uso:** Acompanhamento comercial, identificação de risco e produtividade.
+- **Decisão:** Utilizar propriedade nativa.
+
+### Original Source
+- **Finalidade:** Registra origem técnica da empresa (*Organic Search, Social Media, Referral, Offline Source*).
+- **Decisão:** Utilizar propriedade nativa.
+
+### Acquisition Channel
+- **Diferença Estratégica:** Enquanto *Original Source* responde "De onde veio o contato?", *Acquisition Channel* responde "Qual canal estratégico gerou a aquisição?" (Ex.: Campanha Google Ads - Pequenas Empresas).
+- **Decisão:** Criar propriedade customizada.
+
+### Customer Potential
+- **Finalidade:** Representa potencial comercial futuro (*Baixo, Médio, Alto*).
+- **Uso:** Auxiliar a priorização comercial.
+- **Decisão:** Criar propriedade customizada.
+
+### Commercial Priority
+- **Finalidade:** Representa a prioridade operacional da equipe (*Alta, Média, Baixa*).
+- **Diferença:** Potencial = Valor possível; Prioridade = Decisão interna da equipe.
+- **Decisão:** Criar propriedade customizada.
+
+---
+
+## Decisões Arquiteturais
+
+### DA-010 — Utilizar propriedades nativas para controle do ciclo comercial
+
+Sempre que o HubSpot possuir uma propriedade padrão relacionada ao processo comercial, ela será utilizada para manter compatibilidade com recursos nativos da plataforma.
+
+Exemplo:
+
+**Lifecycle Stage** e **Lead Status** serão utilizados sem criação de campos equivalentes.
+
+---
+
+### DA-011 — Separação entre origem, aquisição e relacionamento comercial
+
+O CRM deverá diferenciar:
+
+* origem técnica do registro;
+* canal estratégico de aquisição;
+* estágio do relacionamento comercial.
+
+Essas informações possuem objetivos diferentes e não devem ser agrupadas em uma única propriedade.
+
+---
+
+### DA-012 — Separação entre potencial comercial e prioridade operacional
+
+O potencial comercial representa a oportunidade futura de negócio.
+
+A prioridade comercial representa a decisão interna da equipe sobre onde concentrar esforços.
+
+Essas informações devem permanecer separadas para evitar interpretações incorretas.
+
+---
+
+### DA-013 — Informações comerciais devem apoiar ações
+
+Uma propriedade comercial somente será criada quando puder gerar:
+
+* ação da equipe;
+* segmentação;
+* automação;
+* relatório;
+* tomada de decisão.
+
+---
+
+### DA-014 — Evitar armazenar informações de negócio no objeto incorreto
+
+Informações relacionadas a uma negociação específica, como:
+
+* valor da oportunidade;
+* produto vendido;
+* previsão de fechamento;
+* etapa da negociação;
+
+devem pertencer ao objeto **Deal (Negócio)** e não ao objeto **Company (Empresa)**.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Lifecycle Stage | Aprovada | Controle padrão do ciclo de relacionamento HubSpot |
+| Lead Status | Aprovada | Controle operacional do processo comercial |
+| Company Owner | Aprovada | Define responsável interno |
+| Create Date | Aprovada | Controle histórico do registro |
+| Last Activity Date | Aprovada | Permite acompanhamento de interação |
+| Original Source | Aprovada | Análise de origem dos registros |
+| Acquisition Channel | Aprovada | Necessária para análise estratégica de aquisição |
+| Customer Potential | Aprovada | Permite priorização de oportunidades futuras |
+| Commercial Priority | Aprovada | Auxilia gestão da carteira |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Sales Territory | Não utilizar inicialmente | Necessário apenas em operações com equipe comercial regionalizada |
+| Lead Qualification | Não utilizar inicialmente | Pode ser tratado através de processos de qualificação e propriedades existentes |
+| Relationship Status | Não utilizar inicialmente | Pode gerar conflito com Lifecycle Stage e Customer Status |
+
+
 
 
 
