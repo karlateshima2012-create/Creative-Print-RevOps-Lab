@@ -244,7 +244,7 @@ Informações relacionadas a valores, negociações e receita deverão permanece
 | --- | --- |
 | Contact Information | ✅ Finalizado |
 | Sales Properties | ✅ Finalizado |
-| Social Media Information | ⏳ Em andamento |
+| Social Media Information | ✅ Finalizado |
 | Email Information | ⬜ Pendente |
 | Marketing Information | ⬜ Pendente |
 
@@ -275,3 +275,54 @@ Este grupo deve armazenar apenas informações relacionadas à pessoa. Informaç
 | Facebook URL | Perfil social | Não inicialmente | HubSpot |
 | Twitter Username | Perfil social | Não inicialmente | HubSpot |
 | Instagram URL | Perfil social | Não inicialmente | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-027 — Redes sociais devem ter finalidade operacional
+
+Informações sociais serão utilizadas somente quando contribuírem para relacionamento, segmentação ou processo comercial.
+
+---
+
+### DA-028 — Separação entre perfil pessoal e empresarial
+
+Perfis sociais de pessoas permanecerão no objeto Contact.
+
+Perfis sociais da organização permanecerão no objeto Company.
+
+---
+
+### DA-029 — Evitar enriquecimento sem uso definido
+
+Novas propriedades sociais somente serão criadas quando existir um processo claro de utilização.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| LinkedIn URL | HubSpot | Single-line text |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Facebook URL | Pouca relevância B2B/comercial individual nesta fase |
+| Twitter Username | Baixa utilização no processo comercial |
+| Instagram URL | Redes sociais de pessoa física não têm uso comercial estruturado |
+
+---
+
+# Status do Grupo
+
+**Grupo 3 — Social Media Information**
+
+- **Status:** ✅ Finalizado
+- **Propriedades aprovadas:**
+  * LinkedIn URL
+- **Decisão arquitetural principal:** Nenhuma propriedade customizada será criada. Apenas a propriedade nativa LinkedIn URL foi aprovada para enriquecimento profissional.
