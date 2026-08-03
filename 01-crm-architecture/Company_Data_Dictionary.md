@@ -1307,6 +1307,136 @@ Criar propriedade customizada.
 - **Status:** Modelagem concluída
 - **Próxima etapa:** Configuração no HubSpot após conclusão da modelagem completa dos grupos de Company.
 
+---
+
+# Grupo 4 — Produtos e Serviços
+
+## Objetivo
+
+O Grupo **Produtos e Serviços** reúne informações relacionadas ao relacionamento da empresa com as soluções oferecidas pela organização.
+
+As propriedades deste grupo têm como objetivo identificar interesses, necessidades e características de consumo da empresa.
+
+Estas informações devem apoiar:
+
+* segmentação de clientes;
+* personalização de comunicação;
+* identificação de oportunidades;
+* estratégias de expansão;
+* análise de aderência das soluções.
+
+Informações relacionadas a negociações específicas, valores, pedidos, contratos e histórico de compras não devem ser armazenadas neste grupo, pois pertencem ao objeto **Deal**.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Products Purchased | Customizada | Não inicialmente | Customizada |
+| Main Solution Interest | Customizada | Sim | Customizada |
+| Product Category Interest | Customizada | Sim | Customizada |
+| Customer Solution Status | Customizada | Sim | Customizada |
+| Number of Active Solutions | Customizada | Não inicialmente | Customizada |
+| Preferred Service Type | Customizada | Não inicialmente | Customizada |
+| Subscription Status | Customizada | Não utilizar | Customizada |
+| Purchase History | Customizada | Não utilizar | Customizada |
+| Contract Information | Customizada | Não utilizar | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-015 — Produtos comprados pertencem ao histórico comercial
+
+Informações relacionadas a compras realizadas, valores, contratos e negociações devem ser armazenadas no objeto **Deal**.
+
+O objeto **Company** deve conter somente informações permanentes sobre características e interesses da organização.
+
+---
+
+### DA-016 — Separação entre interesse e aquisição
+
+O CRM deverá diferenciar:
+
+- interesse da empresa em uma solução;
+- solução efetivamente adquirida.
+
+Interesse pertence ao cadastro da empresa.
+
+Aquisição pertence ao processo comercial.
+
+---
+
+### DA-017 — Evitar campos que armazenam histórico
+
+Propriedades da **Company** não devem ser utilizadas para armazenar listas históricas de eventos (ex.: "Produtos comprados ao longo dos anos").
+
+Esse controle deve ocorrer através de associações entre **Company** e **Deal**.
+
+---
+
+### DA-018 — Informações de produto somente quando gerarem ação
+
+Uma propriedade relacionada a produtos somente será criada quando permitir:
+
+* segmentação;
+* automação;
+* expansão comercial;
+* atendimento personalizado;
+* análise estratégica.
+
+---
+
+### DA-019 — Priorizar modelo relacional do CRM
+
+O modelo seguirá a lógica:
+
+```text
+Empresa
+  ↓
+Relacionamento comercial
+  ↓
+Deal
+  ↓
+Produto/Serviço adquirido
+```
+
+Evitando concentrar informações diferentes dentro de um único objeto.
+
+---
+
+## Propriedades Aprovadas
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Main Solution Interest | Aprovada | Identifica interesse principal da empresa |
+| Product Category Interest | Aprovada | Permite segmentação por interesse |
+| Customer Solution Status | Aprovada | Permite acompanhamento da relação com soluções |
+
+---
+
+## Propriedades Não Utilizadas Inicialmente
+
+| Propriedade | Decisão | Motivo |
+| --- | --- | --- |
+| Products Purchased | Não utilizar inicialmente | Histórico pertence ao Deal |
+| Number of Active Solutions | Não utilizar inicialmente | Pode ser calculated futuramente |
+| Preferred Service Type | Não utilizar inicialmente | Baixa necessidade operacional inicial |
+| Subscription Status | Não utilizar inicialmente | Pertence ao contexto contratual |
+| Purchase History | Não utilizar inicialmente | Deve ser obtido através dos Deals |
+| Contract Information | Não utilizar inicialmente | Pertence ao processo financeiro/comercial |
+
+---
+
+# Status do Grupo
+
+**Grupo 4 — Produtos e Serviços**
+
+- **Status:** Modelagem arquitetural concluída
+- **Próxima etapa:** Especificação das propriedades aprovadas.
+
+
 
 
 
