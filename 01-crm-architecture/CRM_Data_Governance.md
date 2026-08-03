@@ -133,14 +133,14 @@ As propriedades customizadas seguirão um padrão de nomenclatura consistente pa
 | Grupo | Quantidade de propriedades aprovadas |
 | --- | --- |
 | Contact Information | 11 |
-| Perfil da Empresa | 5 |
+| Perfil da Empresa | 3 |
 | Informações Comerciais | 9 |
 | Produtos e Serviços | 3 |
 | Financeiro | 3 |
 | Customer Success | 6 |
 | Marketing | 8 |
 
-> **Total do Modelo:** 45 propriedades aprovadas.
+> **Total do Modelo:** 43 propriedades aprovadas.
 
 ---
 

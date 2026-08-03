@@ -676,24 +676,24 @@ A propriedade não substitui Industry, pois Industry representa o setor de atua�
 
 ## Propriedades Aprovadas
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Industry | Aprovada | Classificação global utilizada pelo HubSpot |
-| Number of Employees | Aprovada | Permite identificar porte da empresa |
-| Business Segment | Aprovada | Necessária para segmentação comercial brasileira |
-| Business Model | Aprovada | Permite classificar modelo de atuação |
-| Company Size Classification | Aprovada | Facilita relatórios e segmentações |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Industry | HubSpot | ✅ Utilizar | Classificação setorizada global nativa do HubSpot |
+| Number of Employees | HubSpot | ✅ Utilizar | Identificação do porte estrutural por contagem de funcionários |
+| Business Type | Customizada | ✅ Criar | Classificação do formato/modelo operacional da empresa |
 
 ---
 
 ## Propriedades Não Utilizadas Inicialmente
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Annual Revenue | Não utilizar inicialmente | Baixa confiabilidade e pouca aplicação operacional no início |
-| Years in Operation | Não utilizar inicialmente | Não possui impacto imediato em automações ou relatórios |
-| Target Market | Não utilizar inicialmente | Informação pode ser obtida em outros processos comerciais |
-| Main Customer Profile | Não utilizar inicialmente | Possui maior relação com estratégia comercial do que cadastro da empresa |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Company Size | HubSpot | Não utilizar inicialmente | Subsequente ao Number of Employees |
+| Annual Revenue | HubSpot | Não utilizar inicialmente | Baixa confiabilidade e pouca aplicação operacional no início |
+| Customer Segment | Customizada | Não utilizar inicialmente | Não possui processo estruturado de coleta definido |
+| Market Segment | Customizada | Não utilizar inicialmente | Pode ser derivado da combinação de Industry e Business Type |
+| Business Model | Customizada | Não utilizar inicialmente | Consolidado dentro das opções da propriedade Business Type |
+| Company Description | HubSpot | Não utilizar inicialmente | Campo de texto livre sem utilização para automação/relatório |
 
 ---
 
