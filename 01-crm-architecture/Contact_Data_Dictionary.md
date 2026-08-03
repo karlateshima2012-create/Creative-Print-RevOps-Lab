@@ -245,7 +245,6 @@ Informações relacionadas a valores, negociações e receita deverão permanece
 | Contact Information | ✅ Finalizado |
 | Sales Properties | ✅ Finalizado |
 | Social Media Information | ✅ Finalizado |
-| Email Information | ⬜ Pendente |
 | Marketing Information | ⬜ Pendente |
 
 ---
