@@ -399,5 +399,76 @@ Novos grupos somente poderão ser criados quando houver necessidade claramente d
 
 Essa padronização garante consistência, facilita a manutenção do sistema e reduz a criação de propriedades redundantes.
 
-## 8. Regras arquiteturais
-<!-- Restrições, integrações sistêmicas e regras de governança para o objeto Company -->
+# Regras Arquiteturais
+
+## Objetivo
+
+Estabelecer os princípios que orientam a modelagem do objeto **Empresa (Company)** e garantem a consistência da arquitetura do CRM da Creative Print.
+
+Essas regras deverão ser respeitadas em todas as futuras implementações, integrações e automações.
+
+---
+
+## Princípios Arquiteturais
+
+### 1. A Empresa representa o cliente, não a pessoa.
+
+O objeto Empresa representa o negócio com o qual a Creative Print mantém relacionamento comercial.
+
+As pessoas que trabalham nesse negócio deverão ser cadastradas como Contatos.
+
+---
+
+### 2. Toda informação deverá possuir um único local de armazenamento.
+
+Cada informação deverá existir apenas uma vez dentro do CRM.
+
+Não serão permitidas duplicações de propriedades entre objetos sem necessidade técnica claramente justificada.
+
+---
+
+### 3. O HubSpot será a fonte única da verdade (Single Source of Truth).
+
+Todas as informações comerciais relacionadas às Empresas deverão ser centralizadas no HubSpot.
+
+Os sistemas da Creative Print poderão consumir ou atualizar dados específicos, mas o CRM será o sistema oficial de relacionamento.
+
+---
+
+### 4. Todo relacionamento comercial deverá estar associado a uma Empresa.
+
+Sempre que existir um cliente B2B, os objetos Contato, Negócio, Ticket e Atividades deverão estar vinculados à respectiva Empresa.
+
+---
+
+### 5. O modelo de dados deverá ser escalável.
+
+A arquitetura deverá permitir a inclusão de novos produtos, serviços e processos sem necessidade de remodelar os objetos principais do CRM.
+
+---
+
+### 6. As propriedades deverão representar dados, e não processos.
+
+Uma propriedade deverá armazenar apenas uma informação.
+
+Processos de negócio serão controlados por Pipelines, Lifecycle Stage, Workflows e demais recursos do HubSpot.
+
+---
+
+### 7. Todas as alterações estruturais deverão ser documentadas.
+
+A criação de novas propriedades, grupos, regras de associação ou mudanças na arquitetura deverá ser registrada antes da implementação.
+
+Nenhuma alteração estrutural deverá ser realizada diretamente no HubSpot sem atualização da documentação do projeto.
+
+---
+
+### 8. A simplicidade terá prioridade sobre a complexidade.
+
+Sempre que houver mais de uma solução tecnicamente possível, será adotada aquela que:
+
+* utilizar menos propriedades;
+* reduzir duplicidade de informações;
+* facilitar a manutenção;
+* utilizar recursos nativos do HubSpot;
+* preservar a escalabilidade da arquitetura.
