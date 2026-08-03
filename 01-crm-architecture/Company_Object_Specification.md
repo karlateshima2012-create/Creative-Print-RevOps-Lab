@@ -264,8 +264,140 @@ não pertencem ao Lifecycle Stage.
 
 Essas situações serão controladas por propriedades específicas da Creative Print definidas posteriormente no Data Dictionary.
 
-## 7. Informações armazenadas
-<!-- Quais os grupos de propriedades e principais tipos de dados armazenados neste objeto -->
+# Informações Armazenadas
+
+## Objetivo
+
+As informações da Empresa serão organizadas em grupos funcionais.
+
+Essa organização facilitará a configuração das propriedades no HubSpot, a manutenção do CRM e a criação de automações e relatórios.
+
+Cada grupo representa um conjunto de informações com uma finalidade específica.
+
+---
+
+## 1. Identificação
+
+Armazena os dados básicos que identificam a empresa.
+
+Exemplos:
+
+* Nome da empresa
+* Nome fantasia
+* CNPJ
+* Site
+* Instagram
+* País
+* Estado
+* Cidade
+
+---
+
+## 2. Perfil da Empresa
+
+Descreve as características do negócio.
+
+Exemplos:
+
+* Segmento
+* Porte
+* Número de funcionários
+* Tipo de empresa
+* Idioma
+* Fuso horário
+
+Essas informações serão utilizadas principalmente para segmentação, relatórios e definição do ICP.
+
+---
+
+## 3. Informações Comerciais
+
+Controla o relacionamento comercial com a Creative Print.
+
+Exemplos:
+
+* Origem do Lead
+* Responsável Comercial
+* Data do Primeiro Contato
+* Data da Última Interação
+* Próxima Ação
+* Prioridade
+
+Esse grupo será utilizado principalmente pelo processo de vendas.
+
+---
+
+## 4. Produtos e Serviços
+
+Registra quais soluções da Creative Print fazem parte do relacionamento da empresa.
+
+Exemplos:
+
+* Cliente de Produtos NFC
+* Cliente CP Agenda
+* Cliente CP Review
+* Cliente CP Connect
+* Outros produtos contratados
+
+Essas informações serão utilizadas em segmentações, campanhas e Customer Success.
+
+---
+
+## 5. Financeiro
+
+Armazena indicadores financeiros relacionados ao relacionamento comercial.
+
+Exemplos:
+
+* Data da Primeira Compra
+* Data da Última Compra
+* Receita Total
+* Ticket Médio
+* Cliente Recorrente
+
+Esse grupo não substituirá um sistema financeiro, mas fornecerá indicadores para análise comercial.
+
+---
+
+## 6. Customer Success
+
+Controla o relacionamento após a venda.
+
+Exemplos:
+
+* Data de Onboarding
+* Onboarding Concluído
+* Data da Última Reunião
+* Próxima Revisão
+* Health Score (futuro)
+
+Essas informações apoiarão o acompanhamento dos clientes ao longo do tempo.
+
+---
+
+## 7. Marketing
+
+Armazena informações utilizadas para campanhas e segmentações.
+
+Exemplos:
+
+* ICP
+* Persona
+* Origem da Campanha
+* Consentimento para Marketing
+* Última Campanha Recebida
+
+Esse grupo será utilizado principalmente quando o Marketing Hub passar a fazer parte da operação.
+
+---
+
+## Considerações Arquiteturais
+
+Cada propriedade da Empresa deverá pertencer a apenas um grupo funcional.
+
+Novos grupos somente poderão ser criados quando houver necessidade claramente documentada e aprovada na arquitetura do CRM.
+
+Essa padronização garante consistência, facilita a manutenção do sistema e reduz a criação de propriedades redundantes.
 
 ## 8. Regras arquiteturais
 <!-- Restrições, integrações sistêmicas e regras de governança para o objeto Company -->
