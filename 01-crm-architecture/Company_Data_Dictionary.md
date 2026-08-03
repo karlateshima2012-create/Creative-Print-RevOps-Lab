@@ -106,8 +106,6 @@ These properties represent stable business information and support integrations,
 | City | HubSpot |
 | Record ID | HubSpot |
 | CNPJ | Custom |
-| Legal Name | Custom |
-| Trade Name | Custom |
 | Instagram Company Page | Custom |
 | Facebook Company Page | HubSpot |
 | LinkedIn Company Page | HubSpot |
@@ -523,70 +521,6 @@ Motivo:
 O HubSpot possui arquitetura global e não possui CNPJ como campo universal obrigatório.
 
 Para operações no Brasil, este dado possui valor estratégico.
-
----
-
-### Razão Social
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Razão Social |
-| Objeto | Company |
-| Tipo | Texto |
-| Categoria | Brasil |
-| Origem | Customizada |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar o nome jurídico oficial da empresa.
-
-#### Uso no Negócio
-
-Utilizado para:
-
-* contratos;
-* documentos fiscais;
-* integrações administrativas.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
-
-Separar nome comercial e nome jurídico evita mistura de informações.
-
----
-
-### Nome Fantasia
-
-#### Informações Gerais
-
-| Campo | Definição |
-| --- | --- |
-| Nome da Propriedade | Nome Fantasia |
-| Objeto | Company |
-| Tipo | Texto |
-| Categoria | Brasil |
-| Origem | Customizada |
-| Obrigatória | Sim |
-
-#### Objetivo
-
-Registrar o nome comercial oficial quando diferente da razão social.
-
-#### Uso no Negócio
-
-Utilizado para:
-
-* comunicação comercial;
-* identificação pública;
-* relacionamento com clientes.
-
-#### Decisão Arquitetural
-
-Criar propriedade customizada.
 
 ---
 
