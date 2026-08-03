@@ -137,10 +137,10 @@ As propriedades customizadas seguirão um padrão de nomenclatura consistente pa
 | Informações Comerciais | 3 |
 | Produtos e Serviços | 2 |
 | Finance | 0 |
-| Customer Success | 6 |
+| Customer Success | 2 |
 | Marketing | 8 |
 
-> **Total do Modelo:** 33 propriedades aprovadas.
+> **Total do Modelo:** 29 propriedades aprovadas.
 
 ---
 

@@ -1377,73 +1377,68 @@ Este grupo não deve armazenar informações operacionais de atendimento ou cham
 
 ## Decisões Arquiteturais
 
-### DA-025 — Separação entre relacionamento e atendimento
+### DA-016 — Separação entre pós-venda estratégico e operacional
 
-Informações relacionadas à saúde do cliente permanecerão no objeto **Company**.
+O objeto Company armazenará exclusivamente dados estratégicos do relacionamento pós-venda, como saúde do cliente e status de onboarding.
 
-Informações relacionadas a solicitações, problemas e atendimentos específicos serão controladas pelo objeto **Ticket**.
-
----
-
-### DA-026 — Customer Success possui visão diferente de Sales
-
-O estágio comercial e a saúde do cliente possuem objetivos diferentes.
-
-- **Lifecycle Stage** controla evolução comercial.
-- **Customer Status** controla relacionamento após aquisição.
+Atendimentos operacionais, dúvidas e chamados pertencem ao objeto Ticket.
 
 ---
 
-### DA-027 — Saúde do cliente deve permitir ação
+### DA-017 — Monitoramento preventivo de saúde do cliente
 
-Uma propriedade de Customer Success somente será criada quando permitir:
-
-* retenção;
-* expansão;
-* priorização;
-* prevenção de churn.
-
----
-
-### DA-028 — Evitar criar métricas sem processo definido
-
-Indicadores como:
-
-* NPS;
-* satisfação;
-* feedback;
-
-somente serão adicionados quando existir um processo estruturado de coleta e utilização.
-
----
-
-### DA-029 — Informações recorrentes dependem do modelo de negócio
-
-Campos relacionados a renovação, contratos e recorrência somente serão utilizados quando houver necessidade operacional real.
+As propriedades Customer Health e Onboarding Status serão utilizadas para acionar fluxos de acompanhamento preventivo e mitigar riscos de churn.
 
 ---
 
 ## Propriedades Aprovadas
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Customer Status | Aprovada | Controla situação atual do cliente |
-| Customer Health Score | Aprovada | Permite acompanhamento de saúde |
-| Customer Tier | Aprovada | Permite diferenciação estratégica |
-| Last Customer Interaction | Aprovada | Permite acompanhamento de relacionamento |
-| Churn Risk Level | Aprovada | Permite prevenção de perda |
-| Expansion Opportunity | Aprovada | Identifica oportunidades de crescimento |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Customer Health | Customizada | ✅ Criar | Monitorar a saúde e engajamento da conta no pós-venda |
+| Onboarding Status | Customizada | ✅ Criar | Acompanhar a evolução da etapa inicial de implantação/onboarding |
 
 ---
 
 ## Propriedades Não Utilizadas Inicialmente
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Renewal Date | Não utilizar inicialmente | Depende de modelo de contrato recorrente |
-| Support Level | Não utilizar inicialmente | Depende de estrutura de atendimento |
-| Customer Feedback Score | Não utilizar inicialmente | Necessita processo de coleta |
-| NPS Score | Não utilizar inicialmente | Necessita metodologia implantada |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Renewal Status | Customizada | Não utilizar inicialmente | Controle de renovação gerido através dos contratos/Deals |
+| Last Success Review | Customizada | Não utilizar inicialmente | Registrado automaticamente via histórico de atividades/reuniões |
+| Churn Risk | Customizada | Não utilizar inicialmente | Indicador incorporado nas opções da propriedade Customer Health |
+
+---
+
+## Especificação das Propriedades
+
+### Customer Health
+
+| Campo | Definição |
+| --- | --- |
+| Property Name | Customer Health |
+| Object | Company |
+| Group | Customer Success |
+| Type | Dropdown select |
+| Origin | Custom |
+| Options | Healthy, Attention, Critical |
+| Purpose | Monitorar o nível de saúde do cliente e engajamento com as soluções. |
+| Usage | Priorização de atendimento CS, alerta de risco de churn e relatórios de saúde da carteira. |
+
+---
+
+### Onboarding Status
+
+| Campo | Definição |
+| --- | --- |
+| Property Name | Onboarding Status |
+| Object | Company |
+| Group | Customer Success |
+| Type | Dropdown select |
+| Origin | Custom |
+| Options | Not Started, In Progress, Completed |
+| Purpose | Acompanhar o progresso de implantação/onboarding de novos clientes. |
+| Usage | Controle da jornada inicial do cliente e identificação de gargalos na implantação. |
 
 ---
 
@@ -1451,8 +1446,11 @@ Campos relacionados a renovação, contratos e recorrência somente serão utili
 
 **Grupo 6 — Customer Success**
 
-- **Status:** Modelagem arquitetural concluída
-- **Decisão arquitetural principal:** A Company armazenará informações estratégicas de relacionamento e saúde do cliente. Atendimentos e solicitações operacionais serão controlados pelo objeto Ticket.
+- **Status:** Modelado e configurado
+- **Propriedades aprovadas:**
+  * Customer Health
+  * Onboarding Status
+- **Decisão arquitetural principal:** A Company armazenará informações estratégicas de saúde do cliente e onboarding. Atendimentos e solicitações operacionais serão controlados pelo objeto Ticket.
 
 ---
 
