@@ -38,3 +38,21 @@ Este grupo deve armazenar informações sobre a oportunidade comercial, não inf
 | Priority | Classificação comercial | Avaliar | Customizada |
 | Loss Reason | Análise comercial | Avaliar | Customizada |
 | Lead Source | Origem oportunidade | Avaliar | Customizada |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-036 — Pipeline e Deal Stage são configurações comerciais
+
+Pipeline e Deal Stage não serão tratados como propriedades customizadas.
+
+Eles representam a estrutura do processo comercial e devem ser configurados no objeto Deal.
+
+---
+
+### DA-037 — Deal representa transações comerciais
+
+Informações de valor, fechamento e responsabilidade pertencem ao Deal.
+
+Dados permanentes da organização permanecem na Company.
