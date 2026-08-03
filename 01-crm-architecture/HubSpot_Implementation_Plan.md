@@ -93,6 +93,9 @@ Exemplo:
 - **Options:** Healthy, Attention, Critical
 - **Description:** Classificação da saúde do relacionamento com o cliente.
 
+**Evidência de Configuração:**
+![Print 2 — Configuração da propriedade CNPJ](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/02_company_properties/02_cnpj_configuration.png)
+
 ---
 
 ## Company Property Creation Order
