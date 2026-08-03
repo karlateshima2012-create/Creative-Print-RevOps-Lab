@@ -1298,49 +1298,51 @@ As propriedades deste grupo têm como objetivo:
 
 ## Decisões Arquiteturais
 
-### DA-014 — Separação entre classificação financeira e transações
+### DA-014 — Dados financeiros transacionais não pertencem ao objeto Company
 
-O objeto Company armazenará apenas informações financeiras estratégicas relacionadas ao cliente.
-
-Valores de negociações, pagamentos, faturamento e receitas permanecerão nos objetos apropriados.
+Informações como faturamento, pagamentos, receitas, condições comerciais específicas e histórico financeiro deverão permanecer nos objetos apropriados ou em sistemas financeiros integrados.
 
 ---
 
-### DA-015 — Propriedades financeiras devem possuir uso operacional
+### DA-015 — Grupo reservado para evolução futura
 
-Uma propriedade financeira somente será criada quando existir um processo claro que utilize essa informação em operações, segmentações ou análises.
+O grupo Finance faz parte da arquitetura do CRM, porém nenhuma propriedade será criada nesta primeira versão.
+
+Novas propriedades somente serão adicionadas quando existir um processo operacional que justifique sua utilização.
 
 ---
 
 ## Propriedades Aprovadas
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Company Revenue Range | Aprovada | Permite segmentação financeira sem exigir valor exato |
-| Customer Value Segment | Aprovada | Auxilia classificação estratégica da carteira |
-| Financial Risk Level | Aprovada | Permite gestão preventiva de risco |
+Nenhuma propriedade foi aprovada para implementação na versão inicial do CRM.
 
 ---
 
 ## Propriedades Não Utilizadas Inicialmente
 
-| Propriedade | Decisão | Motivo |
-| --- | --- | --- |
-| Annual Revenue | Não utilizar inicialmente | Baixa confiabilidade e prioridade inicial reduzida |
-| Payment Status | Não utilizar | Pertence ao processo financeiro/transacional |
-| Payment Method | Não utilizar | Informação operacional financeira |
-| Average Ticket | Não utilizar | Deve ser calculated através de Deals |
-| Contract Value | Não utilizar | Pertence ao negócio fechado |
-| Credit Rating | Não utilizar inicialmente | Necessita processo financeiro específico |
+| Propriedade | Origem | Decisão | Motivo |
+| --- | --- | --- | --- |
+| Payment Terms | Customizada | Não utilizar inicialmente | Sem processo financeiro integrado nesta fase |
+| Customer Credit Status | Customizada | Não utilizar inicialmente | Análise de crédito realizada em sistema externo |
+| Financial Risk | Customizada | Não utilizar inicialmente | Ausência de política formal de risco configurada no CRM |
+| Currency | HubSpot | Não utilizar inicialmente | Operação exclusivamente nacional em moeda BRL |
+| Annual Revenue | HubSpot | Não utilizar inicialmente | Baixa confiabilidade e pouca aplicação operacional no início |
+
+---
+
+## Especificação
+
+Nenhuma propriedade foi aprovada para implementação na versão inicial do CRM.
 
 ---
 
 # Status do Grupo
 
-**Grupo 5 — Financeiro**
+**Grupo 5 — Finance**
 
-- **Status:** Modelagem arquitetural concluída
-- **Decisão arquitetural principal:** A Company armazenará apenas informações financeiras estratégicas e classificatórias. Valores financeiros transacionais serão controlados pelo objeto Deal.
+- **Status:** Concluído (Sem propriedades nesta versão)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Nenhuma propriedade financeira foi criada nesta primeira fase para evitar complexidade desnecessária e manter a integridade dos dados.
 
 ---
 

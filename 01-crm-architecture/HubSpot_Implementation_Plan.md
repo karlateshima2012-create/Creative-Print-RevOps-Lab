@@ -59,7 +59,7 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 | 2 | Company Profile | ✅ Completed |
 | 3 | Commercial Information | ✅ Completed |
 | 4 | Products & Services | ✅ Completed |
-| 5 | Finance | ⏳ Pending |
+| 5 | Finance | ✅ Completed |
 | 6 | Customer Success | ⏳ Pending |
 | 7 | Marketing | ⏳ Pending |
 
@@ -186,7 +186,8 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 - Company Profile
 - Commercial Information
 - Products & Services
+- Finance (Concluído sem criação de propriedades)
 
 **Próxima etapa:**
 
-Configuração do grupo Finance (Financeiro).
+Configuração do grupo Customer Success.
