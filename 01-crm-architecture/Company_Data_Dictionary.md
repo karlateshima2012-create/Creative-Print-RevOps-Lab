@@ -49,3 +49,21 @@ Cada grupo será documentado em uma seção específica deste documento.
 
 # Grupo 1 — Identificação
 
+## Propriedade 01
+
+| Campo          | Valor                                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| Nome Exibido   | Company name                                                                                   |
+| Nome Interno   | `name`                                                                                         |
+| Tipo           | Single-line text                                                                               |
+| Origem         | HubSpot (Padrão)                                                                               |
+| Grupo          | Identificação                                                                                  |
+| Obrigatório    | Sim                                                                                            |
+| Valor Padrão   | Não                                                                                            |
+| Origem do Dado | Comercial / Formulários / Importação                                                           |
+| Responsável    | Comercial                                                                                      |
+| Atualização    | Criação da Empresa                                                                             |
+| Utilização     | Identificação principal da Empresa                                                             |
+| Justificativa  | Identificador principal do objeto Company. Todas as Empresas deverão possuir um nome definido. |
+
+
