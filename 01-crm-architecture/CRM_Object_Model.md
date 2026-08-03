@@ -258,10 +258,79 @@ A separação correta dos objetos permitirá:
 
 ---
 
+# Evolução da Implementação — Company Object
+
+Durante a etapa de implementação do modelo Company no HubSpot, o primeiro grupo de propriedades foi validado e configurado.
+
+## Grupo Implementado
+
+### Company Information
+
+Responsável por armazenar informações principais de identificação e cadastro da empresa.
+
+Propriedades utilizadas:
+
+| Propriedade | Origem |
+| --- | --- |
+| Company Name | HubSpot |
+| Website URL | HubSpot |
+| Phone Number | HubSpot |
+| Country/Region | HubSpot |
+| State/Region | HubSpot |
+| City | HubSpot |
+| Record ID | HubSpot |
+| CNPJ | Customizada |
+
+---
+
+### Social Media Information
+
+Responsável por armazenar os canais digitais oficiais da empresa.
+
+Propriedades utilizadas:
+
+| Propriedade | Origem |
+| --- | --- |
+| Facebook Company Page | HubSpot |
+| LinkedIn Company Page | HubSpot |
+| Instagram Company Page | Customizada |
+
+---
+
+## Decisões de Implementação
+
+### DI-001 — Reutilização de propriedades nativas do HubSpot
+
+As propriedades existentes no HubSpot foram priorizadas sempre que atenderam ao requisito de negócio, evitando duplicidade de informações.
+
+### DI-002 — Criação de propriedades específicas para o mercado brasileiro
+
+A propriedade CNPJ foi criada como campo customizado devido à necessidade de identificação empresarial no mercado brasileiro.
+
+### DI-003 — Separação entre cadastro empresarial e presença digital
+
+Informações cadastrais permanecem no grupo Company Information.
+
+Informações relacionadas aos canais digitais permanecem no grupo Social Media Information.
+
+---
+
+## Evidências
+
+A implementação foi documentada através de capturas de tela armazenadas em:
+
+`Documentation/evidence/hubspot/company/`
+* `01/` (`01_company_information_group.png`)
+* `02/` (`02_cnpj_configuration.png`)
+* `03/` (`03_instagram_company_page_configuration.png`)
+
+---
+
 # Status da Entrega
 
 **Entrega 04 — CRM Object Model**
 
-- **Status:** Modelagem inicial concluída
+- **Status:** Modelagem e primeira implementação do objeto Company concluídas.
+- **Objeto implementado:** Company
+- **Grupos configurados:** Company Information e Social Media Information
 - **Próxima etapa:** Entrega 05 — HubSpot Implementation Plan
-- **Objetivo da próxima etapa:** Transformar o modelo arquitetural em plano de configuração dentro do HubSpot.

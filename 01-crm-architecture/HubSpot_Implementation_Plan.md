@@ -64,7 +64,7 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 | 7 | Marketing |
 
 **Evidência de Implementação:**
-![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/01_property_groups/01_company_information_group.png)
+![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/01/01_company_information_group.png)
 
 ---
 
@@ -94,7 +94,7 @@ Exemplo:
 - **Description:** Classificação da saúde do relacionamento com o cliente.
 
 **Evidência de Configuração:**
-![Print 2 — Configuração da propriedade CNPJ](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/02_company_properties/02_cnpj_configuration.png)
+![Print 2 — Configuração da propriedade CNPJ](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/02/02_cnpj_configuration.png)
 
 ---
 
