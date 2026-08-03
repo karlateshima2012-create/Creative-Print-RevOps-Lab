@@ -634,63 +634,29 @@ Este grupo não deve armazenar informações de negociação, receita ou histór
 
 ## Decisões Arquiteturais
 
-### DA-005 — Utilização de propriedades globais quando disponíveis
+### DA-005 — Utilizar propriedades nativas para classificação organizacional
 
-Sempre que uma propriedade padrão do HubSpot atender ao requisito de negócio, ela será utilizada antes da criação de uma propriedade customizada.
-
-Exemplo:
-
-A propriedade **Industry** será utilizada para classificação geral da empresa, evitando a criação de um campo duplicado.
+Propriedades padrão do HubSpot serão utilizadas quando atenderem aos objetivos de segmentação e análise da empresa.
 
 ---
 
-### DA-006 — Separação entre classificação global e segmentação comercial
+### DA-006 — Evitar duplicidade entre tamanho da empresa e segmentação
 
-O CRM utilizará propriedades globais do HubSpot para classificações universais e propriedades customizadas para informações específicas do mercado ou estratégia comercial.
-
-Exemplo:
-
-- **Industry** representa a classificação global da empresa.
-- **Business Segment** representa a segmentação comercial utilizada pela organização.
+A classificação de porte será realizada utilizando Company Size e Number of Employees, evitando a criação de campos redundantes.
 
 ---
 
-### DA-007 — Dados calculáveis não serão mantidos manualmente
+### DA-007 — Criar segmentações estratégicas somente quando agregarem valor
 
-Propriedades que podem ser derivadas a partir de outros dados não devem depender de preenchimento manual.
-
-Exemplo:
-
-A propriedade **Company Size Classification** será baseada na informação de **Number of Employees** e poderá ser gerada através de automação.
+Novas propriedades de segmentação serão criadas apenas quando forem necessárias para filtros, automações ou relatórios.
 
 ---
 
-### DA-008 — Evitar duplicidade entre propriedades de ciclo de vida
+### DA-008 — Separar características da empresa de informações comerciais
 
-Propriedades relacionadas ao relacionamento da empresa com a organização não devem ser armazenadas neste grupo.
+Dados relacionados ao perfil organizacional permanecerão no objeto Company.
 
-Exemplo:
-
-Informações como:
-
-* cliente ativo;
-* oportunidade;
-* lead;
-* status comercial;
-
-serão tratadas nos grupos apropriados ou através das propriedades padrão do HubSpot.
-
----
-
-### DA-009 — Criar propriedades somente quando existir finalidade operacional
-
-Uma propriedade somente fará parte do CRM quando possuir pelo menos um dos seguintes objetivos:
-
-* segmentação;
-* automação;
-* integração;
-* relatório;
-* apoio à tomada de decisão.
+Informações de vendas, negociação e receita serão tratadas no grupo Informações Comerciais.
 
 ---
 
