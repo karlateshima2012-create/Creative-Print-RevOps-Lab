@@ -67,6 +67,21 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 ---
 
+## Contact Object Implementation
+
+A configuração do objeto **Contact** segue as diretrizes validadas no *Contact Data Dictionary*.
+
+### Property Groups
+
+| Ordem | Grupo | Tipo | Status |
+| --- | --- | --- | --- |
+| 1 | Contact Information | Nativo | ✅ Completed |
+| 2 | Sales Properties | Nativo | ✅ Completed |
+| 3 | Social Media Information | Nativo | ✅ Completed |
+| 4 | Marketing Information | Nativo | ✅ Completed (Sem custom v1) |
+
+---
+
 ## Property Creation Standard
 
 Todas as propriedades deverão seguir o padrão:
@@ -173,19 +188,15 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 
 ---
 
-# Status da Entrega
+**Status da Entrega**
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Concluído
+- **Status:** Concluído (Company & Contact)
 
-**Grupos configurados:**
+**Objetos e grupos configurados:**
 
-- Company Information (nativo)
-- Social Media Information (nativo)
-- Sales Properties (nativo)
-- Products & Services (custom)
-- Customer Success (custom)
-- Marketing (custom)
+- **Company:** Company Information, Social Media Information, Sales Properties, Products & Services, Customer Success, Marketing.
+- **Contact:** Contact Information, Sales Properties, Social Media Information, Marketing Information (Nativo sem custom v1).
 
 *Nota: O grupo Finance foi mantido reservado na arquitetura, sem criação de propriedades na v1.*
