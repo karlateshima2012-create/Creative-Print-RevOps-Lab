@@ -292,7 +292,33 @@ Indicadores gerados pelo HubSpot devem ser utilizados diretamente, evitando cria
 | Deal Information | ✅ Finalizado |
 | Deal Revenue | ✅ Finalizado |
 | Deal Activity | ✅ Finalizado |
-| Analytics History | ⬜ Pendente |
+| Analytics History | ⏳ Em andamento |
 | Professional Services Information | ⬜ Pendente |
 | HubSpot Metrics | ⬜ Pendente |
 | Outros grupos técnicos | ⬜ Pendente |
+
+---
+
+# Grupo 4 — Analytics History
+
+## Objetivo
+
+O grupo Analytics History reúne informações históricas de origem de tráfego associadas aos registros de Deal.
+
+Essas propriedades são geradas automaticamente pelo HubSpot para rastrear a origem dos registros e apoiar análises de aquisição.
+
+Este grupo não deve ser utilizado para armazenar informações comerciais inseridas manualmente pela equipe.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Latest Traffic Source | Origem de aquisição | Não inicialmente | HubSpot |
+| Latest Traffic Source Data 1 | Detalhamento de origem | Não inicialmente | HubSpot |
+| Latest Traffic Source Data 2 | Detalhamento de origem | Não inicialmente | HubSpot |
+| Latest Traffic Source Timestamp | Data de aquisição | Não inicialmente | HubSpot |
+| Original Traffic Source | Origem inicial | Não inicialmente | HubSpot |
+| Original Traffic Source Drill-Down 1 | Detalhamento de origem | Não inicialmente | HubSpot |
+| Original Traffic Source Drill-Down 2 | Detalhamento de origem | Não inicialmente | HubSpot |
