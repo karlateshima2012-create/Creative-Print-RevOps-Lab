@@ -620,6 +620,9 @@ O grupo **Sales Properties** reúne as propriedades padrão do HubSpot utilizada
 | Lead Status | HubSpot | Sales Properties |
 | Company Owner | HubSpot | Sales Properties |
 
+**Evidência de Configuração:**
+![Print — Estrutura do grupo Sales Properties](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/sales-properties/01_sales_properties_group.png)
+
 ---
 
 # Group 3 — Finance
@@ -989,14 +992,29 @@ Recursos de consentimento, assinatura de e-mails e métricas de campanhas utiliz
 
 ---
 
-## Propriedades Não Utilizadas Inicialmente
+## Especificação das Propriedades
 
-| Propriedade | Origem | Decisão | Motivo |
-| --- | --- | --- | --- |
-| Marketing Consent Status | HubSpot | Não utilizar inicialmente | Consentimento e GDPR gerenciados nativamente no nível de Contact |
-| Lead Source Detail | Customizada | Não utilizar inicialmente | Detalhamento adicional sem processo operacional estruturado |
-| Newsletter Subscriber | HubSpot | Não utilizar inicialmente | Inscrição em newsletters é associada diretamente a contatos |
-| Marketing Qualified | HubSpot | Não utilizar inicialmente | Qualificação controlada nativamente via Lifecycle Stage |
+| Property | Group | Type |
+| --- | --- | --- |
+| Primary Acquisition Channel | Marketing | Dropdown select |
+
+---
+
+### Primary Acquisition Channel
+
+| Campo | Definição |
+| --- | --- |
+| Property Name | Primary Acquisition Channel |
+| Object | Company |
+| Group | Marketing |
+| Type | Dropdown select |
+| Origin | Custom |
+| Options | Organic Search, Google Ads, Instagram, Facebook, LinkedIn, Referral, WhatsApp, Event, Direct, Other |
+| Purpose | Identificar o canal principal de aquisição da empresa. |
+| Usage | Segmentação de campanhas, análise de ROI e estratégia de aquisição. |
+
+**Evidência de Configuração:**
+![Print — Configuração Primary Acquisition Channel](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/marketing/01_primary_acquisition_channel_configuration.png)
 
 ---
 
@@ -1004,7 +1022,7 @@ Recursos de consentimento, assinatura de e-mails e métricas de campanhas utiliz
 
 **Grupo 7 — Marketing**
 
-- **Status:** Modelado e em configuração
+- **Status:** Modelado e configurado
 - **Propriedades aprovadas:**
   * Primary Acquisition Channel
 - **Decisão arquitetural principal:** O CRM utilizará propriedades nativas do HubSpot para rastreamento e comunicação individual, criando apenas propriedades customizadas estratégicas para a empresa.
