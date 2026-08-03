@@ -1412,6 +1412,13 @@ As propriedades Customer Health e Onboarding Status serão utilizadas para acion
 
 ## Especificação das Propriedades
 
+| Property | Group | Type |
+| --- | --- | --- |
+| Customer Health | Customer Success | Dropdown select |
+| Onboarding Status | Customer Success | Dropdown select |
+
+---
+
 ### Customer Health
 
 | Campo | Definição |
