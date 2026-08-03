@@ -656,6 +656,171 @@ Novas etapas somente serão adicionadas quando existir uma mudança real no proc
 
 ---
 
+# Deal Stage Governance
+
+## Objetivo
+
+A governança dos Deal Stages define os critérios necessários para movimentar uma oportunidade dentro do pipeline comercial.
+
+O objetivo é garantir:
+
+* qualidade dos dados comerciais;
+* previsibilidade do pipeline;
+* padronização do processo de vendas;
+* melhores relatórios;
+* preparação para automações futuras.
+
+Uma oportunidade somente deve avançar quando os critérios da etapa atual forem atendidos.
+
+---
+
+## Stage Requirements
+
+### Stage 1 — New Opportunity
+
+#### Objetivo
+
+Registrar uma nova oportunidade comercial.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Deal Name | Sim |
+| Associated Company | Sim |
+| Associated Contact | Recomendado |
+| Deal Owner | Sim |
+
+#### Critério de avanço:
+
+A oportunidade possui uma necessidade comercial identificada.
+
+---
+
+### Stage 2 — Qualified Opportunity
+
+#### Objetivo
+
+Confirmar que existe potencial real de negócio.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Deal Name | Sim |
+| Company | Sim |
+| Contact | Sim |
+| Amount | Recomendado |
+| Product/Solution Interest | Recomendado |
+
+#### Critério de avanço:
+
+Existe necessidade, interesse e possibilidade de compra.
+
+---
+
+### Stage 3 — Proposal Sent
+
+#### Objetivo
+
+Registrar que uma proposta comercial foi apresentada.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Amount | Sim |
+| Close Date | Sim |
+| Deal Description | Recomendado |
+| Product/Solution | Recomendado |
+
+#### Critério de avanço:
+
+Cliente recebeu a proposta e está avaliando.
+
+---
+
+### Stage 4 — Negotiation
+
+#### Objetivo
+
+Acompanhar ajustes finais antes do fechamento.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Amount | Sim |
+| Close Date | Sim |
+| Decision Timeline | Futuro |
+| Notes | Recomendado |
+
+#### Critério de avanço:
+
+Cliente demonstra intenção de compra.
+
+---
+
+### Stage 5 — Closed Won
+
+#### Objetivo
+
+Registrar uma venda concluída.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Amount | Sim |
+| Close Date | Sim |
+| Product/Solution | Sim |
+| Associated Company | Sim |
+
+#### Critério:
+
+Compra confirmada.
+
+---
+
+### Stage 6 — Closed Lost
+
+#### Objetivo
+
+Registrar oportunidade perdida.
+
+#### Informações mínimas necessárias:
+
+| Campo | Obrigatório |
+| --- | --- |
+| Loss Reason | Futuro |
+| Notes | Recomendado |
+
+#### Critério:
+
+Cliente decidiu não prosseguir.
+
+---
+
+## Decisões Arquiteturais de Governança
+
+### DA-055 — Cada etapa possui critérios de entrada e saída
+
+O pipeline deve representar evolução real da oportunidade.
+
+---
+
+### DA-056 — Dados obrigatórios aumentam qualidade do CRM
+
+Campos críticos devem ser preenchidos antes de avançar etapas importantes.
+
+---
+
+### DA-057 — Motivos de perda serão estruturados futuramente
+
+Loss Reason será criado somente quando houver volume suficiente de oportunidades perdidas para gerar análise.
+
+---
+
 ## Configurações Aprovadas do Objeto Deal
 
 Além das propriedades, o objeto Deal possui configurações que fazem parte da arquitetura:
@@ -726,12 +891,8 @@ Métricas como MRR, ARR e TCV serão utilizadas quando os produtos SaaS da Creat
 
 # Status do Deal Data Dictionary
 
-| Grupo | Status |
+| Item | Status |
 | --- | --- |
-| Deal Information | ✅ Finalizado |
-| Deal Revenue | ✅ Finalizado |
-| Deal Activity | ✅ Finalizado |
-| Analytics History | ✅ Finalizado |
-| Professional Services Information | ✅ Finalizado |
-| HubSpot Metrics | ✅ Finalizado |
-| Technical Groups | ✅ Revisados |
+| Deal Properties | ✅ Finalizado |
+| Pipeline Definition | ✅ Finalizado |
+| Stage Governance | ✅ Finalizado |
