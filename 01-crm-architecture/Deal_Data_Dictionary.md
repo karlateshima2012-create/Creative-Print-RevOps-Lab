@@ -230,15 +230,15 @@ Informações operacionais geradas automaticamente pelo sistema não devem ser a
 
 ## Decisões Arquiteturais
 
-### DA-041 — Atividades devem ser geradas e atualizadas automaticamente
+### DA-041 — Atividades não substituem dados comerciais
 
-Propriedades de data e contagem de atividades são mantidas automaticamente pelo HubSpot com base nas ligações, reuniões, e-mails e tarefas registradas.
+Informações de interação representam o histórico operacional da venda e não devem substituir propriedades estruturadas do Deal.
 
 ---
 
-### DA-042 — Evitar criação de campos manuais para controle de atividades
+### DA-042 — Métricas automáticas não devem ser recriadas
 
-Campos livres de texto ou controle manual de tarefas não serão criados como propriedades, pois o controle deve ser feito na timeline de atividades do registro.
+Indicadores gerados pelo HubSpot devem ser utilizados diretamente, evitando criação de campos duplicados.
 
 ---
 
@@ -248,8 +248,8 @@ Campos livres de texto ou controle manual de tarefas não serão criados como pr
 
 | Propriedade | Origem | Tipo |
 | --- | --- | --- |
-| Last Activity Date | HubSpot | Date picker |
-| Next Activity Date | HubSpot | Date picker |
+| Last Activity Date | HubSpot | Date |
+| Next Activity Date | HubSpot | Date |
 
 ---
 
@@ -257,19 +257,19 @@ Campos livres de texto ou controle manual de tarefas não serão criados como pr
 
 | Propriedade | Motivo |
 | --- | --- |
-| Last Contacted | Sobreposição funcional com Last Activity Date |
-| Number of Sales Activities | Métrica agregada a ser avaliada em relatórios |
+| Number of Sales Activities | Pode ser útil para métricas comerciais |
 
 ---
 
-### Não Utilizar / Inexistentes
+### Não Utilizar Inicialmente
 
 | Propriedade | Motivo |
 | --- | --- |
-| Next Step | Registrado como tarefas ou notas na timeline |
-| Notes Last Updated | Gerenciado nativamente no histórico da timeline |
-| Created By User ID | Campo interno de sistema do HubSpot |
-| Updated By User ID | Campo interno de sistema do HubSpot |
+| Last Contacted | Duplicidade conceitual com Last Activity Date |
+| Next Step | Não existe no ambiente |
+| Notes Last Updated | Não existe no ambiente |
+| Created By User ID | Auditoria técnica |
+| Updated By User ID | Auditoria técnica |
 
 ---
 
@@ -293,3 +293,6 @@ Campos livres de texto ou controle manual de tarefas não serão criados como pr
 | Deal Revenue | ✅ Finalizado |
 | Deal Activity | ✅ Finalizado |
 | Analytics History | ⬜ Pendente |
+| Professional Services Information | ⬜ Pendente |
+| HubSpot Metrics | ⬜ Pendente |
+| Outros grupos técnicos | ⬜ Pendente |
