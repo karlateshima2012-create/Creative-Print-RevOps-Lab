@@ -1854,6 +1854,48 @@ Campos relacionados a renovação, contratos e recorrência somente serão utili
 - **Status:** Modelagem arquitetural concluída
 - **Decisão arquitetural principal:** A Company armazenará informações estratégicas de relacionamento e saúde do cliente. Atendimentos e solicitações operacionais serão controlados pelo objeto Ticket.
 
+---
+
+# Grupo 7 — Marketing
+
+## Objetivo
+
+O Grupo **Marketing** reúne informações relacionadas à origem, segmentação e relacionamento da empresa com ações de marketing.
+
+As propriedades deste grupo têm como objetivo permitir uma comunicação mais personalizada, análise de campanhas e criação de estratégias de relacionamento.
+
+Estas informações devem apoiar:
+
+* segmentação de campanhas;
+* análise de aquisição;
+* personalização de comunicação;
+* nutrição de leads;
+* análise de desempenho de marketing.
+
+Informações técnicas capturadas automaticamente pelo HubSpot devem utilizar propriedades nativas da plataforma.
+
+Propriedades customizadas devem existir somente quando adicionarem uma visão estratégica específica do negócio.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Original Source | Global | Sim | HubSpot |
+| Latest Source | Global | Sim | HubSpot |
+| First Conversion | Global | Sim | HubSpot |
+| Campaign | Global | Sim | HubSpot |
+| Marketing Segment | Customizada | Sim | Customizada |
+| Persona | Customizada | Sim | Customizada |
+| Content Interest | Customizada | Sim | Customizada |
+| Communication Preference | Customizada | Sim | Customizada |
+| Marketing Qualified Status | Customizada | Não inicialmente | Customizada |
+| Newsletter Subscription | Customizada | Não inicialmente | Customizada |
+| Campaign History | Customizada | Não utilizar | Customizada |
+| Engagement Score | Customizada | Não inicialmente | Customizada |
+
+
 
 
 
