@@ -111,5 +111,48 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
 | Grupo | Status |
 | --- | --- |
 | Ticket Information | ✅ Finalizado |
-| Ticket Activity | ⬜ Pendente |
+| Ticket Activity | ⏳ Em andamento |
 | Ticket Metrics | ⬜ Pendente |
+
+---
+
+# Grupo 2 — Ticket Activity
+
+## Objetivo
+
+O grupo Ticket Activity reúne propriedades relacionadas ao histórico de movimentação, interação e desempenho dos chamados.
+
+Essas propriedades permitem acompanhar:
+
+* tempo de resolução;
+* velocidade de atendimento;
+* histórico de interações;
+* qualidade do suporte.
+
+A maioria dessas informações é gerada automaticamente pelo HubSpot e não deve ser preenchida manualmente.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem |
+| --- | --- | --- | --- |
+| Create Date | Data de criação | Sim | HubSpot |
+| Close Date | Data de fechamento | Sim | HubSpot |
+| Last Modified Date | Histórico | Não inicialmente | HubSpot |
+| Last Activity Date | Histórico de interação | Sim | HubSpot |
+| Next Activity Date | Próxima ação | Sim | HubSpot |
+| Last Customer Reply Date | Resposta do cliente | Sim | HubSpot |
+| First Agent Email Response Date | Primeiro atendimento | Sim | HubSpot |
+| Time to First Agent Email Reply | SLA atendimento | Avaliar | HubSpot |
+| Time to Close | SLA resolução | Avaliar | HubSpot |
+| Ticket Reopen Date | Reabertura | Não inicialmente | HubSpot |
+| Last Closed Date | Histórico | Não inicialmente | HubSpot |
+| Owner Assigned Date | Responsabilidade | Não inicialmente | HubSpot |
+| Number of Times Contacted | Métrica interação | Não inicialmente | HubSpot |
+| Number of Sales Activities | Métrica atividade | Não inicialmente | HubSpot |
+| Last CSAT Survey Rating | Satisfação cliente | Avaliar | HubSpot |
+| Last CSAT Survey Date | Pesquisa satisfação | Avaliar | HubSpot |
+| Last CSAT Survey Comment | Feedback cliente | Avaliar | HubSpot |
+| Last NPS Survey Comment | Feedback cliente | Avaliar | HubSpot |
+| Portal-wide Snooze | Controle interno | Não | HubSpot |
