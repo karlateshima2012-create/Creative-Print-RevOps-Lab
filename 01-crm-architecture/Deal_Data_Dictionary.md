@@ -322,3 +322,64 @@ Este grupo não deve ser utilizado para armazenar informações comerciais inser
 | Original Traffic Source | Origem inicial | Não inicialmente | HubSpot |
 | Original Traffic Source Drill-Down 1 | Detalhamento de origem | Não inicialmente | HubSpot |
 | Original Traffic Source Drill-Down 2 | Detalhamento de origem | Não inicialmente | HubSpot |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-043 — Dados de aquisição pertencem ao contexto de Marketing
+
+Informações de origem de tráfego devem permanecer associadas ao processo de aquisição de contatos, evitando replicação desnecessária no objeto Deal.
+
+---
+
+### DA-044 — Propriedades técnicas do HubSpot não devem ser operacionalizadas
+
+Campos criados automaticamente pela plataforma serão utilizados apenas quando houver necessidade analítica específica.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Nenhuma | — | — |
+
+---
+
+### Não Utilizar Inicialmente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Latest Traffic Source | Informação de marketing, não comercial |
+| Latest Traffic Source Data 1 | Campo técnico automático |
+| Latest Traffic Source Data 2 | Campo técnico automático |
+| Latest Traffic Source Timestamp | Campo técnico automático |
+| Original Traffic Source | Evitar duplicidade com Contact |
+| Original Traffic Source Drill-Down 1 | Campo técnico automático |
+| Original Traffic Source Drill-Down 2 | Campo técnico automático |
+
+---
+
+# Status do Grupo
+
+**Grupo 4 — Analytics History**
+
+- **Status:** ✅ Finalizado (sem propriedades aprovadas)
+- **Propriedades aprovadas:** Nenhuma nesta versão
+- **Decisão arquitetural principal:** Informações de origem de tráfego pertencem ao contexto de Marketing e aquisição de contatos, não sendo operacionalizadas no objeto Deal nesta fase.
+
+---
+
+# Status de Implementação dos Grupos do Deal
+
+| Grupo | Status |
+| --- | --- |
+| Deal Information | ✅ Finalizado |
+| Deal Revenue | ✅ Finalizado |
+| Deal Activity | ✅ Finalizado |
+| Analytics History | ✅ Finalizado (sem propriedades aprovadas) |
+| Professional Services Information | ⬜ Pendente |
+| HubSpot Metrics | ⬜ Pendente |
