@@ -602,19 +602,17 @@ Utilizar propriedade nativa do HubSpot (`facebook_company_page`).
 
 ## Objetivo
 
-O Grupo **Perfil da Empresa** reúne informações estruturais e classificatórias sobre uma organização.
+O grupo Perfil da Empresa reúne informações responsáveis por descrever as características organizacionais da empresa dentro do CRM.
 
-As propriedades deste grupo têm como objetivo permitir compreender o contexto da empresa, seu porte, segmento de atuação e características gerais.
+Essas propriedades têm como objetivo permitir:
 
-Estas informações devem apoiar:
+* segmentação de empresas;
+* classificação de clientes;
+* personalização de abordagens comerciais;
+* criação de relatórios estratégicos;
+* análise da carteira de empresas.
 
-* segmentação comercial;
-* personalização da comunicação;
-* análise de mercado;
-* criação de relatórios;
-* definição de estratégias de relacionamento.
-
-As propriedades deste grupo não devem armazenar informações relacionadas diretamente a oportunidades comerciais, produtos adquiridos ou dados financeiros.
+Este grupo não deve armazenar informações de negociação, receita ou histórico de relacionamento, pois esses dados pertencem aos objetos e grupos específicos correspondentes.
 
 ---
 
@@ -623,15 +621,14 @@ As propriedades deste grupo não devem armazenar informações relacionadas dire
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
 | Industry | Global | Sim | HubSpot |
-| Company Type | Global | Sim | HubSpot |
+| Company Size | Global | Sim | HubSpot |
 | Number of Employees | Global | Sim | HubSpot |
 | Annual Revenue | Global | Não inicialmente | HubSpot |
-| Business Segment | Brasil | Sim | Customizada |
-| Business Model | Brasil | Sim | Customizada |
-| Company Size Classification | Customizada | Sim | Customizada |
-| Years in Operation | Brasil | Não inicialmente | Customizada |
-| Target Market | Customizada | Não inicialmente | Customizada |
-| Main Customer Profile | Customizada | Não inicialmente | Customizada |
+| Business Type | Customizada | Sim | Customizada |
+| Customer Segment | Customizada | Sim | Customizada |
+| Market Segment | Customizada | Sim | Customizada |
+| Business Model | Customizada | Não inicialmente | Customizada |
+| Company Description | Global | Não inicialmente | HubSpot |
 
 ---
 
