@@ -1465,21 +1465,16 @@ As propriedades Customer Health e Onboarding Status serão utilizadas para acion
 
 ## Objetivo
 
-O Grupo **Marketing** reúne informações relacionadas à origem, segmentação e relacionamento da empresa com ações de marketing.
+O grupo Marketing reúne informações utilizadas para segmentação, campanhas e análise da origem do relacionamento com a empresa.
 
-As propriedades deste grupo têm como objetivo permitir uma comunicação mais personalizada, análise de campanhas e criação de estratégias de relacionamento.
-
-Estas informações devem apoiar:
+As propriedades deste grupo têm como objetivo apoiar:
 
 * segmentação de campanhas;
-* análise de aquisição;
-* personalização de comunicação;
-* nutrição de leads;
-* análise de desempenho de marketing.
+* personalização da comunicação;
+* análise de aquisição de clientes;
+* automações de marketing.
 
-Informações técnicas capturadas automaticamente pelo HubSpot devem utilizar propriedades nativas da plataforma.
-
-Propriedades customizadas devem existir somente quando adicionarem uma visão estratégica específica do negócio.
+Este grupo não deve armazenar métricas de campanhas ou atividades de marketing, pois essas informações são registradas automaticamente pelo HubSpot.
 
 ---
 
@@ -1487,18 +1482,11 @@ Propriedades customizadas devem existir somente quando adicionarem uma visão es
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Original Source | Global | Sim | HubSpot |
-| Latest Source | Global | Sim | HubSpot |
-| First Conversion | Global | Sim | HubSpot |
-| Campaign | Global | Sim | HubSpot |
-| Marketing Segment | Customizada | Sim | Customizada |
-| Persona | Customizada | Sim | Customizada |
-| Content Interest | Customizada | Sim | Customizada |
-| Communication Preference | Customizada | Sim | Customizada |
-| Marketing Qualified Status | Customizada | Não inicialmente | Customizada |
-| Newsletter Subscription | Customizada | Não inicialmente | Customizada |
-| Campaign History | Customizada | Não utilizar | Customizada |
-| Engagement Score | Customizada | Não inicialmente | Customizada |
+| Primary Acquisition Channel | Customizada | Sim | Customizada |
+| Marketing Consent Status | HubSpot | Não | HubSpot |
+| Lead Source Detail | Customizada | Não inicialmente | Customizada |
+| Newsletter Subscriber | HubSpot | Não | HubSpot |
+| Marketing Qualified | HubSpot | Não | HubSpot |
 
 ---
 
