@@ -104,18 +104,6 @@ Dados permanentes da organização permanecem na Company.
 
 ---
 
-# Status de Implementação dos Grupos do Deal
-
-| Grupo | Status |
-| --- | --- |
-| Deal Information | ✅ Finalizado |
-| Deal Revenue | ✅ Finalizado |
-| Deal Activity | ⬜ Pendente |
-| Analytics History | ⬜ Pendente |
-| Outros grupos técnicos | ⬜ Pendente |
-
----
-
 # Grupo 2 — Deal Revenue
 
 ## Objetivo
@@ -206,3 +194,102 @@ Conversões monetárias e cálculos automáticos devem permanecer sob responsabi
 - **Propriedades aprovadas:**
   * Amount
 - **Decisão arquitetural principal:** O grupo utilizará a propriedade nativa Amount para controle financeiro da oportunidade. Métricas recorrentes SaaS (ARR/MRR) serão avaliadas futuramente com a maturidade da operação.
+
+---
+
+# Grupo 3 — Deal Activity
+
+## Objetivo
+
+O grupo Deal Activity reúne informações relacionadas ao histórico de interações, engajamento e acompanhamento de tarefas operacionais associadas às oportunidades comerciais.
+
+Essas propriedades têm como objetivo apoiar:
+
+* visibilidade sobre o andamento do negócio;
+* acompanhamento da produtividade comercial;
+* prevenção de estagnação de oportunidades no funil.
+
+Informações operacionais geradas automaticamente pelo sistema não devem ser atualizadas manualmente pelos usuários.
+
+---
+
+## Propriedades Candidatas
+
+| Propriedade | Categoria | Necessária? | Origem | Grupo |
+| --- | --- | --- | --- | --- |
+| Last Activity Date | Histórico de interação | Sim | HubSpot | Deal Activity |
+| Next Activity Date | Próxima ação comercial | Sim | HubSpot | Deal Activity |
+| Number of Sales Activities | Volume de atividades | Não inicialmente | HubSpot | Deal Activity |
+| Last Contacted | Último contato realizado | Avaliar | HubSpot | Deal Activity |
+| Next Step | Próxima etapa comercial | Não existe | — | — |
+| Notes Last Updated | Histórico | Não existe | — | — |
+| Created By User ID | Auditoria | Não existe | — | — |
+| Updated By User ID | Auditoria | Não existe | — | — |
+
+---
+
+## Decisões Arquiteturais
+
+### DA-041 — Atividades devem ser geradas e atualizadas automaticamente
+
+Propriedades de data e contagem de atividades são mantidas automaticamente pelo HubSpot com base nas ligações, reuniões, e-mails e tarefas registradas.
+
+---
+
+### DA-042 — Evitar criação de campos manuais para controle de atividades
+
+Campos livres de texto ou controle manual de tarefas não serão criados como propriedades, pois o controle deve ser feito na timeline de atividades do registro.
+
+---
+
+## Resultado
+
+### Propriedades Aprovadas
+
+| Propriedade | Origem | Tipo |
+| --- | --- | --- |
+| Last Activity Date | HubSpot | Date picker |
+| Next Activity Date | HubSpot | Date picker |
+
+---
+
+### Avaliar Futuramente
+
+| Propriedade | Motivo |
+| --- | --- |
+| Last Contacted | Sobreposição funcional com Last Activity Date |
+| Number of Sales Activities | Métrica agregada a ser avaliada em relatórios |
+
+---
+
+### Não Utilizar / Inexistentes
+
+| Propriedade | Motivo |
+| --- | --- |
+| Next Step | Registrado como tarefas ou notas na timeline |
+| Notes Last Updated | Gerenciado nativamente no histórico da timeline |
+| Created By User ID | Campo interno de sistema do HubSpot |
+| Updated By User ID | Campo interno de sistema do HubSpot |
+
+---
+
+# Status do Grupo
+
+**Grupo 3 — Deal Activity**
+
+- **Status:** ✅ Finalizado
+- **Propriedades aprovadas:**
+  * Last Activity Date
+  * Next Activity Date
+- **Decisão arquitetural principal:** O grupo utilizará as propriedades nativas de controle de atividades automáticas do HubSpot para monitorar a frequência de contato e próximos passos comerciais.
+
+---
+
+# Status de Implementação dos Grupos do Deal
+
+| Grupo | Status |
+| --- | --- |
+| Deal Information | ✅ Finalizado |
+| Deal Revenue | ✅ Finalizado |
+| Deal Activity | ✅ Finalizado |
+| Analytics History | ⬜ Pendente |
