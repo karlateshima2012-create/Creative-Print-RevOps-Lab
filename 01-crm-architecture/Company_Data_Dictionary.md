@@ -44,3 +44,8 @@ As propriedades da Empresa serão organizadas nos seguintes grupos:
 7. Marketing
 
 Cada grupo será documentado em uma seção específica deste documento.
+
+---
+
+# Grupo 1 — Identificação
+
