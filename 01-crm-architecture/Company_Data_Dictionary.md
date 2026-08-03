@@ -660,6 +660,16 @@ Informações de vendas, negociação e receita serão tratadas no grupo Informa
 
 ---
 
+### DA-009 — Business Type como classificação organizacional
+
+A propriedade Business Type será utilizada para classificar o modelo de atuação da empresa.
+
+Esta informação tem como objetivo apoiar segmentação comercial, personalização de abordagem e análises futuras.
+
+A propriedade não substitui Industry, pois Industry representa o setor de atuação enquanto Business Type representa o formato operacional da empresa.
+
+---
+
 ## Propriedades Aprovadas
 
 | Propriedade | Decisão | Motivo |
