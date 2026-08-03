@@ -53,15 +53,16 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 ### Property Groups
 
-| Ordem | Grupo |
-| --- | --- |
-| 1 | Contact Information |
-| 2 | Perfil da Empresa |
-| 3 | Informações Comerciais |
-| 4 | Produtos e Serviços |
-| 5 | Financeiro |
-| 6 | Customer Success |
-| 7 | Marketing |
+| Ordem | Grupo | Status |
+| --- | --- | --- |
+| 1 | Company Information | ✅ Completed |
+| 2 | Social Media Information | ✅ Completed |
+| 3 | Perfil da Empresa | ⏳ Pending |
+| 4 | Informações Comerciais | ⏳ Pending |
+| 5 | Produtos e Serviços | ⏳ Pending |
+| 6 | Financeiro | ⏳ Pending |
+| 7 | Customer Success | ⏳ Pending |
+| 8 | Marketing | ⏳ Pending |
 
 **Evidência de Implementação:**
 ![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/01/01_company_information_group.png)
@@ -102,13 +103,14 @@ Exemplo:
 
 | Ordem | Grupo | Motivo |
 | --- | --- | --- |
-| 1 | Contact Information | Base do cadastro |
-| 2 | Perfil da Empresa | Classificação inicial |
-| 3 | Informações Comerciais | Processo comercial |
-| 4 | Produtos e Serviços | Interesse e relacionamento |
-| 5 | Financeiro | Classificação estratégica |
-| 6 | Customer Success | Pós-venda |
-| 7 | Marketing | Segmentação |
+| 1 | Company Information | Base de identificação da empresa |
+| 2 | Social Media Information | Presença digital e canais oficiais |
+| 3 | Perfil da Empresa | Classificação organizacional |
+| 4 | Informações Comerciais | Processo e relacionamento comercial |
+| 5 | Produtos e Serviços | Interesse e soluções relacionadas |
+| 6 | Financeiro | Classificação financeira |
+| 7 | Customer Success | Gestão do relacionamento pós-venda |
+| 8 | Marketing | Segmentação e aquisição |
 
 ---
 
@@ -177,6 +179,13 @@ O CRM será configurado por etapas, priorizando estrutura, qualidade de dados e 
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Documento criado
-- **Próxima etapa:** Configuração prática do HubSpot.
-- **Primeira atividade:** Criar os Property Groups do objeto Company.
+- **Status:** Implementação em andamento
+
+**Grupos configurados:**
+
+- Company Information
+- Social Media Information
+
+**Próxima etapa:**
+
+Configuração do grupo Perfil da Empresa.
