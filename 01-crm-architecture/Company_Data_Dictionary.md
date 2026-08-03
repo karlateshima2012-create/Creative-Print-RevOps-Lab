@@ -1429,12 +1429,184 @@ Evitando concentrar informações diferentes dentro de um único objeto.
 
 ---
 
+## Especificação das Propriedades Aprovadas
+
+### Main Solution Interest
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Main Solution Interest |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Customizada |
+| Origem | Brasil |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar a principal solução ou categoria de solução na qual a empresa demonstra interesse.
+
+Esta propriedade representa uma necessidade ou intenção comercial identificada, independentemente de uma compra realizada.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* segmentação de empresas interessadas;
+* personalização de abordagem comercial;
+* criação de campanhas direcionadas;
+* priorização de oportunidades;
+* análise de demanda do mercado.
+
+#### Critérios de Preenchimento
+
+A propriedade deve representar o principal interesse identificado no relacionamento.
+
+Exemplos de valores:
+
+* CRM
+* Automação de Marketing
+* Fidelização de Clientes
+* Agendamento Online
+* Soluções NFC
+* Consultoria
+* Integrações
+
+Caso existam múltiplos interesses, o principal deve ser definido neste campo.
+
+Interesses secundários podem ser tratados futuramente através de uma propriedade de múltipla seleção ou associação com produtos.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** O HubSpot não possui uma classificação específica das soluções oferecidas pela organização. A propriedade representa uma visão estratégica própria do negócio.
+
+---
+
+### Product Category Interest
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Product Category Interest |
+| Objeto | Company |
+| Tipo | Caixa de seleção múltipla |
+| Categoria | Customizada |
+| Origem | Brasil |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar todas as categorias de soluções pelas quais a empresa possui interesse.
+
+Diferente de Main Solution Interest, esta propriedade permite múltiplas classificações.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* segmentação de marketing;
+* campanhas específicas;
+* análise de interesse da base;
+* identificação de oportunidades de expansão.
+
+#### Critérios de Preenchimento
+
+Valores sugeridos:
+
+* SaaS
+* CRM
+* Automação
+* NFC
+* Marketing Digital
+* Fidelização
+* Agendamento
+* Consultoria
+* Integrações
+
+Permite selecionar mais de uma opção.
+
+Exemplo: Uma clínica pode possuir interesse em: *CRM*, *Agendamento*, *Automação*.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** A propriedade permite uma visão ampla de interesse comercial sem substituir informações de venda ou aquisição.
+
+---
+
+### Customer Solution Status
+
+#### Informações Gerais
+
+| Campo | Definição |
+| --- | --- |
+| Nome da Propriedade | Customer Solution Status |
+| Objeto | Company |
+| Tipo | Dropdown |
+| Categoria | Customizada |
+| Origem | Brasil |
+| Obrigatória | Sim |
+
+#### Objetivo
+
+Registrar o estágio de relacionamento da empresa com uma solução específica.
+
+Esta propriedade permite identificar se a empresa está avaliando, utilizando ou deixou de utilizar uma solução.
+
+#### Uso no Negócio
+
+Utilizada para:
+
+* acompanhamento de clientes;
+* estratégias de expansão;
+* identificação de oportunidades de upgrade;
+* ações de Customer Success.
+
+#### Critérios de Preenchimento
+
+Valores sugeridos:
+
+* Não utiliza
+* Em avaliação
+* Teste/Trial
+* Implantação
+* Ativo
+* Inativo
+
+#### Observação Arquitetural
+
+Esta propriedade não substitui:
+* Lifecycle Stage;
+* Deal Stage;
+* Subscription Status.
+
+Ela representa exclusivamente a relação da empresa com uma solução.
+
+#### Decisão Arquitetural
+
+Criar propriedade customizada.
+
+**Motivo:** Permite acompanhar o relacionamento com soluções sem misturar dados comerciais, financeiros ou contratuais.
+
+---
+
 # Status do Grupo
 
 **Grupo 4 — Produtos e Serviços**
 
-- **Status:** Modelagem arquitetural concluída
-- **Próxima etapa:** Especificação das propriedades aprovadas.
+- **Status:** Documentação concluída
+- **Propriedades aprovadas:**
+  * Main Solution Interest
+  * Product Category Interest
+  * Customer Solution Status
+- **Decisão arquitetural principal:** Informações de interesse permanecem no objeto Company. Informações de compra, contrato e histórico comercial serão controladas através do objeto Deal.
+
 
 
 
