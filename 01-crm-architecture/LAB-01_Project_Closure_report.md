@@ -190,3 +190,15 @@ Não fazem parte deste módulo:
 - APIs
 - Lead Scoring
 - Objetos Customizados
+
+---
+
+## 9. Próximos Passos
+
+O próximo módulo contemplará:
+
+- Workflows
+- Dashboards
+- Reports
+- Segmentações
+- Automações
