@@ -97,6 +97,14 @@ Esta abordagem garante que toda implementação seja construída sobre uma arqui
 
 # Repository Structure
 
+## 0. Executive Summary
+
+* [00-Executive-Summary.md](00-Executive-Summary.md)
+
+Síntese executiva da arquitetura, escopo, visão de objetos, artefatos produzidos e resultados do Módulo 1.
+
+---
+
 ## 1. Business Strategy
 
 * [Business_Discovery.md](Business_Discovery.md)
@@ -110,7 +118,7 @@ Define o contexto do negócio, os desafios identificados e a visão estratégica
 
 ## 2. Data Modeling
 
-* [Company_Object_Specification.md](Company_Object_Specification.md)
+* [Company_Object_Architecture.md](Company_Object_Architecture.md)
 * [Company_Data_Dictionary.md](Company_Data_Dictionary.md)
 * [Contact_Data_Dictionary.md](Contact_Data_Dictionary.md)
 * [Deal_Data_Dictionary.md](Deal_Data_Dictionary.md)
