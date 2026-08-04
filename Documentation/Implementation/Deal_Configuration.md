@@ -127,6 +127,13 @@ Configurar as probabilidades por estágio:
 | Closed Lost Deals | Custom | Deal Stage = Closed Lost | Acompanhar negócios perdidos |
 | Stale Deals | Custom | Open Deals + Last Activity Date > 14 dias | Identificar negócios sem movimentação |
 
+### Deal Views Created
+
+| View | Purpose |
+| --- | --- |
+| Open Deals | Active sales opportunities |
+| Closed Won Deals | Completed successful sales |
+
 ---
 
 ## 7. Validação após Configuração
