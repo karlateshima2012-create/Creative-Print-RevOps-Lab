@@ -149,10 +149,10 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 
 | Ordem | Objeto | Status |
 | --- | --- | --- |
-| 1 | Company | ✅ Completed |
-| 2 | Contact | ✅ Completed |
-| 3 | Deal | ✅ Completed (v1) |
-| 4 | Ticket | ✅ Completed (v1) |
+| 1 | Company | Planejado |
+| 2 | Contact | Planejado |
+| 3 | Deal | Planejado |
+| 4 | Ticket | Planejado |
 
 ---
 
@@ -166,15 +166,12 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 | Ordem | Grupo | Tipo | Status |
 | --- | --- | --- | --- |
-| 1 | Company Information | Nativo | ✅ Completed |
-| 2 | Social Media Information | Nativo | ✅ Completed |
-| 3 | Sales Properties | Nativo | ✅ Completed |
-| 4 | Products & Services | Custom | ✅ Completed |
-| 5 | Customer Success | Custom | ✅ Completed |
-| 6 | Marketing | Custom | ✅ Completed |
-
-**Evidência de Implementação:**
-![Print 1 — Estrutura do grupo](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/Documentation/evidence/hubspot/company/01/01_company_information_group.png)
+| 1 | Company Information | Nativo | Planejado |
+| 2 | Social Media Information | Nativo | Planejado |
+| 3 | Sales Properties | Nativo | Planejado |
+| 4 | Products & Services | Custom | Planejado |
+| 5 | Customer Success | Custom | Planejado |
+| 6 | Marketing | Custom | Planejado |
 
 ---
 
@@ -186,10 +183,10 @@ A configuração do objeto **Contact** segue as diretrizes validadas no *Contact
 
 | Ordem | Grupo | Tipo | Status |
 | --- | --- | --- | --- |
-| 1 | Contact Information | Nativo | ✅ Completed |
-| 2 | Sales Properties | Nativo | ✅ Completed |
-| 3 | Social Media Information | Nativo | ✅ Completed |
-| 4 | Marketing Information | Nativo | ✅ Completed (Sem custom v1) |
+| 1 | Contact Information | Nativo | Planejado |
+| 2 | Sales Properties | Nativo | Planejado |
+| 3 | Social Media Information | Nativo | Planejado |
+| 4 | Marketing Information | Nativo | Planejado |
 
 ---
 
@@ -222,12 +219,12 @@ A configuração seguirá o *Deal Data Dictionary* e o *Sales Pipeline Design*.
 
 | Grupo | Tipo | Status |
 | --- | --- | --- |
-| Deal Information | Native | ⬜ Pending |
-| Deal Revenue | Native | ⬜ Pending |
-| Deal Activity | Native | ⬜ Pending |
-| Analytics History | Native | ⬜ Reviewed |
-| Professional Services Information | Native | ⬜ Reviewed |
-| HubSpot Metrics | Native | ⬜ Reviewed |
+| Deal Information | Native | Planejado |
+| Deal Revenue | Native | Planejado |
+| Deal Activity | Native | Planejado |
+| Analytics History | Native | Planejado |
+| Professional Services Information | Native | Planejado |
+| HubSpot Metrics | Native | Planejado |
 
 ---
 
@@ -241,10 +238,10 @@ A configuração seguirá o *Ticket Data Dictionary*.
 
 | Grupo | Tipo | Status |
 | --- | --- | --- |
-| Ticket Information | Native | ⬜ Pending |
-| Ticket Activity | Native | ⬜ Reviewed |
-| Ticket AI Enrichment | Native | ⬜ Reviewed |
-| Ticket Stage Properties | Native | ⬜ Reviewed |
+| Ticket Information | Native | Planejado |
+| Ticket Activity | Native | Planejado |
+| Ticket AI Enrichment | Native | Planejado |
+| Ticket Stage Properties | Native | Planejado |
 
 ---
 
@@ -379,16 +376,16 @@ A implementação do HubSpot deve seguir a arquitetura documentada previamente, 
 
 ---
 
-# Status da Entrega
+# Status do Planejamento
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Architecture & Core Objects Configuration Completed (v1)
+- **Status:** Planejamento de Implementação Aprovado
 
-**Estrutura de Arquitetura e Configuração:**
+**Escopo do Plano de Implementação:**
 
-- **Company:** ✅ Completed
-- **Contact:** ✅ Completed
-- **Deal:** ✅ Completed (v1)
-- **Ticket:** ✅ Completed (v1)
-- **Associations / Automation / Reporting / Quality:** Architecture Completed / Implementation Pending
+- **Company:** Planejado
+- **Contact:** Planejado
+- **Deal:** Planejado
+- **Ticket:** Planejado
+- **Associations / Automation / Reporting / Quality:** Planejado
