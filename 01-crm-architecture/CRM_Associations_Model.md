@@ -235,3 +235,14 @@ A análise completa do cliente será construída através das relações entre C
 | Ticket Data Dictionary | ✅ Concluído |
 | CRM Object Model | ✅ Concluído |
 | CRM Associations Model | ✅ Concluído |
+
+---
+
+## Referências
+
+- [Data Model](Data_Model.md)
+- [CRM Object Model](CRM_Object_Model.md)
+- [Company Data Dictionary](Company_Data_Dictionary.md)
+- [Contact Data Dictionary](Contact_Data_Dictionary.md)
+- [Deal Data Dictionary](Deal_Data_Dictionary.md)
+- [Ticket Data Dictionary](Ticket_Data_Dictionary.md)
