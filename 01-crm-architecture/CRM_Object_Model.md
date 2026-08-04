@@ -15,6 +15,20 @@ O modelo foi estruturado seguindo princípios de arquitetura de CRM:
 
 ---
 
+## Visão Geral do Relacionamento
+
+```text
+Company
+    │
+    ├──────── Contact
+    │
+    └──────── Deal
+                  │
+                  └──────── Ticket
+```
+
+---
+
 ## Princípios do Modelo de Objetos
 
 ### Separação de responsabilidades
