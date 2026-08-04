@@ -125,7 +125,7 @@ Para detalhes específicos consulte:
 | Diagnóstico da Operação | [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Current_State.md) |
 | Visão de Futuro | [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Future_State.md) |
 | Modelo de Objetos | [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/CRM_Object_Model.md) |
-| Especificação de Empresa | [Company Object Specification](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Company_Object_Specification.md) |
+| Especificação de Empresa | [Company Object Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Company_Object_Architecture.md) |
 | Dicionário de Dados — Empresa | [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Company_Data_Dictionary.md) |
 | Dicionário de Dados — Contato | [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Contact_Data_Dictionary.md) |
 | Dicionário de Dados — Negócio | [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Deal_Data_Dictionary.md) |

@@ -53,7 +53,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ## Implementation Phases & Roadmap
 
 ### Phase 1 — CRM Foundation
-* **Status:** ✅ Architecture Completed
+* **Status:** ✅ Architecture Approved
 * **Itens:**
   - Define CRM objects
   - Define associations
@@ -63,40 +63,40 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ---
 
 ### Phase 2 — HubSpot Configuration
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 
 #### Company Configuration
-* Criar propriedades aprovadas;
-* Organizar grupos;
-* Validar propriedades existentes;
-* Remover duplicidades.
+* Definição de propriedades aprovadas;
+* Organização de grupos;
+* Mapeamento de propriedades existentes;
+* Remoção de duplicidades.
 
 #### Contact Configuration
-* Criar propriedades aprovadas;
-* Organizar grupos;
-* Validar lifecycle management.
+* Definição de propriedades aprovadas;
+* Organização de grupos;
+* Validação de lifecycle management.
 
 #### Deal Configuration
-* Criar pipeline *Sales Pipeline*;
-* Configurar stages:
+* Planejamento do pipeline *Sales Pipeline*;
+* Definição de stages:
   - New Opportunity
   - Qualified Opportunity
   - Proposal Sent
   - Negotiation
   - Closed Won
   - Closed Lost
-* Configurar probabilidades;
-* Validar propriedades.
+* Definição de probabilidades;
+* Definição de propriedades.
 
 #### Ticket Configuration
-* Validar Ticket Information;
-* Configurar pipeline de atendimento;
-* Validar propriedades operacionais.
+* Definição de Ticket Information;
+* Planejamento do pipeline de atendimento;
+* Definição de propriedades operacionais.
 
 ---
 
 ### Phase 3 — Data Migration / Data Preparation
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 * **Tarefas:**
   - Revisar registros existentes;
   - Padronizar dados;
@@ -106,7 +106,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ---
 
 ### Phase 4 — Automation Implementation
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 * **Baseado em:** `CRM_Automation_Architecture.md`
 * **Implementar:**
   - Deal workflows;
@@ -116,7 +116,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ---
 
 ### Phase 5 — Reporting Implementation
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 * **Baseado em:** `CRM_Reporting_Architecture.md`
 * **Criar:**
   - Executive Dashboard;
@@ -126,7 +126,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ---
 
 ### Phase 6 — Testing & Validation
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 * **Testar:**
   - Criação de registros;
   - Mudança de estágio;
@@ -137,7 +137,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 ---
 
 ### Phase 7 — CRM Governance
-* **Status:** ⬜ Pending
+* **Status:** ⬜ Planned
 * **Implementar:**
   - Revisão periódica de dados;
   - Controle de novas propriedades;
@@ -149,10 +149,10 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 
 | Ordem | Objeto | Status |
 | --- | --- | --- |
-| 1 | Company | Planejado |
-| 2 | Contact | Planejado |
-| 3 | Deal | Planejado |
-| 4 | Ticket | Planejado |
+| 1 | Company | Planned |
+| 2 | Contact | Planned |
+| 3 | Deal | Planned |
+| 4 | Ticket | Planned |
 
 ---
 
@@ -166,12 +166,12 @@ A configuração seguirá os grupos definidos no *Company Data Dictionary*.
 
 | Ordem | Grupo | Tipo | Status |
 | --- | --- | --- | --- |
-| 1 | Company Information | Nativo | Planejado |
-| 2 | Social Media Information | Nativo | Planejado |
-| 3 | Sales Properties | Nativo | Planejado |
-| 4 | Products & Services | Custom | Planejado |
-| 5 | Customer Success | Custom | Planejado |
-| 6 | Marketing | Custom | Planejado |
+| 1 | Company Information | Nativo | Planned |
+| 2 | Social Media Information | Nativo | Planned |
+| 3 | Sales Properties | Nativo | Planned |
+| 4 | Products & Services | Custom | Planned |
+| 5 | Customer Success | Custom | Planned |
+| 6 | Marketing | Custom | Planned |
 
 ---
 
@@ -183,10 +183,10 @@ A configuração do objeto **Contact** segue as diretrizes validadas no *Contact
 
 | Ordem | Grupo | Tipo | Status |
 | --- | --- | --- | --- |
-| 1 | Contact Information | Nativo | Planejado |
-| 2 | Sales Properties | Nativo | Planejado |
-| 3 | Social Media Information | Nativo | Planejado |
-| 4 | Marketing Information | Nativo | Planejado |
+| 1 | Contact Information | Nativo | Planned |
+| 2 | Sales Properties | Nativo | Planned |
+| 3 | Social Media Information | Nativo | Planned |
+| 4 | Marketing Information | Nativo | Planned |
 
 ---
 
@@ -219,12 +219,12 @@ A configuração seguirá o *Deal Data Dictionary* e o *Sales Pipeline Design*.
 
 | Grupo | Tipo | Status |
 | --- | --- | --- |
-| Deal Information | Native | Planejado |
-| Deal Revenue | Native | Planejado |
-| Deal Activity | Native | Planejado |
-| Analytics History | Native | Planejado |
-| Professional Services Information | Native | Planejado |
-| HubSpot Metrics | Native | Planejado |
+| Deal Information | Native | Planned |
+| Deal Revenue | Native | Planned |
+| Deal Activity | Native | Planned |
+| Analytics History | Native | Planned |
+| Professional Services Information | Native | Planned |
+| HubSpot Metrics | Native | Planned |
 
 ---
 
@@ -238,10 +238,10 @@ A configuração seguirá o *Ticket Data Dictionary*.
 
 | Grupo | Tipo | Status |
 | --- | --- | --- |
-| Ticket Information | Native | Planejado |
-| Ticket Activity | Native | Planejado |
-| Ticket AI Enrichment | Native | Planejado |
-| Ticket Stage Properties | Native | Planejado |
+| Ticket Information | Native | Planned |
+| Ticket Activity | Native | Planned |
+| Ticket AI Enrichment | Native | Planned |
+| Ticket Stage Properties | Native | Planned |
 
 ---
 
@@ -258,9 +258,9 @@ Todas as propriedades deverão seguir o padrão:
 
 ---
 
-## Property Configuration Example
+## Property Configuration Specification
 
-Exemplo:
+Exemplo de especificação de propriedade:
 
 - **Property Label:** Customer Health Score
 - **Internal Name:** `customer_health_score`
@@ -298,9 +298,9 @@ Exemplo:
 | Deal Properties | Antes de relatórios de receita |
 | Associations | Antes de análises completas |
 
-## Architecture Validation Status
+## Architecture Approval Status
 
-Antes da configuração operacional do HubSpot, os seguintes documentos foram concluídos:
+Antes da configuração operacional do HubSpot, os seguintes documentos foram aprovados:
 
 * ✅ CRM Strategy
 * ✅ Data Governance
@@ -380,12 +380,10 @@ A implementação do HubSpot deve seguir a arquitetura documentada previamente, 
 
 **Entrega 05 — HubSpot Implementation Plan**
 
-- **Status:** Planejamento de Implementação Aprovado
+- **Status:** Approved
 
 **Escopo do Plano de Implementação:**
 
-- **Company:** Planejado
-- **Contact:** Planejado
 - **Deal:** Planejado
 - **Ticket:** Planejado
 - **Associations / Automation / Reporting / Quality:** Planejado
