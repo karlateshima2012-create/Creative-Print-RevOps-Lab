@@ -22,6 +22,24 @@ A Creative Print é uma empresa de tecnologia e produtos personalizados que comb
 
 O objetivo da implantação do HubSpot CRM é transformar a operação comercial da Creative Print em uma operação orientada por dados, criando a base para Marketing Automation, Customer Success e Revenue Operations.
 
+---
+
+## Escopo do Projeto
+
+### Incluído
+* CRM
+* Vendas
+* Customer Success
+* Governança
+
+### Excluído
+* ERP
+* Financeiro
+* RH
+* Contabilidade
+
+---
+
 ## 2. Como os clientes chegam hoje
 
 | Canal | Descrição |
