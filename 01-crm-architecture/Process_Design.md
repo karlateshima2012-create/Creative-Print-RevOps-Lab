@@ -2,9 +2,33 @@
 
 **Fase:** 7 — Processos
 
+## 1. Fluxo Geral
+
+```text
+Lead
+  │
+  ▼
+Company
+  │
+  ▼
+Contact
+  │
+  ▼
+Deal
+  │
+  ▼
+Won
+  │
+  ▼
+Ticket
+  │
+  ▼
+Closed
+```
+
 ---
 
-## 1. Processo comercial completo
+## 2. Processo comercial completo
 
 ```
 Lead
