@@ -50,3 +50,17 @@ O HubSpot será considerado o sistema central de relacionamento comercial da Cre
 ## 4. Critério de sucesso do Estado Futuro
 
 A arquitetura futura é considerada bem-sucedida quando qualquer pessoa do time consegue, a partir do HubSpot e sem depender de memória individual, responder: quem é o cliente, o que ele contratou, em que etapa do relacionamento está, e quando precisa ser contatado novamente.
+
+---
+
+## Resultados Esperados
+
+Ao final da implementação espera-se:
+
+* visão 360º do cliente;
+* dados padronizados;
+* processos comerciais estruturados;
+* suporte integrado ao CRM;
+* indicadores confiáveis;
+* preparação para automações;
+* escalabilidade da operação.
