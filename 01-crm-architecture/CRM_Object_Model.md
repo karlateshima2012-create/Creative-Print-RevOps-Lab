@@ -29,6 +29,17 @@ Company
 
 ---
 
+## Objetos Principais
+
+| Objeto | Responsabilidade |
+| --- | --- |
+| Company | Organização |
+| Contact | Pessoa |
+| Deal | Receita |
+| Ticket | Customer Success |
+
+---
+
 ## Princípios do Modelo de Objetos
 
 ### Separação de responsabilidades
