@@ -1,5 +1,9 @@
 # Executive Summary — CRM Architecture & Governance
 
+> 📌 **Navegação do Módulo:** [README.md](README.md) ➔ **00-Executive-Summary.md** ➔ Documentação Técnica (`01-Business` a `06-Project-Closure`)
+
+---
+
 ## Project Overview
 
 Este projeto apresenta a arquitetura de um Customer Relationship Management (CRM) desenvolvida para a Creative Print, utilizando o HubSpot CRM como plataforma de referência.

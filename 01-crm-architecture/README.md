@@ -1,8 +1,14 @@
 # CRM Architecture & Governance Lab
 
-## Overview
+## 📌 Guia de Leitura Inicial (Ordem Executiva)
 
-> 📄 **Documento Executivo Principal:** Para uma síntese do projeto, acesse o **[00-Executive-Summary.md](00-Executive-Summary.md)**.
+1. 📄 **[README.md](README.md)** — Visão geral e guia estrutural da arquitetura de CRM.
+2. 📊 **[00-Executive-Summary.md](00-Executive-Summary.md)** — Resumo executivo, problemas de negócio, pilares e entregáveis.
+3. 📂 **Documentação Técnica** — Organizada pelas pastas numéricas narrativas (`01-Business` a `06-Project-Closure`).
+
+---
+
+## Overview
 
 Este projeto documenta a arquitetura completa de um CRM desenvolvido para a **Creative Print**, utilizando o **HubSpot CRM** como plataforma de referência.
 
