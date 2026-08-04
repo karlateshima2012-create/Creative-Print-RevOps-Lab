@@ -193,15 +193,20 @@ Visualizações personalizadas de Deal devem priorizar a identificação rápida
 
 # Status Deal Object Configuration
 
-| Item | Status |
-| --- | --- |
-| Pipeline Sales Pipeline | ✅ Completed |
-| Deal Stages | ✅ Completed |
-| Probabilities | ✅ Completed |
-| Core Properties Validation | ✅ Completed |
-| Custom Properties Creation | ⬜ Não necessária inicialmente |
-| Deal Views | ✅ Completed |
-| Deal Automation | ⬜ Futuro |
+| Item | Details / Views | Status |
+| --- | --- | --- |
+| Pipeline Sales Pipeline | Single Sales Pipeline | ✅ Completed |
+| Deal Stages | 6 Stages | ✅ Completed |
+| Probabilities | Configured per stage | ✅ Completed |
+| Core Properties Validation | Native Properties | ✅ Completed |
+| Custom Properties Creation | Custom Properties | ⬜ Não necessária (v1) |
+| All Deals View | Native View | ✅ Completed |
+| My Deals View | Native View | ✅ Completed |
+| Open Deals View | Custom View | ✅ Completed |
+| Closed Won Deals View | Custom View | ✅ Completed |
+| Closed Lost Deals View | Custom View | ✅ Completed |
+| Stale Deals View | Custom View | ⏳ Fase 2 |
+| Deal Automation | Workflows | ⬜ Futuro |
 
 ---
 
@@ -209,7 +214,7 @@ Visualizações personalizadas de Deal devem priorizar a identificação rápida
 
 | Objeto | Arquitetura | Configuração |
 | --- | --- | --- |
-| Company | ✅ Concluído | ✅ Concluído |
-| Contact | ✅ Concluído | ✅ Concluído |
-| Deal | ✅ Concluído | ✅ Configurado (sem automação) |
-| Ticket | ✅ Concluído | ⬜ Pendente |
+| Company | ✅ Concluído | ✅ Completed |
+| Contact | ✅ Concluído | ✅ Completed |
+| Deal | ✅ Concluído | ✅ Completed (v1) |
+| Ticket | ✅ Concluído | ⬜ Pending |
