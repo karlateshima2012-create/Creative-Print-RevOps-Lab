@@ -1,7 +1,16 @@
 # Data Model — Creative Print
 
-**Fase:** 5 — Modelagem de Dados
-**Nota:** este documento é a versão detalhada de `properties.xlsx`. Toda property aqui listada também está na planilha, pronta para ser criada no HubSpot em Settings → Properties.
+**Fase:** 5 — Modelagem de Dados  
+**Nota:** Este documento descreve a estrutura lógica dos dados.
+
+As regras de relacionamento encontram-se em:
+* [CRM_Associations_Model.md](CRM_Associations_Model.md)
+
+As propriedades detalhadas encontram-se nos respectivos Data Dictionaries:
+* [Company Data Dictionary](Company_Data_Dictionary.md)
+* [Contact Data Dictionary](Contact_Data_Dictionary.md)
+* [Deal Data Dictionary](Deal_Data_Dictionary.md)
+* [Ticket Data Dictionary](Ticket_Data_Dictionary.md)
 
 ---
 
