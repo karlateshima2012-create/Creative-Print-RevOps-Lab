@@ -67,28 +67,13 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
 | Propriedade | Origem | Tipo |
 | --- | --- | --- |
 | Ticket Name | HubSpot | Single-line text |
-| Ticket Owner | HubSpot | HubSpot user |
-| Ticket Status | HubSpot | Dropdown select |
-| Priority | HubSpot | Dropdown select |
+| Ticket Owner | HubSpot | HubSpot User |
+| Ticket Status | HubSpot | Dropdown |
+| Pipeline | HubSpot | Dropdown |
+| Priority | HubSpot | Dropdown |
 | Ticket Description | HubSpot | Multi-line text |
-
----
-
-### Avaliar Futuramente
-
-| Propriedade | Motivo |
-| --- | --- |
-| Category | Depende do volume de atendimentos |
-| Source | Depende da estratégia de canais |
-
----
-
-### Não Utilizar Inicialmente
-
-| Propriedade | Motivo |
-| --- | --- |
-| Create Date | Campo interno do registro |
-| Close Date | Não existe e pode ser derivado do processo |
+| Category | HubSpot | Dropdown |
+| Source | HubSpot | Dropdown |
 
 ---
 
@@ -101,9 +86,12 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
   * Ticket Name
   * Ticket Owner
   * Ticket Status
+  * Pipeline
   * Priority
   * Ticket Description
-- **Decisão arquitetural principal:** O grupo utilizará propriedades nativas do HubSpot para identificação, atribuição de responsável, status, prioridade e descrição do atendimento.
+  * Category
+  * Source
+- **Decisão arquitetural principal:** O grupo utilizará 8 propriedades nativas do HubSpot para identificação, atribuição de responsável, status, pipeline, prioridade, descrição, categoria e origem do atendimento.
 
 ---
 
@@ -361,6 +349,8 @@ Grupos vazios ou técnicos não devem receber campos apenas para completar a est
 | Pipeline | Ticket Information |
 | Priority | Ticket Information |
 | Ticket Description | Ticket Information |
+| Category | Ticket Information |
+| Source | Ticket Information |
 | Create Date | Ticket Activity |
 | Close Date | Ticket Activity |
 | Last Activity Date | Ticket Activity |
