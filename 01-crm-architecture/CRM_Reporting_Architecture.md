@@ -2,7 +2,9 @@
 
 ## Objetivo
 
-Este documento define a arquitetura de relatórios e indicadores que serão utilizados para acompanhar o desempenho do CRM.
+Este documento descreve somente a arquitetura dos relatórios.
+
+> **Nota:** Os dashboards serão construídos no módulo seguinte.
 
 O objetivo é estabelecer:
 
