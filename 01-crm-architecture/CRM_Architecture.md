@@ -19,6 +19,35 @@ O objetivo é estabelecer a estrutura geral para sustentação de:
 
 ---
 
+## Arquitetura em Alto Nível
+
+```text
+Business Discovery
+        │
+        ▼
+CRM Strategy
+        │
+        ▼
+Data Model
+        │
+        ▼
+Object Model
+        │
+        ▼
+Governance
+        │
+        ▼
+Implementation
+        │
+        ▼
+Automation
+        │
+        ▼
+Reporting
+```
+
+---
+
 ## 2. Escopo
 
 O escopo desta arquitetura abrange a fundação do ecossistema CRM no HubSpot, englobando:
