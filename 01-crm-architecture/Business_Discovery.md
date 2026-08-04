@@ -56,6 +56,20 @@ Os dados comerciais estão fragmentados: histórico de conversas no WhatsApp e I
 
 Hoje, majoritariamente uma pessoa (fundação/comercial) concentra o conhecimento sobre os clientes, o que cria dependência de memória individual e risco de perda de informação.
 
-## 8. Conclusão da Descoberta
+---
+
+## 8. Stakeholders
+
+| Papel | Responsabilidade |
+| --- | --- |
+| CEO | Estratégia e tomada de decisão |
+| Comercial | Gestão de oportunidades |
+| Customer Success | Relacionamento pós-venda |
+| Marketing | Geração de demanda |
+| Cliente | Consumidor dos serviços |
+
+---
+
+## 9. Conclusão da Descoberta
 
 A Creative Print tem produtos validados (físicos e SaaS) e canais de aquisição funcionando, mas nenhuma camada de sistema que centralize relacionamento comercial. Esse é exatamente o problema que a arquitetura de CRM definida em `CRM_Architecture.md` foi desenhada para resolver.
