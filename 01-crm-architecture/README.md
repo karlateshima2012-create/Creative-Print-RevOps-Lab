@@ -2,6 +2,8 @@
 
 ## Overview
 
+> 📄 **Documento Executivo Principal:** Para uma síntese do projeto, acesse o **[00-Executive-Summary.md](00-Executive-Summary.md)**.
+
 Este projeto documenta a arquitetura completa de um CRM desenvolvido para a **Creative Print**, utilizando o **HubSpot CRM** como plataforma de referência.
 
 O laboratório foi concebido para simular um projeto real de arquitetura de CRM e Revenue Operations, seguindo uma abordagem **Architecture First**, na qual toda a estratégia, modelagem de dados, governança e planejamento são definidos antes da implementação operacional.
