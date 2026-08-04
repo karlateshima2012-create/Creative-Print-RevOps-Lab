@@ -69,9 +69,26 @@ A implementação da arquitetura segue um roadmap evolutivo estruturado em fases
 
 ---
 
-## 6. Documentação Relacionada
+## 6. Referências da Documentação
 
-Para detalhes específicos e operacionais de cada pilar da arquitetura, consulte os documentos de referência:
+### Documentação Relacionada
+
+Para detalhes específicos consulte:
+
+- [Business Discovery](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Business_Discovery.md)
+- [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Current_State.md)
+- [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Future_State.md)
+- [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/CRM_Object_Model.md)
+- [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Company_Data_Dictionary.md)
+- [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Contact_Data_Dictionary.md)
+- [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Deal_Data_Dictionary.md)
+- [Ticket Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/Ticket_Data_Dictionary.md)
+- [CRM Automation Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/CRM_Automation_Architecture.md)
+- [CRM Reporting Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/CRM_Reporting_Architecture.md)
+
+---
+
+### Matriz Completa de Documentos de Referência
 
 | Área | Documento de Referência |
 | --- | --- |
