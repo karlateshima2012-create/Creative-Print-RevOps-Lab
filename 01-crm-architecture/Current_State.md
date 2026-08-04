@@ -32,6 +32,19 @@ O atendimento pós-compra acontece de forma reativa: o cliente entra em contato 
 
 Inexistente como processo formal. Não há onboarding estruturado, nem verificação ativa de que o cliente está de fato usando CP Agenda ou CP Review, nem gatilho de renovação.
 
+---
+
+## Principais Problemas Identificados
+
+| Processo | Situação Atual | Impacto |
+| --- | --- | --- |
+| Gestão de Empresas | Informações dispersas | Dificulta visão única do cliente |
+| Gestão de Contatos | Sem padronização | Duplicidade de registros |
+| Processo Comercial | Controle manual | Baixa previsibilidade |
+| Pós-venda | Sem estrutura | Dificuldade de retenção |
+
+---
+
 ## 5. Gargalos identificados
 
 | Gargalo | Descrição |
