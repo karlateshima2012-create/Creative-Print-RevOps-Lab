@@ -14,11 +14,14 @@ Nenhuma propriedade deverá ser criada diretamente no HubSpot sem estar previame
 
 ## Objetivo
 
-O grupo Ticket Information reúne informações principais relacionadas às solicitações de atendimento registradas no CRM.
+O grupo Ticket Information reúne as propriedades responsáveis pela identificação, classificação e gerenciamento operacional dos tickets.
 
-Essas propriedades representam o contexto do chamado, classificação, prioridade e responsabilidade pelo atendimento.
-
-Este grupo não deve armazenar informações comerciais ou financeiras, pois essas informações pertencem ao objeto Deal.
+Essas propriedades permitem:
+* identificar o ticket;
+* definir responsáveis;
+* classificar solicitações;
+* organizar o atendimento;
+* controlar o fluxo de Customer Success.
 
 ---
 
@@ -26,16 +29,14 @@ Este grupo não deve armazenar informações comerciais ou financeiras, pois ess
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Ticket Name | Identificação | Sim | HubSpot |
-| Ticket Owner | Responsável | Sim | HubSpot |
-| Ticket Status | Processo atendimento | Sim | HubSpot |
-| Pipeline | Processo atendimento | Sim | HubSpot |
-| Ticket Priority | Classificação | Sim | HubSpot |
-| Description | Contexto | Sim | HubSpot |
-| Category | Classificação | Avaliar | HubSpot |
-| Source | Origem atendimento | Avaliar | HubSpot |
-| Create Date | Histórico | Não inicialmente | HubSpot |
-| Close Date | Resolução | Avaliar | HubSpot |
+| Ticket Name | Nativa | Sim | HubSpot |
+| Ticket Owner | Nativa | Sim | HubSpot |
+| Ticket Status | Nativa | Sim | HubSpot |
+| Pipeline | Nativa | Sim | HubSpot |
+| Priority | Nativa | Sim | HubSpot |
+| Ticket Description | Nativa | Sim | HubSpot |
+| Category | Nativa | Sim | HubSpot |
+| Source | Nativa | Sim | HubSpot |
 
 ---
 
