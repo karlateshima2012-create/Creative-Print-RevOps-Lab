@@ -7,7 +7,7 @@
   <title>Karla Teshima | RevOps Specialist & CRM Architect</title>
   
   <!-- Estilos Globais -->
-  <link rel="stylesheet" href="index.css?v=14">
+  <link rel="stylesheet" href="index.css?v=15">
 </head>
 <body>
 
@@ -17,13 +17,11 @@
       <div class="logo">
         KARLA TESHIMA
       </div>
-      <nav>
-        <ul class="nav-links">
+      <nav>        <ul class="nav-links">
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#architecture">Arquitetura CRM</a></li>
+          <li><a href="#lab-about">Como Trabalho</a></li>
+          <li><a href="#projects">Projetos RevOps</a></li>
           <li><a href="#certifications">Certificações</a></li>
-          <li><a href="#journey">Jornada</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -42,7 +40,10 @@
         <div class="hero-subtitle">
           CEO & Founder @ Creative Print • SaaS Developer • RevOps & CRM Architect
         </div>
-        <div class="hero-cta">
+        <p class="hero-positioning">
+          “Construindo e documentando uma operação completa de Revenue Operations do zero — módulo a módulo — usando minha própria empresa como laboratório real.”
+        </p>
+        <div class="hero-cta" style="margin-top: 1.5rem;">
           <a href="mailto:karlateshima@icloud.com" class="btn btn-primary">Contato Direto</a>
           <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
@@ -50,7 +51,7 @@
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Download CV (Lab)
+            Repositório no GitHub
           </a>
         </div>
       </div>
@@ -68,251 +69,346 @@
     </div>
   </section>
 
-  <!-- SELECTED PROJECTS SECTION -->
-  <section class="projects-section" id="projects">
-    <div class="container section-grid">
-      <div class="section-intro-sticky">
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="section-description">
-          Casos de estudo reais demonstrando a estruturação, automação e governança de dados no HubSpot CRM.
+  <!-- SOBRE O LABORATÓRIO / COMO EU TRABALHO -->
+  <section class="lab-about-section" id="lab-about">
+    <div class="container">
+      <div class="lab-about-card">
+        <span class="lab-about-badge">SOBRE O LABORATÓRIO & MÉTODO</span>
+        <h2 class="lab-about-title">Estudo Independente • Aplicação Real • Documentação Pública</h2>
+        <p class="lab-about-text">
+          Estudo de forma independente, aplico imediatamente na minha empresa e documento tudo publicamente.<br>
+          A <strong>Creative Print</strong> não é só meu negócio — é o laboratório onde testo arquitetura de CRM, automações, governança de dados e Revenue Operations na prática.<br>
+          Cada projeto gera documentação técnica real (Data Model, Naming Conventions, Blueprints, Playbooks) disponível no GitHub.
         </p>
-        <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab" target="_blank" rel="noopener noreferrer" class="view-all-link">
-          Ver no GitHub
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-      
-      <div class="projects-list">
-        
-        <!-- PROJETO 01 -->
-        <article class="project-card">
-          <div class="project-meta-col">
-            <div class="project-number"><span>01</span> CP AGENDA</div>
-            <h3 class="project-name">Aquisição & Vendas</h3>
-            <p class="project-category">CRM & Pipeline Integration</p>
-            
-            <div class="project-case-details">
-              <div class="case-step desafio">
-                <strong>Desafio:</strong> Leads e agendamentos vindos de múltiplos canais sem histórico de relacionamento centralizado e sem previsibilidade de funil.
-              </div>
-              <div class="case-step solucao">
-                <strong>Solução:</strong> Integração automatizada da plataforma de agendamento com o HubSpot CRM, mapeando ciclo de vida dos leads e integrando estágios de vendas.
-              </div>
-              <div class="case-step resultado">
-                <strong>Resultado:</strong> 100% de visibilidade sobre novas conversões, eliminação de acompanhamento manual e dados limpos para Marketing e Vendas.
-              </div>
-            </div>
-            
-            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/tree/main/01-crm-architecture" target="_blank" rel="noopener noreferrer" class="project-git-link">
-              Documentação do Módulo 1 →
-            </a>
+        <div class="lab-about-stats">
+          <div class="lab-stat">
+            <span class="lab-stat-num">01 / 12</span>
+            <span class="lab-stat-label">Projeto Concluído & Documentado</span>
           </div>
-          <div class="project-image-container">
-            <img src="assets/cp_agenda.png" alt="Interface do CP Agenda" class="project-image" loading="lazy" width="400" height="300">
+          <div class="lab-stat">
+            <span class="lab-stat-num">100%</span>
+            <span class="lab-stat-label">Documentação Técnica Aberta</span>
           </div>
-        </article>
-
-        <!-- PROJETO 02 -->
-        <article class="project-card">
-          <div class="project-meta-col">
-            <div class="project-number"><span>02</span> CP REVIEW</div>
-            <h3 class="project-name">Customer Success</h3>
-            <p class="project-category">Feedback & Retention Operations</p>
-            
-            <div class="project-case-details">
-              <div class="case-step desafio">
-                <strong>Desafio:</strong> Falta de acompanhamento sistemático de feedbacks (NPS/CSAT) de pós-venda, impossibilitando identificar potenciais clientes em churn.
-              </div>
-              <div class="case-step solucao">
-                <strong>Solução:</strong> Vinculação direta de dados de satisfação da plataforma CP Review ao cadastro de contatos no HubSpot, acionando alertas dinâmicos para a equipe comercial.
-              </div>
-              <div class="case-step resultado">
-                <strong>Resultado:</strong> Criação do Health Score de clientes no CRM e redução proativa de churn a partir de alertas gerados por feedbacks negativos.
-              </div>
-            </div>
-            
-            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/tree/main/01-crm-architecture" target="_blank" rel="noopener noreferrer" class="project-git-link">
-              Documentação do Módulo 1 →
-            </a>
+          <div class="lab-stat">
+            <span class="lab-stat-num">HubSpot SSOT</span>
+            <span class="lab-stat-label">Fonte Única da Verdade Comercial</span>
           </div>
-          <div class="project-image-container">
-            <img src="assets/cp_review.png" alt="Interface de feedbacks do CP Review" class="project-image" loading="lazy" width="400" height="300">
-          </div>
-        </article>
-
-        <!-- PROJETO 03 -->
-        <article class="project-card">
-          <div class="project-meta-col">
-            <div class="project-number"><span>03</span> REVOPS LAB</div>
-            <h3 class="project-name">Arquitetura de CRM</h3>
-            <p class="project-category">Data Governance & Integrations</p>
-            
-            <div class="project-case-details">
-              <div class="case-step desafio">
-                <strong>Desafio:</strong> Informações inconsistentes sobre leads, falta de padronização na taxonomia dos dados e ausência de governança operacional.
-              </div>
-              <div class="case-step solucao">
-                <strong>Solução:</strong> Criação de dicionário de dados (Data Model), manual de convenção de nomenclatura (Naming Conventions) e mapa conceitual de objetos.
-              </div>
-              <div class="case-step resultado">
-                <strong>Resultado:</strong> Integração robusta via Make.com sem duplicação de dados, relatórios limpos no HubSpot e preparação da infraestrutura para escala de IA.
-              </div>
-            </div>
-            
-            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab" target="_blank" rel="noopener noreferrer" class="project-git-link">
-              Ver Repositório Principal →
-            </a>
-          </div>
-          <div class="project-image-container">
-            <img src="assets/revops_roadmap.png" alt="Pipeline e Roadmap da arquitetura RevOps" class="project-image" loading="lazy" width="400" height="300">
-          </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CRM ARCHITECTURE SHOWCASE SECTION -->
-  <section class="arch-showcase-section" id="architecture">
+  <!-- PROJETOS DO LABORATÓRIO REVOPS -->
+  <section class="lab-projects-section" id="projects">
     <div class="container">
-      <div class="arch-header-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-          <div>
-            <h2 class="arch-header-title">Módulo 1 — CRM Architecture & Governance</h2>
-            <p class="arch-header-desc">
-              Abordagem <strong>Architecture First</strong>: Estruturação estratégica, governança de dados, dicionário de propriedades e planejamento do HubSpot como Fonte Única da Verdade (SSOT).
-            </p>
-          </div>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-              📊 Executive Summary
-            </a>
-            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/tree/main/01-crm-architecture" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-              📁 Abrir Repositório
-            </a>
-          </div>
-        </div>
+      
+      <div style="margin-bottom: 1.5rem;">
+        <h2 class="section-title">Projetos do Laboratório RevOps</h2>
+        <p class="section-description" style="max-width: 750px; margin-top: 8px;">
+          12 projetos práticos aplicados na Creative Print | Documentação pública e evolutiva (2026-2027)
+        </p>
       </div>
 
-      <div class="arch-pillars-grid">
+      <!-- TRACKER E ROADMAP DE FASES -->
+      <div class="lab-tracker-box">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <span class="lab-tracker-title">Evolução do Ecossistema:</span>
+          <div class="phase-roadmap-pills">
+            <span class="phase-pill active">Fundações (Projetos 01–04)</span>
+            <span class="phase-pill">Operações Integradas (Projetos 05–08)</span>
+            <span class="phase-pill">Escala, IA & Estratégia (Projetos 09–12)</span>
+          </div>
+        </div>
+        <span class="lab-tracker-counter">🎯 1 de 12 Projetos Documentados</span>
+      </div>
+
+      <div class="revops-projects-grid">
         
-        <!-- PILAR 01 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 01 -->
+        <article class="revops-card completed">
           <div>
-            <div class="arch-pillar-num">01 — BUSINESS STRATEGY</div>
-            <h3 class="arch-pillar-title">Estratégia de Negócio</h3>
-            <p class="arch-pillar-desc">
-              Mapeamento do contexto da Creative Print, diagnóstico do estado atual (informações fragmentadas no WhatsApp/Instagram) e definição do estado futuro centrado em dados.
+            <div class="revops-card-header">
+              <span class="revops-num">01</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">CRM Architecture Blueprint</h3>
+                <span class="revops-period">Julho 2026</span>
+              </div>
+              <span class="revops-badge badge-completed">Concluído ✅</span>
+            </div>
+            <p class="revops-desc">
+              Especificação conceitual da arquitetura de CRM, definição dos 4 Objetos Principais (Company, Contact, Deal, Ticket), governança de dados, dicionário de propriedades em 5 fases e 10 Decisões Arquiteturais (ADRs 001-010).
             </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregáveis Oficiais no GitHub:</div>
+              <div class="revops-links-grid">
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📊 00-Executive-Summary.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Business-Discovery.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📄 Business-Discovery.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ CRM-Architecture.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏢 Company-Object-Architecture.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📖 Company-Data-Dictionary.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🛡️ CRM-Data-Governance.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ Architecture-Decisions.md</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/06-Project-Closure/LAB-01-Project-Closure-Report.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏁 LAB-01-Project-Closure-Report.md</a>
+              </div>
+            </div>
           </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Business-Discovery.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📄 Business-Discovery</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Current-State.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📄 Current-State</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Future-State.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📄 Future-State</a>
+          <div class="revops-takeaway">
+            <strong>O que foi aplicado:</strong> Arquitetura de dados orientada a processos antes da implementação do software; eliminação da dívida técnica no HubSpot.
+          </div>
+        </article>
+
+        <!-- PROJETO 02 -->
+        <article class="revops-card in-progress">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">02</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Lifecycle Architecture</h3>
+                <span class="revops-period">Agosto 2026</span>
+              </div>
+              <span class="revops-badge badge-in-progress">Em andamento ⏳</span>
+            </div>
+            <p class="revops-desc">
+              Mapeamento completo da jornada de compra, critérios de qualificação, definição de Perfil de Cliente Ideal (ICP), personas e regras de transição de Lifecycle Stages.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável em Construção:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Lifecycle-Architecture-Blueprint.md</span>
+              </div>
+            </div>
+          </div>
+          <div class="revops-takeaway">
+            <strong>Conhecimento aplicado:</strong> Padronização da taxonomia de estágios de vida dos leads no funil de receita.
+          </div>
+        </article>
+
+        <!-- PROJETO 03 -->
+        <article class="revops-card planned">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">03</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Lead Acquisition Blueprint</h3>
+                <span class="revops-period">Setembro 2026</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Arquitetura de captação de leads estruturada via formulários inteligentes, segmentações ativas e rastreamento de canais de aquisição no CRM.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Lead-Acquisition-Blueprint.md</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- PILAR 02 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 04 -->
+        <article class="revops-card planned">
           <div>
-            <div class="arch-pillar-num">02 — CRM ARCHITECTURE</div>
-            <h3 class="arch-pillar-title">Arquitetura de CRM</h3>
-            <p class="arch-pillar-desc">
-              Visão conceitual do ecossistema, definição do HubSpot como SSOT e modelagem dos 4 Objetos Principais (Company, Contact, Deal, Ticket) com regras de associação.
+            <div class="revops-card-header">
+              <span class="revops-num">04</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Sales Pipeline Blueprint</h3>
+                <span class="revops-period">Outubro 2026</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Mapeamento do pipeline de negócios comercial, definição de etapas de vendas, gatilhos de movimentação e regras de SLA para o time comercial.
             </p>
-          </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Architecture.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🏛️ CRM-Architecture</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Object-Model.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🔷 CRM-Object-Model</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Associations-Model.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🔗 Associations-Model</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/System-Mapping.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🗺️ System-Mapping</a>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Sales-Pipeline-Blueprint.md</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- PILAR 03 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 05 -->
+        <article class="revops-card planned">
           <div>
-            <div class="arch-pillar-num">03 — DATA MODEL & DICTIONARIES</div>
-            <h3 class="arch-pillar-title">Modelo & Dicionários de Dados</h3>
-            <p class="arch-pillar-desc">
-              Especificação técnica de propriedades em 5 fases, reutilização de campos nativos e 4 Dicionários de Dados detalhados com regras de atualização e preenchimento.
+            <div class="revops-card-header">
+              <span class="revops-num">05</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Automation Blueprint</h3>
+                <span class="revops-period">Novembro 2026</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Arquitetura e desenvolvimento de Workflows no HubSpot e Make.com para qualificação automática, roteamento de leads e alertas de vendas.
             </p>
-          </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Data-Model.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📊 Data-Model</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🏢 Company-Object</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📖 Company-Dict</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Contact-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📖 Contact-Dict</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Deal-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📖 Deal-Dict</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Ticket-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📖 Ticket-Dict</a>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Automation-Workflows-Blueprint.md</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- PILAR 04 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 06 -->
+        <article class="revops-card planned">
           <div>
-            <div class="arch-pillar-num">04 — PROCESS DESIGN</div>
-            <h3 class="arch-pillar-title">Processos & Implementação</h3>
-            <p class="arch-pillar-desc">
-              Mapeamento do ciclo de vida do cliente (Lead ➔ Deal ➔ Ticket ➔ Renovação), arquitetura de automação de Workflows, relatórios e plano de implementação no HubSpot.
+            <div class="revops-card-header">
+              <span class="revops-num">06</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Customer Success Playbook</h3>
+                <span class="revops-period">Dezembro 2026</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Estruturação dos processos de pós-venda, onboarding de clientes, central de atendimento via Tickets, pesquisas de NPS/CSAT e cálculo de Health Score.
             </p>
-          </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/04-Processes/Process-Design.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">⚙️ Process-Design</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/04-Processes/CRM-Automation-Architecture.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">⚡ Automation-Arch</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/04-Processes/CRM-Reporting-Architecture.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📈 Reporting-Arch</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/04-Processes/HubSpot-Implementation-Plan.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📅 Implementation-Plan</a>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Customer-Success-Playbook.md</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- PILAR 05 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 07 -->
+        <article class="revops-card planned">
           <div>
-            <div class="arch-pillar-num">05 — GOVERNANCE & STANDARDS</div>
-            <h3 class="arch-pillar-title">Governança & Decisões (ADRs)</h3>
-            <p class="arch-pillar-desc">
-              Regras globais de governança de dados, framework de qualidade, padrão de nomenclatura (prefixo <code>cp_</code> + snake_case) e Log de 10 Decisões Arquiteturais (ADRs 001-010).
+            <div class="revops-card-header">
+              <span class="revops-num">07</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">RevOps Integrated Architecture</h3>
+                <span class="revops-period">Janeiro 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Alinhamento cross-functional entre as operações de Marketing, Vendas e Customer Success com visão unificada de receita e governança integrada.
             </p>
-          </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🛡️ Data-Governance</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Quality-Framework.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">✨ Quality-Framework</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Naming-Convention.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🔤 Naming-Convention</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🏛️ ADR Log (001-010)</a>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 RevOps-Integrated-Architecture.md</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- PILAR 06 -->
-        <article class="arch-pillar-card">
+        <!-- PROJETO 08 -->
+        <article class="revops-card planned">
           <div>
-            <div class="arch-pillar-num">06 — PROJECT CLOSURE</div>
-            <h3 class="arch-pillar-title">Encerramento & Próximos Passos</h3>
-            <p class="arch-pillar-desc">
-              Relatório oficial de encerramento do Módulo 1 validando 100% da arquitetura pronta para suportar a fase de Automações, Workflows e Dashboards Executivos.
+            <div class="revops-card-header">
+              <span class="revops-num">08</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Executive Analytics Dashboard</h3>
+                <span class="revops-period">Fevereiro 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Construção de relatórios executivos no HubSpot e Looker Studio para monitoramento em tempo real de CAC, LTV, velocidade de funil e métricas de receita.
             </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Executive-Analytics-Dashboard.md</span>
+              </div>
+            </div>
           </div>
-          <div class="arch-deliverables-box">
-            <div class="arch-deliverables-label">Artefatos Produzidos:</div>
-            <div class="arch-links-wrap">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/06-Project-Closure/LAB-01-Project-Closure-Report.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">🏁 Project-Closure-Report</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="arch-link-chip">📊 Executive-Summary</a>
+        </article>
+
+        <!-- PROJETO 09 -->
+        <article class="revops-card planned">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">09</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Systems Integration Architecture</h3>
+                <span class="revops-period">Março 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Integração de sistemas legados, e-commerce, webhooks e APIs REST ao HubSpot CRM via Make.com sem duplicação de registros.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Systems-Integration-Architecture.md</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 10 -->
+        <article class="revops-card planned">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">10</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">AI RevOps Strategy</h3>
+                <span class="revops-period">Abril 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Aplicação de inteligência artificial para scoring preditivo de leads, identificação proativa de risco de churn e otimização de rotinas operacionais.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 AI-RevOps-Strategy-Blueprint.md</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 11 -->
+        <article class="revops-card planned">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">11</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">RevOps Governance Manual</h3>
+                <span class="revops-period">Maio 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Manual completo de governança operacional, política de auditoria de dados, procedimentos de higienização de base e matriz RACI.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 RevOps-Governance-Manual.md</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 12 -->
+        <article class="revops-card planned">
+          <div>
+            <div class="revops-card-header">
+              <span class="revops-num">12</span>
+              <div class="revops-title-wrap">
+                <h3 class="revops-title">Revenue Growth Blueprint</h3>
+                <span class="revops-period">Junho 2027</span>
+              </div>
+              <span class="revops-badge badge-planned">Planejado 📅</span>
+            </div>
+            <p class="revops-desc">
+              Síntese final da arquitetura completa de Revenue Operations, consolidando o modelo escalável de receita para novos ciclos de expansão.
+            </p>
+            <div class="revops-deliverables">
+              <div class="revops-deliv-title">Entregável Planejado:</div>
+              <div class="revops-links-grid">
+                <span class="revops-link-chip">📄 Revenue-Growth-Blueprint.md</span>
+              </div>
             </div>
           </div>
         </article>
@@ -362,85 +458,6 @@
     </div>
   </section>
 
-  <!-- TIMELINE / JOURNEY SECTION -->
-  <section class="timeline-section" id="journey">
-    <div class="container section-grid">
-      <div class="section-intro-sticky">
-        <h2 class="section-title">RevOps Journey</h2>
-        <p class="section-description">
-          Planejamento estratégico de implementação e desenvolvimento do ecossistema de dados ao longo de 12 meses (2026-2027).
-        </p>
-        <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/GRADE_CURRICULAR.md" target="_blank" rel="noopener noreferrer" class="view-all-link">
-          Grade Curricular Completa
-        </a>
-      </div>
-      
-      <div class="timeline">
-        <!-- MÓDULO 1 -->
-        <div class="timeline-item completed">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="timeline-date">Julho 2026</span>
-              <span class="timeline-status">Concluído</span>
-            </div>
-            <h3 class="timeline-title">Fase 1: CRM Foundations & Especificações</h3>
-            <p class="timeline-desc">Especificação funcional de objetos, governança de dados, dicionário de propriedades em 5 fases e registro de decisões arquiteturais (ADRs).</p>
-            <div class="timeline-deliverable" style="margin-bottom: 8px;">Entregáveis Estratégicos do Módulo 1:</div>
-            <div class="timeline-links" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px;">
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="skill-tag badge-completed" style="text-decoration: none;">📄 Executive Summary</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="skill-tag badge-completed" style="text-decoration: none;">🏢 Company Specification</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="skill-tag badge-completed" style="text-decoration: none;">📊 Data Dictionary</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="skill-tag badge-completed" style="text-decoration: none;">🛡️ Data Governance</a>
-              <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="skill-tag badge-completed" style="text-decoration: none;">🏛️ ADR Log (ADR 001-010)</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MÓDULO 2 -->
-        <div class="timeline-item in-progress">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="timeline-date">Agosto 2026</span>
-              <span class="timeline-status">Em Curso</span>
-            </div>
-            <h3 class="timeline-title">Fase 2: Customer Journey</h3>
-            <p class="timeline-desc">Mapeamento da jornada de compra, transições de Lifecycle Stages, ICP e definição de personas no CRM.</p>
-            <div class="timeline-deliverable">Entregável: <code>Lifecycle Architecture</code></div>
-          </div>
-        </div>
-
-        <!-- MÓDULO 3 -->
-        <div class="timeline-item planned">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="timeline-date">Setembro 2026</span>
-              <span class="timeline-status">Planejado</span>
-            </div>
-            <h3 class="timeline-title">Fase 3: Marketing Operations</h3>
-            <p class="timeline-desc">Captação de leads estruturada via formulários, listas de segmentação e campanhas integradas.</p>
-            <div class="timeline-deliverable">Entregável: <code>Lead Acquisition Blueprint</code></div>
-          </div>
-        </div>
-
-        <!-- MÓDULO 4 -->
-        <div class="timeline-item planned">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="timeline-date">Outubro 2026</span>
-              <span class="timeline-status">Planejado</span>
-            </div>
-            <h3 class="timeline-title">Fase 4: Sales Operations</h3>
-            <p class="timeline-desc">Mapeamento do pipeline de negócios comercial, gatilhos de transição e regras de SLA de vendas.</p>
-            <div class="timeline-deliverable">Entregável: <code>Sales Pipeline Blueprint</code></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- SKILLS & EXPERIENCE SECTION -->
   <section class="experience-section" id="skills">
@@ -587,7 +604,7 @@
             </li>
             <li>
               <strong>Localização</strong>
-              <span>Tóquio, Japão (Disponível para atuação remota global)</span>
+              <span>Tóquio, Japão ➔ Brasil (Em transição de residência | Disponível para atuação remota no Brasil e global)</span>
             </li>
             <li>
               <strong>Fuso Horário</strong>

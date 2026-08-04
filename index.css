@@ -926,89 +926,252 @@ header.site-header .container {
 }
 
 /* ==========================================================================
-   ARCHITECTURE SHOWCASE (MODULE 1 SHOWCASE)
+   HERO POSITIONING & LAB ABOUT SECTION
    ========================================================================== */
-.arch-showcase-section {
-  padding: var(--spacing-xl) 0;
+.hero-positioning {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: rgba(0, 135, 90, 0.03);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0 4px 4px 0;
+}
+
+.lab-about-section {
+  padding: var(--spacing-lg) 0;
   background-color: var(--bg-primary);
   border-bottom: 1px solid var(--border-color);
 }
 
-.arch-header-box {
-  margin-bottom: var(--spacing-lg);
-  padding: var(--spacing-md);
+.lab-about-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  border-left: 4px solid var(--color-accent);
-  border-radius: 6px;
+  border-radius: 12px;
+  padding: var(--spacing-md);
 }
 
-.arch-header-title {
-  font-size: 1.6rem;
-  color: var(--text-primary);
+.lab-about-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-.arch-header-desc {
-  font-size: 0.95rem;
+.lab-about-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.lab-about-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.lab-about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.lab-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.lab-stat-label {
+  font-size: 0.8rem;
   color: var(--text-secondary);
 }
 
-.arch-pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: var(--spacing-md);
+/* ==========================================================================
+   PROJETOS DO LABORATÓRIO REVOPS (GRID DE 12 CARDS)
+   ========================================================================== */
+.lab-projects-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
 }
 
-.arch-pillar-card {
-  background: var(--bg-secondary);
+.lab-tracker-box {
+  margin-bottom: 2rem;
+  background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lab-tracker-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.lab-tracker-counter {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(0, 135, 90, 0.1);
+  color: var(--color-accent);
+}
+
+.phase-roadmap-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.phase-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.phase-pill.active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(0, 135, 90, 0.05);
+}
+
+.revops-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.revops-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
   padding: 1.5rem;
-  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: var(--transition-smooth);
 }
 
-.arch-pillar-card:hover {
+.revops-card:hover {
   border-color: var(--color-accent);
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
 }
 
-.arch-pillar-num {
+.revops-card.completed {
+  border-left: 4px solid var(--color-accent);
+}
+
+.revops-card.in-progress {
+  border-left: 4px solid var(--color-warning);
+}
+
+.revops-card.planned {
+  border-left: 4px solid var(--color-muted);
+  opacity: 0.88;
+}
+
+.revops-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.revops-num {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-accent);
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
+  line-height: 1;
 }
 
-.arch-pillar-title {
-  font-size: 1.25rem;
+.revops-title-wrap {
+  flex: 1;
+}
+
+.revops-title {
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 2px;
+  line-height: 1.3;
 }
 
-.arch-pillar-desc {
+.revops-period {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  display: block;
+}
+
+.revops-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.badge-completed {
+  background: rgba(0, 135, 90, 0.1);
+  color: var(--color-accent);
+}
+
+.badge-in-progress {
+  background: rgba(217, 119, 6, 0.1);
+  color: var(--color-warning);
+}
+
+.badge-planned {
+  background: rgba(163, 163, 163, 0.15);
+  color: var(--text-secondary);
+}
+
+.revops-desc {
   font-size: 0.88rem;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.arch-deliverables-box {
-  background: var(--bg-primary);
+.revops-deliverables {
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.arch-deliverables-label {
-  font-size: 0.75rem;
+.revops-deliv-title {
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1016,30 +1179,36 @@ header.site-header .container {
   margin-bottom: 6px;
 }
 
-.arch-links-wrap {
+.revops-links-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.arch-link-chip {
+.revops-link-chip {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   transition: var(--transition-smooth);
 }
 
-.arch-link-chip:hover {
+.revops-link-chip:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
-  background: var(--bg-primary);
+}
+
+.revops-takeaway {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  border-top: 1px dashed var(--border-color);
+  padding-top: 8px;
 }
 
 /* ==========================================================================
