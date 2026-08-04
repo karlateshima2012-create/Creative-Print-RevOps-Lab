@@ -127,8 +127,6 @@ a {
   gap: 1.25rem;
   align-items: center;
   list-style: none;
-.nav-links a:hover {
-  color: var(--color-accent);
 }
 
 /* ==========================================================================
