@@ -60,6 +60,18 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
 
 ---
 
+### DA-084 — Ticket Information utilizará propriedades nativas
+
+O grupo utilizará exclusivamente propriedades nativas do HubSpot na versão inicial.
+
+---
+
+### DA-085 — Não criar propriedades duplicadas
+
+Informações operacionais de identificação do ticket permanecerão nas propriedades padrão do HubSpot.
+
+---
+
 ## Resultado
 
 ### Propriedades Aprovadas
@@ -99,16 +111,13 @@ Category e Source serão adicionados ao processo quando houver volume suficiente
 
 ## Objetivo
 
-O grupo Ticket Activity reúne propriedades relacionadas ao histórico de movimentação, interação e desempenho dos chamados.
+O grupo Ticket Activity reúne propriedades utilizadas para acompanhar a evolução operacional do ticket e medir indicadores de atendimento.
 
-Essas propriedades permitem acompanhar:
-
-* tempo de resolução;
-* velocidade de atendimento;
-* histórico de interações;
-* qualidade do suporte.
-
-A maioria dessas informações é gerada automaticamente pelo HubSpot e não deve ser preenchida manualmente.
+Essas propriedades apoiam:
+* acompanhamento da execução;
+* medição de SLA;
+* produtividade;
+* Customer Success.
 
 ---
 
@@ -116,25 +125,16 @@ A maioria dessas informações é gerada automaticamente pelo HubSpot e não dev
 
 | Propriedade | Categoria | Necessária? | Origem |
 | --- | --- | --- | --- |
-| Create Date | Data de criação | Sim | HubSpot |
-| Close Date | Data de fechamento | Sim | HubSpot |
-| Last Modified Date | Histórico | Não inicialmente | HubSpot |
-| Last Activity Date | Histórico de interação | Sim | HubSpot |
-| Next Activity Date | Próxima ação | Sim | HubSpot |
-| Last Customer Reply Date | Resposta do cliente | Sim | HubSpot |
-| First Agent Email Response Date | Primeiro atendimento | Sim | HubSpot |
-| Time to First Agent Email Reply | SLA atendimento | Avaliar | HubSpot |
-| Time to Close | SLA resolução | Avaliar | HubSpot |
-| Ticket Reopen Date | Reabertura | Não inicialmente | HubSpot |
-| Last Closed Date | Histórico | Não inicialmente | HubSpot |
-| Owner Assigned Date | Responsabilidade | Não inicialmente | HubSpot |
-| Number of Times Contacted | Métrica interação | Não inicialmente | HubSpot |
-| Number of Sales Activities | Métrica atividade | Não inicialmente | HubSpot |
-| Last CSAT Survey Rating | Satisfação cliente | Avaliar | HubSpot |
-| Last CSAT Survey Date | Pesquisa satisfação | Avaliar | HubSpot |
-| Last CSAT Survey Comment | Feedback cliente | Avaliar | HubSpot |
-| Last NPS Survey Comment | Feedback cliente | Avaliar | HubSpot |
-| Portal-wide Snooze | Controle interno | Não | HubSpot |
+| Create Date | Nativa | Sim | HubSpot |
+| Close Date | Nativa | Sim | HubSpot |
+| Last Activity Date | Nativa | Sim | HubSpot |
+| Last Contacted Date | Nativa | Sim | HubSpot |
+| Next Activity Date | Nativa | Sim | HubSpot |
+| Number of Sales Activities | Nativa | Sim | HubSpot |
+| Time to Close | Nativa | Sim | HubSpot |
+| Last CSAT Survey Rating | Nativa | Sim | HubSpot |
+| Last CSAT Survey Date | Nativa | Sim | HubSpot |
+| Last NPS Survey Comment | Nativa | Sim | HubSpot |
 
 ---
 
@@ -152,6 +152,18 @@ CSAT e NPS serão utilizados quando existir processo estruturado de Customer Suc
 
 ---
 
+### DA-086 — Indicadores operacionais permanecerão nativos
+
+Todos os indicadores de atividade e SLA utilizarão propriedades nativas do HubSpot.
+
+---
+
+### DA-087 — Customer Success utilizará métricas automáticas
+
+Sempre que possível, métricas de CSAT, NPS e tempo de atendimento serão obtidas das propriedades automáticas da plataforma, evitando cálculos ou campos manuais.
+
+---
+
 ## Resultado
 
 ### Propriedades Aprovadas
@@ -161,36 +173,13 @@ CSAT e NPS serão utilizados quando existir processo estruturado de Customer Suc
 | Create Date | HubSpot | Date |
 | Close Date | HubSpot | Date |
 | Last Activity Date | HubSpot | Date |
+| Last Contacted Date | HubSpot | Date |
 | Next Activity Date | HubSpot | Date |
-| Last Customer Reply Date | HubSpot | Date |
-| First Agent Email Response Date | HubSpot | Date |
-
----
-
-### Avaliar Futuramente
-
-| Propriedade | Motivo |
-| --- | --- |
-| Time to First Agent Email Reply | SLA |
-| Time to Close | SLA |
-| Last CSAT Survey Rating | Customer Success |
-| Last CSAT Survey Date | Customer Success |
-| Last CSAT Survey Comment | Feedback |
-| Last NPS Survey Comment | Feedback |
-
----
-
-### Não Utilizar Inicialmente
-
-| Propriedade | Motivo |
-| --- | --- |
-| Last Modified Date | Campo técnico de controle |
-| Ticket Reopen Date | Histórico estendido |
-| Last Closed Date | Histórico estendido |
-| Owner Assigned Date | Histórico estendido |
-| Number of Times Contacted | Métrica derivada em relatórios |
-| Number of Sales Activities | Métrica derivada em relatórios |
-| Portal-wide Snooze | Controle interno do HubSpot |
+| Number of Sales Activities | HubSpot | Number |
+| Time to Close | HubSpot | Calculation |
+| Last CSAT Survey Rating | HubSpot | Rollup |
+| Last CSAT Survey Date | HubSpot | Rollup |
+| Last NPS Survey Comment | HubSpot | Rollup |
 
 ---
 
@@ -203,10 +192,14 @@ CSAT e NPS serão utilizados quando existir processo estruturado de Customer Suc
   * Create Date
   * Close Date
   * Last Activity Date
+  * Last Contacted Date
   * Next Activity Date
-  * Last Customer Reply Date
-  * First Agent Email Response Date
-- **Decisão arquitetural principal:** O grupo utilizará as propriedades de data de atendimento do HubSpot para controle de ciclo de vida e tempo de resposta.
+  * Number of Sales Activities
+  * Time to Close
+  * Last CSAT Survey Rating
+  * Last CSAT Survey Date
+  * Last NPS Survey Comment
+- **Decisão arquitetural principal:** O grupo utilizará 10 propriedades nativas do HubSpot para controle de datas, contagem de atividades, cálculo de SLA de fechamento e métricas de satisfação (CSAT/NPS).
 
 ---
 
