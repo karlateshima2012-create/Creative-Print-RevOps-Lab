@@ -173,3 +173,20 @@ Ao longo do laboratório foram consolidados conhecimentos fundamentais para proj
 O Laboratório do Módulo 1 entregou uma arquitetura completa de CRM para a Creative Print, contemplando estratégia, governança, modelagem de dados e configuração estrutural inicial no HubSpot.
 
 A plataforma encontra-se preparada para iniciar a próxima fase da formação, dedicada à implementação de automações, workflows, segmentações e processos de Revenue Operations.
+
+---
+
+## 8. Limitações do Módulo
+
+Este laboratório contemplou exclusivamente a arquitetura do CRM.
+
+Não fazem parte deste módulo:
+
+- Workflows
+- Dashboards
+- Relatórios
+- Formulários
+- Integrações
+- APIs
+- Lead Scoring
+- Objetos Customizados
