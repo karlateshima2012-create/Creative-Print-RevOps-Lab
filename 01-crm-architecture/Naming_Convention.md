@@ -33,6 +33,16 @@
 | `cp_deal_source` | Origem do Negócio | Negócio |
 | `cp_ticket_type` | Tipo de Ticket | Ticket |
 
+### Exemplos de Nomenclatura Interna
+
+| Correto | Incorreto |
+| --- | --- |
+| `customer_health` | `CustomerHealth` |
+| `company_size` | `Company Size` |
+| `cp_lead_source` | `cp-lead-source` |
+
+---
+
 ## 2. Grupo de propriedades
 
 Todas as properties customizadas ficam agrupadas em: **Creative Print Information**
