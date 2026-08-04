@@ -7,476 +7,568 @@
   <title>Karla Teshima | RevOps Specialist & CRM Architect</title>
   
   <!-- Estilos Globais -->
-  <link rel="stylesheet" href="index.css?v=16">
+  <link rel="stylesheet" href="index.css?v=17">
 </head>
 <body>
 
-  <!-- SITE HEADER -->
-  <header class="site-header" id="home">
-    <div class="container">
-      <div class="logo">
-        KARLA TESHIMA
-      </div>
-      <nav>        <ul class="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#lab-about">Como Trabalho</a></li>
-          <li><a href="#projects">Projetos RevOps</a></li>
-          <li><a href="#certifications">Certificações</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+  <!-- NAVEGAÇÃO LATERAL ESQUERDA (SIDEBAR DE ÍCONES VERTICAIS) -->
+  <aside class="sidebar-vertical-nav" aria-label="Navegação Principal">
+    <div class="sidebar-brand-avatar" title="Karla Teshima">
+      KT
     </div>
-  </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="about">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          <span>KARLA</span>
-          <span>TESHIMA</span>
-        </h1>
-        <div class="hero-subtitle">
-          CEO & Founder @ Creative Print • SaaS Developer • RevOps & CRM Architect
-        </div>
-        <p class="hero-positioning">
-          “Construindo e documentando uma operação completa de Revenue Operations do zero — módulo a módulo — usando minha própria empresa como laboratório real.”
-        </p>
-        <div class="hero-cta" style="margin-top: 1.5rem;">
-          <a href="mailto:karlateshima@icloud.com" class="btn btn-primary">Contato Direto</a>
-          <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Repositório no GitHub
-          </a>
-        </div>
-      </div>
-      
-      <div class="hero-image-wrapper">
-        <img 
-          src="assets/karla_profile_transparent.png" 
-          alt="Retrato profissional de Karla Teshima" 
-          class="profile-avatar-transparent"
-          fetchpriority="high"
-          width="420"
-          height="420"
-        >
-      </div>
+    <ul class="sidebar-icon-menu">
+      <!-- ÍCONE 1: SOBRE MIM -->
+      <li>
+        <button class="nav-icon-btn active" data-section="sec-about" onclick="switchSection('sec-about')" aria-label="Sobre Mim">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span class="tooltip">Sobre Mim</span>
+        </button>
+      </li>
+
+      <!-- ÍCONE 2: PROJETOS -->
+      <li>
+        <button class="nav-icon-btn" data-section="sec-projects" onclick="switchSection('sec-projects')" aria-label="Projetos RevOps">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span class="tooltip">Projetos RevOps</span>
+        </button>
+      </li>
+
+      <!-- ÍCONE 3: RESUME -->
+      <li>
+        <button class="nav-icon-btn" data-section="sec-resume" onclick="switchSection('sec-resume')" aria-label="Resume & Trajetória">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span class="tooltip">Resume & Trajetória</span>
+        </button>
+      </li>
+
+      <!-- ÍCONE 4: SKILLS & CERTIFICAÇÕES -->
+      <li>
+        <button class="nav-icon-btn" data-section="sec-skills" onclick="switchSection('sec-skills')" aria-label="Skills & Certificações">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span class="tooltip">Skills & Certificações</span>
+        </button>
+      </li>
+
+      <!-- ÍCONE 5: CONTACTS -->
+      <li>
+        <button class="nav-icon-btn" data-section="sec-contacts" onclick="switchSection('sec-contacts')" aria-label="Contato">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span class="tooltip">Contato</span>
+        </button>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer-info">
+      2026
     </div>
-  </section>
+  </aside>
 
-  <!-- SOBRE O LABORATÓRIO / COMO EU TRABALHO -->
-  <section class="lab-about-section" id="lab-about">
-    <div class="container">
-      <div class="lab-about-card">
-        <span class="lab-about-badge">SOBRE O LABORATÓRIO & MÉTODO</span>
-        <h2 class="lab-about-title">Estudo Independente • Aplicação Real • Documentação Pública</h2>
-        <p class="lab-about-text">
-          Estudo de forma independente, aplico imediatamente na minha empresa e documento tudo publicamente.<br>
-          A <strong>Creative Print</strong> não é só meu negócio — é o laboratório onde testo arquitetura de CRM, automações, governança de dados e Revenue Operations na prática.<br>
-          Cada projeto gera documentação técnica real (Data Model, Naming Conventions, Blueprints, Playbooks) disponível no GitHub.
-        </p>
-        <div class="lab-about-stats">
-          <div class="lab-stat">
-            <span class="lab-stat-num">01 / 12</span>
-            <span class="lab-stat-label">Projeto Concluído & Documentado</span>
+  <!-- ÁREA PRINCIPAL DA APLICAÇÃO (LAYOUT EM TABS COM ANIMAÇÃO DO TOPO) -->
+  <main class="app-main-layout">
+
+    <!-- ===================================================================
+         SEÇÃO 1: SOBRE MIM (#sec-about)
+         =================================================================== -->
+    <section class="tab-section active" id="sec-about">
+      <div class="container hero-grid" style="padding-top: 1rem;">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>KARLA</span>
+            <span>TESHIMA</span>
+          </h1>
+          <div class="hero-subtitle">
+            CEO & Founder @ Creative Print • SaaS Developer • RevOps & CRM Architect
           </div>
-          <div class="lab-stat">
-            <span class="lab-stat-num">100%</span>
-            <span class="lab-stat-label">Documentação Técnica Aberta</span>
-          </div>
-          <div class="lab-stat">
-            <span class="lab-stat-num">HubSpot SSOT</span>
-            <span class="lab-stat-label">Fonte Única da Verdade Comercial</span>
+          <p class="hero-positioning">
+            “Construindo e documentando uma operação completa de Revenue Operations do zero — módulo a módulo — usando minha própria empresa como laboratório real.”
+          </p>
+          <div class="hero-cta" style="margin-top: 1.5rem;">
+            <button onclick="switchSection('sec-contacts')" class="btn btn-primary">Contato Direto</button>
+            <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Repositório no GitHub
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS DO LABORATÓRIO REVOPS -->
-  <section class="lab-projects-section" id="projects">
-    <div class="container">
-      
-      <div style="margin-bottom: 1.5rem;">
-        <h2 class="section-title">Projetos do Laboratório RevOps</h2>
-        <p class="section-description" style="max-width: 750px; margin-top: 8px;">
-          12 projetos práticos aplicados na Creative Print | Documentação pública e evolutiva (2026-2027)
-        </p>
-      </div>
-
-      <!-- TRACKER E ROADMAP DE FASES -->
-      <div class="lab-tracker-box">
-        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-          <span class="lab-tracker-title">Evolução do Ecossistema:</span>
-          <div class="phase-roadmap-pills">
-            <span class="phase-pill active">Fundações (Projetos 01–04)</span>
-            <span class="phase-pill">Operações Integradas (Projetos 05–08)</span>
-            <span class="phase-pill">Escala, IA & Estratégia (Projetos 09–12)</span>
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <span class="lab-tracker-counter">🎯 1 de 12 Projetos Documentados</span>
-          <div style="display: flex; gap: 6px;">
-            <button onclick="document.getElementById('revops-slider').scrollBy({left: -400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para esquerda">‹</button>
-            <button onclick="document.getElementById('revops-slider').scrollBy({left: 400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para direita">›</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="revops-projects-grid" id="revops-slider">
         
-        <!-- PROJETO 01 -->
-        <article class="revops-card completed">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">01</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">CRM Architecture Blueprint</h3>
-                <span class="revops-period">Julho 2026</span>
-              </div>
-              <span class="revops-badge badge-completed">Concluído ✅</span>
-            </div>
-            <p class="revops-desc">
-              Especificação conceitual da arquitetura de CRM, definição dos 4 Objetos Principais (Company, Contact, Deal, Ticket), governança de dados, dicionário de propriedades em 5 fases e 10 Decisões Arquiteturais (ADRs 001-010).
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregáveis Oficiais no GitHub:</div>
-              <div class="revops-links-grid">
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📊 00-Executive-Summary.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Business-Discovery.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📄 Business-Discovery.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ CRM-Architecture.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏢 Company-Object-Architecture.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📖 Company-Data-Dictionary.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🛡️ CRM-Data-Governance.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ Architecture-Decisions.md</a>
-                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/06-Project-Closure/LAB-01-Project-Closure-Report.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏁 LAB-01-Project-Closure-Report.md</a>
-              </div>
-            </div>
-          </div>
-          <div class="revops-takeaway">
-            <strong>O que foi aplicado:</strong> Arquitetura de dados orientada a processos antes da implementação do software; eliminação da dívida técnica no HubSpot.
-          </div>
-        </article>
-
-        <!-- PROJETO 02 -->
-        <article class="revops-card in-progress">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">02</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Lifecycle Architecture</h3>
-                <span class="revops-period">Agosto 2026</span>
-              </div>
-              <span class="revops-badge badge-in-progress">Em andamento ⏳</span>
-            </div>
-            <p class="revops-desc">
-              Mapeamento completo da jornada de compra, critérios de qualificação, definição de Perfil de Cliente Ideal (ICP), personas e regras de transição de Lifecycle Stages.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável em Construção:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Lifecycle-Architecture-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-          <div class="revops-takeaway">
-            <strong>Conhecimento aplicado:</strong> Padronização da taxonomia de estágios de vida dos leads no funil de receita.
-          </div>
-        </article>
-
-        <!-- PROJETO 03 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">03</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Lead Acquisition Blueprint</h3>
-                <span class="revops-period">Setembro 2026</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Arquitetura de captação de leads estruturada via formulários inteligentes, segmentações ativas e rastreamento de canais de aquisição no CRM.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Lead-Acquisition-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 04 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">04</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Sales Pipeline Blueprint</h3>
-                <span class="revops-period">Outubro 2026</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Mapeamento do pipeline de negócios comercial, definição de etapas de vendas, gatilhos de movimentação e regras de SLA para o time comercial.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Sales-Pipeline-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 05 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">05</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Automation Blueprint</h3>
-                <span class="revops-period">Novembro 2026</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Arquitetura e desenvolvimento de Workflows no HubSpot e Make.com para qualificação automática, roteamento de leads e alertas de vendas.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Automation-Workflows-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 06 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">06</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Customer Success Playbook</h3>
-                <span class="revops-period">Dezembro 2026</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Estruturação dos processos de pós-venda, onboarding de clientes, central de atendimento via Tickets, pesquisas de NPS/CSAT e cálculo de Health Score.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Customer-Success-Playbook.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 07 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">07</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">RevOps Integrated Architecture</h3>
-                <span class="revops-period">Janeiro 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Alinhamento cross-functional entre as operações de Marketing, Vendas e Customer Success com visão unificada de receita e governança integrada.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 RevOps-Integrated-Architecture.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 08 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">08</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Executive Analytics Dashboard</h3>
-                <span class="revops-period">Fevereiro 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Construção de relatórios executivos no HubSpot e Looker Studio para monitoramento em tempo real de CAC, LTV, velocidade de funil e métricas de receita.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Executive-Analytics-Dashboard.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 09 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">09</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Systems Integration Architecture</h3>
-                <span class="revops-period">Março 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Integração de sistemas legados, e-commerce, webhooks e APIs REST ao HubSpot CRM via Make.com sem duplicação de registros.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Systems-Integration-Architecture.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 10 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">10</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">AI RevOps Strategy</h3>
-                <span class="revops-period">Abril 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Aplicação de inteligência artificial para scoring preditivo de leads, identificação proativa de risco de churn e otimização de rotinas operacionais.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 AI-RevOps-Strategy-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 11 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">11</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">RevOps Governance Manual</h3>
-                <span class="revops-period">Maio 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Manual completo de governança operacional, política de auditoria de dados, procedimentos de higienização de base e matriz RACI.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 RevOps-Governance-Manual.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJETO 12 -->
-        <article class="revops-card planned">
-          <div>
-            <div class="revops-card-header">
-              <span class="revops-num">12</span>
-              <div class="revops-title-wrap">
-                <h3 class="revops-title">Revenue Growth Blueprint</h3>
-                <span class="revops-period">Junho 2027</span>
-              </div>
-              <span class="revops-badge badge-planned">Planejado 📅</span>
-            </div>
-            <p class="revops-desc">
-              Síntese final da arquitetura completa de Revenue Operations, consolidando o modelo escalável de receita para novos ciclos de expansão.
-            </p>
-            <div class="revops-deliverables">
-              <div class="revops-deliv-title">Entregável Planejado:</div>
-              <div class="revops-links-grid">
-                <span class="revops-link-chip">📄 Revenue-Growth-Blueprint.md</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
+        <div class="hero-image-wrapper">
+          <img 
+            src="assets/karla_profile_transparent.png" 
+            alt="Retrato profissional de Karla Teshima" 
+            class="profile-avatar-transparent"
+            fetchpriority="high"
+            width="420"
+            height="420"
+          >
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- CERTIFICATIONS SECTION -->
-  <section class="certifications-section" id="certifications">
-    <div class="container">
-      <h2 class="section-title">Certificações Oficiais</h2>
-      <p class="section-description" style="max-width: 700px; margin-top: 10px; margin-bottom: 25px;">
-        Certificações atestadas por plataformas globais como HubSpot Academy, comprovando domínio em software comercial, arquitetura de dados e estratégias de vendas.
-      </p>
-
-      <div class="cert-card-grid">
-        
-        <!-- CERTIFICAÇÃO 1: HUBSPOT SALES HUB -->
-        <article class="cert-card">
-          <div class="cert-img-wrapper">
-            <img src="assets/hubspot_sales_hub_certificate.png" alt="HubSpot Sales Hub Software Certified — Karla Teshima" loading="lazy" width="140" height="100">
-          </div>
-          <div class="cert-info">
-            <span class="cert-badge-status">✅ Ativa & Verificada</span>
-            <h3 class="cert-title">HubSpot Sales Hub Software Certified</h3>
-            <div class="cert-issuer">HubSpot Academy</div>
-            <div class="cert-meta-list">
-              <div class="cert-meta-item">
-                <strong>Titular:</strong> Karla Teshima
-              </div>
-              <div class="cert-meta-item">
-                <strong>Validade:</strong> 21 de Julho de 2026 – 20 de Agosto de 2027
-              </div>
-              <div class="cert-meta-item" style="margin-top: 4px;">
-                <strong>Código de Verificação:</strong>
-              </div>
-              <span class="cert-code-pill">7e1a1403bea34798b01c50c22e765bd2</span>
+      <!-- SOBRE O LABORATÓRIO / MÉTODO -->
+      <div class="container" style="margin-top: 2.5rem;">
+        <div class="lab-about-card">
+          <span class="lab-about-badge">SOBRE O LABORATÓRIO & MÉTODO</span>
+          <h2 class="lab-about-title">Estudo Independente • Aplicação Real • Documentação Pública</h2>
+          <p class="lab-about-text">
+            Estudo de forma independente, aplico imediatamente na minha empresa e documento tudo publicamente.<br>
+            A <strong>Creative Print</strong> não é só meu negócio — é o laboratório onde testo arquitetura de CRM, automações, governança de dados e Revenue Operations na prática.<br>
+            Cada projeto gera documentação técnica real (Data Model, Naming Conventions, Blueprints, Playbooks) disponível no GitHub.
+          </p>
+          <div class="lab-about-stats">
+            <div class="lab-stat">
+              <span class="lab-stat-num">01 / 12</span>
+              <span class="lab-stat-label">Projeto Concluído & Documentado</span>
             </div>
-            <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4;">
-              Certificação oficial comprovando capacidade técnica para criar, estruturar e implementar estratégias comerciais orientadas por processos no HubSpot Sales Hub.
-            </p>
+            <div class="lab-stat">
+              <span class="lab-stat-num">100%</span>
+              <span class="lab-stat-label">Documentação Técnica Aberta</span>
+            </div>
+            <div class="lab-stat">
+              <span class="lab-stat-num">HubSpot SSOT</span>
+              <span class="lab-stat-label">Fonte Única da Verdade Comercial</span>
+            </div>
           </div>
-        </article>
-
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- SKILLS & EXPERIENCE SECTION -->
-  <section class="experience-section" id="skills">
-    <div class="container experience-grid">
-      
-      <!-- Habilidades (Esquerda) -->
-      <div class="skills-wrapper">
-        <h2 class="section-title">Skills & Toolkit</h2>
-        <p class="section-description" style="max-width: 100%; margin-top: 15px; margin-bottom: 25px;">
-          Domínio técnico focado na intersecção de engenharia de software e processos operacionais de receita.
-        </p>
+    <!-- ===================================================================
+         SEÇÃO 2: PROJETOS (#sec-projects)
+         =================================================================== -->
+    <section class="tab-section" id="sec-projects">
+      <div class="container">
         
-        <div class="skills-categories-grid">
+        <div style="margin-bottom: 1.5rem;">
+          <h2 class="section-title">Projetos do Laboratório RevOps</h2>
+          <p class="section-description" style="max-width: 750px; margin-top: 8px;">
+            12 projetos práticos aplicados na Creative Print | Documentação pública e evolutiva (2026-2027)
+          </p>
+        </div>
+
+        <!-- TRACKER E ROADMAP DE FASES -->
+        <div class="lab-tracker-box">
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <span class="lab-tracker-title">Evolução do Ecossistema:</span>
+            <div class="phase-roadmap-pills">
+              <span class="phase-pill active">Fundações (Projetos 01–04)</span>
+              <span class="phase-pill">Operações Integradas (Projetos 05–08)</span>
+              <span class="phase-pill">Escala, IA & Estratégia (Projetos 09–12)</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="lab-tracker-counter">🎯 1 de 12 Projetos Documentados</span>
+            <div style="display: flex; gap: 6px;">
+              <button onclick="document.getElementById('revops-slider').scrollBy({left: -400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para esquerda">‹</button>
+              <button onclick="document.getElementById('revops-slider').scrollBy({left: 400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para direita">›</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDER HORIZONTAL DE CARDS -->
+        <div class="revops-projects-grid" id="revops-slider">
+          
+          <!-- PROJETO 01 -->
+          <article class="revops-card completed">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">01</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">CRM Architecture Blueprint</h3>
+                  <span class="revops-period">Julho 2026</span>
+                </div>
+                <span class="revops-badge badge-completed">Concluído ✅</span>
+              </div>
+              <p class="revops-desc">
+                Especificação conceitual da arquitetura de CRM, definição dos 4 Objetos Principais (Company, Contact, Deal, Ticket), governança de dados, dicionário de propriedades em 5 fases e 10 Decisões Arquiteturais (ADRs 001-010).
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregáveis Oficiais no GitHub:</div>
+                <div class="revops-links-grid">
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📊 00-Executive-Summary.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/01-Business/Business-Discovery.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📄 Business-Discovery.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/02-Architecture/CRM-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ CRM-Architecture.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏢 Company-Object-Architecture.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📖 Company-Data-Dictionary.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🛡️ CRM-Data-Governance.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ Architecture-Decisions.md</a>
+                  <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/06-Project-Closure/LAB-01-Project-Closure-Report.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏁 LAB-01-Project-Closure-Report.md</a>
+                </div>
+              </div>
+            </div>
+            <div class="revops-takeaway">
+              <strong>O que foi aplicado:</strong> Arquitetura de dados orientada a processos antes da implementação do software; eliminação da dívida técnica no HubSpot.
+            </div>
+          </article>
+
+          <!-- PROJETO 02 -->
+          <article class="revops-card in-progress">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">02</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Lifecycle Architecture</h3>
+                  <span class="revops-period">Agosto 2026</span>
+                </div>
+                <span class="revops-badge badge-in-progress">Em andamento ⏳</span>
+              </div>
+              <p class="revops-desc">
+                Mapeamento completo da jornada de compra, critérios de qualificação, definição de Perfil de Cliente Ideal (ICP), personas e regras de transição de Lifecycle Stages.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável em Construção:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Lifecycle-Architecture-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+            <div class="revops-takeaway">
+              <strong>Conhecimento aplicado:</strong> Padronização da taxonomia de estágios de vida dos leads no funil de receita.
+            </div>
+          </article>
+
+          <!-- PROJETO 03 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">03</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Lead Acquisition Blueprint</h3>
+                  <span class="revops-period">Setembro 2026</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Arquitetura de captação de leads estruturada via formulários inteligentes, segmentações ativas e rastreamento de canais de aquisição no CRM.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Lead-Acquisition-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 04 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">04</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Sales Pipeline Blueprint</h3>
+                  <span class="revops-period">Outubro 2026</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Mapeamento do pipeline de negócios comercial, definição de etapas de vendas, gatilhos de movimentação e regras de SLA para o time comercial.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Sales-Pipeline-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 05 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">05</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Automation Blueprint</h3>
+                  <span class="revops-period">Novembro 2026</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Arquitetura e desenvolvimento de Workflows no HubSpot e Make.com para qualificação automática, roteamento de leads e alertas de vendas.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Automation-Workflows-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 06 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">06</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Customer Success Playbook</h3>
+                  <span class="revops-period">Dezembro 2026</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Estruturação dos processos de pós-venda, onboarding de clientes, central de atendimento via Tickets, pesquisas de NPS/CSAT e cálculo de Health Score.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Customer-Success-Playbook.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 07 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">07</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">RevOps Integrated Architecture</h3>
+                  <span class="revops-period">Janeiro 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Alinhamento cross-functional entre as operações de Marketing, Vendas e Customer Success com visão unificada de receita e governança integrada.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 RevOps-Integrated-Architecture.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 08 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">08</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Executive Analytics Dashboard</h3>
+                  <span class="revops-period">Fevereiro 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Construção de relatórios executivos no HubSpot e Looker Studio para monitoramento em tempo real de CAC, LTV, velocidade de funil e métricas de receita.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Executive-Analytics-Dashboard.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 09 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">09</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Systems Integration Architecture</h3>
+                  <span class="revops-period">Março 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Integração de sistemas legados, e-commerce, webhooks e APIs REST ao HubSpot CRM via Make.com sem duplicação de registros.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Systems-Integration-Architecture.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 10 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">10</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">AI RevOps Strategy</h3>
+                  <span class="revops-period">Abril 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Aplicação de inteligência artificial para scoring preditivo de leads, identificação proativa de risco de churn e otimização de rotinas operacionais.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 AI-RevOps-Strategy-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 11 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">11</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">RevOps Governance Manual</h3>
+                  <span class="revops-period">Maio 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Manual completo de governança operacional, política de auditoria de dados, procedimentos de higienização de base e matriz RACI.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 RevOps-Governance-Manual.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 12 -->
+          <article class="revops-card planned">
+            <div>
+              <div class="revops-card-header">
+                <span class="revops-num">12</span>
+                <div class="revops-title-wrap">
+                  <h3 class="revops-title">Revenue Growth Blueprint</h3>
+                  <span class="revops-period">Junho 2027</span>
+                </div>
+                <span class="revops-badge badge-planned">Planejado 📅</span>
+              </div>
+              <p class="revops-desc">
+                Síntese final da arquitetura completa de Revenue Operations, consolidando o modelo escalável de receita para novos ciclos de expansão.
+              </p>
+              <div class="revops-deliverables">
+                <div class="revops-deliv-title">Entregável Planejado:</div>
+                <div class="revops-links-grid">
+                  <span class="revops-link-chip">📄 Revenue-Growth-Blueprint.md</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 3: RESUME (#sec-resume)
+         =================================================================== -->
+    <section class="tab-section" id="sec-resume">
+      <div class="container">
+        
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-title">Resume & Trajetória Profissional</h2>
+          <p class="section-description" style="max-width: 750px; margin-top: 8px;">
+            Atuação estratégica como fundadora de empresa no Japão, unindo arquitetura de CRM, engenharia de software e processos operacionais de receita.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- IMPACTO E HISTÓRIA DE CEO -->
+          <div class="impact-wrapper">
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--text-primary);">CEO & Founder @ Creative Print</h3>
+            <p class="impact-narrative" style="margin-bottom: 1.5rem;">
+              Fundadora da <strong>Creative Print</strong> (Japão), empresa onde implemento e administro do zero toda a infraestrutura operacional de dados e receita baseada no HubSpot como única fonte de verdade comercial. 12 fases do projeto prático evolutivo em andamento (2026 - 2027).
+            </p>
+
+            <div class="stats-grid" style="margin-bottom: 1.5rem;">
+              <div class="stat-item">
+                <div class="stat-number">5<span>+</span></div>
+                <div class="stat-label">Anos como Fundadora & CEO</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Projetos do Laboratório RevOps</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100<span>%</span></div>
+                <div class="stat-label">Foco em Governança de Dados</div>
+              </div>
+            </div>
+
+            <div class="quote-card">
+              <p class="quote-text">
+                "Revenue Operations não é sobre consertar um time isolado. É sobre alinhar toda a jornada do cliente para gerar crescimento previsível."
+              </p>
+              <div class="quote-author">
+                — Karla Teshima, CEO da Creative Print
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMAÇÃO E MÓDULO 1 CONCLUÍDO -->
+          <div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--text-primary);">Formação & Certificação de Arquitetura</h3>
+            
+            <div class="lab-about-card" style="margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span class="revops-badge badge-completed">Módulo 1 Finalizado ✅</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Julho 2026</span>
+              </div>
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Módulo 1: CRM Architecture & Governance</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                100% da arquitetura conceitual e operacional do CRM concluída e documentada publicamente.
+              </p>
+              <div class="revops-deliv-title" style="margin-bottom: 6px;">Principais Entregáveis do Módulo:</div>
+              <div class="revops-links-grid">
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/00-Executive-Summary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📊 Executive Summary</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏢 Company Specification</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">📖 Data Dictionary</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/CRM-Data-Governance.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🛡️ Data Governance</a>
+                <a href="https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab/blob/main/01-crm-architecture/05-Governance/Architecture-Decisions.md" target="_blank" rel="noopener noreferrer" class="revops-link-chip">🏛️ ADR Log (001-010)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 4: SKILLS (#sec-skills)
+         =================================================================== -->
+    <section class="tab-section" id="sec-skills">
+      <div class="container">
+        
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-title">Skills & Certificações</h2>
+          <p class="section-description" style="max-width: 750px; margin-top: 8px;">
+            Domínio técnico focado na intersecção de engenharia de software, desenvolvimento de SaaS e governança operacional no HubSpot CRM.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid" style="margin-bottom: 2.5rem;">
           
           <!-- Category 1 -->
           <div class="skill-category-card">
@@ -487,11 +579,11 @@
               HubSpot Stack
             </h3>
             <div class="skill-tags-list">
-              <span class="skill-tag badge-completed">HubSpot Sales Hub ✅</span>
+              <span class="skill-tag badge-completed">HubSpot Sales Hub Certified ✅</span>
               <span class="skill-tag badge-completed">Inbound Marketing ✅</span>
               <span class="skill-tag">CRM Architecture</span>
-              <span class="skill-tag">Data Quality</span>
-              <span class="skill-tag">Custom Properties</span>
+              <span class="skill-tag">Data Quality & Governance</span>
+              <span class="skill-tag">Custom Properties & Schemas</span>
             </div>
           </div>
 
@@ -507,10 +599,9 @@
             </h3>
             <div class="skill-tags-list">
               <span class="skill-tag">Make.com (Integromat)</span>
-              <span class="skill-tag">Webhooks</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Workflow Automation</span>
+              <span class="skill-tag">Webhooks & REST APIs</span>
               <span class="skill-tag">HubSpot Workflows</span>
+              <span class="skill-tag">CRM Pipeline Automation</span>
             </div>
           </div>
 
@@ -528,7 +619,7 @@
               <span class="skill-tag">SQL</span>
               <span class="skill-tag">Looker Studio</span>
               <span class="skill-tag">Google Analytics 4</span>
-              <span class="skill-tag">ERD Modeling</span>
+              <span class="skill-tag">ERD Data Modeling</span>
               <span class="skill-tag">Business Intelligence</span>
             </div>
           </div>
@@ -547,99 +638,106 @@
               <span class="skill-tag">Git & GitHub</span>
               <span class="skill-tag">SaaS Architecture</span>
               <span class="skill-tag">API Integrations</span>
-              <span class="skill-tag">Linux / VPS Host</span>
+              <span class="skill-tag">Linux / VPS Server Host</span>
             </div>
           </div>
 
         </div>
-      </div>
 
-      <!-- Impacto (Direita) -->
-      <div class="impact-wrapper">
-        <h2 class="section-title">Impact & Experience</h2>
-        
-        <p class="impact-narrative">
-          Fundadora da <strong>Creative Print</strong> (Japão), empresa onde implemento e administro do zero toda a infraestrutura operacional de dados e receita baseada no HubSpot como única fonte de verdade comercial. 12 fases do projeto prático evolutivo em andamento (2026 - 2027).
-        </p>
-        
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">5<span>+</span></div>
-            <div class="stat-label">Anos como Fundadora & CEO</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">12</div>
-            <div class="stat-label">Módulos de Prática Real</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">100<span>%</span></div>
-            <div class="stat-label">Foco em Dados e Escala</div>
+        <!-- CERTIFICAÇÕES OFICIAIS DENTRO DE SKILLS -->
+        <div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--text-primary);">Certificações Oficiais</h3>
+          <div class="cert-card-grid">
+            
+            <!-- CERTIFICAÇÃO 1: HUBSPOT SALES HUB -->
+            <article class="cert-card">
+              <div class="cert-img-wrapper">
+                <img src="assets/hubspot_sales_hub_certificate.png" alt="HubSpot Sales Hub Software Certified — Karla Teshima" loading="lazy" width="140" height="100">
+              </div>
+              <div class="cert-info">
+                <span class="cert-badge-status">✅ Ativa & Verificada</span>
+                <h3 class="cert-title">HubSpot Sales Hub Software Certified</h3>
+                <div class="cert-issuer">HubSpot Academy</div>
+                <div class="cert-meta-list">
+                  <div class="cert-meta-item">
+                    <strong>Titular:</strong> Karla Teshima
+                  </div>
+                  <div class="cert-meta-item">
+                    <strong>Validade:</strong> 21 de Julho de 2026 – 20 de Agosto de 2027
+                  </div>
+                  <div class="cert-meta-item" style="margin-top: 4px;">
+                    <strong>Código de Verificação:</strong>
+                  </div>
+                  <span class="cert-code-pill">7e1a1403bea34798b01c50c22e765bd2</span>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4;">
+                  Certificação oficial comprovando capacidade técnica para criar, estruturar e implementar estratégias comerciais orientadas por processos no HubSpot Sales Hub.
+                </p>
+              </div>
+            </article>
+
           </div>
         </div>
 
-        <div class="quote-card">
-          <p class="quote-text">
-            "Revenue Operations não é sobre consertar um time isolado. É sobre alinhar toda a jornada do cliente para gerar crescimento previsível."
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO 5: CONTACTS (#sec-contacts)
+         =================================================================== -->
+    <section class="tab-section" id="sec-contacts">
+      <div class="container">
+        
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-title">Contato & Localização</h2>
+          <p class="section-description" style="max-width: 750px; margin-top: 8px;">
+            Vamos conversar sobre como estruturar sua operação de CRM, automatizar fluxos de trabalho ou acelerar seu desenvolvimento de SaaS.
           </p>
-          <div class="quote-author">
-            — Karla Teshima, CEO da Creative Print
-          </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section class="contact-section" id="contact">
-    <div class="container section-grid">
-      <div class="section-intro-sticky">
-        <h2 class="section-title">Contato</h2>
-        <p class="section-description">
-          Vamos conversar sobre como estruturar sua operação de CRM, automatizar fluxos de trabalho ou acelerar seu desenvolvimento de SaaS.
-        </p>
-      </div>
-      
-      <div class="contact-methods-grid">
-        <div class="contact-info-card">
-          <h3 class="contact-card-title">Informações de Contato</h3>
-          <ul class="contact-info-list">
-            <li>
-              <strong>E-mail</strong>
-              <a href="mailto:karlateshima@icloud.com" class="contact-link">karlateshima@icloud.com</a>
-            </li>
-            <li>
-              <strong>Localização</strong>
-              <span>Tóquio, Japão ➔ Brasil (Em transição de residência | Disponível para atuação remota no Brasil e global)</span>
-            </li>
-            <li>
-              <strong>Fuso Horário</strong>
-              <span>JST (Japan Standard Time) / Flexibilidade para projetos internacionais</span>
-            </li>
-          </ul>
+        <div class="contact-methods-grid">
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Informações de Contato</h3>
+            <ul class="contact-info-list">
+              <li>
+                <strong>E-mail</strong>
+                <a href="mailto:karlateshima@icloud.com" class="contact-link">karlateshima@icloud.com</a>
+              </li>
+              <li>
+                <strong>Localização</strong>
+                <span>Tóquio, Japão ➔ Brasil (Em transição de residência | Disponível para atuação remota no Brasil e global)</span>
+              </li>
+              <li>
+                <strong>Fuso Horário</strong>
+                <span>JST (Japan Standard Time) / Flexibilidade para projetos internacionais</span>
+              </li>
+            </ul>
+          </div>
+          
+          <form class="contact-form" action="mailto:karlateshima@icloud.com" method="GET" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" name="subject" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail Corporativo</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="body" rows="4" required placeholder="Como posso te ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+          </form>
         </div>
-        
-        <form class="contact-form" action="mailto:karlateshima@icloud.com" method="GET" enctype="text/plain">
-          <div class="form-group">
-            <label for="name">Nome Completo</label>
-            <input type="text" id="name" name="subject" required placeholder="Seu nome">
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail Corporativo</label>
-            <input type="email" id="email" name="email" required placeholder="seu@email.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="body" rows="4" required placeholder="Como posso te ajudar?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
-        </form>
+
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" style="margin-left: 88px;">
     <div class="container footer-content">
       <div class="footer-credits">
         <p>&copy; 2026 Karla Teshima. Desenvolvido para o Creative Print RevOps Lab.</p>
@@ -651,6 +749,36 @@
       </ul>
     </div>
   </footer>
+
+  <!-- SCRIPT DE NAVEGAÇÃO EM TABS COM TRANSIÇÃO -->
+  <script>
+    function switchSection(sectionId) {
+      // Ocultar todas as seções
+      document.querySelectorAll('.tab-section').forEach(function(sec) {
+        sec.classList.remove('active');
+      });
+      
+      // Remover classe ativa dos botões do menu lateral
+      document.querySelectorAll('.nav-icon-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+
+      // Ativar a seção alvo
+      var targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      // Ativar o botão do ícone correspondente
+      var activeBtn = document.querySelector('.nav-icon-btn[data-section="' + sectionId + '"]');
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+      }
+
+      // Rolar suavemente para o topo do conteúdo
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
