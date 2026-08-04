@@ -102,5 +102,5 @@ Este repositório serve como base técnica e estratégica para profissionais de 
 ## 👩‍💻 Autora
 
 **Karla Teshima**
-*   [LinkedIn](https://linkedin.com) *(Insira seu link aqui)*
-*   [GitHub](https://github.com/karlateshima) *(Insira seu link aqui)*
+*   [LinkedIn](https://www.linkedin.com/in/karla-teshima-revops?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
+*   [GitHub](https://github.com/karlateshima2012-create/Creative-Print-RevOps-Lab)
