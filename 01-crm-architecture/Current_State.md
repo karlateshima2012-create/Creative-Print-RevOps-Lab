@@ -72,6 +72,8 @@ Qualificação de lead, envio de proposta, cobrança de resposta (follow-up) e v
 
 CP Agenda e CP Review operam de forma isolada em relação ao processo comercial: não há visibilidade de que um cliente do CP Agenda também poderia comprar CP Review, por exemplo.
 
-## 10. Conclusão do Diagnóstico
+## 10. Conclusão
 
-O diagnóstico confirma os problemas levantados na fase de Discovery e fundamenta diretamente os objetivos definidos no Capítulo 2 do `CRM_Architecture.md`.
+A análise do estado atual demonstra que a empresa possui processos operacionais funcionais, porém sem padronização suficiente para suportar crescimento escalável.
+
+Esses problemas justificam a implementação da arquitetura proposta neste laboratório.
