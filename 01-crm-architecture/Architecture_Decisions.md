@@ -5,6 +5,17 @@
 
 ---
 
+## Índice
+
+| Categoria | Decisões Arquiteturais |
+| --- | --- |
+| Arquitetura Geral | DA-001 até DA-010 |
+| Modelagem | DA-011 até DA-030 |
+| Objetos | DA-031 até DA-060 |
+| Implementação | DA-061 até DA-087 |
+
+---
+
 ## ADR-001 — HubSpot como fonte única da verdade
 
 **Decisão:** o HubSpot será o sistema central de relacionamento comercial da Creative Print.
