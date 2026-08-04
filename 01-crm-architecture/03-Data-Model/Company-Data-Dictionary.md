@@ -155,7 +155,7 @@ Uma propriedade somente poderá fazer parte do CRM quando possuir pelo menos um 
 
 ### DA-004 — Identificação por múltiplos identificadores
 
-A identificação de uma Empresa utilizará uma combinação de propriedades, conforme definido no documento **CRM_Data_Governance.md**, não dependendo de um único identificador.
+A identificação de uma Empresa utilizará uma combinação de propriedades, conforme definido no documento **CRM-Data-Governance.md**, não dependendo de um único identificador.
 
 ---
 

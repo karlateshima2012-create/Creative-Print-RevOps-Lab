@@ -102,33 +102,33 @@ Esta abordagem garante que toda implementação seja construída sobre uma arqui
 ├── README.md
 ├── 00-Executive-Summary.md
 ├── 01-Business/
-│   ├── Business_Discovery.md
-│   ├── Current_State.md
-│   └── Future_State.md
+│   ├── Business-Discovery.md
+│   ├── Current-State.md
+│   └── Future-State.md
 ├── 02-Architecture/
-│   ├── CRM_Architecture.md
-│   ├── CRM_Object_Model.md
-│   ├── CRM_Associations_Model.md
-│   └── System_Mapping.md
+│   ├── CRM-Architecture.md
+│   ├── CRM-Object-Model.md
+│   ├── CRM-Associations-Model.md
+│   └── System-Mapping.md
 ├── 03-Data-Model/
-│   ├── Data_Model.md
-│   ├── Company_Object_Architecture.md
-│   ├── Company_Data_Dictionary.md
-│   ├── Contact_Data_Dictionary.md
-│   ├── Deal_Data_Dictionary.md
-│   └── Ticket_Data_Dictionary.md
+│   ├── Data-Model.md
+│   ├── Company-Object-Architecture.md
+│   ├── Company-Data-Dictionary.md
+│   ├── Contact-Data-Dictionary.md
+│   ├── Deal-Data-Dictionary.md
+│   └── Ticket-Data-Dictionary.md
 ├── 04-Processes/
-│   ├── Process_Design.md
-│   ├── CRM_Automation_Architecture.md
-│   ├── CRM_Reporting_Architecture.md
-│   └── HubSpot_Implementation_Plan.md
+│   ├── Process-Design.md
+│   ├── CRM-Automation-Architecture.md
+│   ├── CRM-Reporting-Architecture.md
+│   └── HubSpot-Implementation-Plan.md
 ├── 05-Governance/
-│   ├── CRM_Data_Governance.md
-│   ├── CRM_Data_Quality_Framework.md
-│   ├── Naming_Convention.md
-│   └── Architecture_Decisions.md
+│   ├── CRM-Data-Governance.md
+│   ├── CRM-Data-Quality-Framework.md
+│   ├── Naming-Convention.md
+│   └── Architecture-Decisions.md
 └── 06-Project-Closure/
-    └── LAB-01_Project_Closure_report.md
+    └── LAB-01-Project-Closure-Report.md
 ```
 
 ---
@@ -143,9 +143,9 @@ Síntese executiva da arquitetura, escopo, visão de objetos, artefatos produzid
 
 ## 01 — Business Strategy
 
-* [Business_Discovery.md](01-Business/Business_Discovery.md)
-* [Current_State.md](01-Business/Current_State.md)
-* [Future_State.md](01-Business/Future_State.md)
+* [Business-Discovery.md](01-Business/Business-Discovery.md)
+* [Current-State.md](01-Business/Current-State.md)
+* [Future-State.md](01-Business/Future-State.md)
 
 Define o contexto do negócio, os desafios identificados e a visão estratégica do CRM.
 
@@ -153,10 +153,10 @@ Define o contexto do negócio, os desafios identificados e a visão estratégica
 
 ## 02 — Architecture
 
-* [CRM_Architecture.md](02-Architecture/CRM_Architecture.md)
-* [CRM_Object_Model.md](02-Architecture/CRM_Object_Model.md)
-* [CRM_Associations_Model.md](02-Architecture/CRM_Associations_Model.md)
-* [System_Mapping.md](02-Architecture/System_Mapping.md)
+* [CRM-Architecture.md](02-Architecture/CRM-Architecture.md)
+* [CRM-Object-Model.md](02-Architecture/CRM-Object-Model.md)
+* [CRM-Associations-Model.md](02-Architecture/CRM-Associations-Model.md)
+* [System-Mapping.md](02-Architecture/System-Mapping.md)
 
 Define os objetos principais do CRM, visão conceitual e seus relacionamentos.
 
@@ -164,12 +164,12 @@ Define os objetos principais do CRM, visão conceitual e seus relacionamentos.
 
 ## 03 — Data Model
 
-* [Data_Model.md](03-Data-Model/Data_Model.md)
-* [Company_Object_Architecture.md](03-Data-Model/Company_Object_Architecture.md)
-* [Company_Data_Dictionary.md](03-Data-Model/Company_Data_Dictionary.md)
-* [Contact_Data_Dictionary.md](03-Data-Model/Contact_Data_Dictionary.md)
-* [Deal_Data_Dictionary.md](03-Data-Model/Deal_Data_Dictionary.md)
-* [Ticket_Data_Dictionary.md](03-Data-Model/Ticket_Data_Dictionary.md)
+* [Data-Model.md](03-Data-Model/Data-Model.md)
+* [Company-Object-Architecture.md](03-Data-Model/Company-Object-Architecture.md)
+* [Company-Data-Dictionary.md](03-Data-Model/Company-Data-Dictionary.md)
+* [Contact-Data-Dictionary.md](03-Data-Model/Contact-Data-Dictionary.md)
+* [Deal-Data-Dictionary.md](03-Data-Model/Deal-Data-Dictionary.md)
+* [Ticket-Data-Dictionary.md](03-Data-Model/Ticket-Data-Dictionary.md)
 
 Documenta a estrutura e dicionários de dados do CRM.
 
@@ -177,10 +177,10 @@ Documenta a estrutura e dicionários de dados do CRM.
 
 ## 04 — Processes & Implementation
 
-* [Process_Design.md](04-Processes/Process_Design.md)
-* [CRM_Automation_Architecture.md](04-Processes/CRM_Automation_Architecture.md)
-* [CRM_Reporting_Architecture.md](04-Processes/CRM_Reporting_Architecture.md)
-* [HubSpot_Implementation_Plan.md](04-Processes/HubSpot_Implementation_Plan.md)
+* [Process-Design.md](04-Processes/Process-Design.md)
+* [CRM-Automation-Architecture.md](04-Processes/CRM-Automation-Architecture.md)
+* [CRM-Reporting-Architecture.md](04-Processes/CRM-Reporting-Architecture.md)
+* [HubSpot-Implementation-Plan.md](04-Processes/HubSpot-Implementation-Plan.md)
 
 Especifica processos, arquitetura de automações, relatórios e planejamento de implementação.
 
@@ -188,10 +188,10 @@ Especifica processos, arquitetura de automações, relatórios e planejamento de
 
 ## 05 — Governance & Standards
 
-* [CRM_Data_Governance.md](05-Governance/CRM_Data_Governance.md)
-* [CRM_Data_Quality_Framework.md](05-Governance/CRM_Data_Quality_Framework.md)
-* [Naming_Convention.md](05-Governance/Naming_Convention.md)
-* [Architecture_Decisions.md](05-Governance/Architecture_Decisions.md)
+* [CRM-Data-Governance.md](05-Governance/CRM-Data-Governance.md)
+* [CRM-Data-Quality-Framework.md](05-Governance/CRM-Data-Quality-Framework.md)
+* [Naming-Convention.md](05-Governance/Naming-Convention.md)
+* [Architecture-Decisions.md](05-Governance/Architecture-Decisions.md)
 
 Estabelece padrões, governança e decisões arquiteturais (ADR Log).
 
@@ -199,7 +199,7 @@ Estabelece padrões, governança e decisões arquiteturais (ADR Log).
 
 ## 06 — Project Closure
 
-* [LAB-01_Project_Closure_report.md](06-Project-Closure/LAB-01_Project_Closure_report.md)
+* [LAB-01-Project-Closure-Report.md](06-Project-Closure/LAB-01-Project-Closure-Report.md)
 
 Documento de encerramento contendo as conclusões e os próximos passos do módulo.
 

@@ -131,7 +131,7 @@ Os sistemas da Creative Print (CP Agenda, CP Review e futuras soluções) poder�
 ## Regras de Atualização
 
 * Informações comerciais deverão ser atualizadas sempre que houver interação relevante com o cliente.
-* Alterações realizadas por integrações deverão seguir as regras definidas em **CRM_Data_Governance.md**.
+* Alterações realizadas por integrações deverão seguir as regras definidas em **CRM-Data-Governance.md**.
 * Nenhuma automação deverá sobrescrever informações preenchidas manualmente sem uma regra previamente documentada.
 * Alterações estruturais (novas propriedades, novos grupos ou mudanças de comportamento) deverão ser registradas como uma nova decisão arquitetural (ADR).
 
