@@ -2,7 +2,9 @@
 
 ## Objetivo
 
-Este documento define a arquitetura das automações que serão implementadas no CRM.
+Este documento define exclusivamente a arquitetura das automações.
+
+> **Nota:** Nenhum workflow foi implementado durante o Módulo 1.
 
 O objetivo é estabelecer:
 
