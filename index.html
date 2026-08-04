@@ -7,7 +7,7 @@
   <title>Karla Teshima | RevOps Specialist & CRM Architect</title>
   
   <!-- Estilos Globais -->
-  <link rel="stylesheet" href="index.css?v=15">
+  <link rel="stylesheet" href="index.css?v=16">
 </head>
 <body>
 
@@ -119,10 +119,16 @@
             <span class="phase-pill">Escala, IA & Estratégia (Projetos 09–12)</span>
           </div>
         </div>
-        <span class="lab-tracker-counter">🎯 1 de 12 Projetos Documentados</span>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span class="lab-tracker-counter">🎯 1 de 12 Projetos Documentados</span>
+          <div style="display: flex; gap: 6px;">
+            <button onclick="document.getElementById('revops-slider').scrollBy({left: -400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para esquerda">‹</button>
+            <button onclick="document.getElementById('revops-slider').scrollBy({left: 400, behavior: 'smooth'})" class="slider-arrow-btn" aria-label="Deslizar para direita">›</button>
+          </div>
+        </div>
       </div>
 
-      <div class="revops-projects-grid">
+      <div class="revops-projects-grid" id="revops-slider">
         
         <!-- PROJETO 01 -->
         <article class="revops-card completed">

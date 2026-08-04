@@ -1063,13 +1063,63 @@ header.site-header .container {
   background: rgba(0, 135, 90, 0.05);
 }
 
+.revops-projects-slider-wrapper {
+  position: relative;
+}
+
 .revops-projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   gap: 1.5rem;
+  padding: 0.5rem 0 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.revops-projects-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.revops-projects-grid::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 4px;
+}
+
+.revops-projects-grid::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.revops-projects-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+.slider-arrow-btn {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.slider-arrow-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--bg-secondary);
 }
 
 .revops-card {
+  flex: 0 0 380px;
+  max-width: 380px;
+  scroll-snap-align: start;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 10px;
