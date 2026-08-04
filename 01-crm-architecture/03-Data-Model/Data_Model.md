@@ -4,7 +4,7 @@
 **Nota:** Este documento descreve a estrutura lógica dos dados.
 
 As regras de relacionamento encontram-se em:
-* [CRM_Associations_Model.md](CRM_Associations_Model.md)
+* [CRM_Associations_Model.md](../02-Architecture/CRM_Associations_Model.md)
 
 As propriedades detalhadas encontram-se nos respectivos Data Dictionaries:
 * [Company Data Dictionary](Company_Data_Dictionary.md)
