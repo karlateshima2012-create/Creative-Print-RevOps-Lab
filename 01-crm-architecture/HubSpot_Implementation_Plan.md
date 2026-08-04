@@ -152,7 +152,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 | 1 | Company | ✅ Completed |
 | 2 | Contact | ✅ Completed |
 | 3 | Deal | ✅ Completed (v1) |
-| 4 | Ticket | 🟨 Architecture Completed / Configuration Pending |
+| 4 | Ticket | ✅ Completed (v1) |
 
 ---
 
@@ -390,5 +390,5 @@ A implementação do HubSpot deve seguir a arquitetura documentada previamente, 
 - **Company:** ✅ Completed
 - **Contact:** ✅ Completed
 - **Deal:** ✅ Completed (v1)
-- **Ticket:** ⬜ Pending
+- **Ticket:** ✅ Completed (v1)
 - **Associations / Automation / Reporting / Quality:** Architecture Completed / Implementation Pending
