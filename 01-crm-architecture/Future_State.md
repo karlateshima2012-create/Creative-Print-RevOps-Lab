@@ -64,3 +64,9 @@ Ao final da implementação espera-se:
 * indicadores confiáveis;
 * preparação para automações;
 * escalabilidade da operação.
+
+---
+
+## Visão Consolidada
+
+Ao final da implementação espera-se uma operação centrada em dados, com processos padronizados, visão única do cliente e base preparada para automações futuras.
