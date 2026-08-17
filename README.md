@@ -108,7 +108,7 @@ Creative-Print-Revops-Lab/
 │       ├── Customer-Evidence-Matrix.md   # Matriz de evidências empíricas
 │       └── Ideal-Customer-Profile.md     # Definição do Perfil de Cliente Ideal (ICP)
 │
-├── 02-hubspot-configuration/  # Arquivos de Configuração e Templates
+├── 00-hubspot-configuration/  # Arquivos de Configuração e Templates
 │   ├── implementation/        # Configurações de Deals e Tickets
 │   ├── import_templates/      # CSVs padronizados para carga de dados
 │   ├── pipelines.xlsx         # Mapeamento dos estágios de pipelines
@@ -129,7 +129,7 @@ Creative-Print-Revops-Lab/
 Este repositório serve como base técnica e estratégica para profissionais de Revenue Operations e consultores HubSpot.
 
 1. **Arquitetura & Governança:** Acesse [01-crm-architecture/05-Governance/Naming-Convention.md](01-crm-architecture/05-Governance/Naming-Convention.md) para entender os padrões de nomenclatura de propriedades, listas e workflows.
-2. **Configuração Prática de CRM:** Utilize os templates em [02-hubspot-configuration/import_templates/](02-hubspot-configuration/import_templates/) e as planilhas de propriedades para cargas em massa no HubSpot.
+2. **Configuração Prática de CRM:** Utilize os templates em [00-hubspot-configuration/import_templates/](00-hubspot-configuration/import_templates/) e as planilhas de propriedades para cargas em massa no HubSpot.
 3. **Decisões de Arquitetura (ADR):** Consulte as justificativas técnicas em [01-crm-architecture/05-Governance/Architecture-Decisions.md](01-crm-architecture/05-Governance/Architecture-Decisions.md).
 
 ---
