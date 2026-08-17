@@ -48,7 +48,7 @@ Todos os 12 módulos seguem a mesma estrutura metodológica:
 
 Durante toda a formação será desenvolvido **um único projeto evolutivo**, dividido em 12 fases.
 
-A Creative Print funciona como laboratório profissional para implantação progressiva de uma operação de CRM, Lifecycle Marketing, Marketing Operations, Sales Operations, Customer Success e Revenue Operations utilizando HubSpot.
+A Creative Print funciona como laboratório profissional para implantação progressiva de uma operação de CRM, Lifecycle Marketing, Marketing Operations, Sales Operations, Marketing Automation, Customer Success, Revenue Operations, Analytics, Systems Integration, AI e Governance utilizando HubSpot.
 
 Produtos reais utilizados no laboratório:
 
@@ -74,39 +74,36 @@ Ao final dos 12 meses, o ambiente documentado será o principal case profissiona
 
 ---
 
-## 5. Roadmap executivo
+## 5. Grade oficial — visão executiva
 
-| Mês | Módulo | Fase do laboratório | Status |
-|---|---|---|---|
-| Jul/2026 | **M01 — CRM Foundations** | Fundação do CRM | ✅ Concluído |
-| Ago/2026 | **M02 — Customer Journey & Lifecycle Marketing** | Estruturação da Jornada do Cliente | 🟡 Em andamento |
-| Set/2026 | **M03 — Marketing Operations** | Sistema de Aquisição de Leads | ⚪ Não iniciado |
-| Out/2026 | **M04 — Sales Operations & Revenue Data Skills** | Operação Comercial & Revenue Data Skills | ⚪ Não iniciado |
-| Nov/2026 | **M05 — Revenue Operations** | Integração da Operação de Receita | ⚪ Não iniciado |
-| Dez/2026 | **M06 — Customer Success Operations** | Operação de Customer Success | ⚪ Não iniciado |
-| Jan/2027 | **M07 — Marketing Automation** | Automação da Jornada | ⚪ Não iniciado |
-| Fev/2027 | **M08 — Data & Business Analytics** | Inteligência Analítica & BI | ⚪ Não iniciado |
-| Mar/2027 | **M09 — Systems Integration** | Arquitetura Integrada da Creative Print | ⚪ Não iniciado |
-| Abr/2027 | **M10 — AI, AEO & Intelligent RevOps** | AI-Driven Revenue Operations | ⚪ Não iniciado |
-| Mai/2027 | **M11 — Governance & Scalability** | Governança e Escalabilidade | ⚪ Não iniciado |
-| Jun/2027 | **M12 — Revenue Strategy & Business Growth** | Revenue Growth Strategy | ⚪ Não iniciado |
+| Status | Mês | Módulo | Certificações | Objetivo Estratégico |
+|---|---|---|---|---|
+| ✅ Concluído | Julho 2026 — M01 | **CRM Foundations** | HubSpot Sales Hub Software Certification | Estruturar o HubSpot CRM, organizar a base de dados, propriedades, objetos, pipelines e implantar a arquitetura inicial da Creative Print. |
+| 🟡 Em andamento | Agosto 2026 — M02 | **Customer Journey & Lifecycle Marketing** | HubSpot Inbound Marketing Certification | Definir ICP, Personas, Customer Journey e Lifecycle Stages para construir uma jornada completa do cliente e alinhar Marketing, Vendas e Customer Success. |
+| ⚪ Não iniciado | Setembro 2026 — M03 | **Marketing Operations** | HubSpot Marketing Hub Software Certification; **HubSpot Content Marketing Certification (opcional)** | Construir uma operação de Marketing previsível utilizando Landing Pages, Forms, CTAs, Campanhas, E-mail Marketing, Segmentação e geração de demanda. |
+| ⚪ Não iniciado | Outubro 2026 — M04 | **Sales Operations** | Sem certificação obrigatória | Implantar um processo comercial completo utilizando Sales Hub: Pipeline, Deals, Forecast, Meetings, Quotes, Sequences, Follow-up e produtividade comercial. Inclui fundamentos de Excel/Sheets e SQL aplicados a receita. |
+| ⚪ Não iniciado | Novembro 2026 — M05 | **Marketing Automation** | Sem certificação obrigatória | Automatizar processos de Marketing e Vendas utilizando Workflows, Lead Scoring, Personalização, Tokens, Webhooks e automações avançadas. |
+| ⚪ Não iniciado | Dezembro 2026 — M06 | **Customer Success Operations** | HubSpot Service Hub Software Certification | Estruturar onboarding, NPS, Health Score, retenção, renovação, expansão de receita e Customer Success. |
+| ⚪ Não iniciado | Janeiro 2027 — M07 | **Revenue Operations** | HubSpot Revenue Operations Certification | Integrar Marketing, Vendas e Customer Success através de processos, dados, KPIs e governança de receita. |
+| ⚪ Não iniciado | Fevereiro 2027 — M08 | **Data & Business Analytics** | HubSpot Reporting Certification; Google Analytics 4 Certification; SQL; Looker Studio | Desenvolver dashboards executivos, análises de dados, SQL aplicado ao CRM e indicadores para tomada de decisão. |
+| ⚪ Não iniciado | Março 2027 — M09 | **Systems Integration** | HubSpot Operations Hub Software Certification | Transformar o HubSpot no centro da operação integrando CP Review, Make, APIs, Meta Ads, WhatsApp e demais sistemas corporativos. |
+| ⚪ Não iniciado | Abril 2027 — M10 | **AI for Revenue Operations** | Implementing AEO with HubSpot; AEO Fundamentals; HubSpot AI for Marketers / AI Essentials quando disponível | Aplicar IA, Agentes Inteligentes, AEO, GEO e LLMO para otimizar CRM, Marketing, Vendas, Customer Success e Revenue Operations. |
+| ⚪ Não iniciado | Maio 2027 — M11 | **Governance & Scalability** | Sem certificação obrigatória | Consolidar governança, documentação, SOPs, Data Governance, Playbooks, qualidade dos dados e escalabilidade da operação. |
+| ⚪ Não iniciado | Junho 2027 — M12 | **Revenue Strategy & Business Growth** | Consolidação das certificações e revisão executiva; sem certificação obrigatória | Construir o plano estratégico de crescimento da Creative Print, consolidar o portfólio, GitHub, LinkedIn e preparar as candidaturas para vagas remotas. |
 
 ---
 
-# 6. Grade curricular oficial
+# 6. Grade curricular detalhada
 
 ## JULHO 2026 — M01: CRM Foundations
 
 ### Problema de negócio
-
 A empresa possui clientes, mas não possui um CRM estruturado. As informações estão espalhadas, não existe padronização e não há visão única do cliente.
 
 ### Competência
-
 Estruturar informações de clientes de forma organizada, escalável e confiável.
 
 ### Conteúdo
-
 - Fundamentos de CRM
 - Customer Journey
 - ICP
@@ -120,51 +117,41 @@ Estruturar informações de clientes de forma organizada, escalável e confiáve
 - HubSpot CRM
 
 ### Certificação
-
 - ✅ HubSpot Sales Hub Software Certification
 
 ### Laboratório — Fase 1: Fundação do CRM
-
-Implantar a arquitetura inicial do HubSpot:
-
 - estrutura de Contatos;
 - Empresas;
 - Negócios;
-- objetos;
+- objetos e associações;
 - properties;
 - pipelines;
 - convenções de nomenclatura;
 - modelagem dos dados do CP Agenda e CP Review.
 
 ### Entrega de portfólio
-
 **CRM Architecture**
 
 ### Estado
-
 **Status:** ✅ Concluído  
 **Repositório:** `01-crm-architecture/`
-
-Competências trabalhadas: arquitetura do CRM, objetos e associações, properties, pipelines, modelagem de dados, governança e documentação.
 
 ---
 
 ## AGOSTO 2026 — M02: Customer Journey & Lifecycle Marketing
 
 ### Problema de negócio
-
 A empresa não possui uma jornada clara e todos os clientes recebem praticamente o mesmo tratamento.
 
 ### Competência
-
 Projetar a jornada completa do cliente.
 
 ### Conteúdo
-
 - Customer Journey
 - Lifecycle Marketing
 - Inbound Marketing
 - Segmentação
+- ICP
 - Personas
 - Lead Generation
 - Lead Qualification
@@ -175,13 +162,10 @@ Projetar a jornada completa do cliente.
 - Advocacy
 
 ### Certificação
-
 - ✅ HubSpot Inbound Marketing Certification
 
 ### Laboratório — Fase 2: Estruturação da Jornada do Cliente
-
 Adicionar ao CRM:
-
 - Customer Journey;
 - Lifecycle Stages;
 - segmentações;
@@ -191,41 +175,27 @@ Adicionar ao CRM:
 - jornadas do CP Review.
 
 ### Entregas de portfólio
-
 - **Customer Journey Map**
 - **Lifecycle Architecture**
 
 ### Estado atual
-
 **Status:** 🟡 Em andamento  
 **Repositório:** `02-inbound-lifecycle/`
 
-Estrutura atual:
-
-```text
-02-inbound-lifecycle/
-├── 00-Executive-Summary.md
-└── 01-ICP-and-Buyer-Persona/
-```
-
 Trabalho iniciado:
-
 - avaliação de segmentos de mercado;
 - matriz de evidências de clientes;
 - construção de ICP e Buyer Persona;
 - separação entre evidência interna e hipóteses de mercado.
 
 ### Limitação metodológica
-
 A base histórica da Creative Print é pequena para sustentar conclusões estatísticas fortes sobre ICP e recorrência. O M02 deve manter separadas:
-
 1. evidências internas reais;
 2. hipóteses de mercado;
 3. pesquisa externa;
 4. decisões de segmentação ainda não validadas.
 
 ### Próxima ação
-
 **Concluir e validar ICP & Buyer Persona antes de avançar para Customer Journey e Lifecycle Architecture.**
 
 ---
@@ -233,19 +203,16 @@ A base histórica da Creative Print é pequena para sustentar conclusões estat�
 ## SETEMBRO 2026 — M03: Marketing Operations
 
 ### Problema de negócio
-
 A empresa depende de indicações e não possui geração previsível de demanda.
 
 ### Competência
-
 Criar um sistema previsível de geração de demanda e aquisição de clientes.
 
 ### Conteúdo
-
 - Marketing Hub
 - Landing Pages
 - Forms
-- CTA
+- CTAs
 - Campanhas
 - Email Marketing
 - Segmentação
@@ -253,14 +220,12 @@ Criar um sistema previsível de geração de demanda e aquisição de clientes.
 - Attribution
 - Conversão
 
-### Certificação planejada
-
+### Certificações planejadas
 - HubSpot Marketing Hub Software Certification
+- HubSpot Content Marketing Certification — **opcional**
 
 ### Laboratório — Fase 3: Sistema de Aquisição de Leads
-
 Construir a entrada de leads aplicada ao CP Agenda:
-
 - Landing Pages;
 - Forms;
 - Campanhas;
@@ -269,23 +234,19 @@ Construir a entrada de leads aplicada ao CP Agenda:
 - conversão para CRM.
 
 ### Entrega de portfólio
-
 **Lead Acquisition Blueprint**
 
 ---
 
-## OUTUBRO 2026 — M04: Sales Operations & Revenue Data Skills
+## OUTUBRO 2026 — M04: Sales Operations
 
 ### Problema de negócio
-
-As vendas não possuem processo definido e a tomada de decisão comercial sofre pela falta de organização, manipulação e análise de dados de receita.
+As vendas não possuem processo definido, e a tomada de decisão comercial sofre pela falta de organização e análise dos dados de receita.
 
 ### Competência
-
-Construir uma operação comercial eficiente e previsível, fundamentada em análise de dados de receita com Excel/Google Sheets e SQL.
+Implantar uma operação comercial eficiente e previsível e desenvolver fundamentos de análise de receita.
 
 ### Conteúdo — Sales Operations
-
 - Pipeline de Vendas
 - Deals
 - Forecast
@@ -297,89 +258,77 @@ Construir uma operação comercial eficiente e previsível, fundamentada em aná
 - Follow-up
 - Produtividade e eficiência comercial
 
-### Conteúdo — Revenue Data Skills
-
-- Excel e Google Sheets avançado
-- Tabelas dinâmicas
-- Fórmulas de busca e manipulação
-- VLOOKUP
-- INDEX/MATCH
-- QUERY
-- Tratamento de bases comerciais
-- Relatórios de apoio a vendas
-- SQL aplicado a funil, conversão, sales cycle, ticket médio e receita
-
-> Excel, Google Sheets e SQL fazem parte deste módulo. Não constituem um 13º módulo.
+### Revenue Data Foundations
+Excel/Google Sheets e SQL entram aqui como fundamentos aplicados ao processo comercial, sem transformar o módulo em uma trilha separada:
+- tratamento de bases comerciais;
+- tabelas dinâmicas;
+- fórmulas de busca e manipulação;
+- consultas SQL básicas para pipeline, conversão, ticket médio e sales cycle.
 
 ### Certificação
-
 Sem certificação obrigatória.
 
-### Laboratório — Fase 4: Operação Comercial & Revenue Data Skills
-
+### Laboratório — Fase 4: Operação Comercial
 Implantar no CP Agenda:
-
 - pipeline comercial estruturado;
 - gestão de Deals e Forecast;
 - follow-ups e SLAs comerciais;
-- processo comercial e onboarding de vendas;
-- planilhas e consultas SQL para análise de performance de receita.
+- processo comercial;
+- análises básicas de receita em planilhas e SQL.
 
 ### Entregas de portfólio
-
 - **Sales Pipeline Blueprint**
-- **Revenue Data Analysis Framework**
+- **Revenue Data Foundations Evidence**
 
 ---
 
-## NOVEMBRO 2026 — M05: Revenue Operations
+## NOVEMBRO 2026 — M05: Marketing Automation
 
 ### Problema de negócio
-
-Marketing, Comercial e Customer Success trabalham em silos, gerando atrito nos handoffs, desalinhamento de métricas e perda de receita.
+A operação possui tarefas repetitivas e processos manuais que geram atrasos, erros e baixa escala em Marketing e Vendas.
 
 ### Competência
-
-Integrar Marketing, Vendas e Customer Success sob um framework estratégico e uma arquitetura de dados comum.
+Automatizar processos de Marketing e Vendas de forma estruturada e governável.
 
 ### Conteúdo
+- HubSpot Workflows
+- Lead Scoring
+- Branches e Delays
+- Personalização
+- Tokens dinâmicos
+- Webhooks
+- Nutrição
+- Reengajamento
+- Atualização automática de propriedades e Lifecycle Stages
+- Handoffs automatizados entre Marketing e Sales
 
-- Revenue Operations Framework
-- Revenue Funnel
-- SLAs interdepartamentais
-- Governança de Receita
-- KPIs e métricas globais de RevOps
-- Integrated Forecast
-- Arquitetura da solução RevOps
-- Mapeamento e alinhamento de processos
+### Certificação
+Sem certificação obrigatória.
 
-### Certificação planejada
-
-- HubSpot Revenue Operations Certification
-
-### Laboratório — Fase 5: Integração da Operação de Receita
-
-Integrar CP Agenda e CP Review em uma arquitetura única de Revenue Operations no HubSpot.
+### Laboratório — Fase 5: Marketing Automation
+Automatizar processos do CP Agenda:
+- qualificação de leads;
+- nutrição;
+- notificações internas;
+- atualização automática de propriedades;
+- lifecycle;
+- handoff Marketing → Sales.
 
 ### Entregas de portfólio
-
-- **RevOps Architecture Blueprint**
-- **RevOps SLA & Process Framework**
+- **Workflow Documentation**
+- **Marketing Automation Blueprint**
 
 ---
 
 ## DEZEMBRO 2026 — M06: Customer Success Operations
 
 ### Problema de negócio
-
 Os clientes compram uma vez e desaparecem. A empresa sofre com retenção fraca, baixa previsibilidade de receita recorrente e ausência de processos estruturados de pós-venda.
 
 ### Competência
-
-Estruturar pós-venda para aumentar sucesso, retenção e expansão da base de clientes.
+Estruturar Customer Success para aumentar sucesso, retenção e expansão da base de clientes.
 
 ### Conteúdo
-
 - Customer Success Management
 - Onboarding
 - NPS e CSAT
@@ -390,13 +339,10 @@ Estruturar pós-venda para aumentar sucesso, retenção e expansão da base de c
 - Tickets
 
 ### Certificação planejada
-
 - HubSpot Service Hub Software Certification
 
 ### Laboratório — Fase 6: Operação de Customer Success
-
 Aplicado ao CP Review:
-
 - fluxos de onboarding;
 - pesquisas de NPS e CSAT;
 - Health Score;
@@ -405,124 +351,122 @@ Aplicado ao CP Review:
 - retenção e expansão.
 
 ### Entrega de portfólio
-
 **Customer Success Playbook**
 
 ---
 
-## JANEIRO 2027 — M07: Marketing Automation
+## JANEIRO 2027 — M07: Revenue Operations
 
 ### Problema de negócio
-
-Tarefas manuais repetitivas consomem tempo, geram erros e impedem escala.
+Marketing, Vendas e Customer Success já possuem processos, mas operam de forma fragmentada, com handoffs, métricas e responsabilidades desalinhados.
 
 ### Competência
-
-Automatizar fluxos operacionais e jornadas do cliente de forma inteligente.
+Integrar Marketing, Vendas e Customer Success sob uma arquitetura única de receita.
 
 ### Conteúdo
-
-- HubSpot Workflows
-- Branches e Delays
-- Tokens dinâmicos
-- Lead Scoring
-- Webhooks
+- Revenue Operations Framework
+- Revenue Funnel
+- SLAs interdepartamentais
+- Governança de Receita
+- KPIs de RevOps
+- Integrated Forecast
+- Arquitetura RevOps
+- Mapeamento e alinhamento de processos
 - Handoffs Marketing → Sales → CS
-- Nutrição e reengajamento
 
-### Certificação
+### Certificação planejada
+- HubSpot Revenue Operations Certification
 
-Sem certificação obrigatória.
-
-### Laboratório — Fase 7: Automação da Jornada
-
-Automatizar:
-
-- qualificação de leads;
-- notificações internas e emails;
-- atualização de Lifecycle Stages;
-- handoff entre aquisição e vendas.
+### Laboratório — Fase 7: Integração da Operação de Receita
+Integrar CP Agenda e CP Review em uma arquitetura única de Revenue Operations no HubSpot.
 
 ### Entregas de portfólio
-
-- **Workflow Documentation**
-- **Automation Blueprint**
+- **RevOps Architecture Blueprint**
+- **RevOps SLA & Process Framework**
 
 ---
 
 ## FEVEREIRO 2027 — M08: Data & Business Analytics
 
 ### Problema de negócio
-
 Existem dados acumulados, mas a liderança não possui visão consolidada nem relatórios executivos confiáveis para tomada de decisão.
 
 ### Competência
-
-Transformar dados de CRM e receita em inteligência de negócios, dashboards e relatórios estratégicos.
+Transformar dados de CRM e receita em inteligência de negócios, dashboards e análises estratégicas.
 
 ### Conteúdo
-
 - HubSpot Reports
 - Dashboards executivos
+- SQL analítico aplicado ao CRM e receita
 - Looker Studio
 - Google Analytics 4
-- CAC, LTV, ROI, MRR, ARR, NRR e GRR
+- CAC
+- LTV
+- ROI
+- MRR
+- ARR
+- NRR
+- GRR
 - Métricas de funil
 - Eficiência operacional
 
-### Certificações planejadas
-
+### Certificações e trilhas planejadas
 - HubSpot Reporting Certification
 - Google Analytics 4 Certification
+- SQL aplicado à análise de CRM e receita
+- Looker Studio
 
 ### Laboratório — Fase 8: Inteligência Analítica & Business Intelligence
-
 Construir:
-
 - dashboards de Vendas, Marketing e CS;
+- consultas SQL para análise de receita;
 - painéis no Looker Studio;
 - integração de métricas do GA4 com HubSpot;
 - relatórios aplicados ao CP Agenda e CP Review.
 
 ### Entregas de portfólio
-
 - **Executive Dashboard Blueprint**
 - **Business Analytics Report**
+- **SQL Revenue Analysis Evidence**
 
 ---
 
 ## MARÇO 2027 — M09: Systems Integration
 
 ### Problema de negócio
-
 Os sistemas operam de forma isolada, gerando retrabalho, duplicidade e ausência de visão única do cliente.
 
 ### Competência
-
 Projetar e implementar arquitetura integrada utilizando HubSpot como **Single Source of Truth** e Make para orquestração e sincronização.
 
 ### Conteúdo
-
-**Fundamentos:** APIs, REST API, JSON, Webhooks e autenticação.  
-**HubSpot Operations:** API, Custom Objects, Custom Properties, Associations e Webhooks.  
-**Make:** cenários, módulos, routers, filtros, error handling, agendamento, logs e monitoramento.  
-**Integrações:** Meta Lead Ads, WhatsApp, Stripe, APIs próprias e integração entre sistemas.  
-**Arquitetura:** Single Source of Truth, fluxo de dados, sincronização e governança.
+- APIs
+- REST API
+- JSON
+- Webhooks
+- Autenticação
+- HubSpot API
+- Custom Objects
+- Custom Properties
+- Associations
+- Make: cenários, módulos, routers, filtros, error handling, logs e monitoramento
+- Meta Lead Ads
+- WhatsApp
+- Stripe
+- APIs próprias
+- Fluxo e governança de dados
 
 ### Certificação planejada
-
 - HubSpot Operations Hub Software Certification
 
 ### Laboratório — Fase 9: Arquitetura Integrada da Creative Print
-
-1. Arquitetar sistemas, responsabilidades, origem, destino e fluxos de dados.
-2. Integrar CP Review ao HubSpot via workflows, Make e webhooks.
-3. Integrar Meta Lead Ads, WhatsApp, Stripe e formulários.
-4. Automatizar sincronização de contatos, empresas, produtos, status e eventos.
-5. Documentar a arquitetura.
+- arquitetar sistemas, responsabilidades, origem, destino e fluxos de dados;
+- integrar CP Review ao HubSpot via workflows, Make e webhooks;
+- integrar Meta Lead Ads, WhatsApp, Stripe e formulários;
+- automatizar sincronização;
+- documentar integrações e tratamento de erros.
 
 ### Entregas de portfólio
-
 - **Systems Integration Architecture**
 - **Data Flow Diagram**
 - **HubSpot Integration Blueprint**
@@ -532,100 +476,62 @@ Projetar e implementar arquitetura integrada utilizando HubSpot como **Single So
 
 ---
 
-## ABRIL 2027 — M10: AI, AEO & Intelligent RevOps
+## ABRIL 2027 — M10: AI for Revenue Operations
 
 ### Problema de negócio
-
-A operação já possui CRM, processos, automações e integrações, mas utiliza IA de forma limitada, perdendo produtividade, velocidade de decisão e oportunidades de automação inteligente e visibilidade em mecanismos de resposta baseados em IA.
+A operação já possui CRM, processos, automações e integrações, mas ainda utiliza IA de forma limitada e sem governança.
 
 ### Competência
+Aplicar IA de forma prática, segura e governável ao ecossistema de Revenue Operations.
 
-Projetar, implementar e governar soluções de IA aplicadas a Revenue Operations para produtividade, automação, decisão e presença digital.
-
-### Conteúdo — IA aplicada a RevOps
-
+### Conteúdo
 - IA Generativa e LLMs
 - Engenharia de Prompt
 - Agentes de IA
-- IA aplicada a CRM, Marketing, Vendas, CS e análise de dados
-
-### Conteúdo — HubSpot AI
-
-- Breeze AI
-- AI Assistant
-- criação de conteúdo
-- workflows
-- enriquecimento de CRM
-- atendimento
-- análise e relatórios
-
-### Conteúdo — IA aplicada ao Make
-
-- cenários com IA;
-- agentes inteligentes;
-- classificação de leads;
-- resumo de contatos e feedbacks;
-- enriquecimento de dados;
-- criação de tarefas;
-- documentação automática.
-
-### AI Search Optimization
-
+- IA aplicada ao CRM
+- IA aplicada a Marketing
+- IA aplicada a Vendas
+- IA aplicada a Customer Success
+- IA aplicada à análise de dados
+- Breeze AI e recursos de IA do HubSpot
+- IA em cenários do Make
+- Classificação de leads
+- Resumo e enriquecimento de contatos
 - AEO
 - GEO
 - LLMO
-- FAQs e dados estruturados
-- E-E-A-T
-- AI Overviews
-- conteúdo semântico
-- clusters
-- GitHub e LinkedIn como ativos de autoridade
-
-### Governança da IA
-
-- segurança;
-- privacidade;
-- governança;
-- uso responsável;
-- auditoria;
-- políticas corporativas.
+- Governança, segurança, privacidade e revisão humana
 
 ### Certificações planejadas
-
 - Implementing AEO with HubSpot
 - AEO Fundamentals
-- HubSpot AI for Marketers / AI Essentials, quando pertinente e disponível
+- HubSpot AI for Marketers / AI Essentials — quando disponível
 
 ### Laboratório — Fase 10: AI-Driven Revenue Operations
-
-1. Aplicar IA ao CRM para enriquecimento, classificação e resumo.
-2. Automatizar processos inteligentes com Make.
-3. Aplicar IA ao Customer Success.
-4. Construir autoridade para mecanismos de IA.
-5. Definir biblioteca de prompts, padrões, segurança e revisão humana.
+- IA aplicada ao CRM;
+- automações inteligentes no Make;
+- IA aplicada ao Customer Success;
+- estratégia de autoridade para mecanismos de IA;
+- governança e biblioteca de prompts.
 
 ### Entregas de portfólio
-
 - **AI Revenue Operations Strategy**
 - **AI Automation Blueprint**
 - **Prompt Library**
 - **AI Governance Guide**
-- **AI Search Optimization Strategy — AEO/GEO/LLMO**
+- **AI Search Optimization Strategy**
 
 ---
 
 ## MAIO 2027 — M11: Governance & Scalability
 
 ### Problema de negócio
-
-A empresa cresce, mas perde organização.
+A operação cresce e começa a perder padronização, qualidade e previsibilidade.
 
 ### Competência
-
-Construir processos escaláveis garantindo qualidade, padronização e governança.
+Consolidar governança, documentação e processos escaláveis.
 
 ### Conteúdo
-
 - Data Governance
 - Naming Convention
 - Permissões
@@ -635,15 +541,13 @@ Construir processos escaláveis garantindo qualidade, padronização e governan�
 - BPMN — conceitos
 - Arquitetura
 - Documentação
+- Data Quality
 
 ### Certificação
-
 Sem certificação obrigatória.
 
-### Laboratório — Fase 11: Governança e Escalabilidade da Operação
-
-Padronizar toda a operação construída durante a formação, incluindo:
-
+### Laboratório — Fase 11: Governança e Escalabilidade
+Consolidar:
 - CRM Governance Guide;
 - Naming Convention;
 - Data Dictionary;
@@ -655,7 +559,6 @@ Padronizar toda a operação construída durante a formação, incluindo:
 - Política de Data Quality.
 
 ### Entrega de portfólio
-
 **Revenue Operations Governance Manual**
 
 ---
@@ -663,15 +566,12 @@ Padronizar toda a operação construída durante a formação, incluindo:
 ## JUNHO 2027 — M12: Revenue Strategy & Business Growth
 
 ### Problema de negócio
-
-A operação está organizada e precisa crescer de forma previsível.
+A operação está estruturada e precisa transformar capacidade operacional em crescimento previsível e posicionamento profissional consolidado.
 
 ### Competência
-
-Planejar crescimento previsível utilizando Revenue Operations.
+Planejar crescimento utilizando Revenue Operations e transformar a formação em um portfólio competitivo para o mercado.
 
 ### Conteúdo
-
 - Revenue Strategy
 - Growth Strategy
 - AARRR
@@ -687,16 +587,18 @@ Planejar crescimento previsível utilizando Revenue Operations.
 - GRR
 - Business Cases
 - Planejamento Estratégico
+- Consolidação do GitHub
+- Cases de portfólio
+- LinkedIn
+- Currículo
+- Preparação para candidaturas e entrevistas
 
 ### Certificação
+Consolidação das certificações e revisão executiva. Sem certificação obrigatória.
 
-Sem certificação obrigatória. O foco é consolidar a formação no projeto final.
-
-### Laboratório — Fase 12: Revenue Growth Strategy
-
-Elaborar plano estratégico completo para crescimento da Creative Print contemplando:
-
-- diagnóstico atual;
+### Laboratório — Fase 12: Revenue Growth Strategy & Market Readiness
+Construir o plano estratégico completo da Creative Print contemplando:
+- diagnóstico;
 - objetivos de curto, médio e longo prazo;
 - aquisição;
 - conversão;
@@ -704,49 +606,39 @@ Elaborar plano estratégico completo para crescimento da Creative Print contempl
 - retenção;
 - expansão;
 - advocacy;
-- CAC, LTV, MRR, NRR, Pipeline, Conversão, Churn e Forecast;
-- roadmap de automações, integrações, IA e escalabilidade;
-- governança para manutenção da operação.
+- KPIs;
+- roadmap de crescimento;
+- governança;
+- consolidação dos 12 laboratórios em cases profissionais;
+- preparação do portfólio e candidaturas.
 
-### Entrega de portfólio
-
-**Revenue Growth Strategy Blueprint**
+### Entregas de portfólio
+- **Revenue Growth Strategy Blueprint**
+- **Portfolio Final**
+- **GitHub Final Review**
+- **LinkedIn & CV Market Readiness**
 
 ---
 
-## 7. Certificações — painel de acompanhamento
+## 7. Pós-formação
 
-| Módulo | Certificação | Estado |
-|---|---|---|
-| M01 | HubSpot Sales Hub Software Certification | ✅ Concluída |
-| M02 | HubSpot Inbound Marketing Certification | ✅ Concluída |
-| M03 | HubSpot Marketing Hub Software Certification | 📅 Planejada |
-| M04 | Sem certificação obrigatória | — |
-| M05 | HubSpot Revenue Operations Certification | 📅 Planejada |
-| M06 | HubSpot Service Hub Software Certification | 📅 Planejada |
-| M07 | Sem certificação obrigatória | — |
-| M08 | HubSpot Reporting Certification + Google Analytics 4 | 📅 Planejadas |
-| M09 | HubSpot Operations Hub Software Certification | 📅 Planejada |
-| M10 | Implementing AEO with HubSpot + AEO Fundamentals + IA pertinente | 📅 Planejadas |
-| M11 | Sem certificação obrigatória | — |
-| M12 | Sem certificação obrigatória | — |
+Após os 12 módulos:
 
-### Pós-formação
-
-- **HubSpot Academy RevOps Bootcamp** — previsto como consolidação e validação adicional após os 12 módulos.
+- **HubSpot Academy RevOps Bootcamp** — consolidação prática e validação adicional da formação.
+- Início/intensificação de candidaturas direcionadas a posições remotas em CRM, HubSpot, Revenue Operations e Marketing Automation.
 
 ---
 
 ## 8. Estratégia de portfólio
 
-Cada módulo deve gerar evidência suficiente para responder:
+Cada módulo deve gerar evidência profissional suficiente para responder:
 
-1. Qual problema de negócio existia?
-2. Que decisão foi tomada e por quê?
-3. Como a solução foi implementada ou modelada?
-4. Que competência profissional isso demonstra?
+1. **Qual problema de negócio existia?**
+2. **Que decisão foi tomada e por quê?**
+3. **Como a solução foi implementada ou modelada?**
+4. **Que competência profissional isso demonstra?**
 
-O GitHub é a fonte técnica oficial. LinkedIn e Instagram reutilizam aprendizados e evidências reais do laboratório sem apresentar experiência de estudo como experiência profissional inexistente.
+O GitHub é a fonte técnica oficial. LinkedIn e Instagram devem reutilizar aprendizados e evidências reais do laboratório, sem apresentar experiência de estudo como experiência profissional inexistente.
 
 ---
 
@@ -762,38 +654,29 @@ Direções profissionais prioritárias:
 - Revenue Operations
 - Marketing Automation
 
-Vagas reais devem ser analisadas periodicamente para identificar gaps concretos e verificar alinhamento da formação com o mercado.
+Vagas reais devem ser usadas periodicamente para identificar gaps concretos e verificar se a formação continua alinhada ao mercado.
 
 ---
 
-## 10. Regra de atualização deste mapa
+## 10. Regra de atualização deste documento
 
-Este arquivo é a **fonte oficial da grade, roadmap e status da formação**.
+Este arquivo é a **fonte oficial única da formação**.
 
 Atualizar quando houver mudança relevante em:
-
+- ordem ou conteúdo dos módulos;
+- certificação planejada ou concluída;
 - início ou conclusão de módulo;
-- certificação obtida;
 - laboratório ou entrega principal;
 - decisão curricular estrutural;
-- competência adicionada ou removida;
-- objetivo profissional;
-- gap de mercado que exija mudança real da formação.
+- mudança de objetivo profissional;
+- gap de mercado que exija alteração real da formação.
 
-Não usar como diário de estudo. Detalhes técnicos permanecem nas pastas dos respectivos módulos.
-
----
-
-## 11. Resultado esperado da formação
-
-Ao concluir os 12 módulos, a Creative Print terá sido utilizada como laboratório profissional para construir uma operação integrada de **HubSpot CRM, Lifecycle Marketing, Marketing Operations, Sales Operations, Customer Success, Revenue Operations, Analytics, Systems Integration, AI e Governance**.
-
-O portfólio deverá conter documentação técnica, diagramas, dashboards, integrações, processos e decisões capazes de demonstrar competência prática para candidaturas profissionais e futuras oportunidades de consultoria.
+Não usar como diário de estudo. Detalhes técnicos permanecem dentro das pastas dos respectivos módulos.
 
 ---
 
-## 12. Próximo marco
+## 11. Próximo marco
 
-> **M02 — concluir ICP & Buyer Persona com evidência suficiente e avançar para Customer Journey.**
+> **M02 — concluir ICP & Buyer Persona com evidência suficiente e avançar para Customer Journey e Lifecycle Architecture.**
 
 Última atualização estrutural: **17 de agosto de 2026**.
