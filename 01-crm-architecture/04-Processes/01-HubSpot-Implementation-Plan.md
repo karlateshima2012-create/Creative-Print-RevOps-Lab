@@ -107,7 +107,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 
 ### Phase 4 — Automation Implementation
 * **Status:** ⬜ Planned
-* **Baseado em:** `CRM-Automation-Architecture.md`
+* **Baseado em:** `03-CRM-Automation-Architecture.md`
 * **Implementar:**
   - Deal workflows;
   - Ticket workflows;
@@ -117,7 +117,7 @@ Antes da configuração do HubSpot, a arquitetura CRM foi definida através dos 
 
 ### Phase 5 — Reporting Implementation
 * **Status:** ⬜ Planned
-* **Baseado em:** `CRM-Reporting-Architecture.md`
+* **Baseado em:** `04-CRM-Reporting-Architecture.md`
 * **Criar:**
   - Executive Dashboard;
   - Sales Dashboard;

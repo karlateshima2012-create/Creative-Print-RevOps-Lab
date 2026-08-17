@@ -104,16 +104,16 @@ A implementação da arquitetura segue um roadmap evolutivo estruturado em fases
 
 Para detalhes específicos consulte:
 
-- [Business Discovery](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Business-Discovery.md)
-- [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Current-State.md)
-- [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Future-State.md)
-- [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/CRM-Object-Model.md)
-- [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md)
-- [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Contact-Data-Dictionary.md)
-- [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Deal-Data-Dictionary.md)
-- [Ticket Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Ticket-Data-Dictionary.md)
-- [CRM Automation Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/CRM-Automation-Architecture.md)
-- [CRM Reporting Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/CRM-Reporting-Architecture.md)
+- [Business Discovery](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/01-Business-Discovery.md)
+- [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/02-Current-State.md)
+- [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/03-Future-State.md)
+- [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/02-CRM-Object-Model.md)
+- [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/03-Company-Data-Dictionary.md)
+- [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/04-Contact-Data-Dictionary.md)
+- [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/05-Deal-Data-Dictionary.md)
+- [Ticket Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/06-Ticket-Data-Dictionary.md)
+- [CRM Automation Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/03-CRM-Automation-Architecture.md)
+- [CRM Reporting Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/04-CRM-Reporting-Architecture.md)
 
 ---
 
@@ -121,21 +121,21 @@ Para detalhes específicos consulte:
 
 | Área | Documento de Referência |
 | --- | --- |
-| Estratégia de Negócio | [Business Discovery](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Business-Discovery.md) |
-| Diagnóstico da Operação | [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Current-State.md) |
-| Visão de Futuro | [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/Future-State.md) |
-| Modelo de Objetos | [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/CRM-Object-Model.md) |
-| Especificação de Empresa | [Company Object Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Company-Object-Architecture.md) |
-| Dicionário de Dados — Empresa | [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Company-Data-Dictionary.md) |
-| Dicionário de Dados — Contato | [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Contact-Data-Dictionary.md) |
-| Dicionário de Dados — Negócio | [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Deal-Data-Dictionary.md) |
-| Dicionário de Dados — Ticket | [Ticket Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/Ticket-Data-Dictionary.md) |
-| Modelo de Associações | [CRM Associations Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/CRM-Associations-Model.md) |
-| Governança de Dados | [CRM Data Governance](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/CRM-Data-Governance.md) |
-| Qualidade de Dados | [CRM Data Quality Framework](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/CRM-Data-Quality-Framework.md) |
-| Nomenclatura e Padrões | [Naming Convention](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/Naming-Convention.md) |
-| Decisões Arquiteturais (DAs) | [Architecture Decisions Log](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/Architecture-Decisions.md) |
-| Arquitetura de Automação | [CRM Automation Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/CRM-Automation-Architecture.md) |
-| Arquitetura de Relatórios | [CRM Reporting Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/CRM-Reporting-Architecture.md) |
-| Plano de Implementação | [HubSpot Implementation Plan](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/HubSpot-Implementation-Plan.md) |
-| Relatório de Encerramento | [LAB-01 Project Closure Report](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/06-Project-Closure/LAB-01-Project-Closure-Report.md) |
+| Estratégia de Negócio | [Business Discovery](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/01-Business-Discovery.md) |
+| Diagnóstico da Operação | [Current State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/02-Current-State.md) |
+| Visão de Futuro | [Future State](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/01-Business/03-Future-State.md) |
+| Modelo de Objetos | [CRM Object Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/02-CRM-Object-Model.md) |
+| Especificação de Empresa | [Company Object Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/02-Company-Object-Architecture.md) |
+| Dicionário de Dados — Empresa | [Company Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/03-Company-Data-Dictionary.md) |
+| Dicionário de Dados — Contato | [Contact Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/04-Contact-Data-Dictionary.md) |
+| Dicionário de Dados — Negócio | [Deal Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/05-Deal-Data-Dictionary.md) |
+| Dicionário de Dados — Ticket | [Ticket Data Dictionary](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/03-Data-Model/06-Ticket-Data-Dictionary.md) |
+| Modelo de Associações | [CRM Associations Model](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/02-Architecture/03-CRM-Associations-Model.md) |
+| Governança de Dados | [CRM Data Governance](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/02-CRM-Data-Governance.md) |
+| Qualidade de Dados | [CRM Data Quality Framework](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/03-CRM-Data-Quality-Framework.md) |
+| Nomenclatura e Padrões | [Naming Convention](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/01-Naming-Convention.md) |
+| Decisões Arquiteturais (DAs) | [Architecture Decisions Log](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/05-Governance/04-Architecture-Decisions.md) |
+| Arquitetura de Automação | [CRM Automation Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/03-CRM-Automation-Architecture.md) |
+| Arquitetura de Relatórios | [CRM Reporting Architecture](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/04-CRM-Reporting-Architecture.md) |
+| Plano de Implementação | [HubSpot Implementation Plan](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/04-Processes/01-HubSpot-Implementation-Plan.md) |
+| Relatório de Encerramento | [LAB-01 Project Closure Report](file:///Users/karlateshima/Developer/Portifolio/Creative-Print-Revops-Lab/01-crm-architecture/06-Project-Closure/01-LAB-01-Project-Closure-Report.md) |

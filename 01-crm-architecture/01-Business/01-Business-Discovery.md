@@ -90,4 +90,4 @@ Hoje, majoritariamente uma pessoa (fundação/comercial) concentra o conheciment
 
 ## 9. Conclusão da Descoberta
 
-A Creative Print tem produtos validados (físicos e SaaS) e canais de aquisição funcionando, mas nenhuma camada de sistema que centralize relacionamento comercial. Esse é exatamente o problema que a arquitetura de CRM definida em `CRM-Architecture.md` foi desenhada para resolver.
+A Creative Print tem produtos validados (físicos e SaaS) e canais de aquisição funcionando, mas nenhuma camada de sistema que centralize relacionamento comercial. Esse é exatamente o problema que a arquitetura de CRM definida em `01-CRM-Architecture.md` foi desenhada para resolver.

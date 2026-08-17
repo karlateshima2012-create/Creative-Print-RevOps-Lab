@@ -240,9 +240,9 @@ A análise completa do cliente será construída através das relações entre C
 
 ## Referências
 
-- [Data Model](../03-Data-Model/Data-Model.md)
-- [CRM Object Model](CRM-Object-Model.md)
-- [Company Data Dictionary](../03-Data-Model/Company-Data-Dictionary.md)
-- [Contact Data Dictionary](../03-Data-Model/Contact-Data-Dictionary.md)
-- [Deal Data Dictionary](../03-Data-Model/Deal-Data-Dictionary.md)
-- [Ticket Data Dictionary](../03-Data-Model/Ticket-Data-Dictionary.md)
+- [Data Model](../03-Data-Model/01-Data-Model.md)
+- [CRM Object Model](02-CRM-Object-Model.md)
+- [Company Data Dictionary](../03-Data-Model/03-Company-Data-Dictionary.md)
+- [Contact Data Dictionary](../03-Data-Model/04-Contact-Data-Dictionary.md)
+- [Deal Data Dictionary](../03-Data-Model/05-Deal-Data-Dictionary.md)
+- [Ticket Data Dictionary](../03-Data-Model/06-Ticket-Data-Dictionary.md)

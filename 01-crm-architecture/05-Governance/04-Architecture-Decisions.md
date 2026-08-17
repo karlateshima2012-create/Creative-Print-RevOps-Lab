@@ -10,9 +10,9 @@
 | Categoria | Decisões Arquiteturais |
 | --- | --- |
 | Arquitetura Geral | [ADR-001 até ADR-010](#adr-001--hubspot-como-fonte-única-da-verdade) |
-| Modelagem | [DA-011 até DA-030](../02-Architecture/CRM-Architecture.md) |
-| Objetos | [DA-031 até DA-060](../02-Architecture/CRM-Object-Model.md) |
-| Implementação | [DA-061 até DA-087](../04-Processes/HubSpot-Implementation-Plan.md) |
+| Modelagem | [DA-011 até DA-030](../02-Architecture/01-CRM-Architecture.md) |
+| Objetos | [DA-031 até DA-060](../02-Architecture/02-CRM-Object-Model.md) |
+| Implementação | [DA-061 até DA-087](../04-Processes/01-HubSpot-Implementation-Plan.md) |
 
 ---
 
