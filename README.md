@@ -103,10 +103,11 @@ Creative-Print-Revops-Lab/
 │   └── 06-Project-Closure/    # Relatório de Encerramento do Módulo 1
 │
 ├── 02-inbound-lifecycle/       # [MÓDULO 2] Inbound Marketing & Ciclo de Vida
+│   ├── 00-Executive-Summary.md # Resumo executivo do Módulo 2
 │   └── 01-ICP-and-Buyer-Persona/
-│       ├── Market-Segment-Evaluation.md # Avaliação e priorização de segmentos
-│       ├── Customer-Evidence-Matrix.md   # Matriz de evidências empíricas
-│       └── Ideal-Customer-Profile.md     # Definição do Perfil de Cliente Ideal (ICP)
+│       ├── 01-Market-Segment-Evaluation.md # Avaliação e priorização de segmentos
+│       ├── 02-Customer-Evidence-Matrix.md   # Matriz de evidências empíricas
+│       └── 03-Ideal-Customer-Profile.md     # Definição do Perfil de Cliente Ideal (ICP)
 │
 ├── 00-hubspot-configuration/  # Arquivos de Configuração e Templates
 │   ├── implementation/        # Configurações de Deals e Tickets
