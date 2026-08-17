@@ -193,97 +193,89 @@ Lead Acquisition Blueprint
 
 ---
 
-# OUTUBRO - MÓDULO 4 — Sales Operations
+# OUTUBRO - MÓDULO 4 — Sales Operations & Revenue Data Skills
 
 ## Problema
 
-As vendas não possuem um processo definido.
-
-Cada vendedor trabalha de uma maneira.
+As vendas não possuem um processo definido, e a tomada de decisão comercial sofre pela falta de organização, manipulação e análise avançada de dados de receita.
 
 ## Competência
 
-Construir uma operação comercial eficiente e previsível.
+Construir uma operação comercial eficiente, previsível e fundamentada em análise avançada de dados de receita (Excel/Sheets e SQL).
+
+> 💡 **Nota de Estrutura:** O estudo aprofundado de **Excel, Google Sheets e SQL** aplicados a análises comerciais e de receita está oficialmente integrado a este módulo como uma competência central de *Revenue Data Skills*. Não se trata de um curso separado e nem de um 13º módulo, mas sim da base analítica indispensável para a gestão de Sales Operations.
 
 ### Conteúdo
 
-- Sales Hub
-- Pipeline
-- Deals
-- Forecast
-- Meetings
-- Quotes
-- Sequences
-- SLA
-- Qualificação
-- Follow-up
-- Produtividade comercial
+- **Sales Hub & Processo Comercial:**
+  - Pipeline de Vendas
+  - Negócios (Deals)
+  - Previsão de Vendas (Forecast)
+  - Agendamentos (Meetings)
+  - Orçamentos (Quotes)
+  - Sequências de Prospecção (Sequences)
+  - Acordo de Nível de Serviço (SLA Comercial)
+  - Metodologias de Qualificação
+  - Estratégias de Follow-up
+  - Produtividade e Eficiência Comercial
+
+- **Revenue Data Skills (Excel / Google Sheets & SQL):**
+  - **Excel & Google Sheets Avançado:** Tabelas dinâmicas, fórmulas avançadas de busca e manipulação (VLOOKUP, INDEX/MATCH, QUERY), tratamento de base de dados comerciais e construção de relatórios de apoio a vendas.
+  - **SQL para Análise de Vendas & Receita:** Consultas focadas em funil comercial, taxa de conversão entre estágios, tempo médio de fechamento (Sales Cycle Length), ticket médio e cálculo de receita.
 
 ### Certificações
 
 - SEM CERTIFICAÇÃO OBRIGATÓRIA
 
-### Módulo 4 - Laboratório – Fase 4: Operação Comercial
+### Módulo 4 - Laboratório – Fase 4: Operação Comercial & Revenue Data Skills
 
-Implantar:
-
-- Pipeline Comercial
-- Deals
-- Forecast
-- Follow-up
-- Processo Comercial
-- Onboarding
-
-Aplicado ao CP Agenda.
+Implantar no **CP Agenda**:
+- Pipeline Comercial estruturado no HubSpot
+- Gestão de Deals e Forecast
+- Automação de Follow-ups e SLAs Comerciais
+- Processo Comercial e Onboarding de Vendas
+- Planilhas e consultas SQL de análise de performance de receita
 
 ### Entrega do Portfólio
 
-Sales Pipeline Blueprint
+- Sales Pipeline Blueprint
+- Revenue Data Analysis Framework (Excel/Sheets & SQL)
 
 ---
 
-# NOVEMBRO - MÓDULO 5 — Marketing Automation
+# NOVEMBRO - MÓDULO 5 — Revenue Operations
 
 ## Problema
 
-Existem tarefas repetitivas que consomem tempo.
+As áreas de Marketing, Comercial e Customer Success trabalham de forma isolada (silos), gerando atrito na passagem de bastão, desalinhamento de métricas e perda de receita.
 
 ## Competência
 
-Automatizar processos para ganhar escala.
+Integrar toda a operação de receita unificando Marketing, Vendas e Customer Success sob um mesmo framework estratégico e arquitetura de dados.
 
 ### Conteúdo
 
-- Workflows
-- Branches
-- Delays
-- Personalização
-- Tokens
-- Lead Scoring
-- Webhooks
-- Automações entre Marketing e Vendas
-- Workflows avançados
+- Revenue Operations Framework
+- Funil Unificado de Receita (Revenue Funnel)
+- SLAs Interdepartamentais (Marketing ➔ Sales ➔ CS)
+- Governança de Receita
+- KPIs e Métricas Globais de RevOps
+- Previsão Integrada de Receita (Integrated Forecast)
+- Arquitetura da Solução RevOps
+- Mapeamento e Alinhamento de Processos
 
 ### Certificações
 
-**— Sem certificação obrigatória**
+- **HubSpot Revenue Operations Certification**
 
-### Módulo 5 - Laboratório – Fase 5: Automação da Jornada
+### Módulo 5 - Laboratório – Fase 5: Integração da Operação de Receita
 
-Automatizar todos os processos construídos até aqui:
-
-- Workflows
-- Lead Qualification
-- Notificações
-- Emails
-- Atualização de Lifecycle
-- Automações entre Marketing e Vendas
+Integrar a operação de **CP Agenda** (Vendas/Aquisição) e **CP Review** (Pós-venda/CS), construindo uma arquitetura única de Revenue Operations no HubSpot.
 
 ### Entrega do Portfólio
 
-Workflow Documentation
-
-Automation Blueprint
+- RevOps Architecture Blueprint
+- RevOps SLA & Process Framework
 
 ---
 
@@ -291,89 +283,78 @@ Automation Blueprint
 
 ## Problema
 
-Os clientes compram uma vez e desaparecem.
+Os clientes compram uma vez e desaparecem. A empresa sofre com retenção fraca, falta de previsibilidade de receita recorrente e ausência de processos estruturados de pós-venda.
 
 ## Competência
 
-Transformar clientes em receita recorrente.
+Estruturar a operação de pós-venda para garantir o sucesso do cliente, aumentar a retenção e transformar a base ativa em receita recorrente e expansão.
 
 ### Conteúdo
 
-- Customer Success
-- Onboarding
-- NPS
-- Health Score
-- Churn
-- Renovação
-- Upsell
-- Cross Sell
-- Expansão
+- Customer Success Management (CSM)
+- Processos e Marcos de Onboarding
+- Pesquisas de Satisfação (NPS e CSAT)
+- Construção de Health Score do Cliente
+- Gestão e Prevenção de Churn
+- Processos de Renovação de Contratos
+- Estratégias de Expansão: Upsell e Cross-Sell
+- Atendimento e Gestão de Tickets
 
 ### Certificações
 
-- HubSpot Service Hub Software Certification
+- **HubSpot Service Hub Software Certification**
 
-## Módulo 6 - Laboratório – Fase 6: Customer Success
+### Módulo 6 - Laboratório – Fase 6: Operação de Customer Success
 
-Construir toda a operação de pós-venda:
-
-- Onboarding
-- Pesquisas
-- NPS
-- CSAT
-- Health Score
-- Clientes em risco
-- Recuperação
-- Retenção
-- Expansão
-
-Aplicado ao CP Review.
+Construir toda a operação de pós-venda aplicada ao **CP Review**:
+- Fluxos de Onboarding
+- Pesquisas de NPS e CSAT automatizadas
+- Modelagem de Health Score
+- Gestão de Clientes em Risco e Playbooks de Recuperação
+- Estruturação de Retenção e Expansão
 
 ### Entrega do Portfólio
 
-Customer Success Playbook
+- Customer Success Playbook
 
 ---
 
-# JANEIRO 2027 - MÓDULO 7 — Revenue Operations
+# JANEIRO 2027 - MÓDULO 7 — Marketing Automation
 
 ## Problema
 
-Marketing, Comercial e Pós-venda trabalham separados.
+A operação possui muitas tarefas repetitivas manuais que consomem tempo da equipe, causam erros operacionais e impedem o ganho de escala.
 
 ## Competência
 
-Integrar toda operação de receita - Marketing, Vendas e Customer Success.
+Automatizar fluxos operacionais e jornadas do cliente de forma inteligente para escalar as ações de marketing, vendas e relacionamento.
 
 ### Conteúdo
 
-- Revenue Operations
-- Revenue Funnel
-- SLA
-- Governança
-- KPIs
-- Forecast
-- Processos
-- Framework RevOps
-- Arquitetura RevOps
+- Automação de Processos (Workflows no HubSpot)
+- Lógica Condicional: Branches e Delays
+- Personalização Avançada com Tokens Dinâmicos
+- Modelagem de Lead Scoring (Pontuação de Qualificação)
+- Disparos via Webhooks
+- Automações da Passagem de Bastão (Marketing ➔ Sales ➔ CS)
+- Workflows Avançados de Nutrição e Reengajamento
 
 ### Certificações
 
-- HubSpot Revenue Operations Certification
+- Sem certificação obrigatória
 
-### Módulo 7 - Laboratório – Fase 7: Integração da Operação
+### Módulo 7 - Laboratório – Fase 7: Automação da Jornada
 
-Integrar:
-
-- Marketing
-- Sales
-- Customer Success
-
-Construindo uma arquitetura única de Revenue Operations.
+Automatizar todos os processos construídos na operação Creative Print:
+- Workflows de Qualificação de Leads
+- Notificações Internas e Disparos de Emails
+- Atualização Automática de Lifecycle Stages
+- Handoff Automatizado entre Aquisição e Vendas
 
 ### Entrega do Portfólio
 
-RevOps Architecture
+- Workflow Documentation
+- Automation Blueprint
 
 ---
 
@@ -381,54 +362,41 @@ RevOps Architecture
 
 ## Problema
 
-Existem dados, mas ninguém toma decisões com eles.
+Existem dados acumulados no CRM e nos sistemas, mas a liderança não consegue tomar decisões estratégicas por falta de visão consolidada e relatórios executivos confiáveis.
 
 ## Competência
 
-Transformar dados em decisões.
+Transformar dados de CRM e receita em inteligência de negócios, dashboards executivos e relatórios estratégicos para tomada de decisão.
 
-### Conteúdo: O estudo de SQL será direcionado para análises de CRM e Revenue Operations, com foco em consultas para funil de vendas, segmentação, retenção, churn, receita e indicadores de negócio. O objetivo não é desenvolvimento de software, mas tomada de decisão baseada em dados.
+### Conteúdo
 
-- SQL
-- HubSpot Reports
-- Dashboards
-- Looker Studio
-- Google Analytics 4
-- CAC
-- LTV
-- ROI
-- MRR
-- ARR
+- Relatórios Nativos e Personalizados no HubSpot (HubSpot Reports)
+- Construção de Dashboards Executivos
+- Visualização de Dados no Looker Studio
+- Análise de Tráfego e Conversão com Google Analytics 4 (GA4)
+- Análise de Indicadores Financeiros e de Crescimento: CAC, LTV, ROI, MRR, ARR, NRR, GRR
+- Métricas de Funil e Eficiência Operacional
 
 ### Certificações
 
-- 
-- ✅ HubSpot Reporting Certification
-- ✅ Google Analytics 4 Certification
-- ➕ SQL
-- ➕ Looker Studio
+- ✅ **HubSpot Reporting Certification**
+- ✅ **Google Analytics 4 Certification**
 
-### Módulo 8 - Laboratório – Fase 8: Inteligência Analítica
+### Módulo 8 - Laboratório – Fase 8: Inteligência Analítica & Business Intelligence
 
-Construir:
-
-- Dashboards
-- Relatórios
-- KPIs
-- Consultas SQL
-- Looker Studio
-- HubSpot Reports
-- GA4
-
-Aplicados aos dados do CP Agenda e CP Review.
+Construir o ecossistema analítico da Creative Print:
+- Dashboards Executivos de Vendas, Marketing e CS
+- Painéis de Acompanhamento em Looker Studio
+- Integração de Métricas do GA4 com o HubSpot CRM
+- Relatórios de Métricas de Negócio aplicados ao CP Agenda e CP Review
 
 ### Entrega do Portfólio
 
-Executive Dashboard
-
-Business Analytics Report
+- Executive Dashboard Blueprint
+- Business Analytics Report
 
 ---
+
 
 # MARÇO 2027 - MÓDULO 9 — Systems Integration
 
@@ -597,7 +565,7 @@ Ao final do módulo serão produzidos:
 
 ---
 
-# ABRIL 2027 - MÓDULO 10 — AI for Revenue Operations
+# ABRIL 2027 - MÓDULO 10 — AI, AEO & Intelligent RevOps
 
 ## Problema
 

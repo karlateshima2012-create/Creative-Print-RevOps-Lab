@@ -2,7 +2,7 @@
 
 <!-- Badges de Status e Ferramentas -->
 <p align="left">
-  <img src="https://img.shields.io/badge/Status-Fase%201%20%26%202-brightgreen?style=for-the-badge" alt="Status"/>
+  <img src="https://img.shields.io/badge/Status-M2%20In%20Progress-blue?style=for-the-badge" alt="Status"/>
   <img src="https://img.shields.io/badge/HubSpot-FF7A59?style=for-the-badge&logo=HubSpot&logoColor=white" alt="HubSpot"/>
   <img src="https://img.shields.io/badge/Make.com-430098?style=for-the-badge&logo=make&logoColor=white" alt="Make.com"/>
   <img src="https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/>
@@ -11,22 +11,28 @@
   <img src="https://img.shields.io/badge/Breeze%20AI-00C4CC?style=for-the-badge&logo=openai&logoColor=white" alt="Breeze AI"/>
 </p>
 
-Este repositório documenta a implementação de uma arquitetura completa de **Revenue Operations (RevOps)** e **CRM Lifecycle Marketing** utilizando o HubSpot como *Single Source of Truth* (SSOT). O projeto é desenvolvido de forma evolutiva ao longo de 12 meses, usando a **Creative Print** como estudo de caso real de implantação.
+Este repositório documenta a implantação completa e evolutiva de uma arquitetura de **Revenue Operations (RevOps)** e **Lifecycle Marketing**, utilizando a **Creative Print** como o **estudo de caso real** de mercado. 
+
+Ao longo de **12 módulos integrados**, o sistema é construído progressivamente, transformando o **HubSpot CRM** na Fonte Única da Verdade (*Single Source of Truth - SSOT*) da operação.
 
 ---
 
-## 🎯 O Conceito do Laboratório
+## 🎯 O Case Real e o Propósito do Laboratório
 
-A **Creative Print** é uma empresa de tecnologia e produtos personalizados (combinando NFC, fabricação digital e soluções SaaS). Este repositório atua como um laboratório profissional de implantação integrado por meio de dois produtos reais da empresa:
+A **Creative Print** é uma empresa de tecnologia e produtos personalizados (combinando soluções de produtos físicos NFC, impressão digital e software SaaS). 
 
-*   **CP Agenda:** Foco nos processos de Aquisição de Leads, Conversão, Vendas e Onboarding.
-*   **CP Review:** Foco nos processos de Customer Success, Feedback (NPS/CSAT), Retenção e Expansão de Clientes.
+Este laboratório não é um exercício genérico: **os 12 módulos constroem progressivamente uma operação real**, integrando dois produtos centrais da empresa:
+
+* 📱 **CP Agenda:** Foco nos processos de Aquisição de Leads, Qualificação, Pipeline Comercial, Vendas e Onboarding de Clientes.
+* 💬 **CP Review:** Foco nos processos de Customer Success, Pesquisas de Satisfação (NPS/CSAT), Retenção, Health Score e Expansão.
+
+Cada módulo adiciona uma nova camada arquitetural (dados, processos, automações, analytics, integrações e IA), culminando em um ecossistema de receita unificado e previsível.
 
 ---
 
 ## 🏗️ Arquitetura Geral da Solução
 
-O HubSpot atua no centro de toda a operação. A integração de canais externos e sistemas proprietários é orquestrada de forma automatizada:
+O **HubSpot CRM** centraliza os dados de Marketing, Vendas e CS. A integração de canais externos e produtos proprietários é orquestrada via **Make.com**:
 
 ```mermaid
 graph TD
@@ -38,53 +44,82 @@ graph TD
 
 ---
 
-## 📅 Roadmap Interativo da Operação (12 Meses)
+## 📊 Status Atual do Roadmap (12 Módulos)
 
-Abaixo está o cronograma de implementação do ecossistema de RevOps. Cada módulo possui entregas práticas voltadas para a construção do portfólio.
+| Módulo | Nome do Módulo | Status |
+| :---: | :--- | :---: |
+| **M1** | CRM Foundations | ✅ COMPLETED |
+| **M2** | Inbound & Customer Lifecycle | 🔵 IN PROGRESS |
+| **M3** | Marketing Operations | ⚪ PLANNED |
+| **M4** | Sales Operations & Revenue Data Skills | ⚪ PLANNED |
+| **M5** | Revenue Operations | ⚪ PLANNED |
+| **M6** | Customer Success Operations | ⚪ PLANNED |
+| **M7** | Marketing Automation | ⚪ PLANNED |
+| **M8** | Data & Business Analytics | ⚪ PLANNED |
+| **M9** | Systems Integration | ⚪ PLANNED |
+| **M10** | AI, AEO & Intelligent RevOps | ⚪ PLANNED |
+| **M11** | Governance & Scalability | ⚪ PLANNED |
+| **M12** | Revenue Strategy | ⚪ PLANNED |
 
-| Fase | Módulo | Período | Foco Temático | Entregável Principal | Status |
-| :---: | :--- | :--- | :--- | :--- | :---: |
-| **01** | **CRM Foundations** | Julho 2026 | Estrutura de dados e arquitetura de objetos | `CRM Architecture Blueprint` | 🟢 Concluído |
-| **02** | **Customer Journey** | Agosto 2026 | Mapeamento de jornada e ciclo de vida | `Lifecycle Architecture` | 🟡 Em Curso |
-| **03** | **Marketing Operations** | Setembro 2026 | Geração previsível de demanda e formulários | `Lead Acquisition Blueprint` | ⚪ Planejado |
-| **04** | **Sales Operations** | Outubro 2026 | Processo comercial e pipelines de venda | `Sales Pipeline Blueprint` | ⚪ Planejado |
-| **05** | **Marketing Automation** | Novembro 2026 | Workflows, Lead Scoring e automações | `Automation Blueprint` | ⚪ Planejado |
-| **06** | **Customer Success Ops** | Dezembro 2026 | Onboarding, NPS, Churn e CSAT | `Customer Success Playbook` | ⚪ Planejado |
-| **07** | **Revenue Operations** | Janeiro 2027 | Integração de Marketing, Vendas e CS | `RevOps Integrated Architecture` | ⚪ Planejado |
-| **08** | **Data & Business Analytics**| Fevereiro 2027 | Dashboards executivos, SQL e Looker Studio | `Executive Analytics Dashboard` | ⚪ Planejado |
-| **09** | **Systems Integration** | Março 2027 | APIs, Webhooks e cenários avançados no Make | `Systems Integration Architecture` | ⚪ Planejado |
-| **10** | **AI for RevOps** | Abril 2027 | Breeze AI, AEO, GEO e otimização para LLMs | `AI RevOps Strategy` | ⚪ Planejado |
-| **11** | **Governance & Scalability**| Maio 2027 | Data quality, manual operacional e SOPs | `RevOps Governance Manual` | ⚪ Planejado |
-| **12** | **Revenue Strategy** | Junho 2027 | Growth, Unit Economics (CAC/LTV) e OKRs | `Revenue Growth Blueprint` | ⚪ Planejado |
+---
+
+## 📅 Roadmap Detalhado e Laboratórios Evolutivos
+
+Abaixo está o detalhamento dos 12 módulos e das fases práticas do laboratório Creative Print:
+
+| Módulo | Fase do Laboratório | Período | Foco Temático & Propósito do Laboratório | Entregável Principal | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: |
+| **M1** | **Fase 1: Fundação do CRM** | Julho 2026 | Estruturação inicial do CRM: objetos, propriedades, pipelines e nomenclaturas para CP Agenda e CP Review. | `CRM Architecture Blueprint` | ✅ COMPLETED |
+| **M2** | **Fase 2: Estruturação da Jornada do Cliente** | Agosto 2026 | Mapeamento do ciclo de vida, ICP, personas, segmentação e lifecycle stages aplicados. | `Lifecycle Architecture` | 🔵 IN PROGRESS |
+| **M3** | **Fase 3: Sistema de Aquisição de Leads** | Setembro 2026 | Geração previsível de demanda, landing pages, formulários e captação de leads para o CP Agenda. | `Lead Acquisition Blueprint` | ⚪ PLANNED |
+| **M4** | **Fase 4: Operação Comercial & Habilidades de Dados** | Outubro 2026 | Estruturação de pipelines comerciais, negociações (deals), forecast, SLAs e produtividade em vendas. | `Sales Pipeline Blueprint` | ⚪ PLANNED |
+| **M5** | **Fase 5: Integração da Operação de Receita** | Novembro 2026 | Alinhamento e integração dos processos de Marketing, Vendas e CS sob uma arquitetura única de RevOps. | `RevOps Integrated Architecture` | ⚪ PLANNED |
+| **M6** | **Fase 6: Operação de Customer Success** | Dezembro 2026 | Estruturação de pós-venda no CP Review: onboarding, pesquisas NPS/CSAT, Health Score, retenção e expansão. | `Customer Success Playbook` | ⚪ PLANNED |
+| **M7** | **Fase 7: Automação da Jornada** | Janeiro 2027 | Automação de processos, workflows avançados no HubSpot, lead scoring e handoff automático entre áreas. | `Automation Blueprint` | ⚪ PLANNED |
+| **M8** | **Fase 8: Inteligência Analítica & Business Intelligence** | Fevereiro 2027 | Dashboards executivos, modelagem SQL para CRM/RevOps, análises em Looker Studio e GA4. | `Executive Analytics Dashboard` | ⚪ PLANNED |
+| **M9** | **Fase 9: Arquitetura de Sistemas Integrados** | Março 2027 | Conexão do HubSpot como SSOT via Make.com com CP Review, Meta Lead Ads, WhatsApp e Stripe. | `Systems Integration Architecture` | ⚪ PLANNED |
+| **M10** | **Fase 10: AI-Driven Revenue Operations** | Abril 2027 | Aplicação de Breeze AI, cenários com IA no Make, AEO/GEO/LLMO e governança de inteligência artificial. | `AI RevOps Strategy` | ⚪ PLANNED |
+| **M11** | **Fase 11: Governança e Escalabilidade da Operação** | Maio 2027 | Padronização operacional, governança de dados, auditorias, SOPs e manuais do HubSpot e Make. | `RevOps Governance Manual` | ⚪ PLANNED |
+| **M12** | **Fase 12: Revenue Growth Strategy** | Junho 2027 | Plano estratégico de crescimento previsível, Unit Economics (CAC, LTV, NRR, GRR) e OKRs de receita. | `Revenue Growth Blueprint` | ⚪ PLANNED |
 
 ---
 
 ## 📂 Estrutura de Arquivos e Entregas
 
-```bash
-creative-print-revops-lab/
-├── GRADE_CURRICULAR.md        # Documento mestre do programa da formação
+```text
+Creative-Print-Revops-Lab/
+├── GRADE_CURRICULAR.md        # Documento mestre do programa da formação (12 Módulos)
+├── README.md                  # Visão geral e roadmap do laboratório
+├── index.html                 # Apresentação interativa da arquitetura
+├── index.css                  # Estilização visual da apresentação
 │
-├── 01-crm-architecture/       # [MÓDULO 1] Arquitetura Conceitual do CRM
-│   ├── CRM_Architecture.md    # Documento mestre da arquitetura do CRM
-│   ├── Business_Discovery.md  # Levantamento e requisitos da Creative Print
-│   ├── Current_State.md       # Diagnóstico do cenário atual (As Is)
-│   ├── Future_State.md        # Modelagem do cenário futuro do CRM (To Be)
-│   ├── Data_Model.md          # Dicionário de propriedades e dados
-│   ├── Naming_Convention.md   # Padronização de nomenclatura HubSpot
-│   ├── Process_Design.md      # Mapeamento de processos e SLAs
-│   ├── System_Mapping.md      # Arquitetura de integração CP Agenda/Review
-│   └── Architecture_Decisions.md # Log de Decisões de Arquitetura (ADR)
+├── 01-crm-architecture/       # Documentação da Arquitetura do CRM e Negócio
+│   ├── 00-Executive-Summary.md
+│   ├── 01-Business/           # Discovery, As-Is e To-Be da Creative Print
+│   ├── 02-Architecture/       # Modelagem de Objetos, Associações e Mapeamento de Sistemas
+│   ├── 03-Data-Model/         # Dicionários de Dados (Company, Contact, Deal, Ticket)
+│   ├── 04-Processes/          # Automação, Relatórios e Plano de Implementação
+│   ├── 05-Governance/         # Decisões de Arquitetura (ADRs), Governança e Nomenclatura
+│   └── 06-Project-Closure/    # Relatório de Encerramento do Módulo 1
 │
-├── 02-hubspot-configuration/  # [MÓDULO 2] Arquivos e Templates do CRM
-│   ├── properties.xlsx        # Dicionário de propriedades para importação
-│   ├── pipelines.xlsx         # Estrutura de estágios dos pipelines comerciais/CS
-│   └── import_templates/      # CSVs de exemplo para carga de contatos/empresas
+├── 02-inbound-lifecycle/       # [MÓDULO 2] Inbound Marketing & Ciclo de Vida
+│   └── 01-ICP-and-Buyer-Persona/
+│       ├── Market-Segment-Evaluation.md # Avaliação e priorização de segmentos
+│       ├── Customer-Evidence-Matrix.md   # Matriz de evidências empíricas
+│       └── Ideal-Customer-Profile.md     # Definição do Perfil de Cliente Ideal (ICP)
 │
-└── diagrams/                  # Diagramas e Ativos Visuais
-    ├── crm_architecture.png   # Modelo físico/lógico do HubSpot CRM
-    ├── customer_journey.png   # Jornada de compra e relacionamento
-    └── data_model.png         # Diagrama de Entidade-Relacionamento (ERD)
+├── 02-hubspot-configuration/  # Arquivos de Configuração e Templates
+│   ├── implementation/        # Configurações de Deals e Tickets
+│   ├── import_templates/      # CSVs padronizados para carga de dados
+│   ├── pipelines.xlsx         # Mapeamento dos estágios de pipelines
+│   └── properties.xlsx        # Dicionário de propriedades customizadas
+│
+├── documentation/             # Evidências de Configuração e Telas do HubSpot
+│   ├── Implementation/        # Documentos detalhados de implementação
+│   └── evidence/              # Evidências visuais organizadas por grupo de propriedades
+│
+├── assets/                    # Identidade Visual e Certificados
+└── diagrams/                  # Diagramas de Arquitetura, ERD e Jornada
 ```
 
 ---
@@ -93,13 +128,14 @@ creative-print-revops-lab/
 
 Este repositório serve como base técnica e estratégica para profissionais de Revenue Operations e consultores HubSpot.
 
-1.  **Modelagem e Nomenclatura:** Acesse [Naming_Convention.md](file:///Users/karlateshima/Developer/Creative-Print-Revops-Lab/01-crm-architecture/Naming_Convention.md) para entender a padronização recomendada de propriedades, listas e workflows.
-2.  **Configuração de CRM:** Faça o download das planilhas em [02-hubspot-configuration/](file:///Users/karlateshima/Developer/Creative-Print-Revops-Lab/02-hubspot-configuration) para criar propriedades customizadas em massa via API ou importação.
-3.  **Decisões de Arquitetura:** As decisões arquiteturais que justificam a escolha de determinados pipelines e relacionamentos de objetos customizados podem ser revisadas em [Architecture_Decisions.md](file:///Users/karlateshima/Developer/Creative-Print-Revops-Lab/01-crm-architecture/Architecture_Decisions.md).
+1. **Arquitetura & Governança:** Acesse [01-crm-architecture/05-Governance/Naming-Convention.md](01-crm-architecture/05-Governance/Naming-Convention.md) para entender os padrões de nomenclatura de propriedades, listas e workflows.
+2. **Configuração Prática de CRM:** Utilize os templates em [02-hubspot-configuration/import_templates/](02-hubspot-configuration/import_templates/) e as planilhas de propriedades para cargas em massa no HubSpot.
+3. **Decisões de Arquitetura (ADR):** Consulte as justificativas técnicas em [01-crm-architecture/05-Governance/Architecture-Decisions.md](01-crm-architecture/05-Governance/Architecture-Decisions.md).
 
 ---
 
 ## 👩‍💻 Autora
 
 **Karla Teshima**
-*   [LinkedIn](https://www.linkedin.com/in/karla-teshima-revops?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
+* [LinkedIn](https://www.linkedin.com/in/karla-teshima-revops?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
+* [GitHub](https://github.com/karlateshima)
