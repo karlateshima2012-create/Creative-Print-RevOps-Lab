@@ -1,292 +1,356 @@
-# Ideal Customer Profile (ICP)
+# Ideal Customer Profile (ICP) — v1.0
 
 ## 1. Objetivo
 
-Este documento define o Ideal Customer Profile (ICP) da Creative Print com base na análise dos segmentos de mercado, evidências dos clientes atuais, aderência entre problemas e soluções e potencial estratégico de expansão.
+Este documento define a primeira versão do Ideal Customer Profile (ICP) da Creative Print com base nas evidências comerciais disponíveis, na avaliação estratégica dos segmentos e na aderência entre problemas e soluções.
 
-O objetivo é estabelecer um direcionamento claro sobre quais perfis de empresas devem ser priorizados na aquisição, qualificação e gestão do relacionamento com clientes.
+O objetivo é estabelecer uma direção inicial para:
 
-Como a Creative Print possui uma base histórica ainda limitada, principalmente em relação às soluções digitais, este documento diferencia claramente:
+- aquisição;
+- qualificação;
+- priorização de leads;
+- desenvolvimento de conteúdo;
+- definição de hipóteses comerciais;
+- coleta de novos dados no CRM.
 
-- evidências observadas;
-- evidências parciais;
-- hipóteses estratégicas;
-- oportunidades ainda não validadas.
+A Creative Print possui atualmente uma base histórica limitada. Por isso, este ICP não deve ser interpretado como uma definição definitiva do mercado.
 
-O ICP será tratado como um artefato de RevOps em evolução, podendo ser revisado conforme novos dados forem incorporados ao CRM.
+O ICP será tratado como um artefato de RevOps em evolução.
+
+À medida que novos leads, oportunidades e clientes forem registrados no CRM, as hipóteses deverão ser validadas, refinadas ou rejeitadas.
 
 ---
 
-# 2. Metodologia de definição do ICP
+# 2. Princípio metodológico
 
-O ICP foi definido considerando quatro dimensões principais:
+A definição do ICP utiliza três níveis de evidência:
 
-1. **Evidência de clientes** — comportamento observado nos clientes reais da Creative Print.
-2. **Potencial do segmento** — atratividade comercial do segmento.
-3. **Aderência problema-solução** — relação entre os problemas do segmento e as soluções oferecidas pela Creative Print.
-4. **Potencial de expansão** — possibilidade de evolução da relação comercial para outros produtos físicos, produtos NFC ou soluções digitais.
-
-### Classificação das evidências
-
-| Classificação | Definição |
+| Nível | Definição |
 |---|---|
-| **Validado** | Sustentado por comportamento observado nos clientes da Creative Print |
-| **Evidência parcial** | Sustentado por poucos casos ou uma amostra limitada |
-| **Hipótese estratégica** | Existe potencial identificado, mas ainda não há evidência suficiente para validação |
-| **Não validado** | Não existem dados suficientes para sustentar uma conclusão |
+| **Evidência observada** | Comportamento registrado em clientes reais da Creative Print |
+| **Sinal / evidência parcial** | Comportamento observado em poucos casos, insuficiente para generalização |
+| **Hipótese estratégica** | Possibilidade identificada pelo potencial do segmento e pela aderência problema-solução, ainda não validada comercialmente |
+
+Essa distinção é necessária porque a base histórica atual não possui volume suficiente para sustentar conclusões generalizadas sobre todos os segmentos.
 
 ---
 
-# 3. Evidências atuais de clientes
+# 3. Fontes utilizadas
 
-A base atual de clientes da Creative Print ainda não possui volume suficiente para definir um único ICP para todo o portfólio.
+A definição deste ICP v1.0 considera:
 
-A análise dos clientes existentes demonstra comportamentos diferentes entre os produtos físicos e as soluções digitais.
+1. `01-Market-Segment-Evaluation.md`
+2. `02-Customer-Evidence-Matrix.md`
+3. comportamento comercial observado na Creative Print;
+4. aderência entre problemas identificados e soluções oferecidas.
 
-## Padrões observados
+A avaliação de mercado e as pontuações de segmento são tratadas como hipóteses estratégicas.
 
-- Garagens de venda de carro representam o segmento com maior evidência de demanda por produtos físicos, considerando quantidade de clientes e volume de compra observado.
-- Fotógrafos apresentam casos de recompra de chaveiros personalizados.
-- Escolas de artes marciais apresentam casos de recompra de produtos físicos.
-- Os produtos físicos possuem atualmente uma quantidade de evidências comerciais significativamente maior do que as soluções digitais.
-- O CP Agenda possui atualmente uma base limitada de clientes.
-- O CP Review ainda não possui histórico suficiente de clientes para validar um ICP.
-
-Dessa forma, a Creative Print não será tratada como tendo um único ICP para todo o portfólio.
-
-A definição será estruturada de acordo com o tipo de solução.
+A matriz de evidências representa o comportamento observado na base atual de clientes.
 
 ---
 
-# 4. Estrutura do ICP da Creative Print
+# 4. Evidências atuais
 
-A análise atual indica duas grandes categorias estratégicas:
+A base atual apresenta diferentes níveis de evidência entre segmentos e soluções.
 
-### ICP A — Produtos Físicos
+## 4.1 Produtos físicos
 
-Definido principalmente com base no comportamento observado dos clientes atuais.
+Os produtos físicos possuem atualmente a maior quantidade de evidências comerciais.
 
-### ICP B — Soluções Digitais
+O segmento de **garagens de venda de carro** representa o maior grupo observado e apresenta maior evidência de demanda por chaveiros personalizados.
 
-Definido inicialmente com base na aderência entre problema e solução e no potencial estratégico, pois a quantidade de dados históricos ainda é insuficiente para validação.
+## 4.2 Recompra
 
-Dentro das soluções digitais, CP Agenda e CP Review possuem características e necessidades de cliente diferentes.
+Foram observados casos de recompra entre:
+
+- fotógrafos;
+- escolas de artes marciais.
+
+Entretanto, a quantidade de clientes nesses segmentos ainda é pequena.
+
+Portanto, esses casos devem ser tratados como sinais relevantes, e não como validação definitiva do segmento.
+
+## 4.3 Soluções digitais
+
+A evidência histórica das soluções digitais ainda é limitada.
+
+O CP Agenda possui uma base pequena de clientes.
+
+O CP Review ainda não possui histórico suficiente para validar empiricamente seu ICP.
+
+Consequentemente, os ICPs das soluções digitais permanecem como hipóteses estratégicas.
 
 ---
 
-# 5. ICP A — Produtos Físicos
+# 5. ICP v1.0 — Produtos físicos
 
 ## Definição
 
-Pequenas e médias empresas locais que utilizam produtos personalizados como ferramentas de divulgação da marca, aquisição de clientes, relacionamento, promoção ou distribuição.
+Pequenas empresas locais que utilizam produtos personalizados como ferramentas de divulgação, relacionamento, identificação da marca ou distribuição aos seus clientes.
 
-## Características principais
+## Características desejáveis
 
-- Negócio local.
-- Necessidade de aumentar a visibilidade da marca.
-- Utilização de materiais ou produtos promocionais.
-- Possibilidade de distribuir produtos para clientes ou potenciais clientes.
-- Valorização de personalização.
-- Potencial para compras recorrentes ou em volume.
-- Possibilidade de utilização de produtos com tecnologia NFC.
+- negócio local;
+- necessidade de divulgar ou reforçar a marca;
+- utilização de materiais promocionais;
+- possibilidade de distribuição dos produtos aos clientes;
+- valorização de personalização;
+- possibilidade de compra em volume;
+- potencial de recompra;
+- potencial de utilização de produtos NFC.
 
-## Segmento com maior evidência atual
+## Principal evidência atual
 
 **Garagens de venda de carro**
 
-Esse segmento apresenta atualmente a evidência mais forte de demanda por produtos físicos dentro da base analisada da Creative Print.
+Esse segmento apresenta atualmente a maior evidência de demanda por produtos físicos na base analisada.
 
-## Caso de uso observado
+## Evidência complementar
 
-Utilização de chaveiros personalizados como material de divulgação e distribuição aos clientes.
+**Fotógrafos** e **escolas de artes marciais** apresentam sinais de recompra, mas com amostras pequenas.
 
 ## Status
 
-**Validado para demanda de produtos físicos.**
+**Evidência comercial observada — não generalizada.**
 
-## Limitação
-
-A evidência atual não permite afirmar que garagens possuem forte demanda pelas soluções digitais da Creative Print.
-
-A possibilidade de expansão de produtos físicos para NFC, gestão de reputação ou outras soluções digitais permanece como uma hipótese que deverá ser validada.
+A Creative Print possui evidência suficiente para priorizar a investigação comercial de empresas que utilizam produtos personalizados, mas ainda não possui dados suficientes para afirmar que um único segmento representa o ICP definitivo dos produtos físicos.
 
 ---
 
-# 6. ICP B — Soluções Digitais
-
-O ICP das soluções digitais ainda não pode ser considerado totalmente validado devido ao volume limitado de clientes históricos do CP Agenda e à ausência de clientes do CP Review.
-
-Por isso, os ICPs das soluções digitais são tratados atualmente como hipóteses estratégicas.
-
----
-
-# 6.1 CP Agenda — Hipótese de ICP
+# 6. ICP v1.0 — CP Agenda
 
 ## Definição
 
-Empresas locais de serviços que dependem de agendamentos e possuem interações recorrentes com clientes.
+Pequenas empresas de serviços que dependem de agendamento e possuem relacionamento recorrente com clientes.
 
-## Características
+## Características desejáveis
 
-- Operação baseada em agendamento.
-- Atendimento recorrente.
-- Necessidade de organização da agenda.
-- Potencial de problemas relacionados a faltas e cancelamentos.
-- Necessidade de centralizar informações dos clientes.
-- Relacionamento recorrente com clientes.
-- Potencial para automação de agendamentos e comunicação.
+- operação baseada em agendamento;
+- atendimento recorrente;
+- necessidade de organização da agenda;
+- possibilidade de problemas com faltas e cancelamentos;
+- necessidade de centralizar informações dos clientes;
+- relacionamento recorrente;
+- potencial de automação de comunicação.
 
-## Segmentos potenciais
+## Segmentos prioritários para teste
 
-- Profissionais de beleza.
-- Esteticistas.
-- Nail designers.
-- Profissionais de massagem.
-- Salões.
-- Outros negócios locais baseados em agendamento.
+- esteticistas;
+- nail designers;
+- salões e profissionais de beleza;
+- profissionais de massagem;
+- outros negócios locais baseados em agendamento.
 
-## Status da evidência
+## Status
 
 **Hipótese estratégica.**
 
-Existe aderência entre o problema desses segmentos e a proposta do CP Agenda, porém a Creative Print ainda não possui dados históricos suficientes para validar esses segmentos como ICP.
+Existe aderência entre as características operacionais desses segmentos e a proposta do CP Agenda.
+
+Entretanto, a Creative Print ainda não possui dados históricos suficientes para validar esses segmentos como ICP.
 
 ---
 
-# 6.2 CP Review — Hipótese de ICP
+# 7. ICP v1.0 — CP Review
 
 ## Definição
 
-Empresas locais cuja aquisição de novos clientes depende significativamente de reputação, avaliações e recomendações online.
+Pequenas empresas locais cuja aquisição de clientes depende significativamente de reputação, avaliações e recomendações online.
 
-## Características
+## Características desejáveis
 
-- Dependência de aquisição local.
-- Importância da reputação online.
-- Interação frequente com clientes.
-- Dependência de avaliações em plataformas como Google.
-- Necessidade de facilitar a solicitação de avaliações.
-- Interesse em coletar feedback dos clientes.
-- Potencial de utilização de mecanismos automatizados de geração de avaliações.
+- dependência de aquisição local;
+- importância da reputação online;
+- interação frequente com clientes;
+- dependência de avaliações no Google;
+- necessidade de facilitar a solicitação de avaliações;
+- interesse em coletar feedback;
+- potencial para automação do processo de avaliação.
 
-## Segmentos potenciais
+## Segmentos prioritários para teste
 
-- Restaurantes.
-- Negócios de beleza.
-- Empresas automotivas.
-- Food trucks e negócios de alimentação.
-- Academias.
-- Outros negócios locais de serviços.
+- restaurantes;
+- negócios de beleza;
+- empresas automotivas;
+- food trucks;
+- academias;
+- outros negócios locais dependentes de reputação.
 
-## Status da evidência
+## Status
 
-**Não validado.**
+**Hipótese estratégica não validada.**
 
-A Creative Print ainda não possui histórico suficiente de clientes do CP Review para validar empiricamente esse ICP.
-
----
-
-# 7. Comparação dos ICPs
-
-| ICP | Solução principal | Evidência atual | Potencial de mercado | Status |
-|---|---|---|---|---|
-| Empresas locais que utilizam produtos promocionais | Produtos físicos | Forte | Alto | **Validado** |
-| Garagens de venda de carro | Chaveiros / NFC | Forte | Alto | **Validado para produtos físicos** |
-| Fotógrafos | Chaveiros personalizados | Parcial | Médio | **Evidência parcial** |
-| Escolas de artes marciais | Chaveiros personalizados | Parcial | Médio | **Evidência parcial** |
-| Negócios baseados em agendamento | CP Agenda | Limitada | Alto | **Hipótese estratégica** |
-| Negócios dependentes de reputação online | CP Review | Nenhuma | Alto | **Não validado** |
+O potencial existe, mas a Creative Print ainda não possui histórico comercial suficiente do CP Review para validar esse ICP.
 
 ---
 
-# 8. Priorização do ICP
+# 8. Priorização atual
 
-Com base nas evidências disponíveis, a Creative Print não deve utilizar um único ICP para todo o portfólio.
+A Creative Print não deve utilizar um único ICP para todo o portfólio.
 
-A priorização atual é:
+A priorização abaixo representa a melhor decisão com base nas evidências disponíveis atualmente.
 
-## Prioridade 1 — Clientes de Produtos Físicos
+| Prioridade | Área | Base da decisão | Status |
+|---|---|---|---|
+| 1 | Produtos físicos | Maior evidência comercial atual | Evidência observada |
+| 2 | CP Agenda | Forte aderência problema-solução | Hipótese estratégica |
+| 3 | CP Review | Potencial de mercado e aderência | Hipótese estratégica não validada |
 
-Empresas que demonstram necessidade de produtos personalizados para divulgação, relacionamento ou distribuição.
+Essa priorização não representa uma conclusão definitiva sobre o tamanho ou potencial de mercado.
 
-**Evidência: Validada**
-
-O segmento de garagens possui atualmente a maior evidência comercial dentro dessa categoria.
-
----
-
-## Prioridade 2 — Negócios baseados em agendamento
-
-Empresas que possuem uma operação recorrente de agendamentos e podem se beneficiar do CP Agenda.
-
-**Evidência: Hipótese estratégica**
-
-Existe forte aderência entre o problema identificado e a solução, mas a hipótese ainda precisa ser validada comercialmente.
+Ela representa a ordem atual de investigação e aquisição com base no nível de evidência disponível.
 
 ---
 
-## Prioridade 3 — Negócios dependentes de reputação
-
-Empresas que dependem de avaliações e reputação online e podem se beneficiar do CP Review.
-
-**Evidência: Não validada**
-
-O potencial existe, mas ainda não há histórico de clientes suficiente para confirmar o ICP.
-
----
-
-# 9. Critérios de qualificação do ICP
+# 9. Critérios de qualificação
 
 O ICP não deve ser determinado exclusivamente pelo setor de atuação.
 
-A qualificação deverá considerar quatro dimensões.
+Um potencial cliente deverá ser avaliado em quatro dimensões.
 
 ## 9.1 Fit Firmográfico
 
-- Tipo de negócio.
-- Segmento.
-- Tamanho da empresa.
-- Localização.
-- Modelo de negócio.
+- segmento;
+- localização;
+- tamanho da empresa;
+- modelo de negócio;
+- tipo de operação.
 
 ## 9.2 Fit Operacional
 
-- Utilização de agendamento.
-- Volume de clientes.
-- Frequência de interação com clientes.
-- Necessidade de gestão de relacionamento.
-- Necessidade de materiais promocionais.
+- frequência de interação com clientes;
+- volume de clientes;
+- utilização de agendamento;
+- necessidade de materiais promocionais;
+- necessidade de gestão de relacionamento.
 
 ## 9.3 Fit de Problema
 
-- Problemas de agendamento.
-- Problemas de aquisição de clientes.
-- Necessidade de aumentar a visibilidade da marca.
-- Necessidade de melhorar a reputação online.
-- Necessidade de relacionamento e retenção.
+- dificuldade de aquisição;
+- dificuldade de relacionamento;
+- problemas de agendamento;
+- necessidade de aumentar a visibilidade da marca;
+- necessidade de melhorar reputação online.
 
 ## 9.4 Potencial de Expansão
 
-- Produtos personalizados.
-- Produtos NFC.
-- Páginas digitais.
-- CP Agenda.
+- produtos personalizados;
+- produtos NFC;
+- páginas digitais;
+- CP Agenda;
 - CP Review.
 
 ---
 
-# 10. Framework de decisão do ICP
+# 10. Framework de decisão
 
-Um potencial cliente deve ser considerado um forte candidato ao ICP quando apresentar:
+Um potencial cliente apresenta maior potencial de ICP quando existe combinação entre:
 
 ```text
 Fit com o segmento
         +
 Problema relevante
         +
-Aderência à solução da Creative Print
+Aderência à solução
         +
 Potencial de recorrência ou expansão
         =
-Alto potencial de ICP
+Maior potencial de ICP
 ```
+
+Nenhum desses critérios deve ser considerado isoladamente.
+
+---
+
+# 11. Plano de validação do ICP
+
+O ICP v1.0 deverá ser utilizado como hipótese operacional para gerar novos dados.
+
+## Dados a coletar
+
+Para cada lead e cliente, registrar no CRM:
+
+* segmento;
+* tamanho da empresa;
+* localização;
+* problema principal;
+* solução de interesse;
+* produto adquirido;
+* valor da oportunidade;
+* origem do lead;
+* estágio do lifecycle;
+* taxa de conversão;
+* recompra;
+* produtos adicionais adquiridos;
+* interesse em soluções digitais.
+
+## Objetivo da validação
+
+Identificar quais características apresentam maior relação com:
+
+* conversão;
+* valor da venda;
+* recorrência;
+* expansão;
+* retenção.
+
+## Processo
+
+```text
+ICP v1.0
+   ↓
+Aquisição de leads
+   ↓
+Qualificação
+   ↓
+Oportunidades
+   ↓
+Clientes
+   ↓
+Dados comportamentais
+   ↓
+Análise
+   ↓
+Validação / refutação
+   ↓
+ICP v2.0
+```
+
+O ICP deverá ser revisado quando houver volume suficiente de novos dados para identificar padrões com maior confiança.
+
+---
+
+# 12. Limitações atuais
+
+A principal limitação desta análise é o tamanho reduzido da base histórica.
+
+Consequentemente:
+
+* não é possível generalizar os resultados para todo o mercado;
+* poucos casos de recompra não comprovam um padrão de segmento;
+* o maior grupo de clientes não representa necessariamente o melhor ICP;
+* potencial de mercado não representa demanda comprovada;
+* ausência de clientes não significa ausência de demanda.
+
+Essas limitações são incorporadas ao próprio modelo de ICP e serão tratadas por meio da coleta contínua de dados.
+
+---
+
+# 13. Conclusão
+
+O ICP v1.0 da Creative Print não representa uma afirmação definitiva sobre o mercado.
+
+Ele representa a melhor hipótese operacional possível com os dados disponíveis atualmente.
+
+A principal evidência comercial está concentrada nos produtos físicos, especialmente em chaveiros personalizados.
+
+Fotógrafos e escolas de artes marciais apresentam sinais de recompra, mas ainda com evidência parcial.
+
+Para CP Agenda e CP Review, a definição atual permanece baseada principalmente em aderência problema-solução e potencial estratégico.
+
+O próximo objetivo não é obter certeza artificial com a base atual.
+
+O objetivo é utilizar o ICP v1.0 para orientar aquisição, qualificação e coleta estruturada de dados, permitindo que futuras versões sejam baseadas em evidências mais robustas.
+
+**ICP v1.0 = hipótese operacional + evidência atual + mecanismo de validação.**
