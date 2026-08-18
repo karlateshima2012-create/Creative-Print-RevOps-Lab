@@ -2,119 +2,101 @@
 
 # Creative Print RevOps Lab
 
-### CRM Operations · HubSpot · Data Quality · Revenue Analytics · Systems Integration
+### CRM Operations · HubSpot · Revenue Analytics · Systems Integration
 
-Portfólio técnico desenvolvido a partir de uma operação real para demonstrar como eu estruturo dados, processos e sistemas de receita.
+Três projetos práticos desenvolvidos durante um bootcamp intensivo de 8 semanas.
 
 ![HubSpot](https://img.shields.io/badge/HubSpot-CRM%20%26%20RevOps-FF7A59?style=for-the-badge&logo=hubspot&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-Revenue%20Analytics-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Looker Studio](https://img.shields.io/badge/Looker%20Studio-Dashboards-4285F4?style=for-the-badge&logo=looker&logoColor=white)
 ![Make](https://img.shields.io/badge/Make-Integrations-6D00CC?style=for-the-badge)
-![GA4](https://img.shields.io/badge/GA4-Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![Status](https://img.shields.io/badge/status-bootcamp%20planejado-64748B?style=for-the-badge)
 
 </div>
 
 ---
 
-## Sobre este portfólio
+## Sobre o bootcamp
 
-Sou fundadora e CEO da Creative Print e uso a empresa como laboratório para desenvolver competências em **CRM Operations, HubSpot e Revenue Operations**.
+Neste repositório, vou desenvolver três projetos conectados para demonstrar competências práticas em CRM Operations, HubSpot e Revenue Operations.
 
-Neste repositório, transformo problemas reais de dados e operação em três projetos conectados. O trabalho evolui da organização da base de CRM para análise do funil e, por fim, para a construção de um sistema integrado de Revenue Operations.
+Os cases serão construídos do zero durante o bootcamp. Cada documento, configuração, consulta, teste e evidência será publicado somente depois de ser produzido e validado.
 
-Meu objetivo é demonstrar como eu penso e executo: **diagnóstico, decisão, implementação, teste, evidência e análise**.
-
-> **Compromisso com a evidência:** não invento clientes, volumes, métricas ou resultados. Identifico separadamente dados reais, hipóteses e datasets simulados.
-
-## Os três projetos
-
-| Case | Problema profissional | Principais entregas | Status |
-|---|---|---|---|
-| **[01 — CRM Implementation & Data Quality](./01-crm-implementation-data-quality/)** | Transformar registros dispersos em uma base confiável no HubSpot | Auditoria, plano de correção, field mapping, importação, validação e log de qualidade | 🟠 Em desenvolvimento |
-| **[02 — Revenue Funnel Analysis](./02-revenue-funnel-analysis/)** | Converter dados de funil e receita em decisões operacionais | Dataset SaaS, consultas SQL, KPIs, Executive Dashboard e Business Analytics Report | ⚪ Planejado |
-| **[03 — HubSpot Revenue Operations System](./03-hubspot-revenue-operations-system/)** | Integrar processos e sistemas em uma operação de receita rastreável | Lifecycle, pipeline, SLA, automações, integrações, testes e arquitetura RevOps | ⚪ Planejado |
-
-O capstone não será um quarto projeto. Ele consolidará os três cases, conectando qualidade de dados, analytics e arquitetura de sistemas.
-
-## O que será desenvolvido
-
-### 01. CRM Implementation & Data Quality
-
-Vou auditar a base real da Creative Print, definir regras de qualidade, corrigir inconsistências, mapear campos e associações, preparar a importação e validar os registros no HubSpot. O case será encerrado com evidências de configuração e um log rastreável de erros, correções e resultados.
-
-**Competência central:** estruturar uma migração de CRM sem perder integridade, contexto ou rastreabilidade.
-
-### 02. Revenue Funnel Analysis
-
-Vou construir um dataset SaaS simulado para analisar aquisição, conversão, receita, retenção e churn. Aplicarei SQL a perguntas de negócio e transformarei os resultados em um dashboard executivo e um relatório de recomendações.
-
-**Competência central:** transformar dados de receita em métricas, diagnóstico e decisão.
-
-### 03. HubSpot Revenue Operations System
-
-Vou projetar o HubSpot como **Single Source of Truth**, conectar lifecycle e pipeline, definir handoffs e SLA, documentar automações e integrar fontes externas por Make, APIs REST, JSON e webhooks. O sistema será testado antes de ser apresentado como implementado.
-
-**Competência central:** conectar dados, processos e sistemas em uma arquitetura operacional de receita.
-
-## Tecnologias e uso no portfólio
-
-| Tecnologia | Aplicação | Estado |
-|---|---|---|
-| **HubSpot CRM** | Objetos, propriedades, associações, pipelines, importação, workflows e reporting | Em aplicação progressiva |
-| **Excel / Google Sheets** | Auditoria, limpeza, deduplicação, field mapping e validação | Em aplicação |
-| **SQL** | Consultas de funil, receita, conversão, retenção e churn | Planejado no Case 02 |
-| **HubSpot Reports** | Relatórios operacionais e análise do funil | Planejado no Case 02 |
-| **Looker Studio** | Executive Dashboard | Planejado no Case 02 |
-| **Google Analytics 4** | Dados de aquisição e comportamento digital | Planejado no Case 02 |
-| **Make** | Orquestração de integrações e automações | Planejado no Case 03 |
-| **APIs REST, JSON e webhooks** | Integração entre HubSpot e sistemas externos | Planejado no Case 03 |
-| **GitHub** | Versionamento, documentação técnica e evidências | Em aplicação |
-
-## Metodologia
-
-Cada projeto segue o mesmo ciclo de execução:
+Minha execução seguirá este ciclo:
 
 ```text
-Problema → Diagnóstico → Requisitos → Implementação → Testes → Evidência → Análise
+Problema → Diagnóstico → Implementação → Testes → Análise → Evidência
 ```
 
-Essa estrutura me obriga a distinguir quatro níveis de desenvolvimento profissional:
+> Não apresento planejamento como experiência concluída. O status dos projetos será atualizado conforme as entregas forem realizadas.
 
-- **estudado:** conheço o conceito;
-- **aplicado:** executei em um cenário definido;
-- **demonstrável:** possuo artefatos e evidências verificáveis;
-- **pronto para entrevista:** consigo explicar decisões, limitações, erros e resultados.
+## Projetos
 
-## Competências demonstradas ao longo do bootcamp
+| Case | O que vou desenvolver | Evidência final | Status |
+|---|---|---|---|
+| **[01 — CRM Implementation & Data Quality](./01-crm-implementation-data-quality/)** | Auditoria, limpeza, field mapping, importação e validação no HubSpot | Base corrigida, associações verificadas e log de erros e correções | ⚪ Planejado |
+| **[02 — Revenue Funnel Analysis](./02-revenue-funnel-analysis/)** | Dataset, qualidade de dados, SQL, métricas e dashboard | Dashboard de funil, aging e conversão, consultas interpretadas e relatório analítico | ⚪ Planejado |
+| **[03 — HubSpot Revenue Operations System](./03-hubspot-revenue-operations-system/)** | Pipeline, SLA, workflows, integrações, testes e reporting | Pipeline testado, workflow monitorado e automação integrada com logs e payloads | ⚪ Planejado |
 
-- CRM architecture e data modeling;
-- data governance, data hygiene e deduplicação;
-- field mapping e importação no HubSpot;
-- lifecycle stages, pipelines, handoffs e SLA;
-- análise de funil e métricas de receita;
-- SQL aplicado a problemas de negócio;
-- dashboards e comunicação executiva;
-- automações, integrações e documentação de sistemas;
-- testes, UAT e rastreabilidade de decisões.
+## O que será entregue
 
-## Estrutura do repositório
+### Case 01 — CRM Implementation & Data Quality
+
+Vou auditar uma base, identificar problemas de qualidade, executar correções, mapear campos e associações, importar os dados no HubSpot e validar o resultado. O case será encerrado com rastreabilidade entre problema, correção e evidência.
+
+### Case 02 — Revenue Funnel Analysis
+
+Vou estruturar e validar um dataset, escrever consultas SQL orientadas a perguntas de negócio, definir métricas e construir uma análise de funil. O resultado será apresentado em um dashboard executivo e em um relatório com achados e recomendações.
+
+### Case 03 — HubSpot Revenue Operations System
+
+Vou construir um sistema operacional de receita no HubSpot, com pipeline, regras de progressão, SLA, workflow, integração e reporting. O sistema será submetido a cenários de teste, incluindo exceções e falhas.
+
+Na etapa final, os três cases serão consolidados em um case bilíngue em português e inglês. O capstone fechará os projetos existentes e não criará uma quarta pasta.
+
+## Tecnologias previstas
+
+| Tecnologia | Uso no bootcamp |
+|---|---|
+| **HubSpot CRM** | Objetos, propriedades, associações, importação, pipeline, workflows e reporting |
+| **Excel / Google Sheets** | Auditoria, limpeza, deduplicação, mapping e validação |
+| **SQL** | Análise de funil, aging, conversão e receita |
+| **Looker Studio** | Dashboard executivo |
+| **Make** | Automação e integração entre sistemas |
+| **APIs REST, JSON e webhooks** | Troca de dados, eventos, payloads e tratamento de erros |
+| **GitHub** | Versionamento, documentação técnica e evidências |
+
+Todas as tecnologias estão apresentadas como escopo previsto. Elas passarão a compor minhas competências demonstráveis apenas quando os respectivos artefatos e testes forem publicados.
+
+## Evidências esperadas ao final
+
+- auditoria e correção de uma base;
+- importação com associações verificadas;
+- log de erros, decisões e correções;
+- pipeline ativo validado por nove cenários de teste;
+- workflow com SLA e monitoramento;
+- dashboard de funil, aging e conversão;
+- consultas SQL acompanhadas de interpretação de negócio;
+- integração com casos de sucesso e erro, logs e payloads;
+- case final bilíngue em português e inglês;
+- preparação para explicar decisões em entrevista técnica.
+
+## Estrutura
 
 ```text
 Creative-Print-RevOps-Lab/
 ├── 01-crm-implementation-data-quality/
 ├── 02-revenue-funnel-analysis/
 ├── 03-hubspot-revenue-operations-system/
-├── assets/
 └── README.md
 ```
 
-Cada case possui seu próprio README com problema, escopo, entregáveis, tecnologias, evidências esperadas e estado atual.
+As subpastas e os artefatos de cada projeto serão adicionados quando forem produzidos no bootcamp. Não mantenho arquivos vazios apenas para simular progresso.
 
 ---
 
 <div align="center">
 
 **Karla Teshima**  
-Founder & CEO, Creative Print · Em formação prática em CRM Operations, HubSpot e Revenue Operations
+Founder & CEO, Creative Print
 
 </div>

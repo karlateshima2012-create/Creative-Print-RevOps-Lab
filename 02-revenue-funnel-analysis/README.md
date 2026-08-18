@@ -5,78 +5,52 @@
 ### SQL, métricas de receita e dashboard executivo
 
 ![SQL](https://img.shields.io/badge/SQL-Revenue%20Analytics-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Looker Studio](https://img.shields.io/badge/Looker%20Studio-Dashboard-4285F4?style=flat-square&logo=looker&logoColor=white)
-![GA4](https://img.shields.io/badge/GA4-Acquisition-E37400?style=flat-square&logo=googleanalytics&logoColor=white)
+![Dashboard](https://img.shields.io/badge/Dashboard-Looker%20Studio-4285F4?style=flat-square)
 ![Status](https://img.shields.io/badge/status-planejado-64748B?style=flat-square)
 
 </div>
 
-## Visão do projeto
+## Objetivo
 
-Neste case, vou construir uma análise completa de funil e receita a partir de um dataset SaaS simulado. O objetivo é demonstrar como transformo dados brutos em perguntas de negócio, consultas SQL, métricas confiáveis e recomendações executivas.
+Neste projeto, vou transformar dados de funil em análise de negócio. Vou preparar e validar o dataset, formular perguntas, escrever consultas SQL, definir métricas e construir um dashboard executivo.
 
-O uso de dados simulados será identificado em todos os artefatos. Não apresentarei os resultados como desempenho real da Creative Print.
-
-## Problema de negócio
-
-Uma operação de receita pode registrar leads, oportunidades, clientes e pagamentos sem conseguir responder perguntas básicas: onde o funil perde conversão, quanto tempo cada etapa leva, quais canais geram receita e onde surgem churn ou retenção.
+Este case ainda não foi executado. Os artefatos serão publicados conforme forem produzidos durante o bootcamp.
 
 ## O que vou desenvolver
 
-1. **Dataset**
-   - modelo de leads, oportunidades, clientes, atividades e receita;
-   - dicionário de dados;
-   - regras de geração e identificação dos dados simulados.
+1. estruturar o dataset e seu dicionário de dados;
+2. testar nulos, duplicidades, chaves, datas, estágios e valores;
+3. escrever consultas SQL orientadas a perguntas de negócio;
+4. calcular volume, conversão, aging, velocity e receita;
+5. construir um dashboard executivo;
+6. interpretar resultados, limitações e implicações;
+7. recomendar ações com base nos dados.
 
-2. **Data quality**
-   - testes de nulos, duplicidades, chaves e formatos;
-   - validação de datas, estágios e valores;
-   - registro das correções realizadas.
+## Entregáveis previstos
 
-3. **SQL aplicado ao negócio**
-   - volume e conversão por etapa;
-   - velocity e tempo de ciclo;
-   - win rate e receita;
-   - aquisição por canal;
-   - retenção e churn.
-
-4. **Métricas e visualização**
-   - definição dos KPIs e fórmulas;
-   - dashboard executivo;
-   - leitura crítica dos resultados;
-   - recomendações priorizadas.
-
-## Entregáveis
-
-| Entregável | O que demonstrará |
+| Entregável | O que deverá comprovar |
 |---|---|
-| Dataset SaaS simulado | Modelagem e preparação de dados para análise |
-| Data Dictionary | Definições, tipos, chaves e regras de cada campo |
+| Dataset | Estrutura adequada para análise |
+| Data Dictionary | Definições, tipos, chaves e regras |
 | Data Quality Report | Testes, inconsistências e correções |
-| SQL Query Library | Consultas comentadas ligadas a perguntas de negócio |
-| Metrics Dictionary | Fórmulas, granularidade e interpretação dos KPIs |
-| **Executive Dashboard** | Visualização do funil, receita, retenção e churn |
-| **Business Analytics Report** | Diagnóstico, achados, limitações e recomendações |
+| SQL Query Library | Consultas comentadas e interpretadas |
+| Metrics Dictionary | Fórmulas, granularidade e uso dos KPIs |
+| Executive Dashboard | Funil, aging, conversão e receita |
+| Business Analytics Report | Achados, limitações e recomendações |
 
-## Tecnologias planejadas
+## Tecnologias previstas
 
-- **SQL:** consultas de funil, receita, retenção e churn;
-- **HubSpot Reports:** comparação com a visão operacional do CRM;
-- **Looker Studio:** construção do Executive Dashboard;
-- **Google Analytics 4:** contexto de aquisição e comportamento;
-- **Excel / Google Sheets:** validação e análise exploratória;
-- **GitHub:** versionamento do dataset, queries e documentação.
+- SQL;
+- Excel ou Google Sheets;
+- HubSpot Reports;
+- Looker Studio;
+- GitHub para versionamento e documentação.
 
-## Perguntas que o projeto deverá responder
+## Critério de conclusão
 
-- Em quais etapas ocorre a maior perda de conversão?
-- Qual é o tempo médio entre aquisição, oportunidade e fechamento?
-- Quais canais geram volume e quais geram receita?
-- Como win rate e ciclo de vendas variam entre segmentos?
-- Quais sinais ajudam a explicar retenção e churn?
-- Que ações devem ser priorizadas a partir dos dados?
+Vou considerar o case concluído somente quando as consultas estiverem validadas, o dashboard estiver consistente com os dados e cada conclusão puder ser explicada a partir de uma evidência.
 
-## Estrutura
+## Estrutura prevista
 
 ```text
 02-revenue-funnel-analysis/
@@ -89,10 +63,6 @@ Uma operação de receita pode registrar leads, oportunidades, clientes e pagame
 └── README.md
 ```
 
-As pastas serão adicionadas quando seus primeiros artefatos existirem. Não uso arquivos vazios apenas para simular progresso.
-
-## Competência demonstrável
-
-Ao concluir este case, poderei apresentar uma análise de receita de ponta a ponta: qualidade da base, consultas SQL, definição de KPIs, dashboard e recomendações sustentadas pelos dados.
+As pastas serão adicionadas quando seus primeiros entregáveis forem produzidos.
 
 [← Voltar ao portfólio](../README.md)

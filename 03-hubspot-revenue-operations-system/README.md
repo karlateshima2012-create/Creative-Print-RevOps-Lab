@@ -2,97 +2,61 @@
 
 # Case 03 — HubSpot Revenue Operations System
 
-### Lifecycle, SLA, automações e integrações com o HubSpot como Single Source of Truth
+### Pipeline, SLA, automações, integrações e reporting
 
 ![HubSpot](https://img.shields.io/badge/HubSpot-RevOps-FF7A59?style=flat-square&logo=hubspot&logoColor=white)
 ![Make](https://img.shields.io/badge/Make-Automation-6D00CC?style=flat-square)
-![REST API](https://img.shields.io/badge/REST-API-0F172A?style=flat-square)
-![JSON](https://img.shields.io/badge/JSON-Data%20Exchange-000000?style=flat-square&logo=json&logoColor=white)
+![API](https://img.shields.io/badge/REST-API-0F172A?style=flat-square)
 ![Status](https://img.shields.io/badge/status-planejado-64748B?style=flat-square)
 
 </div>
 
-## Visão do projeto
+## Objetivo
 
-Neste case, vou projetar e implementar um sistema de Revenue Operations com o HubSpot como **Single Source of Truth**. O projeto conectará requisitos, lifecycle, pipeline, handoffs, SLA, automações, integrações e reporting em uma única arquitetura operacional.
+Neste projeto, vou construir e testar um sistema operacional de Revenue Operations no HubSpot. O case conectará requisitos, pipeline, SLA, automação, integração e reporting.
 
-A Creative Print, o CP Agenda e o CP Review serão utilizados como contexto real. Só apresentarei como implementado aquilo que tiver configuração, teste e evidência verificável.
-
-## Problema de negócio
-
-Quando marketing, vendas e atendimento utilizam dados e regras diferentes, a operação perde rastreabilidade. Leads não recebem o tratamento correto, handoffs dependem de ações manuais, sistemas mantêm informações divergentes e os relatórios deixam de representar a realidade.
+Este case ainda não foi executado. Os artefatos serão publicados conforme forem produzidos durante o bootcamp.
 
 ## O que vou desenvolver
 
-1. **Requisitos e arquitetura**
-   - fontes de dados, usuários, processos e restrições;
-   - definição do HubSpot como sistema central;
-   - critérios de sucesso e decisões arquiteturais.
+1. definir requisitos, objetos, propriedades e regras;
+2. construir pipeline e critérios de progressão;
+3. documentar responsabilidades, handoffs e SLA;
+4. implementar workflow com monitoramento;
+5. integrar sistemas e mapear payloads;
+6. tratar falhas, exceções e reprocessamentos;
+7. criar reporting operacional;
+8. executar testes e UAT.
 
-2. **Lifecycle e pipeline**
-   - lifecycle stages e critérios de entrada e saída;
-   - pipeline e regras de progressão;
-   - responsabilidades e handoffs entre funções.
+## Entregáveis previstos
 
-3. **Automação e SLA**
-   - SLAs operacionais;
-   - triggers, condições, ações e exceções;
-   - workflows e tratamento de falhas;
-   - documentação das regras de negócio.
-
-4. **Integrações**
-   - fluxos com Meta Lead Ads, WhatsApp, Stripe e APIs próprias;
-   - cenários no Make;
-   - APIs REST, JSON e webhooks;
-   - custom properties e associations.
-
-5. **Testes e reporting**
-   - cenários de teste e UAT;
-   - logs, erros e reprocessamento;
-   - relatórios operacionais e de gestão;
-   - validação da rastreabilidade de ponta a ponta.
-
-## Entregáveis
-
-| Entregável | Finalidade |
+| Entregável | O que deverá comprovar |
 |---|---|
-| **RevOps Architecture** | Representar processos, dados, responsabilidades e sistemas |
-| **Systems Integration Architecture** | Mapear aplicações, limites e integrações |
-| **Data Flow Diagram** | Mostrar origem, transformação e destino dos dados |
-| **HubSpot Integration Blueprint** | Documentar objetos, propriedades, eventos e regras |
-| **Lifecycle & Pipeline Specification** | Definir estágios, critérios e progressão |
-| **Handoff & SLA Matrix** | Formalizar responsabilidades e tempos de resposta |
-| **Automation Specification** | Registrar triggers, ações, exceções e ownership |
-| **Make Scenarios Documentation** | Documentar cenários, filtros, mapeamentos e erros |
-| **Testing & UAT Report** | Comprovar funcionamento e registrar falhas |
-| **Integration Playbook** | Consolidar operação, monitoramento e recuperação |
-| **Reporting Framework** | Conectar métricas operacionais às decisões de receita |
+| RevOps Architecture | Relação entre processos, dados, responsabilidades e sistemas |
+| Lifecycle & Pipeline Specification | Estágios, critérios e progressão |
+| Handoff & SLA Matrix | Responsáveis e tempos de resposta |
+| Automation Specification | Triggers, ações, exceções e ownership |
+| Systems Integration Architecture | Sistemas, limites e conexões |
+| Data Flow Diagram | Origem, transformação e destino dos dados |
+| Integration Blueprint | Objetos, eventos, propriedades e payloads |
+| Testing & UAT Report | Cenários executados, falhas e resultados |
+| Reporting Framework | Indicadores operacionais e de gestão |
+| Integration Playbook | Monitoramento, erros e recuperação |
 
-## Tecnologias planejadas
+## Tecnologias previstas
 
-- **HubSpot CRM:** objetos, custom properties, associations, pipelines, workflows e reports;
-- **Make:** cenários de integração e automação;
-- **APIs REST:** comunicação com sistemas externos;
-- **JSON e webhooks:** troca de dados e eventos;
-- **Meta Lead Ads:** captura de leads;
-- **WhatsApp:** comunicação e continuidade operacional;
-- **Stripe:** eventos de pagamento e receita;
-- **APIs próprias:** integração com CP Agenda e CP Review;
-- **GitHub:** arquitetura, documentação, versionamento e evidências.
+- HubSpot CRM;
+- workflows e reporting;
+- Make;
+- APIs REST;
+- JSON e webhooks;
+- GitHub para arquitetura, documentação e evidências.
 
-## Evidências necessárias
+## Critério de conclusão
 
-O sistema só será apresentado como implementado após:
+Vou considerar o case concluído somente depois de validar o pipeline em nove cenários, testar o workflow com SLA e comprovar a integração com casos de sucesso e erro, logs e payloads.
 
-- testes positivos, negativos e de exceção;
-- UAT com critérios definidos;
-- comprovação dos registros criados ou atualizados;
-- validação de associações e lifecycle;
-- logs de automação e integração;
-- registro de erros e estratégia de reprocessamento;
-- comparação entre comportamento esperado e observado.
-
-## Estrutura
+## Estrutura prevista
 
 ```text
 03-hubspot-revenue-operations-system/
@@ -106,10 +70,6 @@ O sistema só será apresentado como implementado após:
 └── README.md
 ```
 
-As fontes iniciais de ICP e evidência de clientes estão em `requirements/`. Elas apoiam o projeto, mas não substituem a implementação do sistema.
-
-## Competência demonstrável
-
-Ao concluir este case, poderei explicar como conectei dados, processos e sistemas em uma arquitetura RevOps testada, documentada e rastreável no HubSpot.
+As pastas serão adicionadas quando seus primeiros entregáveis forem produzidos.
 
 [← Voltar ao portfólio](../README.md)

@@ -2,90 +2,56 @@
 
 # Case 01 — CRM Implementation & Data Quality
 
-### Auditoria, correção, importação e validação de dados reais no HubSpot
+### Auditoria, correção, importação e validação de dados no HubSpot
 
 ![HubSpot](https://img.shields.io/badge/HubSpot-CRM-FF7A59?style=flat-square&logo=hubspot&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-Data%20Quality-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-F59E0B?style=flat-square)
+![Data Quality](https://img.shields.io/badge/Data-Quality-0F766E?style=flat-square)
+![Status](https://img.shields.io/badge/status-planejado-64748B?style=flat-square)
 
 </div>
 
-## Visão do projeto
+## Objetivo
 
-Neste case, trabalho com a operação real da Creative Print para transformar registros dispersos em uma base confiável, padronizada e utilizável no HubSpot.
+Neste projeto, vou executar uma implementação de CRM orientada por qualidade de dados. O trabalho começará com a auditoria da base e terminará com a importação validada no HubSpot.
 
-Meu foco é demonstrar o processo completo de qualidade e migração de dados: entender o negócio, auditar a base, definir regras, mapear campos, corrigir inconsistências, importar e validar os registros sem perder rastreabilidade.
-
-## Problema de negócio
-
-A Creative Print possui clientes e relacionamentos reais, mas as informações foram construídas ao longo da operação sem uma estrutura única de CRM. Isso cria riscos de duplicidade, campos incompletos, associações incorretas e baixa confiabilidade para vendas, marketing e atendimento.
+Este case ainda não foi executado. Os artefatos serão publicados conforme forem produzidos durante o bootcamp.
 
 ## O que vou desenvolver
 
-1. **Discovery e requisitos**
-   - contexto do negócio e objetivos do CRM;
-   - diagnóstico do estado atual;
-   - definição do estado futuro e critérios de sucesso.
+1. auditar estrutura, completude, validade, consistência e duplicidade;
+2. classificar problemas e definir critérios de correção;
+3. limpar e padronizar os dados;
+4. mapear campos de origem e destino;
+5. definir objetos, propriedades, identificadores e associações;
+6. preparar arquivos e executar a importação;
+7. validar registros e associações no HubSpot;
+8. documentar erros, correções e reprocessamentos.
 
-2. **Auditoria e qualidade**
-   - inventário e profiling da base;
-   - análise de duplicidade, completude, validade e consistência;
-   - regras de padronização e deduplicação;
-   - plano de correção priorizado.
+## Entregáveis previstos
 
-3. **Field mapping**
-   - mapeamento entre origem e destino;
-   - revisão dos objetos Company, Contact, Deal e Ticket;
-   - propriedades, tipos de campo e regras de preenchimento;
-   - associações e identificadores únicos.
+| Entregável | O que deverá comprovar |
+|---|---|
+| Data Audit Report | Problemas encontrados e impacto na implementação |
+| Data Cleaning Plan | Regras e prioridades de correção |
+| Field Mapping Workbook | Relação entre origem, destino, tipo e regra de cada campo |
+| Import Files | Base preparada para carga controlada |
+| Import & Validation Report | Registros processados, rejeitados e reconciliados |
+| Error & Correction Log | Rastreabilidade de falhas, decisões e reprocessamentos |
+| Evidence Pack | Configurações, registros e associações verificadas no HubSpot |
 
-4. **Configuração do HubSpot**
-   - revisão de propriedades e pipelines;
-   - validação das configurações de Deal e Ticket;
-   - preparação dos templates de importação.
+## Tecnologias previstas
 
-5. **Importação e validação**
-   - execução controlada da importação;
-   - verificação das associações;
-   - reconciliação entre origem e HubSpot;
-   - registro de erros, correções e reprocessamentos.
+- HubSpot CRM;
+- Excel ou Google Sheets;
+- arquivos CSV e XLSX;
+- técnicas de deduplicação e data hygiene;
+- GitHub para versionamento e evidências.
 
-## Entregáveis
+## Critério de conclusão
 
-| Entregável | Finalidade | Estado |
-|---|---|---|
-| Business Discovery e Current/Future State | Traduzir o problema operacional em requisitos de CRM | Disponível |
-| Data dictionaries | Definir propriedades, formatos e regras dos quatro objetos | Disponível |
-| Governance e Data Quality Framework | Estabelecer padrões de criação, manutenção e controle | Disponível |
-| Field Mapping Workbook | Relacionar campos de origem e destino | Em revisão |
-| Data Audit Report | Medir completude, validade, consistência e duplicidade | A desenvolver |
-| Data Cleaning Plan | Priorizar correções antes da importação | A desenvolver |
-| Import Templates | Padronizar Company, Contact e Deal | Disponível |
-| Import & Validation Report | Comprovar volume processado, erros e reconciliação | A desenvolver |
-| Error & Correction Log | Preservar rastreabilidade das decisões | A desenvolver |
-| Evidence Pack | Reunir capturas e validações relevantes do HubSpot | Em desenvolvimento |
+Vou considerar o case concluído somente quando a auditoria, a correção, a importação e a validação tiverem sido executadas e comprovadas. O planejamento isolado não será tratado como implementação.
 
-## Tecnologias e técnicas
-
-- **HubSpot CRM:** objetos, propriedades, associações, pipelines e importação;
-- **Excel / Google Sheets:** profiling, limpeza, deduplicação, mapping e reconciliação;
-- **CSV / XLSX:** preparação e controle dos arquivos de carga;
-- **GitHub:** versionamento da documentação, artefatos e evidências;
-- **Data hygiene:** completude, unicidade, validade, consistência e padronização.
-
-## Evidências que encerrarão o case
-
-O projeto só será considerado concluído quando eu conseguir demonstrar:
-
-- base auditada com critérios documentados;
-- correções executadas e justificadas;
-- importação concluída sem perda silenciosa de registros;
-- associações verificadas no HubSpot;
-- comparação entre dados de origem e destino;
-- erros e reprocessamentos registrados;
-- limitações e próximos passos explicitados.
-
-## Estrutura
+## Estrutura prevista
 
 ```text
 01-crm-implementation-data-quality/
@@ -98,8 +64,6 @@ O projeto só será considerado concluído quando eu conseguir demonstrar:
 └── README.md
 ```
 
-## Competência demonstrável
-
-Ao concluir este case, poderei explicar tecnicamente como auditei uma base real, defini regras de qualidade, preparei uma migração e validei dados no HubSpot mantendo integridade e rastreabilidade.
+As pastas serão adicionadas quando seus primeiros entregáveis forem produzidos.
 
 [← Voltar ao portfólio](../README.md)
