@@ -2,21 +2,22 @@
 
 ## Objetivo
 
-Projetar um sistema de Revenue Operations no HubSpot cobrindo lifecycle, pipeline, handoffs, SLA, automações, integrações e reporting para a operação da Creative Print e seus produtos CP Agenda e CP Review.
+Construir um sistema de Revenue Operations no HubSpot cobrindo requisitos, lifecycle, pipeline, handoffs, SLA, automações, testes, integrações, reporting e evidências.
 
-## Ativos preservados
+## Estrutura definida
 
-O case incorpora o diagnóstico de lifecycle iniciado anteriormente e os artefatos arquiteturais que sustentam processo, automação, integração e reporting. Eles são insumos; não comprovam uma implementação end-to-end concluída.
+- `requirements/`
+- `lifecycle-and-pipeline/`
+- `automation-and-sla/`
+- `testing-and-uat/`
+- `integration/`
+- `reporting/`
+- `evidence/`
 
-## Estrutura
+## Ativos iniciais
 
-- `01-lifecycle-and-pipeline/`: ICP, evidências de clientes e desenho inicial de lifecycle.
-- `02-automation-and-sla/`: desenho de processos e arquitetura de automação.
-- `03-testing-and-uat/`: reservado para critérios e evidências de teste.
-- `04-integration/`: mapeamento dos sistemas.
-- `05-reporting/`: arquitetura de reporting.
-- `06-evidence/`: diagramas e evidências futuras.
+Market Segment Evaluation, Customer Evidence Matrix e ICP foram preservados como fontes internas para requisitos da Semana 1. Eles não permanecem como um case público separado.
 
 ## Estado
 
-Em evolução. Discovery e arquitetura inicial existem; handoffs, SLA, automações implementadas, integrações, UAT e reporting validado continuam pendentes.
+Em andamento. Os requisitos iniciais possuem fontes reaproveitadas; os demais diretórios serão adicionados quando houver entregáveis reais. O Git não mantém diretórios vazios e não serão usados arquivos `.gitkeep`.

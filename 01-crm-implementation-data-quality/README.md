@@ -1,23 +1,22 @@
 # Case 01 — CRM Implementation & Data Quality
 
+## Problema
+
+A Creative Print possui dados e relacionamentos reais, mas precisa transformar registros dispersos em uma base confiável e utilizável no HubSpot.
+
 ## Objetivo
 
-Auditar e estruturar os dados reais da Creative Print, definir o modelo de CRM, preparar a configuração do HubSpot e documentar evidências de implementação e qualidade de dados.
-
-## Fonte e limitações
-
-Este case utiliza a operação real da Creative Print. Os documentos preservados foram produzidos no laboratório anterior e representam diagnóstico, arquitetura, governança, configuração e evidências reais disponíveis até o momento. A limpeza, importação completa e validação pós-importação ainda precisam ser executadas e comprovadas.
+Executar discovery, auditoria de dados, mapeamento de campos, configuração do HubSpot, preparação da importação, validação e coleta de evidências.
 
 ## Estrutura
 
-- `01-discovery-and-requirements/`: contexto, estado atual e requisitos.
-- `02-data-audit-and-quality/`: governança, qualidade e decisões.
-- `03-field-mapping/`: modelo de objetos, associações e dicionários.
-- `04-hubspot-configuration/`: arquitetura, propriedades, pipelines e templates.
-- `05-import-and-validation/`: plano de implementação e validação.
-- `06-evidence/`: diagramas, capturas do HubSpot e certificação.
-- `07-project-closure/`: fechamento produzido no laboratório anterior.
+- `discovery-and-requirements/`
+- `data-audit/`
+- `field-mapping/`
+- `hubspot-configuration/`
+- `import-and-validation/`
+- `evidence/`
 
-## Estado
+## Estado e limitações
 
-Em evolução. A documentação e parte da configuração existem; o resultado operacional não deve ser tratado como concluído antes da auditoria da base, importação e validação.
+Os ativos reaproveitados comprovam discovery, arquitetura, governança, preparação da configuração e parte das configurações realizadas. A auditoria da base, a limpeza, a importação completa e a validação pós-importação ainda precisam ser executadas. As configurações de Deal e Ticket permanecem como material sujeito a revisão.

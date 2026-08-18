@@ -1,21 +1,19 @@
-# Creative Print RevOps Bootcamp Portfolio
+# Creative Print RevOps Lab
 
-Portfólio técnico de Karla Teshima para posições de CRM Operations, HubSpot Specialist e Revenue Operations.
+Portfólio técnico de Karla Teshima construído durante o bootcamp de CRM, HubSpot e Revenue Operations.
 
-O repositório está organizado em três cases progressivos. Cada case distingue trabalho concluído, evidência real, hipótese e entregáveis planejados.
+O repositório foi reorganizado exclusivamente em torno de três cases profissionais. A formação anterior não permanece como um projeto público separado.
 
 ## Cases
 
-| Case | Escopo | Fonte de dados | Estado |
-|---|---|---|---|
-| [01 — CRM Implementation & Data Quality](./01-crm-implementation-data-quality/) | Diagnóstico, arquitetura de dados, configuração e evidências de implementação no HubSpot | Operação real da Creative Print | Em evolução |
-| [02 — Revenue Funnel Analysis](./02-revenue-funnel-analysis/) | Dataset SaaS, SQL, métricas, dashboard e análise do funil | Dataset simulado, ainda não produzido | Planejado |
-| [03 — HubSpot Revenue Operations System](./03-hubspot-revenue-operations-system/) | Lifecycle, pipeline, handoffs, SLA, automações, integrações e reporting | Creative Print, CP Agenda e CP Review | Em evolução |
+| Case | Objetivo | Estado |
+|---|---|---|
+| [01 — CRM Implementation & Data Quality](./01-crm-implementation-data-quality/) | Auditar dados reais da Creative Print, mapear campos, configurar o HubSpot, importar e validar a base | Em andamento |
+| [02 — Revenue Funnel Analysis](./02-revenue-funnel-analysis/) | Construir um dataset SaaS simulado, analisar o funil com SQL, métricas e dashboard | Planejado |
+| [03 — HubSpot Revenue Operations System](./03-hubspot-revenue-operations-system/) | Implementar lifecycle, pipeline, handoffs, SLA, automações, integrações e reporting | Em andamento |
+
+O capstone consolidará e fechará os três cases existentes; não haverá uma quarta pasta.
 
 ## Regra de evidência
 
-Nenhum cliente, volume, métrica ou resultado é inventado. Materiais simulados são identificados explicitamente. Um case só será considerado concluído quando demonstrar problema, diagnóstico, metodologia, decisão, implementação, evidência, resultado e competência.
-
-## Contexto
-
-A Creative Print é a empresa-laboratório. Os ativos úteis da formação anterior foram preservados dentro dos cases correspondentes; a navegação antiga foi removida para que o repositório funcione como portfólio profissional.
+Nenhum cliente, volume, métrica ou resultado é inventado. Evidência real, hipótese e dado simulado são identificados separadamente. Um case só será considerado concluído quando demonstrar problema, diagnóstico, metodologia, decisão, implementação, evidência, resultado e competência.
