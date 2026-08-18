@@ -88,10 +88,8 @@ Abaixo está o detalhamento dos 12 módulos e das fases práticas do laboratóri
 
 ```text
 Creative-Print-Revops-Lab/
-├── GRADE_CURRICULAR.md        # Documento mestre do programa da formação (12 Módulos)
-├── README.md                  # Visão geral e roadmap do laboratório
-├── index.html                 # Apresentação interativa da arquitetura
-├── index.css                  # Estilização visual da apresentação
+├── 00-REVOPS-CAREER-MAP.md    # Painel executivo e roadmap mestre da formação (12 Módulos)
+├── README.md                  # Visão geral e guia do repositório
 │
 ├── 01-crm-architecture/       # Documentação da Arquitetura do CRM e Negócio
 │   ├── 00-Executive-Summary.md
