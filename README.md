@@ -11,6 +11,8 @@ Três projetos práticos desenvolvidos durante um bootcamp intensivo de 8 semana
 ![Make](https://img.shields.io/badge/Make-Integrations-6D00CC?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-bootcamp%20planejado-64748B?style=for-the-badge)
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karla%20Teshima-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karla-teshima-revops)
+
 </div>
 
 ---
@@ -97,6 +99,7 @@ As subpastas e os artefatos de cada projeto serão adicionados quando forem prod
 <div align="center">
 
 **Karla Teshima**  
-Founder & CEO, Creative Print
+Founder & CEO, Creative Print  
+[LinkedIn profissional](https://www.linkedin.com/in/karla-teshima-revops)
 
 </div>
